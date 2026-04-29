@@ -1,0 +1,111 @@
+{
+  "collected_at": "2026-04-30T05:43:05.192658",
+  "date": "2026-04-30",
+  "total_found": 28,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-04-29T20:43:03.279157+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.88927924448
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.123: v2.1.123",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.123",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.123",
+      "body": "## What's changed\n\n- Fixed OAuth authentication failing with a 401 retry loop when `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` is set\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-04-29T03:29:13Z",
+      "final_score": 1312.8139231342593
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.122: v2.1.122",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.122",
+      "body": "## What's changed\n\n- Added `ANTHROPIC_BEDROCK_SERVICE_TIER` environment variable to select a Bedrock service tier (`default`, `flex`, or `priority`), sent as the `X-Amzn-Bedrock-Service-Tier` header\n- Pasting a PR URL into the `/resume` search box now finds the session that created that PR (GitHub, GitHub Enterprise, GitLab, and Bitbucket)\n- `/mcp` now shows claude.ai connectors hidden by a manually-added server with the same URL, with a hint to remove the duplicate\n- Clarified the `/mcp` message shown when an MCP server is still unauthorized after the browser sign-in flow\n- OpenTelemetry: num",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-04-28T22:05:15Z",
+      "final_score": 1222.8231823935184
+    },
+    {
+      "source": "Hacker News",
+      "title": "HERMES.md: Anthropic bug causes $200 extra charge, refuses refund",
+      "url": "https://github.com/anthropics/claude-code/issues/53262",
+      "external_url": "https://github.com/anthropics/claude-code/issues/53262",
+      "score": 563,
+      "comments": 211,
+      "created": "2026-04-29T18:54:31+00:00",
+      "final_score": 1210.276097016846
+    },
+    {
+      "source": "Reddit r/ClaudeAI",
+      "title": "When you've got money to burn 😂",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1syuij0/when_youve_got_money_to_burn/",
+      "external_url": "https://i.redd.it/5aa3x176t3yg1.jpeg",
+      "score": 624,
+      "comments": 38,
+      "created": "2026-04-29T10:09:38+00:00",
+      "final_score": 1129.7518044891667
+    },
+    {
+      "source": "Reddit r/ClaudeAI",
+      "title": "Claude is my SEO strategist, content engine, and CTO. From 0 to 10,000 active users in 6 weeks, $0 on ads.",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1syt37w/claude_is_my_seo_strategist_content_engine_and/",
+      "external_url": "https://i.redd.it/xmlmjwuud3yg1.png",
+      "score": 523,
+      "comments": 150,
+      "created": "2026-04-29T08:47:32+00:00",
+      "final_score": 991.0575247027258
+    },
+    {
+      "source": "Reddit r/ClaudeAI",
+      "title": "Thanks for the advice Claude",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sz67w4/thanks_for_the_advice_claude/",
+      "external_url": "https://i.redd.it/i00zhniv36yg1.jpeg",
+      "score": 469,
+      "comments": 91,
+      "created": "2026-04-29T17:52:09+00:00",
+      "final_score": 955.6634587337558
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.121: v2.1.121",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.121",
+      "body": "## What's changed\n\n- Added `alwaysLoad` option to MCP server config — when `true`, all tools from that server skip tool-search deferral and are always available\n- Added `claude plugin prune` to remove orphaned auto-installed plugin dependencies; `plugin uninstall --prune` cascades\n- Added a type-to-filter search box to `/skills` so you can find a skill in long lists without scrolling\n- PostToolUse hooks can now replace tool output for all tools via `hookSpecificOutput.updatedToolOutput` (previously MCP-only)\n- Fullscreen mode: typing into the prompt no longer jumps scroll back to the bottom af",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-04-28T00:31:31Z",
+      "final_score": 863.4528120231483
+    },
+    {
+      "source": "Reddit r/ClaudeAI",
+      "title": "Claude picked the moral high ground in the red button/blue button vote",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1sz5md9/claude_picked_the_moral_high_ground_in_the_red/",
+      "external_url": "https://i.redd.it/s9tj1hgdx5yg1.png",
+      "score": 328,
+      "comments": 349,
+      "created": "2026-04-29T17:31:43+00:00",
+      "final_score": 808.7050973739352
+    },
+    {
+      "source": "Reddit r/ClaudeAI",
+      "title": "The final nail in the coffin for entry level creative freelancers just dropped",
+      "url": "https://reddit.com/r/ClaudeAI/comments/1syu949/the_final_nail_in_the_coffin_for_entry_level/",
+      "external_url": "https://www.reddit.com/r/ClaudeAI/comments/1syu949/the_final_nail_in_the_coffin_for_entry_level/",
+      "score": 422,
+      "comments": 107,
+      "created": "2026-04-29T09:55:19+00:00",
+      "final_score": 802.5837194533217
+    }
+  ]
+}

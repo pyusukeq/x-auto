@@ -1,0 +1,45 @@
+name: Daily X Post
+
+on:
+  schedule:
+    - cron: '0 22 * * *'  # 毎日 JST 07:00 (UTC 22:00)
+  workflow_dispatch:       # GitHub UI から手動実行も可能
+
+jobs:
+  daily-post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # posted_tweets.json をコミットするため
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Collect content
+        run: python pipeline/collect.py
+
+      - name: Generate and post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: python pipeline/auto_post.py
+
+      - name: Save results to repo
+        if: always()
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add pipeline/posted_tweets.json pipeline/collected/ || true
+          git diff --staged --quiet || git commit -m "auto: daily post $(date +%Y-%m-%d)"
+          git push || true
