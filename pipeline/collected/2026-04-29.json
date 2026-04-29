@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-04-29T21:28:07.212863",
+  "collected_at": "2026-04-29T21:39:03.435499",
   "date": "2026-04-29",
   "total_found": 14,
   "top_stories": [
@@ -10,19 +10,19 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-29T21:28:06.322779+00:00",
+      "created": "2026-04-29T21:39:02.260388+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.94849895849
+      "final_score": 19997.93200489047
     },
     {
       "source": "Hacker News",
       "title": "HERMES.md: Anthropic bug causes $200 extra charge, refuses refund",
       "url": "https://github.com/anthropics/claude-code/issues/53262",
       "external_url": "https://github.com/anthropics/claude-code/issues/53262",
-      "score": 737,
-      "comments": 289,
+      "score": 771,
+      "comments": 298,
       "created": "2026-04-29T18:54:31+00:00",
-      "final_score": 1579.1924257058913
+      "final_score": 1646.9511126132466
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -33,7 +33,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1300.3045703425926
+      "final_score": 1297.2665024953703
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -44,7 +44,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1210.313829601852
+      "final_score": 1207.2757617546297
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -55,7 +55,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 850.9434592314815
+      "final_score": 847.9053913842595
     },
     {
       "source": "GitHub anthropics/claude-code",
