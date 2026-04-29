@@ -30,6 +30,19 @@ jobs:
       - name: Collect content
         run: python pipeline/collect.py
 
+      - name: Check API connectivity
+        run: |
+          echo "=== Anthropic API 接続確認 ==="
+          curl -s -o /dev/null -w "HTTP Status: %{http_code}\n" https://api.anthropic.com/ || echo "curl failed"
+          python -c "
+          import httpx
+          try:
+              r = httpx.get('https://api.anthropic.com/', timeout=10)
+              print(f'httpx: HTTP {r.status_code}')
+          except Exception as e:
+              print(f'httpx error: {type(e).__name__}: {e}')
+          "
+
       - name: Generate and post
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

@@ -68,7 +68,11 @@ def generate_posts(stories: list) -> list[str]:
         raise ValueError(f"ANTHROPIC_API_KEY の形式が不正です（先頭: {api_key[:10]}...）")
 
     print(f"  APIキー確認: {api_key[:12]}...（長さ: {len(api_key)}文字）")
-    client = anthropic.Anthropic(api_key=api_key)
+    import httpx
+    client = anthropic.Anthropic(
+        api_key=api_key,
+        http_client=httpx.Client(timeout=httpx.Timeout(60.0, connect=15.0)),
+    )
 
     stories_text = "\n\n".join([
         f"[{i+1}] ソース: {s['source']}\nタイトル: {s['title']}\n"
