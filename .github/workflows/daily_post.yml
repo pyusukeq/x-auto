@@ -30,17 +30,26 @@ jobs:
       - name: Collect content
         run: python pipeline/collect.py
 
-      - name: Check API connectivity
+      - name: Debug API call
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          echo "=== Anthropic API 接続確認 ==="
-          curl -s -o /dev/null -w "HTTP Status: %{http_code}\n" https://api.anthropic.com/ || echo "curl failed"
           python -c "
-          import httpx
+          import anthropic, os, traceback, sys
+          api_key = os.environ.get('ANTHROPIC_API_KEY', '')
+          print(f'anthropic version: {anthropic.__version__}')
+          print(f'key prefix: {api_key[:15]}... len={len(api_key)}')
           try:
-              r = httpx.get('https://api.anthropic.com/', timeout=10)
-              print(f'httpx: HTTP {r.status_code}')
+              client = anthropic.Anthropic(api_key=api_key)
+              msg = client.messages.create(
+                  model='claude-haiku-4-5-20251001',
+                  max_tokens=10,
+                  messages=[{'role': 'user', 'content': 'hi'}]
+              )
+              print('SUCCESS:', msg.content[0].text)
           except Exception as e:
-              print(f'httpx error: {type(e).__name__}: {e}')
+              traceback.print_exc()
+              sys.exit(1)
           "
 
       - name: Generate and post
