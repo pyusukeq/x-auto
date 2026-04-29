@@ -60,8 +60,15 @@ def shorten_post(post: str, limit: int = 260) -> str:
 
 
 def generate_posts(stories: list) -> list[str]:
-    """Anthropic API を使って投稿を生成する"""
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    """Anthropic API を使って投稿を生成する（リトライあり）"""
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        raise ValueError("ANTHROPIC_API_KEY が設定されていません")
+    if not api_key.startswith("sk-ant-"):
+        raise ValueError(f"ANTHROPIC_API_KEY の形式が不正です（先頭: {api_key[:10]}...）")
+
+    print(f"  APIキー確認: {api_key[:12]}...（長さ: {len(api_key)}文字）")
+    client = anthropic.Anthropic(api_key=api_key)
 
     stories_text = "\n\n".join([
         f"[{i+1}] ソース: {s['source']}\nタイトル: {s['title']}\n"
@@ -70,15 +77,28 @@ def generate_posts(stories: list) -> list[str]:
         for i, s in enumerate(stories[:8])
     ])
 
-    message = client.messages.create(
-        model="claude-haiku-4-5-20251001",
-        max_tokens=1024,
-        system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": f"以下の記事から3本のX投稿を作成してください。\n\n{stories_text}"
-        }]
-    )
+    # リトライ処理（最大3回）
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            print(f"  API呼び出し試行 {attempt}/3...")
+            message = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=1024,
+                system=SYSTEM_PROMPT,
+                messages=[{
+                    "role": "user",
+                    "content": f"以下の記事から3本のX投稿を作成してください。\n\n{stories_text}"
+                }]
+            )
+            break
+        except Exception as e:
+            last_error = e
+            print(f"  試行{attempt}失敗: {type(e).__name__}: {e}")
+            if attempt < 3:
+                time.sleep(5 * attempt)
+    else:
+        raise last_error
 
     raw = message.content[0].text.strip()
 
