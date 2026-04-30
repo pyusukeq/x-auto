@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-04-30T00:27:45.066109",
+  "collected_at": "2026-04-30T03:10:47.109548",
   "date": "2026-04-30",
-  "total_found": 13,
+  "total_found": 14,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-30T00:27:44.128093+00:00",
+      "created": "2026-04-30T03:10:46.390666+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.94572400453
+      "final_score": 19997.95840456505
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1250.4071015
+      "final_score": 1205.1198633935185
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1160.4163607592593
+      "final_score": 1115.1291226527778
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 801.045990388889
+      "final_score": 800.0
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -56,17 +56,6 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T23:24:19Z",
-      "final_score": 800.0
-    },
-    {
-      "source": "GitHub anthropics/claude-code",
-      "title": "【リリース】claude-code v2.1.118: v2.1.118",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.118",
-      "body": "## What's changed\n\n- Added vim visual mode (`v`) and visual-line mode (`V`) with selection, operators, and visual feedback\n- Merged `/cost` and `/stats` into `/usage` — both remain as typing shortcuts that open the relevant tab\n- Create and switch between named custom themes from `/theme`, or hand-edit JSON files in `~/.claude/themes/`; plugins can also ship themes via a `themes/` directory\n- Hooks can now invoke MCP tools directly via `type: \"mcp_tool\"`\n- Added `DISABLE_UPDATES` env var to completely block all update paths including manual `claude update` — stricter than `DISABLE_AUTOUPDATER`",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-04-23T00:42:21Z",
       "final_score": 800.0
     },
     {
@@ -112,6 +101,16 @@
       "comments": 0,
       "created": "2026-04-23T20:47:41Z",
       "final_score": 800.0
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude.ai and API unavailable [fixed]",
+      "url": "https://status.claude.com/incidents/2gf1jpyty350",
+      "external_url": "https://status.claude.com/incidents/2gf1jpyty350",
+      "score": 95,
+      "comments": 83,
+      "created": "2026-04-30T01:21:03+00:00",
+      "final_score": 227.88026387057292
     }
   ]
 }
