@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-04-30T14:14:19.588922",
+  "collected_at": "2026-04-30T14:41:51.910185",
   "date": "2026-04-30",
   "total_found": 10,
   "top_stories": [
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-30T14:14:18.428260+00:00",
+      "created": "2026-04-30T14:41:50.283459+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.980811690846
+      "final_score": 19997.9731063768
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1434.5150940674603
+      "final_score": 1432.3294839312168
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1408.8034538558202
+      "final_score": 1406.6178437195767
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 1306.1262051785714
+      "final_score": 1303.940595042328
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-24T23:26:44Z",
-      "final_score": 958.1275279298943
+      "final_score": 955.9419177936509
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T23:24:19Z",
-      "final_score": 843.6500147023811
+      "final_score": 841.4644045661375
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -78,7 +78,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:51:59Z",
-      "final_score": 831.5600676124341
+      "final_score": 829.3744574761904
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -89,7 +89,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:41Z",
-      "final_score": 831.2187977711641
+      "final_score": 829.0331876349206
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -100,7 +100,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:35Z",
-      "final_score": 831.2108612632276
+      "final_score": 829.0252511269841
     },
     {
       "source": "Hacker News",
@@ -108,19 +108,19 @@
       "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
       "external_url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
       "score": 128,
-      "comments": 31,
+      "comments": 32,
       "created": "2026-04-29T12:43:12+00:00",
-      "final_score": 252.05712404550263
+      "final_score": 252.2074264237037
     }
   ],
   "viral_video_tweet": {
-    "tweet_id": "2049854388261273799",
-    "author": "ridark_eth",
-    "text": "🚨 I just realized I’ve been paying $20 for Claude and only using 5% of its power.\n\nWhile I was stuck copy-pasting from the browser, others were already automating their entire workflow using Claude Code and MCP servers. \n\nIt’s not just a chatbot, it’s a command center I’ve been https://t.co/scJgd2gstr https://t.co/Bm7J674fWd",
-    "url": "https://x.com/ridark_eth/status/2049854388261273799",
-    "like_count": 5,
-    "retweet_count": 0,
-    "score": 15,
-    "created": "2026-04-30T14:12:25+00:00"
+    "tweet_id": "2049861678049955887",
+    "author": "sharulanuar777",
+    "text": "🐳 Whale - Buy-&gt;10.01SOL 🐳\n\n🪙 𝘛oken : $RLS \n🧪 CA: 2p3WDeRmtogvzUp64JGXHoaGodPdpLiLEea285RCrLcH\n🌠 MCP : 88K\n🛰️ Savory rice layered with tender lamb shank.\n🚀 Check 👉 https://t.co/H2iDxLHXrH 💎 https://t.co/etJnGDvGLd",
+    "url": "https://x.com/sharulanuar777/status/2049861678049955887",
+    "like_count": 0,
+    "retweet_count": 1,
+    "score": 5,
+    "created": "2026-04-30T14:41:23+00:00"
   }
 }
