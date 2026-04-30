@@ -22,6 +22,7 @@ KEYWORDS = ["claude", "anthropic", "claude code", "mcp", "ai coding", "agentic"]
 
 def fetch_reddit():
     results = []
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
     targets = [
         ("ClaudeAI", None),           # 全記事対象
         ("MachineLearning", KEYWORDS), # キーワードフィルタあり
@@ -30,12 +31,16 @@ def fetch_reddit():
 
     for subreddit, keywords in targets:
         try:
-            url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=15"
+            url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=25"
             resp = requests.get(url, headers=HEADERS, timeout=10)
             resp.raise_for_status()
 
+            sub_count = 0
             for post in resp.json()["data"]["children"]:
                 d = post["data"]
+                created = datetime.fromtimestamp(d["created_utc"], tz=timezone.utc)
+                if created < cutoff:
+                    continue
                 if keywords:
                     if not any(kw in d["title"].lower() for kw in keywords):
                         continue
@@ -46,9 +51,10 @@ def fetch_reddit():
                     "external_url": d.get("url", ""),
                     "score": d["score"],
                     "comments": d["num_comments"],
-                    "created": datetime.fromtimestamp(d["created_utc"], tz=timezone.utc).isoformat(),
+                    "created": created.isoformat(),
                 })
-            print(f"  ✅ Reddit r/{subreddit}: {len(results)}件")
+                sub_count += 1
+            print(f"  ✅ Reddit r/{subreddit}: {sub_count}件（直近7日）")
         except Exception as e:
             print(f"  ❌ Reddit r/{subreddit}: {e}")
 
@@ -57,11 +63,12 @@ def fetch_reddit():
 
 def fetch_hackernews():
     results = []
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
     try:
         top_ids = requests.get(
             "https://hacker-news.firebaseio.com/v0/topstories.json",
             timeout=10
-        ).json()[:50]
+        ).json()[:80]
 
         count = 0
         for item_id in top_ids:
@@ -72,6 +79,10 @@ def fetch_hackernews():
                 ).json()
 
                 if not item or item.get("type") != "story":
+                    continue
+
+                created = datetime.fromtimestamp(item.get("time", 0), tz=timezone.utc)
+                if created < cutoff:
                     continue
 
                 text = (item.get("title", "") + " " + item.get("text", "")).lower()
@@ -85,13 +96,13 @@ def fetch_hackernews():
                     "external_url": item.get("url", ""),
                     "score": item.get("score", 0),
                     "comments": item.get("descendants", 0),
-                    "created": datetime.fromtimestamp(item.get("time", 0), tz=timezone.utc).isoformat(),
+                    "created": created.isoformat(),
                 })
                 count += 1
             except Exception:
                 continue
 
-        print(f"  ✅ Hacker News: {count}件")
+        print(f"  ✅ Hacker News: {count}件（直近7日）")
     except Exception as e:
         print(f"  ❌ Hacker News: {e}")
 
@@ -164,15 +175,21 @@ def fetch_github():
 
 def score_and_rank(items):
     now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=7)
+    valid = []
     for item in items:
         try:
             created = datetime.fromisoformat(item["created"])
+            if created < cutoff:
+                continue
             hours_ago = (now - created).total_seconds() / 3600
-            freshness = max(0.0, 1.0 - hours_ago / 48)
+            freshness = max(0.0, 1.0 - hours_ago / (7 * 24))
             item["final_score"] = item["score"] * (1 + freshness) + item.get("comments", 0) * 0.5
+            valid.append(item)
         except Exception:
             item["final_score"] = 0.0
-    return sorted(items, key=lambda x: x["final_score"], reverse=True)
+            valid.append(item)
+    return sorted(valid, key=lambda x: x["final_score"], reverse=True)
 
 
 def main():
