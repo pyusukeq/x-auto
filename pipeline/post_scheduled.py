@@ -84,7 +84,14 @@ def main():
     print(f"引用ツイート: {quote_tweet_id or 'なし'}")
     print(f"内容: {text.split(chr(10))[0][:50]}...")
 
-    result = post_to_x(text, quote_tweet_id)
+    try:
+        result = post_to_x(text, quote_tweet_id)
+    except Exception as e:
+        if quote_tweet_id and ("403" in str(e) or "Forbidden" in str(e)):
+            print(f"引用ツイート失敗({e})→通常投稿にフォールバック")
+            result = post_to_x(text, None)
+        else:
+            raise
     tweet_id = result["data"]["id"]
     append_log(tweet_id, text, post_type, today)
     print(f"投稿完了 ID: {tweet_id}")
