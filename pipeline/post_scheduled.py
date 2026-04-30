@@ -44,7 +44,7 @@ def append_log(tweet_id: str, text: str, tweet_type: str, date: str):
         "id": tweet_id,
         "date": date,
         "type": tweet_type,
-        "text": text[:60] + ("..." if len(text) > 60 else ""),
+        "text": text[:200] + ("..." if len(text) > 200 else ""),
     })
     with open(TWEETS_FILE, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
@@ -71,6 +71,7 @@ def main():
     posts = data.get("posts", [])
     types = data.get("types", ["速報", "解説", "事例"])
     quote_tweet_ids = data.get("quote_tweet_ids", [None, None, None])
+    fallback_post = data.get("fallback_post")
 
     if post_index >= len(posts):
         print(f"ERROR: {post_number}本目が存在しません（{len(posts)}本のみ）")
@@ -88,10 +89,18 @@ def main():
         result = post_to_x(text, quote_tweet_id)
     except Exception as e:
         if quote_tweet_id and ("403" in str(e) or "Forbidden" in str(e)):
-            print(f"引用ツイート失敗({e})→通常投稿にフォールバック")
-            result = post_to_x(text, None)
+            if fallback_post:
+                print(f"引用ツイート失敗({e})→フォールバック投稿（別ネタ）に切り替え")
+                text = fallback_post
+                post_type = "事例"
+                quote_tweet_id = None
+                result = post_to_x(text, None)
+            else:
+                print(f"引用ツイート失敗({e})→フォールバックなし→通常投稿")
+                result = post_to_x(text, None)
         else:
             raise
+
     tweet_id = result["data"]["id"]
     append_log(tweet_id, text, post_type, today)
     print(f"投稿完了 ID: {tweet_id}")

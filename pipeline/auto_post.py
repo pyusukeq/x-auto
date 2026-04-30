@@ -62,10 +62,7 @@ CTA（「〜はこちら👇」「試してみて👀」「保存推奨」など
 - ハッシュタグは使わない
 - 英語情報は自然な日本語に翻訳する
 - ネガティブな内容は避ける
-- 全角換算350文字以内
-
-出力形式（JSONのみ。前後に余計なテキスト・コードブロック不要）:
-{"posts": ["投稿1のテキスト", "投稿2のテキスト", "投稿3のテキスト"]}"""
+- 全角換算350文字以内"""
 
 
 def weighted_len(text: str) -> int:
@@ -91,9 +88,11 @@ def shorten_post(post: str, limit: int = 900) -> str:
     return body.strip() + footer
 
 
-def generate_posts(stories: list, viral_video: dict = None) -> tuple:
+def generate_posts(stories: list, viral_video: dict = None, recent_posts: list = None) -> tuple:
     """Anthropic API を使って投稿を生成する（リトライあり）
-    Returns: (posts, types, quote_tweet_ids)
+    Returns: (scheduled_posts, types, quote_tweet_ids, fallback_post)
+    - viral_video あり: scheduled=[速報,解説,動画引用], fallback=事例投稿
+    - viral_video なし: scheduled=[速報,解説,事例], fallback=None
     """
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
@@ -115,23 +114,47 @@ def generate_posts(stories: list, viral_video: dict = None) -> tuple:
         for i, s in enumerate(stories[:8])
     ])
 
+    dedup_instruction = ""
+    if recent_posts:
+        recent_summary = "\n".join(f"- {p[:120]}" for p in recent_posts[-15:])
+        dedup_instruction = (
+            f"\n\n【重複禁止】以下は最近投稿した内容です。同じトピック・フレーズは絶対に使わないでください:\n"
+            f"{recent_summary}"
+        )
+
     if viral_video:
         types = ["速報", "解説", "動画引用"]
         quote_tweet_ids = [None, None, viral_video["tweet_id"]]
-        video_instruction = (
-            f"\n\n【投稿3は動画引用コメントとして作成】\n"
-            f"以下の英語バズツイートを日本語で紹介する短いコメントを書いてください（全角100文字以内）。\n"
-            f"元ツイート(@{viral_video['author']}): {viral_video['text'][:300]}\n"
-            f"「海外で話題の〇〇動画」「この動画が分かりやすい」のように動画の価値を伝える形式で。"
+        num_posts = 4
+        post_instructions = (
+            "以下の記事から4本のX投稿を作成してください:\n\n"
+            "- 投稿1（速報）: 新しいリリースや発表を中心に。【速報】タグ必須\n"
+            "- 投稿2（解説）: 機能の使い方・仕組みの解説。【保存版】【保存推奨】【必見】のいずれかのタグ必須。速報とは異なるトピックで\n"
+            "- 投稿3（事例・予備）: 実際の活用事例・驚きの使い方。【これはすごい】【保存必須】のいずれかのタグ必須。投稿1・2とは異なるトピックで\n"
+            f"- 投稿4（動画引用コメント・全角100文字以内）: 以下の英語バズツイートを日本語で紹介するコメント:\n"
+            f"  @{viral_video['author']}: {viral_video['text'][:300]}\n"
+            f"  「海外で話題の〇〇動画」「この動画が分かりやすい」のように動画の価値を伝える形式で\n\n"
         )
+        output_format = '{"posts": ["速報投稿", "解説投稿", "事例投稿(予備)", "動画引用コメント"]}'
     else:
         types = ["速報", "解説", "事例"]
         quote_tweet_ids = [None, None, None]
-        video_instruction = ""
+        num_posts = 3
+        post_instructions = (
+            "以下の記事から3本のX投稿を作成してください:\n\n"
+            "- 投稿1（速報）: 新しいリリースや発表を中心に。【速報】タグ必須\n"
+            "- 投稿2（解説）: 機能の使い方・仕組みの解説。【保存版】【保存推奨】【必見】のいずれかのタグ必須。速報とは異なるトピックで\n"
+            "- 投稿3（事例）: 実際の活用事例・驚きの使い方。【これはすごい】【保存必須】のいずれかのタグ必須。投稿1・2とは異なるトピックで\n\n"
+        )
+        output_format = '{"posts": ["速報投稿", "解説投稿", "事例投稿"]}'
 
-    prompt = f"以下の記事から3本のX投稿を作成してください。{video_instruction}\n\n{stories_text}"
+    prompt = (
+        f"{post_instructions}"
+        f"{dedup_instruction}\n\n"
+        f"=== 記事一覧 ===\n{stories_text}\n\n"
+        f"出力形式（JSONのみ。前後に余計なテキスト・コードブロック不要）:\n{output_format}"
+    )
 
-    # リトライ処理（最大3回）
     last_error = None
     for attempt in range(1, 4):
         try:
@@ -153,7 +176,6 @@ def generate_posts(stories: list, viral_video: dict = None) -> tuple:
 
     raw = message.content[0].text.strip()
 
-    # コードブロックが含まれる場合は除去
     if "```" in raw:
         parts = raw.split("```")
         for part in parts:
@@ -167,17 +189,31 @@ def generate_posts(stories: list, viral_video: dict = None) -> tuple:
     data = json.loads(raw)
     posts = data["posts"]
 
-    # 文字数チェックと短縮（引用ツイートは200w以内、通常は900w以内）
+    if len(posts) < num_posts:
+        raise ValueError(f"{num_posts}本必要ですが{len(posts)}本しか生成されませんでした")
+
+    # 文字数チェックと短縮
+    limits = [900] * num_posts
+    if viral_video:
+        limits[3] = 200  # 動画引用コメントは短く
+
     validated = []
-    for i, post in enumerate(posts, 1):
-        limit = 200 if (quote_tweet_ids[i - 1] is not None) else 900
+    for i, post in enumerate(posts[:num_posts]):
+        limit = limits[i]
         wlen = weighted_len(post)
         if wlen > limit:
-            print(f"  投稿{i}: 文字数超過({wlen}w) → 短縮")
+            print(f"  投稿{i+1}: 文字数超過({wlen}w) → 短縮")
             post = shorten_post(post, limit)
         validated.append(post)
 
-    return validated, types, quote_tweet_ids
+    if viral_video:
+        scheduled_posts = [validated[0], validated[1], validated[3]]
+        fallback_post = validated[2]
+    else:
+        scheduled_posts = validated
+        fallback_post = None
+
+    return scheduled_posts, types, quote_tweet_ids, fallback_post
 
 
 def post_to_x(text: str, quote_tweet_id: str = None) -> dict:
@@ -208,21 +244,21 @@ def append_log(log: dict, tweet_id: str, text: str, tweet_type: str, date: str):
         "id": tweet_id,
         "date": date,
         "type": tweet_type,
-        "text": text[:60] + ("..." if len(text) > 60 else ""),
+        "text": text[:200] + ("..." if len(text) > 200 else ""),
     })
     with open(TWEETS_FILE, "w", encoding="utf-8") as f:
         json.dump(log, f, ensure_ascii=False, indent=2)
 
 
-def save_scheduled(posts: list, types: list, quote_tweet_ids: list, today: str):
+def save_scheduled(posts: list, types: list, quote_tweet_ids: list, today: str, fallback_post: str = None):
     """3本の投稿を scheduled/ に保存する"""
     os.makedirs(SCHEDULED_DIR, exist_ok=True)
     path = os.path.join(SCHEDULED_DIR, f"{today}.json")
+    data = {"date": today, "posts": posts, "types": types, "quote_tweet_ids": quote_tweet_ids}
+    if fallback_post:
+        data["fallback_post"] = fallback_post
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(
-            {"date": today, "posts": posts, "types": types, "quote_tweet_ids": quote_tweet_ids},
-            f, ensure_ascii=False, indent=2
-        )
+        json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"  予約ファイル保存: {path}")
 
 
@@ -243,19 +279,21 @@ def main():
     print(f"=== 自動投稿開始 ({today}) ===")
     print(f"収集済み: {len(stories)}件 / 動画ツイート: {'あり' if viral_video else 'なし'}\n")
 
+    log = load_log()
+    recent_posts = [t["text"] for t in log.get("tweets", [])[-20:]]
+
     print("[1/3] Claude API で投稿を生成中...")
     try:
-        posts, types, quote_tweet_ids = generate_posts(stories, viral_video)
-        print(f"  → {len(posts)}本生成完了\n")
+        posts, types, quote_tweet_ids, fallback_post = generate_posts(stories, viral_video, recent_posts)
+        print(f"  → {len(posts)}本生成完了 / フォールバック: {'あり' if fallback_post else 'なし'}\n")
     except Exception as e:
         print(f"ERROR: 投稿生成失敗 - {e}")
         sys.exit(1)
 
     print("[2/3] 投稿を保存中（昼・夜の分散投稿用）...")
-    save_scheduled(posts, types, quote_tweet_ids, today)
+    save_scheduled(posts, types, quote_tweet_ids, today, fallback_post)
 
     print("\n[3/3] 1本目を投稿中...")
-    log = load_log()
     post, post_type, qid = posts[0], types[0], quote_tweet_ids[0]
     preview = post.split("\n")[0][:40]
     print(f"  タイプ: {post_type} / 文字数: {weighted_len(post)}w")
