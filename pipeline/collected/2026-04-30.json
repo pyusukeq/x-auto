@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-04-30T03:40:13.571420",
+  "collected_at": "2026-04-30T04:28:22.928530",
   "date": "2026-04-30",
-  "total_found": 13,
+  "total_found": 15,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-30T03:40:12.772089+00:00",
+      "created": "2026-04-30T04:28:22.286160+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.953749301458
+      "final_score": 19997.98938057594
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1196.9417991620371
+      "final_score": 1481.018613112434
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1106.9510584212962
+      "final_score": 1455.3069729007937
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,29 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 800.0
-    },
-    {
-      "source": "GitHub anthropics/claude-code",
-      "title": "【リリース】claude-code v2.1.119: v2.1.119",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
-      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
-      "body": "## What's changed\n\n- `/config` settings (theme, editor mode, verbose, etc.) now persist to `~/.claude/settings.json` and participate in project/local/policy override precedence\n- Added `prUrlTemplate` setting to point the footer PR badge at a custom code-review URL instead of github.com\n- Added `CLAUDE_CODE_HIDE_CWD` environment variable to hide the working directory in the startup logo\n- `--from-pr` now accepts GitLab merge-request, Bitbucket pull-request, and GitHub Enterprise PR URLs\n- `--print` mode now honors the agent's `tools:` and `disallowedTools:` frontmatter, matching interactive-mo",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-04-23T23:24:19Z",
-      "final_score": 800.0
-    },
-    {
-      "source": "GitHub anthropics/anthropic-sdk-python",
-      "title": "【リリース】anthropic-sdk-python v0.97.0: v0.97.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0",
-      "body": "## 0.97.0 (2026-04-23)\n\nFull Changelog: [v0.96.0...v0.97.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.96.0...v0.97.0)\n\n### Features\n\n* **api:** CMA Memory public beta ([fc30ebe](https://github.com/anthropics/anthropic-sdk-python/commit/fc30ebe5ca81204faa0b1d756b61dad176e37dcb))\n\n\n### Bug Fixes\n\n* **api:** fix errors in api spec ([f946de8](https://github.com/anthropics/anthropic-sdk-python/commit/f946de8da00748b472489e93ab4920d64d1cb22d))\n* **api:** restore missing features ([72212ab](https://github.com/anthropics/anthropic-sdk-python/commit/72212ab8408af389981e9e6b111c00460",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-04-23T20:51:59Z",
-      "final_score": 800.0
+      "final_score": 1352.629724223545
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -78,18 +56,29 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-24T23:26:44Z",
-      "final_score": 800.0
+      "final_score": 1004.6310469748678
     },
     {
-      "source": "GitHub anthropics/anthropic-sdk-typescript",
-      "title": "【リリース】anthropic-sdk-typescript sdk-v0.91.0: sdk: v0.91.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.91.0",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.91.0",
-      "body": "## 0.91.0 (2026-04-23)\n\nFull Changelog: [sdk-v0.90.0...sdk-v0.91.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.90.0...sdk-v0.91.0)\n\n### Features\n\n* **api:** CMA Memory public beta ([ddf732f](https://github.com/anthropics/anthropic-sdk-typescript/commit/ddf732f5f35c123f963fa270669e35707a2e3f7f))\n* **bedrock:** use auth header for mantle client ([#866](https://github.com/anthropics/anthropic-sdk-typescript/issues/866)) ([aec801a](https://github.com/anthropics/anthropic-sdk-typescript/commit/aec801afc7d37d9e8ca1471748ca599b442cbce4))\n\n\n### Bug Fixes\n\n* **api:** fix erro",
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.119: v2.1.119",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.119",
+      "body": "## What's changed\n\n- `/config` settings (theme, editor mode, verbose, etc.) now persist to `~/.claude/settings.json` and participate in project/local/policy override precedence\n- Added `prUrlTemplate` setting to point the footer PR badge at a custom code-review URL instead of github.com\n- Added `CLAUDE_CODE_HIDE_CWD` environment variable to hide the working directory in the startup logo\n- `--from-pr` now accepts GitLab merge-request, Bitbucket pull-request, and GitHub Enterprise PR URLs\n- `--print` mode now honors the agent's `tools:` and `disallowedTools:` frontmatter, matching interactive-mo",
       "score": 800,
       "comments": 0,
-      "created": "2026-04-23T20:47:35Z",
-      "final_score": 800.0
+      "created": "2026-04-23T23:24:19Z",
+      "final_score": 890.1535337473543
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.97.0: v0.97.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0",
+      "body": "## 0.97.0 (2026-04-23)\n\nFull Changelog: [v0.96.0...v0.97.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.96.0...v0.97.0)\n\n### Features\n\n* **api:** CMA Memory public beta ([fc30ebe](https://github.com/anthropics/anthropic-sdk-python/commit/fc30ebe5ca81204faa0b1d756b61dad176e37dcb))\n\n\n### Bug Fixes\n\n* **api:** fix errors in api spec ([f946de8](https://github.com/anthropics/anthropic-sdk-python/commit/f946de8da00748b472489e93ab4920d64d1cb22d))\n* **api:** restore missing features ([72212ab](https://github.com/anthropics/anthropic-sdk-python/commit/72212ab8408af389981e9e6b111c00460",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-04-23T20:51:59Z",
+      "final_score": 878.0635866574073
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -100,17 +89,28 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:41Z",
-      "final_score": 800.0
+      "final_score": 877.7223168161374
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.91.0: sdk: v0.91.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.91.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.91.0",
+      "body": "## 0.91.0 (2026-04-23)\n\nFull Changelog: [sdk-v0.90.0...sdk-v0.91.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.90.0...sdk-v0.91.0)\n\n### Features\n\n* **api:** CMA Memory public beta ([ddf732f](https://github.com/anthropics/anthropic-sdk-typescript/commit/ddf732f5f35c123f963fa270669e35707a2e3f7f))\n* **bedrock:** use auth header for mantle client ([#866](https://github.com/anthropics/anthropic-sdk-typescript/issues/866)) ([aec801a](https://github.com/anthropics/anthropic-sdk-typescript/commit/aec801afc7d37d9e8ca1471748ca599b442cbce4))\n\n\n### Bug Fixes\n\n* **api:** fix erro",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-04-23T20:47:35Z",
+      "final_score": 877.714380308201
     },
     {
       "source": "Hacker News",
-      "title": "Claude.ai and API unavailable [fixed]",
-      "url": "https://status.claude.com/incidents/2gf1jpyty350",
-      "external_url": "https://status.claude.com/incidents/2gf1jpyty350",
-      "score": 100,
-      "comments": 90,
-      "created": "2026-04-30T01:21:03+00:00",
-      "final_score": 240.16749341377314
+      "title": "Show HN: Drive any macOS app in the background without stealing the cursor",
+      "url": "https://github.com/trycua/cua",
+      "external_url": "https://github.com/trycua/cua",
+      "score": 177,
+      "comments": 40,
+      "created": "2026-04-28T16:03:34+00:00",
+      "final_score": 335.635680651126
     }
   ]
 }
