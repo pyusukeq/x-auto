@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-04-30T04:28:22.928530",
+  "collected_at": "2026-04-30T04:33:30.961442",
   "date": "2026-04-30",
   "total_found": 15,
   "top_stories": [
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-30T04:28:22.286160+00:00",
+      "created": "2026-04-30T04:33:30.266779+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.98938057594
+      "final_score": 19997.988516095596
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1481.018613112434
+      "final_score": 1480.611162175926
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1455.3069729007937
+      "final_score": 1454.899521964286
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 1352.629724223545
+      "final_score": 1352.222273287037
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-24T23:26:44Z",
-      "final_score": 1004.6310469748678
+      "final_score": 1004.2235960383598
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T23:24:19Z",
-      "final_score": 890.1535337473543
+      "final_score": 889.7460828108466
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -78,7 +78,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:51:59Z",
-      "final_score": 878.0635866574073
+      "final_score": 877.6561357208994
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -89,7 +89,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:41Z",
-      "final_score": 877.7223168161374
+      "final_score": 877.3148658796295
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -100,7 +100,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:35Z",
-      "final_score": 877.714380308201
+      "final_score": 877.3069293716932
     },
     {
       "source": "Hacker News",
@@ -110,7 +110,7 @@
       "score": 177,
       "comments": 40,
       "created": "2026-04-28T16:03:34+00:00",
-      "final_score": 335.635680651126
+      "final_score": 335.5455321314236
     }
   ]
 }
