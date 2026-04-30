@@ -20,6 +20,7 @@ import anthropic
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PIPELINE_DIR = os.path.join(BASE_DIR, "pipeline")
 TWEETS_FILE = os.path.join(PIPELINE_DIR, "posted_tweets.json")
+SCHEDULED_DIR = os.path.join(PIPELINE_DIR, "scheduled")
 
 SYSTEM_PROMPT = """あなたはAI・Claude Codeの情報を日本のエンジニア・個人開発者向けに発信するXアカウントの運営者です。
 
@@ -166,6 +167,15 @@ def append_log(log: dict, tweet_id: str, text: str, tweet_type: str, date: str):
         json.dump(log, f, ensure_ascii=False, indent=2)
 
 
+def save_scheduled(posts: list, types: list, today: str):
+    """3本の投稿を scheduled/ に保存する"""
+    os.makedirs(SCHEDULED_DIR, exist_ok=True)
+    path = os.path.join(SCHEDULED_DIR, f"{today}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"date": today, "posts": posts, "types": types}, f, ensure_ascii=False, indent=2)
+    print(f"  予約ファイル保存: {path}")
+
+
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
     collected_path = os.path.join(PIPELINE_DIR, "collected", f"{today}.json")
@@ -182,7 +192,7 @@ def main():
     print(f"=== 自動投稿開始 ({today}) ===")
     print(f"収集済み: {len(stories)}件\n")
 
-    print("[1/2] Claude API で投稿を生成中...")
+    print("[1/3] Claude API で投稿を生成中...")
     try:
         posts = generate_posts(stories)
         print(f"  → {len(posts)}本生成完了\n")
@@ -190,29 +200,28 @@ def main():
         print(f"ERROR: 投稿生成失敗 - {e}")
         sys.exit(1)
 
-    log = load_log()
     types = ["速報", "解説", "事例"]
-    success = 0
 
-    print("[2/2] X に投稿中...")
-    for i, (post, post_type) in enumerate(zip(posts, types), 1):
-        preview = post.split("\n")[0][:40]
-        print(f"\n  [{i}] {post_type}: {preview}...")
-        print(f"       文字数: {weighted_len(post)}w")
+    print("[2/3] 投稿を保存中（昼・夜の分散投稿用）...")
+    save_scheduled(posts, types, today)
 
-        try:
-            result = post_to_x(post)
-            tweet_id = result["data"]["id"]
-            append_log(log, tweet_id, post, post_type, today)
-            print(f"       投稿完了 ID: {tweet_id}")
-            success += 1
-        except Exception as e:
-            print(f"       投稿失敗: {e}")
+    print("\n[3/3] 1本目を投稿中（速報）...")
+    log = load_log()
+    post, post_type = posts[0], types[0]
+    preview = post.split("\n")[0][:40]
+    print(f"  内容: {preview}...")
+    print(f"  文字数: {weighted_len(post)}w")
 
-        if i < len(posts):
-            time.sleep(3)
+    try:
+        result = post_to_x(post)
+        tweet_id = result["data"]["id"]
+        append_log(log, tweet_id, post, post_type, today)
+        print(f"  投稿完了 ID: {tweet_id}")
+    except Exception as e:
+        print(f"  投稿失敗: {e}")
+        sys.exit(1)
 
-    print(f"\n=== 完了: {success}/{len(posts)}本投稿 ===")
+    print(f"\n=== 完了: 1本目投稿済み / 2本目 12:00 / 3本目 19:00 ===")
 
 
 if __name__ == "__main__":

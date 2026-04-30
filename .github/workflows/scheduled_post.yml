@@ -1,0 +1,63 @@
+name: Scheduled Post (Noon & Evening)
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # JST 12:00 (UTC 03:00) — 2本目
+    - cron: '0 10 * * *'  # JST 19:00 (UTC 10:00) — 3本目
+  workflow_dispatch:
+    inputs:
+      post_number:
+        description: '何本目を投稿するか (2 or 3)'
+        required: true
+        default: '2'
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Determine post number
+        id: post_num
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "num=${{ github.event.inputs.post_number }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 3 * * *" ]; then
+            echo "num=2" >> $GITHUB_OUTPUT
+          else
+            echo "num=3" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Post scheduled tweet
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: python pipeline/post_scheduled.py ${{ steps.post_num.outputs.num }}
+
+      - name: Save results to repo
+        if: always()
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git pull --rebase origin main || true
+          git add pipeline/posted_tweets.json || true
+          git diff --staged --quiet || git commit -m "auto: scheduled post $(date +%Y-%m-%d) #${{ steps.post_num.outputs.num }}"
+          git push || true
