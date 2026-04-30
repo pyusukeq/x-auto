@@ -12,6 +12,7 @@ import requests
 import json
 import os
 from datetime import datetime, timezone, timedelta
+from requests_oauthlib import OAuth1Session
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; x-auto-collector/1.0)"}
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "collected")
@@ -173,6 +174,73 @@ def fetch_github():
     return results
 
 
+def fetch_x_viral_videos():
+    """英語のバズ動画ツイートをX APIで検索する（X認証情報が必要）"""
+    required = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"]
+    if not all(os.environ.get(k) for k in required):
+        print("  ⚠️  X認証情報未設定のためスキップ")
+        return None
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    try:
+        oauth = OAuth1Session(
+            os.environ["X_API_KEY"],
+            client_secret=os.environ["X_API_SECRET"],
+            resource_owner_key=os.environ["X_ACCESS_TOKEN"],
+            resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
+        )
+        query = '(claude OR anthropic OR "claude code" OR MCP) has:videos -is:reply -is:retweet lang:en'
+        params = {
+            "query": query,
+            "max_results": 10,
+            "tweet.fields": "created_at,public_metrics,author_id",
+            "expansions": "author_id",
+            "user.fields": "name,username",
+        }
+        resp = oauth.get("https://api.twitter.com/2/tweets/search/recent", params=params)
+        resp.raise_for_status()
+        data = resp.json()
+
+        tweets = data.get("data", [])
+        users = {u["id"]: u for u in data.get("includes", {}).get("users", [])}
+
+        scored = []
+        for tweet in tweets:
+            created = datetime.fromisoformat(tweet["created_at"].replace("Z", "+00:00"))
+            if created < cutoff:
+                continue
+            m = tweet.get("public_metrics", {})
+            score = (
+                m.get("like_count", 0) * 3 +
+                m.get("retweet_count", 0) * 5 +
+                m.get("quote_count", 0) * 4
+            )
+            author = users.get(tweet["author_id"], {})
+            username = author.get("username", "")
+            scored.append({
+                "tweet_id": tweet["id"],
+                "author": username,
+                "text": tweet["text"],
+                "url": f"https://x.com/{username}/status/{tweet['id']}",
+                "like_count": m.get("like_count", 0),
+                "retweet_count": m.get("retweet_count", 0),
+                "score": score,
+                "created": created.isoformat(),
+            })
+
+        if not scored:
+            print("  ⚠️  動画ツイートが見つかりませんでした")
+            return None
+
+        best = sorted(scored, key=lambda x: x["score"], reverse=True)[0]
+        print(f"  ✅ X動画ツイート: @{best['author']} (いいね:{best['like_count']} RT:{best['retweet_count']})")
+        return best
+
+    except Exception as e:
+        print(f"  ❌ X動画検索: {e}")
+        return None
+
+
 def score_and_rank(items):
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(days=7)
@@ -205,6 +273,9 @@ def main():
     all_items.extend(fetch_anthropic_blog())
     all_items.extend(fetch_github())
 
+    print("  X動画ツイート検索中...")
+    viral_video = fetch_x_viral_videos()
+
     ranked = score_and_rank(all_items)
     top = ranked[:10]
 
@@ -213,6 +284,7 @@ def main():
         "date": today,
         "total_found": len(all_items),
         "top_stories": top,
+        "viral_video_tweet": viral_video,
     }
 
     with open(output_path, "w", encoding="utf-8") as f:

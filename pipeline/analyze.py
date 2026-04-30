@@ -31,10 +31,12 @@ def get_oauth():
 
 
 def fetch_metrics(tweet_id: str, oauth) -> dict | None:
+    """X Premiumのadvanced metricsを含めて取得（非対応の場合はpublic_metricsのみ）"""
+    fields = "public_metrics,non_public_metrics,organic_metrics,created_at"
     try:
         resp = oauth.get(
             f"https://api.twitter.com/2/tweets/{tweet_id}",
-            params={"tweet.fields": "public_metrics,created_at"}
+            params={"tweet.fields": fields}
         )
         if resp.status_code == 429:
             reset = int(resp.headers.get("x-rate-limit-reset", time.time() + 900))
@@ -43,10 +45,23 @@ def fetch_metrics(tweet_id: str, oauth) -> dict | None:
             time.sleep(wait)
             resp = oauth.get(
                 f"https://api.twitter.com/2/tweets/{tweet_id}",
-                params={"tweet.fields": "public_metrics,created_at"}
+                params={"tweet.fields": fields}
             )
         resp.raise_for_status()
-        return resp.json().get("data", {}).get("public_metrics", {})
+        tweet_data = resp.json().get("data", {})
+
+        metrics = tweet_data.get("public_metrics", {}).copy()
+        # Premium: organic_metrics にインプレッションが含まれる
+        organic = tweet_data.get("organic_metrics", {})
+        non_public = tweet_data.get("non_public_metrics", {})
+        if organic.get("impression_count") is not None:
+            metrics["impression_count"] = organic["impression_count"]
+            metrics["url_link_clicks"] = organic.get("url_link_clicks", 0)
+            metrics["user_profile_clicks"] = organic.get("user_profile_clicks", 0)
+        elif non_public.get("impression_count") is not None:
+            metrics["impression_count"] = non_public["impression_count"]
+
+        return metrics
     except Exception as e:
         print(f"  メトリクス取得失敗 {tweet_id}: {e}")
         return None
@@ -60,6 +75,20 @@ def engagement_score(metrics: dict) -> int:
         metrics.get("quote_count", 0) * 4 +
         metrics.get("bookmark_count", 0) * 2
     )
+
+
+def engagement_rate(metrics: dict) -> str:
+    impressions = metrics.get("impression_count")
+    if not impressions:
+        return "N/A"
+    total_eng = (
+        metrics.get("like_count", 0) +
+        metrics.get("retweet_count", 0) +
+        metrics.get("reply_count", 0) +
+        metrics.get("quote_count", 0) +
+        metrics.get("bookmark_count", 0)
+    )
+    return f"{total_eng / impressions * 100:.2f}%"
 
 
 def generate_report(results: list, week_label: str) -> str:
@@ -79,21 +108,40 @@ def generate_report(results: list, week_label: str) -> str:
         type_stats[t]["likes"] += r["metrics"].get("like_count", 0)
         type_stats[t]["retweets"] += r["metrics"].get("retweet_count", 0)
 
+    has_impressions = any(r["metrics"].get("impression_count") is not None for r in results)
+
     lines = [
         f"# 週次パフォーマンスレポート {week_label}",
         f"\n分析対象: {len(results)}件\n",
         "## 投稿ランキング\n",
-        "| # | 日付 | タイプ | いいね | RT | 引用 | ブクマ | スコア | 内容 |",
-        "|---|------|--------|--------|-----|------|--------|--------|------|",
     ]
+    if has_impressions:
+        lines += [
+            "| # | 日付 | タイプ | インプレ | ER | いいね | RT | 引用 | ブクマ | スコア | 内容 |",
+            "|---|------|--------|----------|-----|--------|-----|------|--------|--------|------|",
+        ]
+    else:
+        lines += [
+            "| # | 日付 | タイプ | いいね | RT | 引用 | ブクマ | スコア | 内容 |",
+            "|---|------|--------|--------|-----|------|--------|--------|------|",
+        ]
     for i, r in enumerate(sorted_results, 1):
         m = r["metrics"]
-        lines.append(
-            f"| {i} | {r['date']} | {r['type']} | "
-            f"{m.get('like_count', 0)} | {m.get('retweet_count', 0)} | "
-            f"{m.get('quote_count', 0)} | {m.get('bookmark_count', 0)} | "
-            f"{r['score']} | {r['text']} |"
-        )
+        if has_impressions:
+            lines.append(
+                f"| {i} | {r['date']} | {r['type']} | "
+                f"{m.get('impression_count', 'N/A')} | {engagement_rate(m)} | "
+                f"{m.get('like_count', 0)} | {m.get('retweet_count', 0)} | "
+                f"{m.get('quote_count', 0)} | {m.get('bookmark_count', 0)} | "
+                f"{r['score']} | {r['text']} |"
+            )
+        else:
+            lines.append(
+                f"| {i} | {r['date']} | {r['type']} | "
+                f"{m.get('like_count', 0)} | {m.get('retweet_count', 0)} | "
+                f"{m.get('quote_count', 0)} | {m.get('bookmark_count', 0)} | "
+                f"{r['score']} | {r['text']} |"
+            )
 
     lines.append("\n## タイプ別平均スコア\n")
     lines.append("| タイプ | 件数 | 平均スコア | 合計いいね | 合計RT |")

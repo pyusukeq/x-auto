@@ -20,17 +20,17 @@ SCHEDULED_DIR = os.path.join(PIPELINE_DIR, "scheduled")
 TWEETS_FILE = os.path.join(PIPELINE_DIR, "posted_tweets.json")
 
 
-def post_to_x(text: str) -> dict:
+def post_to_x(text: str, quote_tweet_id: str = None) -> dict:
     oauth = OAuth1Session(
         os.environ["X_API_KEY"],
         client_secret=os.environ["X_API_SECRET"],
         resource_owner_key=os.environ["X_ACCESS_TOKEN"],
         resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
     )
-    resp = oauth.post(
-        "https://api.twitter.com/2/tweets",
-        json={"text": text},
-    )
+    body = {"text": text}
+    if quote_tweet_id:
+        body["quote_tweet_id"] = quote_tweet_id
+    resp = oauth.post("https://api.twitter.com/2/tweets", json=body)
     resp.raise_for_status()
     return resp.json()
 
@@ -56,7 +56,7 @@ def main():
         sys.exit(1)
 
     post_number = int(sys.argv[1])  # 2 or 3
-    post_index = post_number - 1    # 0-based index
+    post_index = post_number - 1    # 0-based
 
     today = datetime.now().strftime("%Y-%m-%d")
     scheduled_path = os.path.join(SCHEDULED_DIR, f"{today}.json")
@@ -70,6 +70,7 @@ def main():
 
     posts = data.get("posts", [])
     types = data.get("types", ["速報", "解説", "事例"])
+    quote_tweet_ids = data.get("quote_tweet_ids", [None, None, None])
 
     if post_index >= len(posts):
         print(f"ERROR: {post_number}本目が存在しません（{len(posts)}本のみ）")
@@ -77,11 +78,13 @@ def main():
 
     text = posts[post_index]
     post_type = types[post_index] if post_index < len(types) else "投稿"
+    quote_tweet_id = quote_tweet_ids[post_index] if post_index < len(quote_tweet_ids) else None
 
     print(f"=== {post_number}本目を投稿 ({post_type}) ===")
+    print(f"引用ツイート: {quote_tweet_id or 'なし'}")
     print(f"内容: {text.split(chr(10))[0][:50]}...")
 
-    result = post_to_x(text)
+    result = post_to_x(text, quote_tweet_id)
     tweet_id = result["data"]["id"]
     append_log(tweet_id, text, post_type, today)
     print(f"投稿完了 ID: {tweet_id}")

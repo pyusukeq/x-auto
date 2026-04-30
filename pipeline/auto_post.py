@@ -22,14 +22,14 @@ PIPELINE_DIR = os.path.join(BASE_DIR, "pipeline")
 TWEETS_FILE = os.path.join(PIPELINE_DIR, "posted_tweets.json")
 SCHEDULED_DIR = os.path.join(PIPELINE_DIR, "scheduled")
 
-SYSTEM_PROMPT = """あなたはAI・Claude Codeの情報を日本のエンジニア・個人開発者向けに発信するXアカウントの運営者です。
+SYSTEM_PROMPT = """あなたはAI・Claude Codeの情報を日本のエンジニア・個人開発者向けに発信するXアカウントの運営者です。X Premiumに対応した長文リッチ投稿を作成します。
 
 投稿ルール:
-- 全角換算120文字以内を厳守（超えると投稿が失敗する）
-- 冒頭1行でインパクトを出す（読者が続きを読みたくなるような一文）
+- 全角換算400文字以内（X Premiumの文字数を活用）
+- 構成: ①好奇心を刺激する冒頭1行 → ②3〜5行の詳細・背景・具体例 → ③実践的な気づきorCTA → ④ハッシュタグ
+- 冒頭パターン例: 「〇〇が激変した理由とは？」「知らないと損する〇〇の使い方」「エンジニア必見：〇〇がついに実現」
 - 技術的だが初心者にも分かる言葉で書く
-- ハッシュタグは最大3個。#ClaudeCode #AIコーディング #個人開発 #AI副業 #MCP から内容に合うものを選ぶ
-- 速報型・解説型・事例型のバランスを取る
+- ハッシュタグは最大3個。#ClaudeCode #AIコーディング #個人開発 #AI副業 #MCP から選ぶ
 - 英語情報は必ず自然な日本語に翻訳する
 - ネガティブな内容（炎上・批判・バグ報告）は避ける
 
@@ -42,8 +42,8 @@ def weighted_len(text: str) -> int:
     return sum(2 if ord(c) > 127 else 1 for c in text)
 
 
-def shorten_post(post: str, limit: int = 260) -> str:
-    """文字数超過の投稿を短縮する"""
+def shorten_post(post: str, limit: int = 900) -> str:
+    """文字数超過の投稿を短縮する（X Premium: 全角450文字=900w が上限）"""
     if weighted_len(post) <= limit:
         return post
 
@@ -60,8 +60,10 @@ def shorten_post(post: str, limit: int = 260) -> str:
     return body.strip() + footer
 
 
-def generate_posts(stories: list) -> list[str]:
-    """Anthropic API を使って投稿を生成する（リトライあり）"""
+def generate_posts(stories: list, viral_video: dict = None) -> tuple:
+    """Anthropic API を使って投稿を生成する（リトライあり）
+    Returns: (posts, types, quote_tweet_ids)
+    """
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY が設定されていません")
@@ -82,6 +84,22 @@ def generate_posts(stories: list) -> list[str]:
         for i, s in enumerate(stories[:8])
     ])
 
+    if viral_video:
+        types = ["速報", "解説", "動画引用"]
+        quote_tweet_ids = [None, None, viral_video["tweet_id"]]
+        video_instruction = (
+            f"\n\n【投稿3は動画引用コメントとして作成】\n"
+            f"以下の英語バズツイートを日本語で紹介する短いコメントを書いてください（全角100文字以内）。\n"
+            f"元ツイート(@{viral_video['author']}): {viral_video['text'][:300]}\n"
+            f"「海外で話題の〇〇動画」「この動画が分かりやすい」のように動画の価値を伝える形式で。"
+        )
+    else:
+        types = ["速報", "解説", "事例"]
+        quote_tweet_ids = [None, None, None]
+        video_instruction = ""
+
+    prompt = f"以下の記事から3本のX投稿を作成してください。{video_instruction}\n\n{stories_text}"
+
     # リトライ処理（最大3回）
     last_error = None
     for attempt in range(1, 4):
@@ -89,12 +107,9 @@ def generate_posts(stories: list) -> list[str]:
             print(f"  API呼び出し試行 {attempt}/3...")
             message = client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=1024,
+                max_tokens=2048,
                 system=SYSTEM_PROMPT,
-                messages=[{
-                    "role": "user",
-                    "content": f"以下の記事から3本のX投稿を作成してください。\n\n{stories_text}"
-                }]
+                messages=[{"role": "user", "content": prompt}]
             )
             break
         except Exception as e:
@@ -121,30 +136,31 @@ def generate_posts(stories: list) -> list[str]:
     data = json.loads(raw)
     posts = data["posts"]
 
-    # 文字数チェックと短縮
+    # 文字数チェックと短縮（引用ツイートは200w以内、通常は900w以内）
     validated = []
     for i, post in enumerate(posts, 1):
+        limit = 200 if (quote_tweet_ids[i - 1] is not None) else 900
         wlen = weighted_len(post)
-        if wlen > 270:
+        if wlen > limit:
             print(f"  投稿{i}: 文字数超過({wlen}w) → 短縮")
-            post = shorten_post(post)
+            post = shorten_post(post, limit)
         validated.append(post)
 
-    return validated
+    return validated, types, quote_tweet_ids
 
 
-def post_to_x(text: str) -> dict:
-    """X API v2 で投稿する"""
+def post_to_x(text: str, quote_tweet_id: str = None) -> dict:
+    """X API v2 で投稿する（quote_tweet_id指定で引用ツイート）"""
     oauth = OAuth1Session(
         os.environ["X_API_KEY"],
         client_secret=os.environ["X_API_SECRET"],
         resource_owner_key=os.environ["X_ACCESS_TOKEN"],
         resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
     )
-    resp = oauth.post(
-        "https://api.twitter.com/2/tweets",
-        json={"text": text},
-    )
+    body = {"text": text}
+    if quote_tweet_id:
+        body["quote_tweet_id"] = quote_tweet_id
+    resp = oauth.post("https://api.twitter.com/2/tweets", json=body)
     resp.raise_for_status()
     return resp.json()
 
@@ -167,12 +183,15 @@ def append_log(log: dict, tweet_id: str, text: str, tweet_type: str, date: str):
         json.dump(log, f, ensure_ascii=False, indent=2)
 
 
-def save_scheduled(posts: list, types: list, today: str):
+def save_scheduled(posts: list, types: list, quote_tweet_ids: list, today: str):
     """3本の投稿を scheduled/ に保存する"""
     os.makedirs(SCHEDULED_DIR, exist_ok=True)
     path = os.path.join(SCHEDULED_DIR, f"{today}.json")
     with open(path, "w", encoding="utf-8") as f:
-        json.dump({"date": today, "posts": posts, "types": types}, f, ensure_ascii=False, indent=2)
+        json.dump(
+            {"date": today, "posts": posts, "types": types, "quote_tweet_ids": quote_tweet_ids},
+            f, ensure_ascii=False, indent=2
+        )
     print(f"  予約ファイル保存: {path}")
 
 
@@ -189,31 +208,30 @@ def main():
         collected = json.load(f)
 
     stories = collected.get("top_stories", [])
+    viral_video = collected.get("viral_video_tweet")
     print(f"=== 自動投稿開始 ({today}) ===")
-    print(f"収集済み: {len(stories)}件\n")
+    print(f"収集済み: {len(stories)}件 / 動画ツイート: {'あり' if viral_video else 'なし'}\n")
 
     print("[1/3] Claude API で投稿を生成中...")
     try:
-        posts = generate_posts(stories)
+        posts, types, quote_tweet_ids = generate_posts(stories, viral_video)
         print(f"  → {len(posts)}本生成完了\n")
     except Exception as e:
         print(f"ERROR: 投稿生成失敗 - {e}")
         sys.exit(1)
 
-    types = ["速報", "解説", "事例"]
-
     print("[2/3] 投稿を保存中（昼・夜の分散投稿用）...")
-    save_scheduled(posts, types, today)
+    save_scheduled(posts, types, quote_tweet_ids, today)
 
-    print("\n[3/3] 1本目を投稿中（速報）...")
+    print("\n[3/3] 1本目を投稿中...")
     log = load_log()
-    post, post_type = posts[0], types[0]
+    post, post_type, qid = posts[0], types[0], quote_tweet_ids[0]
     preview = post.split("\n")[0][:40]
+    print(f"  タイプ: {post_type} / 文字数: {weighted_len(post)}w")
     print(f"  内容: {preview}...")
-    print(f"  文字数: {weighted_len(post)}w")
 
     try:
-        result = post_to_x(post)
+        result = post_to_x(post, qid)
         tweet_id = result["data"]["id"]
         append_log(log, tweet_id, post, post_type, today)
         print(f"  投稿完了 ID: {tweet_id}")
