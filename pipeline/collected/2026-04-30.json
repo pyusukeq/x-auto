@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-04-30T03:10:47.109548",
+  "collected_at": "2026-04-30T03:40:13.571420",
   "date": "2026-04-30",
-  "total_found": 14,
+  "total_found": 13,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-30T03:10:46.390666+00:00",
+      "created": "2026-04-30T03:40:12.772089+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.95840456505
+      "final_score": 19997.953749301458
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1205.1198633935185
+      "final_score": 1196.9417991620371
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1115.1291226527778
+      "final_score": 1106.9510584212962
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -107,10 +107,10 @@
       "title": "Claude.ai and API unavailable [fixed]",
       "url": "https://status.claude.com/incidents/2gf1jpyty350",
       "external_url": "https://status.claude.com/incidents/2gf1jpyty350",
-      "score": 95,
-      "comments": 83,
+      "score": 100,
+      "comments": 90,
       "created": "2026-04-30T01:21:03+00:00",
-      "final_score": 227.88026387057292
+      "final_score": 240.16749341377314
     }
   ]
 }
