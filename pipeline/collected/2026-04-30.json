@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-04-30T12:58:25.638387",
+  "collected_at": "2026-04-30T14:14:19.588922",
   "date": "2026-04-30",
-  "total_found": 12,
+  "total_found": 10,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-04-30T12:58:24.317329+00:00",
+      "created": "2026-04-30T14:14:18.428260+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.97815992232
+      "final_score": 19997.980811690846
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1440.5388381626985
+      "final_score": 1434.5150940674603
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1414.8271979510582
+      "final_score": 1408.8034538558202
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 1312.1499492738096
+      "final_score": 1306.1262051785714
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-24T23:26:44Z",
-      "final_score": 964.1512720251324
+      "final_score": 958.1275279298943
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T23:24:19Z",
-      "final_score": 849.673758797619
+      "final_score": 843.6500147023811
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -78,7 +78,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:51:59Z",
-      "final_score": 837.5838117076718
+      "final_score": 831.5600676124341
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -89,7 +89,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:41Z",
-      "final_score": 837.242541866402
+      "final_score": 831.2187977711641
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -100,17 +100,27 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-23T20:47:35Z",
-      "final_score": 837.2346053584657
+      "final_score": 831.2108612632276
     },
     {
       "source": "Hacker News",
-      "title": "Claude.ai and API unavailable [fixed]",
-      "url": "https://status.claude.com/incidents/2gf1jpyty350",
-      "external_url": "https://status.claude.com/incidents/2gf1jpyty350",
-      "score": 116,
-      "comments": 112,
-      "created": "2026-04-30T01:21:03+00:00",
-      "final_score": 279.974626242586
+      "title": "Letting AI play my game – building an agentic test harness to help play-testing",
+      "url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
+      "external_url": "https://blog.jeffschomay.com/letting-ai-play-my-game",
+      "score": 128,
+      "comments": 31,
+      "created": "2026-04-29T12:43:12+00:00",
+      "final_score": 252.05712404550263
     }
-  ]
+  ],
+  "viral_video_tweet": {
+    "tweet_id": "2049854388261273799",
+    "author": "ridark_eth",
+    "text": "🚨 I just realized I’ve been paying $20 for Claude and only using 5% of its power.\n\nWhile I was stuck copy-pasting from the browser, others were already automating their entire workflow using Claude Code and MCP servers. \n\nIt’s not just a chatbot, it’s a command center I’ve been https://t.co/scJgd2gstr https://t.co/Bm7J674fWd",
+    "url": "https://x.com/ridark_eth/status/2049854388261273799",
+    "like_count": 5,
+    "retweet_count": 0,
+    "score": 15,
+    "created": "2026-04-30T14:12:25+00:00"
+  }
 }
