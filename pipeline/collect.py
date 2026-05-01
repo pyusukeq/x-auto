@@ -268,7 +268,9 @@ def fetch_x_announcements():
 
 
 def fetch_x_viral_videos():
-    """英語のバズ動画ツイートをX APIで検索する（AI製品デモ + CEOインタビュー）"""
+    """バズっているAI関連の英語動画ツイートを広く検索し、最もエンゲージメントが高いものを返す。
+    Claude/Anthropic/OpenAI/ChatGPT/CEO発言を横断的に収集し、スコア0（スパム）を除外して選ぶ。
+    """
     required = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"]
     if not all(os.environ.get(k) for k in required):
         print("  ⚠️  X認証情報未設定のためスキップ")
@@ -282,37 +284,35 @@ def fetch_x_viral_videos():
             resource_owner_key=os.environ["X_ACCESS_TOKEN"],
             resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
         )
-        video_params = {
-            "max_results": 15,
-            "tweet.fields": "created_at,public_metrics,author_id",
-            "expansions": "author_id",
-            "user.fields": "name,username",
-        }
-
-        all_scored = []
-
-        # 検索1: Claude/AI製品のデモ動画
-        r1 = oauth.get(
-            "https://api.twitter.com/2/tweets/search/recent",
-            params={**video_params, "query": '(claude OR anthropic OR "claude code" OR MCP) has:videos -is:reply -is:retweet lang:en'},
+        # AI全般を横断して広く検索（絞りすぎない）
+        query = (
+            "(claude OR anthropic OR openai OR chatgpt OR \"Dario Amodei\" OR \"Sam Altman\""
+            " OR \"claude code\" OR MCP OR \"AI agents\" OR \"gpt-4\" OR \"gpt-5\")"
+            " has:videos -is:reply -is:retweet lang:en"
         )
-        r1.raise_for_status()
-        all_scored.extend(_parse_video_tweets(r1.json(), cutoff, score_multiplier=1.0))
-
-        # 検索2: CEOインタビュー・衝撃的な発言の動画（スコアを1.5倍で優先）
-        r2 = oauth.get(
+        resp = oauth.get(
             "https://api.twitter.com/2/tweets/search/recent",
-            params={**video_params, "query": '("Dario Amodei" OR "Sam Altman" OR "Anthropic CEO" OR "OpenAI CEO") has:videos -is:reply -is:retweet lang:en'},
+            params={
+                "query": query,
+                "max_results": 50,  # 多めに取得してスコアで選別
+                "tweet.fields": "created_at,public_metrics,author_id",
+                "expansions": "author_id",
+                "user.fields": "name,username",
+            },
         )
-        r2.raise_for_status()
-        all_scored.extend(_parse_video_tweets(r2.json(), cutoff, score_multiplier=1.5))
+        resp.raise_for_status()
 
-        if not all_scored:
-            print("  ⚠️  動画ツイートが見つかりませんでした")
+        all_scored = _parse_video_tweets(resp.json(), cutoff)
+
+        # スコア0（エンゲージメントなし）のスパム・Bot投稿を除外
+        viral = [s for s in all_scored if s["score"] > 0]
+
+        if not viral:
+            print("  ⚠️  エンゲージメントのある動画ツイートが見つかりませんでした")
             return None
 
-        best = sorted(all_scored, key=lambda x: (x["score"], x["created"]), reverse=True)[0]
-        print(f"  ✅ X動画ツイート: @{best['author']} (いいね:{best['like_count']} RT:{best['retweet_count']})")
+        best = sorted(viral, key=lambda x: (x["score"], x["created"]), reverse=True)[0]
+        print(f"  ✅ X動画ツイート: @{best['author']} スコア:{best['score']} (いいね:{best['like_count']} RT:{best['retweet_count']})")
         return best
 
     except Exception as e:
