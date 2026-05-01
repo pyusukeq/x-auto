@@ -77,6 +77,12 @@
       "date": "2026-05-01",
       "type": "解説",
       "text": "【保存推奨】\n\nTypeScript SDK v0.92.0で\nManaged Agents APIが強化された。\n\nエージェント開発をSDKから直接操作できる機能が改善。\n\nポイントはここ👇\n\n▶︎ Managed Agents APIの使い勝手を大幅改善\n▶︎ TypeScriptから自律エージェントをコード制御可能に\n▶︎ Bedrock SDK v0.29.1ではエラーイベント処理のバグも..."
+    },
+    {
+      "id": "2050218949577482663",
+      "date": "2026-05-01",
+      "type": "動画引用",
+      "text": "海外で話題のオフラインAI動画🎥\n\nChatGPT・Claude・Copilot全部解約して\nMacBook上に完全オフラインのJARVISを自作した猛者が登場。気になる人はチェックして👀"
     }
   ]
 }
