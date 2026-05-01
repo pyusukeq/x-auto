@@ -2,6 +2,7 @@
 """
 投稿レビュー・修正エージェント
 scheduled/{today}.json の投稿を審査し、問題があれば Claude API で自動修正する
+修正できない場合は review_failed フラグを立てる（投稿はスキップされる）
 
 検出する問題:
 - 👇/⏬ があるがURLがない（「確認👇」だがリンクなし）
@@ -115,13 +116,15 @@ def main():
 
     print(f"=== 投稿レビュー開始 ({today}) ===\n")
 
-    # スケジュール投稿 + フォールバックをまとめてレビュー
+    review_failed = [False] * len(posts)
+    fallback_failed = False
+
     review_targets = [(i, post, types[i] if i < len(types) else "投稿") for i, post in enumerate(posts)]
     if fallback_post:
         review_targets.append(("fallback", fallback_post, "事例(予備)"))
 
     revised_count = 0
-    has_error = False
+    skipped_count = 0
 
     for idx, post, post_type in review_targets:
         label = f"投稿{idx + 1}" if isinstance(idx, int) else "フォールバック投稿"
@@ -138,8 +141,12 @@ def main():
             print(f"     - {issue}")
 
         if not client:
-            print(f"  ANTHROPIC_API_KEY 未設定 → 修正スキップ\n")
-            has_error = True
+            print(f"  ANTHROPIC_API_KEY 未設定 → 修正不可 → この投稿をスキップ\n")
+            if isinstance(idx, int):
+                review_failed[idx] = True
+            else:
+                fallback_failed = True
+            skipped_count += 1
             continue
 
         print(f"  🔧 Claude APIで修正中...")
@@ -148,35 +155,51 @@ def main():
 
             remaining = check_post(revised)
             if remaining:
-                print(f"  ⚠️  修正後も問題あり（元のまま使用）: {remaining}")
-                print()
-                continue
-
-            print(f"  ✅ 修正完了")
-            if isinstance(idx, int):
-                posts[idx] = revised
+                print(f"  ❌ 修正後も問題が残るため投稿をスキップ: {remaining}")
+                if isinstance(idx, int):
+                    review_failed[idx] = True
+                else:
+                    fallback_failed = True
+                skipped_count += 1
             else:
-                fallback_post = revised
-            revised_count += 1
+                print(f"  ✅ 修正完了")
+                if isinstance(idx, int):
+                    posts[idx] = revised
+                else:
+                    fallback_post = revised
+                revised_count += 1
 
         except Exception as e:
-            print(f"  ❌ 修正失敗: {e}")
-            has_error = True
+            print(f"  ❌ 修正API失敗({e}) → この投稿をスキップ")
+            if isinstance(idx, int):
+                review_failed[idx] = True
+            else:
+                fallback_failed = True
+            skipped_count += 1
 
         print()
 
-    if revised_count > 0:
-        data["posts"] = posts
-        if fallback_post is not None:
-            data["fallback_post"] = fallback_post
-        with open(scheduled_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"修正済みを保存: {scheduled_path}")
+    # 結果を scheduled JSON に書き戻す
+    data["posts"] = posts
+    data["review_failed"] = review_failed
+    if fallback_post is not None:
+        data["fallback_post"] = fallback_post
+    if fallback_failed:
+        data["fallback_review_failed"] = True
 
-    print(f"\n=== レビュー完了: {revised_count}件修正 ===")
+    with open(scheduled_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
-    if has_error:
-        sys.exit(1)
+    print(f"レビュー結果を保存: {scheduled_path}")
+    print(f"\n=== レビュー完了: {revised_count}件修正 / {skipped_count}件スキップ ===")
+
+    if skipped_count > 0:
+        skipped_labels = [
+            f"投稿{i+1}" for i, failed in enumerate(review_failed) if failed
+        ]
+        if fallback_failed:
+            skipped_labels.append("フォールバック投稿")
+        print(f"スキップ対象: {', '.join(skipped_labels)}")
 
 
 if __name__ == "__main__":

@@ -72,10 +72,16 @@ def main():
     types = data.get("types", ["速報", "解説", "事例"])
     quote_tweet_ids = data.get("quote_tweet_ids", [None, None, None])
     fallback_post = data.get("fallback_post")
+    review_failed = data.get("review_failed", [])
+    fallback_review_failed = data.get("fallback_review_failed", False)
 
     if post_index >= len(posts):
         print(f"ERROR: {post_number}本目が存在しません（{len(posts)}本のみ）")
         sys.exit(1)
+
+    if post_index < len(review_failed) and review_failed[post_index]:
+        print(f"⚠️ 投稿{post_number}はレビュー未通過のためスキップします（品質基準を満たしませんでした）")
+        sys.exit(0)
 
     text = posts[post_index]
     post_type = types[post_index] if post_index < len(types) else "投稿"
@@ -95,6 +101,9 @@ def main():
                 post_type = "事例"
                 quote_tweet_id = None
                 result = post_to_x(text, None)
+            elif fallback_review_failed:
+                print(f"引用ツイート失敗({e})→フォールバックもレビュー未通過 → 投稿スキップ")
+                sys.exit(0)
             else:
                 print(f"引用ツイート失敗({e})→フォールバックなし→通常投稿")
                 result = post_to_x(text, None)
