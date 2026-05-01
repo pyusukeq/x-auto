@@ -13,8 +13,6 @@ import os
 import time
 from datetime import datetime
 
-import requests
-from requests_oauthlib import OAuth1Session
 import anthropic
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -216,38 +214,11 @@ def generate_posts(stories: list, viral_video: dict = None, recent_posts: list =
     return scheduled_posts, types, quote_tweet_ids, fallback_post
 
 
-def post_to_x(text: str, quote_tweet_id: str = None) -> dict:
-    """X API v2 で投稿する（quote_tweet_id指定で引用ツイート）"""
-    oauth = OAuth1Session(
-        os.environ["X_API_KEY"],
-        client_secret=os.environ["X_API_SECRET"],
-        resource_owner_key=os.environ["X_ACCESS_TOKEN"],
-        resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
-    )
-    body = {"text": text}
-    if quote_tweet_id:
-        body["quote_tweet_id"] = quote_tweet_id
-    resp = oauth.post("https://api.twitter.com/2/tweets", json=body)
-    resp.raise_for_status()
-    return resp.json()
-
-
 def load_log() -> dict:
     if os.path.exists(TWEETS_FILE):
         with open(TWEETS_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     return {"tweets": []}
-
-
-def append_log(log: dict, tweet_id: str, text: str, tweet_type: str, date: str):
-    log["tweets"].append({
-        "id": tweet_id,
-        "date": date,
-        "type": tweet_type,
-        "text": text[:200] + ("..." if len(text) > 200 else ""),
-    })
-    with open(TWEETS_FILE, "w", encoding="utf-8") as f:
-        json.dump(log, f, ensure_ascii=False, indent=2)
 
 
 def save_scheduled(posts: list, types: list, quote_tweet_ids: list, today: str, fallback_post: str = None):
@@ -282,7 +253,7 @@ def main():
     log = load_log()
     recent_posts = [t["text"] for t in log.get("tweets", [])[-20:]]
 
-    print("[1/3] Claude API で投稿を生成中...")
+    print("[1/2] Claude API で投稿を生成中...")
     try:
         posts, types, quote_tweet_ids, fallback_post = generate_posts(stories, viral_video, recent_posts)
         print(f"  → {len(posts)}本生成完了 / フォールバック: {'あり' if fallback_post else 'なし'}\n")
@@ -290,25 +261,11 @@ def main():
         print(f"ERROR: 投稿生成失敗 - {e}")
         sys.exit(1)
 
-    print("[2/3] 投稿を保存中（昼・夜の分散投稿用）...")
+    print("[2/2] 投稿を保存中...")
     save_scheduled(posts, types, quote_tweet_ids, today, fallback_post)
 
-    print("\n[3/3] 1本目を投稿中...")
-    post, post_type, qid = posts[0], types[0], quote_tweet_ids[0]
-    preview = post.split("\n")[0][:40]
-    print(f"  タイプ: {post_type} / 文字数: {weighted_len(post)}w")
-    print(f"  内容: {preview}...")
-
-    try:
-        result = post_to_x(post, qid)
-        tweet_id = result["data"]["id"]
-        append_log(log, tweet_id, post, post_type, today)
-        print(f"  投稿完了 ID: {tweet_id}")
-    except Exception as e:
-        print(f"  投稿失敗: {e}")
-        sys.exit(1)
-
-    print(f"\n=== 完了: 1本目投稿済み / 2本目 12:00 / 3本目 19:00 ===")
+    print(f"\n=== 完了: scheduled/{today}.json に保存済み ===")
+    print("次: review_post.py でレビュー → post_scheduled.py 1 で1本目投稿")
 
 
 if __name__ == "__main__":
