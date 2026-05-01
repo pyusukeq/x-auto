@@ -294,7 +294,7 @@ def fetch_x_viral_videos():
             "https://api.twitter.com/2/tweets/search/recent",
             params={
                 "query": query,
-                "max_results": 50,  # 多めに取得してスコアで選別
+                "max_results": 100,  # API上限（エンゲージメント順でなく最新順のため多めに取得）
                 "tweet.fields": "created_at,public_metrics,author_id",
                 "expansions": "author_id",
                 "user.fields": "name,username",
