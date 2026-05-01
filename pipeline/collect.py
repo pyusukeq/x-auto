@@ -174,14 +174,49 @@ def fetch_github():
     return results
 
 
-def fetch_x_viral_videos():
-    """英語のバズ動画ツイートをX APIで検索する（X認証情報が必要）"""
+def _parse_video_tweets(data: dict, cutoff, score_multiplier: float = 1.0) -> list:
+    """X API レスポンスから動画ツイートをスコアリングして返す"""
+    tweets = data.get("data", [])
+    users = {u["id"]: u for u in data.get("includes", {}).get("users", [])}
+    scored = []
+    for tweet in tweets:
+        created = datetime.fromisoformat(tweet["created_at"].replace("Z", "+00:00"))
+        if created < cutoff:
+            continue
+        text = tweet["text"]
+        if len(text) < 30:
+            continue
+        m = tweet.get("public_metrics", {})
+        score = int((
+            m.get("like_count", 0) * 3 +
+            m.get("retweet_count", 0) * 5 +
+            m.get("quote_count", 0) * 4
+        ) * score_multiplier)
+        author = users.get(tweet["author_id"], {})
+        username = author.get("username", "")
+        scored.append({
+            "tweet_id": tweet["id"],
+            "author": username,
+            "text": text,
+            "url": f"https://x.com/{username}/status/{tweet['id']}",
+            "video_url": f"https://x.com/{username}/status/{tweet['id']}/video/1",
+            "like_count": m.get("like_count", 0),
+            "retweet_count": m.get("retweet_count", 0),
+            "score": score,
+            "created": created.isoformat(),
+        })
+    return scored
+
+
+def fetch_x_announcements():
+    """AnthropicAI・OpenAI公式アカウントとCEO(@sama/@DarioAmodei)の最新ツイートを収集"""
     required = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"]
     if not all(os.environ.get(k) for k in required):
         print("  ⚠️  X認証情報未設定のためスキップ")
-        return None
+        return []
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    results = []
     try:
         oauth = OAuth1Session(
             os.environ["X_API_KEY"],
@@ -189,7 +224,7 @@ def fetch_x_viral_videos():
             resource_owner_key=os.environ["X_ACCESS_TOKEN"],
             resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
         )
-        query = '(claude OR anthropic OR "claude code" OR MCP) has:videos -is:reply -is:retweet lang:en'
+        query = "(from:AnthropicAI OR from:OpenAI OR from:sama OR from:DarioAmodei) -is:reply -is:retweet"
         params = {
             "query": query,
             "max_results": 20,
@@ -204,46 +239,85 @@ def fetch_x_viral_videos():
         tweets = data.get("data", [])
         users = {u["id"]: u for u in data.get("includes", {}).get("users", [])}
 
-        scored = []
         for tweet in tweets:
             created = datetime.fromisoformat(tweet["created_at"].replace("Z", "+00:00"))
             if created < cutoff:
                 continue
-            m = tweet.get("public_metrics", {})
-            score = (
-                m.get("like_count", 0) * 3 +
-                m.get("retweet_count", 0) * 5 +
-                m.get("quote_count", 0) * 4
-            )
-            author = users.get(tweet["author_id"], {})
-            username = author.get("username", "")
-            # スパム・低品質フィルタ（テキストが短すぎる or 明らかなBot）
             text = tweet["text"]
             if len(text) < 30:
                 continue
-            scored.append({
-                "tweet_id": tweet["id"],
-                "author": username,
-                "text": text,
+            m = tweet.get("public_metrics", {})
+            base_score = m.get("like_count", 0) * 3 + m.get("retweet_count", 0) * 5
+            author = users.get(tweet["author_id"], {})
+            username = author.get("username", "")
+            results.append({
+                "source": f"X @{username}",
+                "title": text[:100].replace("\n", " "),
                 "url": f"https://x.com/{username}/status/{tweet['id']}",
-                "video_url": f"https://x.com/{username}/status/{tweet['id']}/video/1",
-                "like_count": m.get("like_count", 0),
-                "retweet_count": m.get("retweet_count", 0),
-                "score": score,
+                "body": text[:600],
+                "score": max(base_score, 500),  # 公式アカウントは最低500スコアを保証
+                "comments": m.get("reply_count", 0),
                 "created": created.isoformat(),
             })
 
-        if not scored:
+        print(f"  ✅ X公式アナウンス(@AnthropicAI/@OpenAI/@sama/@DarioAmodei): {len(results)}件")
+    except Exception as e:
+        print(f"  ❌ X公式アナウンス: {e}")
+
+    return results
+
+
+def fetch_x_viral_videos():
+    """英語のバズ動画ツイートをX APIで検索する（AI製品デモ + CEOインタビュー）"""
+    required = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"]
+    if not all(os.environ.get(k) for k in required):
+        print("  ⚠️  X認証情報未設定のためスキップ")
+        return None
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    try:
+        oauth = OAuth1Session(
+            os.environ["X_API_KEY"],
+            client_secret=os.environ["X_API_SECRET"],
+            resource_owner_key=os.environ["X_ACCESS_TOKEN"],
+            resource_owner_secret=os.environ["X_ACCESS_TOKEN_SECRET"],
+        )
+        video_params = {
+            "max_results": 15,
+            "tweet.fields": "created_at,public_metrics,author_id",
+            "expansions": "author_id",
+            "user.fields": "name,username",
+        }
+
+        all_scored = []
+
+        # 検索1: Claude/AI製品のデモ動画
+        r1 = oauth.get(
+            "https://api.twitter.com/2/tweets/search/recent",
+            params={**video_params, "query": '(claude OR anthropic OR "claude code" OR MCP) has:videos -is:reply -is:retweet lang:en'},
+        )
+        r1.raise_for_status()
+        all_scored.extend(_parse_video_tweets(r1.json(), cutoff, score_multiplier=1.0))
+
+        # 検索2: CEOインタビュー・衝撃的な発言の動画（スコアを1.5倍で優先）
+        r2 = oauth.get(
+            "https://api.twitter.com/2/tweets/search/recent",
+            params={**video_params, "query": '("Dario Amodei" OR "Sam Altman" OR "Anthropic CEO" OR "OpenAI CEO") has:videos -is:reply -is:retweet lang:en'},
+        )
+        r2.raise_for_status()
+        all_scored.extend(_parse_video_tweets(r2.json(), cutoff, score_multiplier=1.5))
+
+        if not all_scored:
             print("  ⚠️  動画ツイートが見つかりませんでした")
             return None
 
-        # エンゲージメントスコアで降順ソート。同点の場合は最新を優先
-        best = sorted(scored, key=lambda x: (x["score"], x["created"]), reverse=True)[0]
+        best = sorted(all_scored, key=lambda x: (x["score"], x["created"]), reverse=True)[0]
         print(f"  ✅ X動画ツイート: @{best['author']} (いいね:{best['like_count']} RT:{best['retweet_count']})")
         return best
 
     except Exception as e:
         print(f"  ❌ X動画検索: {e}")
+        return None
         return None
 
 
@@ -278,6 +352,9 @@ def main():
     all_items.extend(fetch_hackernews())
     all_items.extend(fetch_anthropic_blog())
     all_items.extend(fetch_github())
+
+    print("  X公式アナウンス・CEO発言を収集中...")
+    all_items.extend(fetch_x_announcements())
 
     print("  X動画ツイート検索中...")
     viral_video = fetch_x_viral_videos()
