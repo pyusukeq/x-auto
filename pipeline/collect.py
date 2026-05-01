@@ -192,7 +192,7 @@ def fetch_x_viral_videos():
         query = '(claude OR anthropic OR "claude code" OR MCP) has:videos -is:reply -is:retweet lang:en'
         params = {
             "query": query,
-            "max_results": 10,
+            "max_results": 20,
             "tweet.fields": "created_at,public_metrics,author_id",
             "expansions": "author_id",
             "user.fields": "name,username",
@@ -217,11 +217,16 @@ def fetch_x_viral_videos():
             )
             author = users.get(tweet["author_id"], {})
             username = author.get("username", "")
+            # スパム・低品質フィルタ（テキストが短すぎる or 明らかなBot）
+            text = tweet["text"]
+            if len(text) < 30:
+                continue
             scored.append({
                 "tweet_id": tweet["id"],
                 "author": username,
-                "text": tweet["text"],
+                "text": text,
                 "url": f"https://x.com/{username}/status/{tweet['id']}",
+                "video_url": f"https://x.com/{username}/status/{tweet['id']}/video/1",
                 "like_count": m.get("like_count", 0),
                 "retweet_count": m.get("retweet_count", 0),
                 "score": score,
@@ -232,7 +237,8 @@ def fetch_x_viral_videos():
             print("  ⚠️  動画ツイートが見つかりませんでした")
             return None
 
-        best = sorted(scored, key=lambda x: x["score"], reverse=True)[0]
+        # エンゲージメントスコアで降順ソート。同点の場合は最新を優先
+        best = sorted(scored, key=lambda x: (x["score"], x["created"]), reverse=True)[0]
         print(f"  ✅ X動画ツイート: @{best['author']} (いいね:{best['like_count']} RT:{best['retweet_count']})")
         return best
 

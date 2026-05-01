@@ -70,7 +70,6 @@ def main():
 
     posts = data.get("posts", [])
     types = data.get("types", ["速報", "解説", "事例"])
-    quote_tweet_ids = data.get("quote_tweet_ids", [None, None, None])
     fallback_post = data.get("fallback_post")
     review_failed = data.get("review_failed", [])
     fallback_review_failed = data.get("fallback_review_failed", False)
@@ -80,36 +79,22 @@ def main():
         sys.exit(1)
 
     if post_index < len(review_failed) and review_failed[post_index]:
-        print(f"⚠️ 投稿{post_number}はレビュー未通過のためスキップします（品質基準を満たしませんでした）")
-        sys.exit(0)
-
-    text = posts[post_index]
-    post_type = types[post_index] if post_index < len(types) else "投稿"
-    quote_tweet_id = quote_tweet_ids[post_index] if post_index < len(quote_tweet_ids) else None
+        # 投稿3（動画スロット）はフォールバック投稿で代替
+        if post_index == 2 and fallback_post and not fallback_review_failed:
+            print(f"投稿{post_number}はレビュー未通過 → フォールバック投稿（事例）に切り替え")
+            text = fallback_post
+            post_type = "事例"
+        else:
+            print(f"⚠️ 投稿{post_number}はレビュー未通過のためスキップ（品質基準を満たしませんでした）")
+            sys.exit(0)
+    else:
+        text = posts[post_index]
+        post_type = types[post_index] if post_index < len(types) else "投稿"
 
     print(f"=== {post_number}本目を投稿 ({post_type}) ===")
-    print(f"引用ツイート: {quote_tweet_id or 'なし'}")
     print(f"内容: {text.split(chr(10))[0][:50]}...")
 
-    try:
-        result = post_to_x(text, quote_tweet_id)
-    except Exception as e:
-        if quote_tweet_id and ("403" in str(e) or "Forbidden" in str(e)):
-            if fallback_post:
-                print(f"引用ツイート失敗({e})→フォールバック投稿（別ネタ）に切り替え")
-                text = fallback_post
-                post_type = "事例"
-                quote_tweet_id = None
-                result = post_to_x(text, None)
-            elif fallback_review_failed:
-                print(f"引用ツイート失敗({e})→フォールバックもレビュー未通過 → 投稿スキップ")
-                sys.exit(0)
-            else:
-                print(f"引用ツイート失敗({e})→フォールバックなし→通常投稿")
-                result = post_to_x(text, None)
-        else:
-            raise
-
+    result = post_to_x(text)
     tweet_id = result["data"]["id"]
     append_log(tweet_id, text, post_type, today)
     print(f"投稿完了 ID: {tweet_id}")

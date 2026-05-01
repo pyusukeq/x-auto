@@ -121,19 +121,24 @@ def generate_posts(stories: list, viral_video: dict = None, recent_posts: list =
         )
 
     if viral_video:
-        types = ["速報", "解説", "動画引用"]
-        quote_tweet_ids = [None, None, viral_video["tweet_id"]]
+        types = ["速報", "解説", "動画"]
+        quote_tweet_ids = [None, None, None]  # 引用ツイートではなくURLを本文に埋め込む
         num_posts = 4
+        video_url = viral_video.get(
+            "video_url",
+            f"https://x.com/{viral_video['author']}/status/{viral_video['tweet_id']}/video/1"
+        )
         post_instructions = (
             "以下の記事から4本のX投稿を作成してください:\n\n"
             "- 投稿1（速報）: 新しいリリースや発表を中心に。【速報】タグ必須\n"
             "- 投稿2（解説）: 機能の使い方・仕組みの解説。【保存版】【保存推奨】【必見】のいずれかのタグ必須。速報とは異なるトピックで\n"
             "- 投稿3（事例・予備）: 実際の活用事例・驚きの使い方。【これはすごい】【保存必須】のいずれかのタグ必須。投稿1・2とは異なるトピックで\n"
-            f"- 投稿4（動画引用コメント・全角100文字以内）: 以下の英語バズツイートを日本語で紹介するコメント:\n"
-            f"  @{viral_video['author']}: {viral_video['text'][:300]}\n"
-            f"  「海外で話題の〇〇動画」「この動画が分かりやすい」のように動画の価値を伝える形式で\n\n"
+            f"- 投稿4（動画紹介）: 以下の英語動画ツイートを日本語で紹介する投稿。\n"
+            f"  【重要】動画URL「{video_url}」を必ず投稿の3〜4行目（フックの直後）に含めること。URLは一切変更・省略しないこと。\n"
+            f"  投稿テンプレートに従い、動画の価値・驚きを伝える。「この動画が分かりやすい」「海外で話題の〇〇動画」などの表現を使う。\n"
+            f"  元ツイート(@{viral_video['author']}): {viral_video['text'][:300]}\n\n"
         )
-        output_format = '{"posts": ["速報投稿", "解説投稿", "事例投稿(予備)", "動画引用コメント"]}'
+        output_format = f'{{"posts": ["速報投稿", "解説投稿", "事例投稿(予備)", "動画紹介投稿({video_url}を含む)"]}}'
     else:
         types = ["速報", "解説", "事例"]
         quote_tweet_ids = [None, None, None]
@@ -190,21 +195,23 @@ def generate_posts(stories: list, viral_video: dict = None, recent_posts: list =
     if len(posts) < num_posts:
         raise ValueError(f"{num_posts}本必要ですが{len(posts)}本しか生成されませんでした")
 
-    # 文字数チェックと短縮
-    limits = [900] * num_posts
-    if viral_video:
-        limits[3] = 200  # 動画引用コメントは短く
-
+    # 文字数チェックと短縮（全投稿900w上限）
     validated = []
     for i, post in enumerate(posts[:num_posts]):
-        limit = limits[i]
         wlen = weighted_len(post)
-        if wlen > limit:
+        if wlen > 900:
             print(f"  投稿{i+1}: 文字数超過({wlen}w) → 短縮")
-            post = shorten_post(post, limit)
+            post = shorten_post(post, 900)
         validated.append(post)
 
     if viral_video:
+        # 動画投稿にURLが含まれているか確認。含まれていなければURLを先頭に追記
+        video_post = validated[3]
+        if video_url not in video_post and "https://" not in video_post:
+            video_post = video_url + "\n\n" + video_post
+            print(f"  投稿4: 動画URLが含まれていなかったため追記")
+            validated[3] = video_post
+
         scheduled_posts = [validated[0], validated[1], validated[3]]
         fallback_post = validated[2]
     else:
