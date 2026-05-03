@@ -194,12 +194,19 @@ def _parse_video_tweets(data: dict, cutoff, score_multiplier: float = 1.0) -> li
         ) * score_multiplier)
         author = users.get(tweet["author_id"], {})
         username = author.get("username", "")
+        # entities から pic.x.com の t.co URL を取得（これがあると動画がインライン表示される）
+        pic_tco = None
+        for url_ent in tweet.get("entities", {}).get("urls", []):
+            if url_ent.get("display_url", "").startswith("pic.x.com"):
+                pic_tco = url_ent["url"]
+                break
+        video_url = pic_tco or f"https://x.com/{username}/status/{tweet['id']}/video/1"
         scored.append({
             "tweet_id": tweet["id"],
             "author": username,
             "text": text,
             "url": f"https://x.com/{username}/status/{tweet['id']}",
-            "video_url": f"https://x.com/{username}/status/{tweet['id']}/video/1",
+            "video_url": video_url,
             "like_count": m.get("like_count", 0),
             "retweet_count": m.get("retweet_count", 0),
             "score": score,
@@ -295,7 +302,7 @@ def fetch_x_viral_videos():
             params={
                 "query": query,
                 "max_results": 100,  # API上限（エンゲージメント順でなく最新順のため多めに取得）
-                "tweet.fields": "created_at,public_metrics,author_id",
+                "tweet.fields": "created_at,public_metrics,author_id,entities",
                 "expansions": "author_id",
                 "user.fields": "name,username",
             },
