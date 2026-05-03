@@ -9,7 +9,7 @@ jobs:
   daily-post:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # posted_tweets.json をコミットするため
+      contents: write
 
     steps:
       - name: Checkout
@@ -28,11 +28,6 @@ jobs:
         run: pip install -r pipeline/requirements.txt
 
       - name: Collect content
-        env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: python pipeline/collect.py
 
       - name: Debug API call
@@ -60,10 +55,6 @@ jobs:
       - name: Generate posts
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: python pipeline/auto_post.py
 
       - name: Review and revise posts
@@ -71,19 +62,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python pipeline/review_post.py
 
-      - name: Post first tweet
-        env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-        run: python pipeline/post_scheduled.py 1
+      - name: Save draft
+        run: python pipeline/save_draft.py
 
       - name: Save results to repo
         if: always()
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add pipeline/posted_tweets.json pipeline/collected/ pipeline/scheduled/ || true
-          git diff --staged --quiet || git commit -m "auto: daily post $(date +%Y-%m-%d)"
+          git add pipeline/collected/ pipeline/scheduled/ draft/ || true
+          git diff --staged --quiet || git commit -m "draft: daily $(date +%Y-%m-%d)"
           git push || true

@@ -128,7 +128,6 @@ def main():
 
     # 元情報の準備
     stories_context = "(元記事情報なし)"
-    video_sources = []
     if os.path.exists(collected_path):
         with open(collected_path, "r", encoding="utf-8") as f:
             collected = json.load(f)
@@ -137,10 +136,6 @@ def main():
             f"- {s['title'][:60]}: {s.get('url') or s.get('external_url', '')}"
             for s in stories
         )
-        for v in collected.get("viral_video_tweets", []):
-            video_sources.append(
-                f"@{v['author']} のツイート: {v['text'][:400]}\nURL: {v['url']}"
-            )
 
     posts = list(data.get("posts", []))
     types = data.get("types", [])
@@ -166,19 +161,12 @@ def main():
 
     revised_count = 0
     skipped_count = 0
-    video_idx = 0  # 動画投稿のソース割り当て用カウンタ
 
     for idx, post, post_type in review_targets:
         label = f"投稿{idx + 1}" if isinstance(idx, int) else "フォールバック投稿"
         print(f"[{label} / {post_type}] レビュー中...")
 
-        # 元情報ソースの選択（動画投稿は動画ツイート原文を使用）
-        is_video = "動画" in post_type
-        if is_video and video_idx < len(video_sources):
-            source = video_sources[video_idx]
-            video_idx += 1
-        else:
-            source = stories_context
+        source = stories_context
 
         # ① ルールベースチェック
         issues = check_post(post)
