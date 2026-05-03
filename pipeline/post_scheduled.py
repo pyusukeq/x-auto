@@ -79,8 +79,8 @@ def main():
         sys.exit(1)
 
     if post_index < len(review_failed) and review_failed[post_index]:
-        # 投稿3（動画スロット）はフォールバック投稿で代替
-        if post_index == 2 and fallback_post and not fallback_review_failed:
+        # 投稿1（動画スロット）はフォールバック投稿で代替
+        if post_index == 0 and fallback_post and not fallback_review_failed:
             print(f"投稿{post_number}はレビュー未通過 → フォールバック投稿（事例）に切り替え")
             text = fallback_post
             post_type = "事例"
