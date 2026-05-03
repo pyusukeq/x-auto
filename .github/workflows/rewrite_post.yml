@@ -39,6 +39,6 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add draft/
+          git add draft/ docs/
           git diff --cached --quiet || git commit -m "draft: rewrite $(date +'%Y-%m-%d')"
           git push

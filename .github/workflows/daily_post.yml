@@ -70,6 +70,6 @@ jobs:
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add pipeline/collected/ pipeline/scheduled/ draft/ || true
+          git add pipeline/collected/ pipeline/scheduled/ draft/ docs/ || true
           git diff --staged --quiet || git commit -m "draft: daily $(date +%Y-%m-%d)"
           git push || true

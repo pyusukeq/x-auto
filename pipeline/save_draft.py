@@ -10,10 +10,13 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="repla
 
 import json
 import os
+import sys
 from datetime import datetime, timezone, timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PIPELINE_DIR = os.path.join(BASE_DIR, "pipeline")
+sys.path.insert(0, PIPELINE_DIR)
+from draft_html import save_daily_html
 SCHEDULED_DIR = os.path.join(PIPELINE_DIR, "scheduled")
 DRAFT_DIR = os.path.join(BASE_DIR, "draft")
 
@@ -65,6 +68,9 @@ def main():
 
     print(f"下書き保存: {draft_path}")
     print(f"投稿数: {len(posts)}本")
+
+    fallback_failed = data.get("fallback_review_failed", False)
+    save_daily_html(posts, types, review_failed, fallback_post, fallback_failed, today)
 
 
 if __name__ == "__main__":
