@@ -174,7 +174,7 @@ def fetch_github():
     return results
 
 
-def _parse_video_tweets(data: dict, cutoff, score_multiplier: float = 1.0) -> list:
+def _parse_video_tweets(data: dict, cutoff, too_fresh=None, score_multiplier: float = 1.0) -> list:
     """X API レスポンスから動画ツイートをスコアリングして返す"""
     tweets = data.get("data", [])
     users = {u["id"]: u for u in data.get("includes", {}).get("users", [])}
@@ -182,6 +182,8 @@ def _parse_video_tweets(data: dict, cutoff, score_multiplier: float = 1.0) -> li
     for tweet in tweets:
         created = datetime.fromisoformat(tweet["created_at"].replace("Z", "+00:00"))
         if created < cutoff:
+            continue
+        if too_fresh and created > too_fresh:  # 投稿から12時間未満は除外
             continue
         text = tweet["text"]
         if len(text) < 30:
@@ -284,6 +286,7 @@ def fetch_x_viral_videos():
         return None
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    too_fresh = datetime.now(timezone.utc) - timedelta(hours=12)
     try:
         oauth = OAuth1Session(
             os.environ["X_API_KEY"],
@@ -309,7 +312,7 @@ def fetch_x_viral_videos():
         )
         resp.raise_for_status()
 
-        all_scored = _parse_video_tweets(resp.json(), cutoff)
+        all_scored = _parse_video_tweets(resp.json(), cutoff, too_fresh)
 
         # スコア0（エンゲージメントなし）のスパム・Bot投稿を除外
         viral = [s for s in all_scored if s["score"] > 0]
