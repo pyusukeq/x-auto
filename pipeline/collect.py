@@ -275,7 +275,7 @@ def fetch_x_announcements():
 
 
 def fetch_x_viral_videos():
-    """バズっているAI関連の英語動画ツイートを広く検索し、最もエンゲージメントが高いものを返す。
+    """バズっているAI関連の英語動画ツイートを広く検索し、エンゲージメント上位2件を返す。
     Claude/Anthropic/OpenAI/ChatGPT/CEO発言を横断的に収集し、スコア0（スパム）を除外して選ぶ。
     """
     required = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_TOKEN_SECRET"]
@@ -316,16 +316,16 @@ def fetch_x_viral_videos():
 
         if not viral:
             print("  ⚠️  エンゲージメントのある動画ツイートが見つかりませんでした")
-            return None
+            return []
 
-        best = sorted(viral, key=lambda x: (x["score"], x["created"]), reverse=True)[0]
-        print(f"  ✅ X動画ツイート: @{best['author']} スコア:{best['score']} (いいね:{best['like_count']} RT:{best['retweet_count']})")
-        return best
+        top2 = sorted(viral, key=lambda x: (x["score"], x["created"]), reverse=True)[:2]
+        for i, v in enumerate(top2, 1):
+            print(f"  ✅ X動画ツイート{i}: @{v['author']} スコア:{v['score']} (いいね:{v['like_count']} RT:{v['retweet_count']})")
+        return top2
 
     except Exception as e:
         print(f"  ❌ X動画検索: {e}")
-        return None
-        return None
+        return []
 
 
 def score_and_rank(items):
@@ -364,7 +364,7 @@ def main():
     all_items.extend(fetch_x_announcements())
 
     print("  X動画ツイート検索中...")
-    viral_video = fetch_x_viral_videos()
+    viral_videos = fetch_x_viral_videos()
 
     ranked = score_and_rank(all_items)
     top = ranked[:10]
@@ -374,7 +374,7 @@ def main():
         "date": today,
         "total_found": len(all_items),
         "top_stories": top,
-        "viral_video_tweet": viral_video,
+        "viral_video_tweets": viral_videos,
     }
 
     with open(output_path, "w", encoding="utf-8") as f:
