@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>X投稿下書き 2026-05-04</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  padding: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+header { text-align: center; padding: 16px 0 8px; }
+header h1 { font-size: 20px; color: #0f1419; }
+header p { font-size: 13px; color: #536471; margin-top: 4px; }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.card-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #536471;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+.warning { font-size: 12px; color: #f4212e; margin-bottom: 8px; }
+.post-text {
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #0f1419;
+  padding: 12px;
+  background: #f7f9f9;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+.post-text.failed { border-left: 3px solid #f4212e; }
+.copy-btn {
+  display: block;
+  width: 100%;
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.copy-btn.done { background: #00ba7c; }
+.copy-btn:active { opacity: 0.85; }
+.source-url {
+  font-size: 12px;
+  color: #536471;
+  background: #f7f9f9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  word-break: break-all;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>X投稿下書き 2026-05-04</h1>
+  <p>生成: 2026-05-04 12:05 JST</p>
+</header>
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+待ってたやつ！！
+
+Claude Code v2.1.126で
+OAuth認証のバグが修正された。
+
+『CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1設定時に401ループが発生する問題』
+がようやく解消。
+
+具体的には
+
+▶︎ OAuth認証が401エラーで無限リトライしていた
+▶︎ 環境変数でベータ機能を無効化している環境で発生
+▶︎ v2.1.126で修正済み
+
+つまり、
+
+ベータ機能を切って使っていた方は
+アップデートで解決しますよ✨
+
+最新版に更新してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.126</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
+
+Claude Code v2.1.126の
+/modelピッカーが地味に便利になった。
+
+『ANTHROPIC_BASE_URL』でカスタムゲートウェイを指定している場合
+モデル一覧が自動で取得できるように。
+
+ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.126
+
+▶︎ ゲートウェイの /v1/models エンドポイントからモデルを自動取得
+▶︎ 社内ゲートウェイや互換APIを使っている方に特に便利
+▶︎ モデル名を手打ちしなくてよくなる
+
+つまり、
+
+自前のゲートウェイ経由で使っている方は
+設定の手間が減りますよ😊
+
+詳細はリリースノートをチェックして👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
+
+Claude Codeの/resumeに
+PRのURLを貼り付けてセッション検索できる機能について投稿が出回っていますが、
+
+現時点で確認できている公式リリース（v2.1.123・v2.1.126）のリリースノートに、この機能の記載は見当たりません。
+
+バージョン番号・機能内容・対応サービス（GitHub/GitLab/Bitbucket）いずれも元情報から裏付けが取れていない状態です。
+
+情報の正確性が確認できるまで、拡散はいったん保留をおすすめします。
+
+公式リリースノートはこちら👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.126
+https://github.com/anthropics/claude-code/releases/tag/v2.1.123</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+<script>
+function copy(id, btn) {
+  var text = document.getElementById(id).innerText;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() { done(btn); }, function() { fallback(text, btn); });
+  } else {
+    fallback(text, btn);
+  }
+}
+function fallback(text, btn) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+  document.body.appendChild(ta);
+  ta.focus(); ta.select(); ta.setSelectionRange(0, 99999);
+  try { document.execCommand('copy'); done(btn); }
+  catch(e) { alert('コピーできませんでした。長押しで選択してください。'); }
+  document.body.removeChild(ta);
+}
+function done(btn) {
+  btn.textContent = 'コピー完了 ✓';
+  btn.classList.add('done');
+  setTimeout(function() { btn.textContent = 'コピー'; btn.classList.remove('done'); }, 2500);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-04",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.126で\nOAuth認証のバグが修正された。\n\n『CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1設定時に401ループが発生する問題』\nがようやく解消。\n\n具体的には\n\n▶︎ OAuth認証が401エラーで無限リトライしていた\n▶︎ 環境変数でベータ機能を無効化している環境で発生\n▶︎ v2.1.126で修正済み\n\nつまり、\n\nベータ機能を切って使っていた方は\nアップデートで解決しますよ✨\n\n最新版に更新してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126",
+    "【必見】\n\nClaude Code v2.1.126の\n/modelピッカーが地味に便利になった。\n\n『ANTHROPIC_BASE_URL』でカスタムゲートウェイを指定している場合\nモデル一覧が自動で取得できるように。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126\n\n▶︎ ゲートウェイの /v1/models エンドポイントからモデルを自動取得\n▶︎ 社内ゲートウェイや互換APIを使っている方に特に便利\n▶︎ モデル名を手打ちしなくてよくなる\n\nつまり、\n\n自前のゲートウェイ経由で使っている方は\n設定の手間が減りますよ😊\n\n詳細はリリースノートをチェックして👀",
+    "【要確認】\n\nClaude Codeの/resumeに\nPRのURLを貼り付けてセッション検索できる機能について投稿が出回っていますが、\n\n現時点で確認できている公式リリース（v2.1.123・v2.1.126）のリリースノートに、この機能の記載は見当たりません。\n\nバージョン番号・機能内容・対応サービス（GitHub/GitLab/Bitbucket）いずれも元情報から裏付けが取れていない状態です。\n\n情報の正確性が確認できるまで、拡散はいったん保留をおすすめします。\n\n公式リリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.123"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
