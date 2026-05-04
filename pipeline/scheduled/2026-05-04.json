@@ -1,9 +1,9 @@
 {
   "date": "2026-05-04",
   "posts": [
-    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.126で\nOAuth認証のバグが修正された。\n\n『CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1設定時に401ループが発生する問題』\nがようやく解消。\n\n具体的には\n\n▶︎ OAuth認証が401エラーで無限リトライしていた\n▶︎ 環境変数でベータ機能を無効化している環境で発生\n▶︎ v2.1.126で修正済み\n\nつまり、\n\nベータ機能を切って使っていた方は\nアップデートで解決しますよ✨\n\n最新版に更新してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126",
-    "【必見】\n\nClaude Code v2.1.126の\n/modelピッカーが地味に便利になった。\n\n『ANTHROPIC_BASE_URL』でカスタムゲートウェイを指定している場合\nモデル一覧が自動で取得できるように。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126\n\n▶︎ ゲートウェイの /v1/models エンドポイントからモデルを自動取得\n▶︎ 社内ゲートウェイや互換APIを使っている方に特に便利\n▶︎ モデル名を手打ちしなくてよくなる\n\nつまり、\n\n自前のゲートウェイ経由で使っている方は\n設定の手間が減りますよ😊\n\n詳細はリリースノートをチェックして👀",
-    "【要確認】\n\nClaude Codeの/resumeに\nPRのURLを貼り付けてセッション検索できる機能について投稿が出回っていますが、\n\n現時点で確認できている公式リリース（v2.1.123・v2.1.126）のリリースノートに、この機能の記載は見当たりません。\n\nバージョン番号・機能内容・対応サービス（GitHub/GitLab/Bitbucket）いずれも元情報から裏付けが取れていない状態です。\n\n情報の正確性が確認できるまで、拡散はいったん保留をおすすめします。\n\n公式リリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.123"
+    "【Claude Code v2.1.126リリース】\n\n地味だけど大事なバグ修正が入った。\n\n最新のv2.1.126では細かい改善が続いています。\n\n直近のv2.1.123での修正内容はリリースノートで確認してみて👀\n\n▶︎ 環境変数でベータ機能を無効化していると認証が壊れていた\n▶︎ 再ログインを繰り返す無限ループが発生していた\n\nつまり、\n\nベータ機能をオフにして使っていた人は\n最新版にアップデートしておくと安心ですよね👀\n\nリリースノートはこちら→ https://github.com/anthropics/claude-code/releases/tag/v2.1.126",
+    "Claude Codeの `/model` ピッカーが\n地味に便利になっていました。\n\n`ANTHROPIC_BASE_URL` でカスタムゲートウェイを指定している場合に\nモデル一覧が自動取得できるようになった模様です。\n\nポイントはここ\n\n▶︎ ゲートウェイの `/v1/models` エンドポイントからモデルを取得\n▶︎ 自前のプロキシ・互換ゲートウェイ環境でも動作\n▶︎ モデルを手打ちする手間がなくなる\n\nゲートウェイ経由でClaudeを使っている人には\nうれしいアップデートかもしれません✨\n\n詳細はv2.1.126のリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126",
+    "Claude Code v2.1.126がリリースされました。\n\n最新バージョンでの主な更新はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.126\n\nあわせてTypeScript SDKもアップデート。\n\n▶︎ claude-code v2.1.126\n▶︎ anthropic-sdk-typescript sdk-v0.92.0\n▶︎ bedrock-sdk-v0.29.1\n\nClaude Codeは、ターミナル上で動くAIコーディングエージェント。\nSDKの更新により、より安定した開発体験が期待できます😊\n\n気になる方はリリースノートをチェックしてみて👀"
   ],
   "types": [
     "速報",

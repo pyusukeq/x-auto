@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-05-04T03:04:51.508906",
+  "collected_at": "2026-05-04T08:05:28.763099",
   "date": "2026-05-04",
   "total_found": 11,
   "top_stories": [
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-05-04T03:04:50.548555+00:00",
+      "created": "2026-05-04T08:05:28.017914+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.98412338015
+      "final_score": 19997.987680646744
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-01T02:05:23Z",
-      "final_score": 1252.4226073161376
+      "final_score": 1228.5638054722222
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-30T19:41:00Z",
-      "final_score": 1221.9159935595237
+      "final_score": 1198.0571917156085
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-30T19:40:53Z",
-      "final_score": 1221.9067343002646
+      "final_score": 1198.0479324563494
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-29T03:29:13Z",
-      "final_score": 1030.5046178981481
+      "final_score": 1006.6458160542329
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T22:05:15Z",
-      "final_score": 1004.7929776865079
+      "final_score": 980.9341758425926
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -78,37 +78,37 @@
       "score": 800,
       "comments": 0,
       "created": "2026-04-28T00:31:31Z",
-      "final_score": 902.1157290092592
+      "final_score": 878.2569271653438
+    },
+    {
+      "source": "Hacker News",
+      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro",
+      "url": "https://github.com/aattaran/deepclaude",
+      "external_url": "https://github.com/aattaran/deepclaude",
+      "score": 410,
+      "comments": 151,
+      "created": "2026-05-03T22:13:20+00:00",
+      "final_score": 871.414694352133
     },
     {
       "source": "Hacker News",
       "title": "Agentic Coding Is a Trap",
       "url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
       "external_url": "https://larsfaye.com/articles/agentic-coding-is-a-trap",
-      "score": 220,
-      "comments": 153,
+      "score": 343,
+      "comments": 247,
       "created": "2026-05-03T22:52:07+00:00",
-      "final_score": 510.98380960453045
-    },
-    {
-      "source": "Hacker News",
-      "title": "DeepClaude – Claude Code agent loop with DeepSeek V4 Pro, 17x cheaper",
-      "url": "https://github.com/aattaran/deepclaude",
-      "external_url": "https://github.com/aattaran/deepclaude",
-      "score": 182,
-      "comments": 88,
-      "created": "2026-05-03T22:13:20+00:00",
-      "final_score": 402.73635149775464
+      "final_score": 790.6702964110301
     },
     {
       "source": "Hacker News",
       "title": "Show HN: Ableton Live MCP",
       "url": "https://github.com/bschoepke/ableton-live-mcp",
       "external_url": "https://github.com/bschoepke/ableton-live-mcp",
-      "score": 67,
-      "comments": 48,
+      "score": 80,
+      "comments": 52,
       "created": "2026-05-03T18:05:28+00:00",
-      "final_score": 154.41475678865245
+      "final_score": 179.33323239907406
     }
   ]
 }
