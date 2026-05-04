@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>リライト下書き 2026-05-04</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  padding: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+header { text-align: center; padding: 16px 0 8px; }
+header h1 { font-size: 20px; color: #0f1419; }
+header p { font-size: 13px; color: #536471; margin-top: 4px; }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.card-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #536471;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+.warning { font-size: 12px; color: #f4212e; margin-bottom: 8px; }
+.post-text {
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #0f1419;
+  padding: 12px;
+  background: #f7f9f9;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+.post-text.failed { border-left: 3px solid #f4212e; }
+.copy-btn {
+  display: block;
+  width: 100%;
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.copy-btn.done { background: #00ba7c; }
+.copy-btn:active { opacity: 0.85; }
+.source-url {
+  font-size: 12px;
+  color: #536471;
+  background: #f7f9f9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  word-break: break-all;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>リライト下書き 2026-05-04</h1>
+  <p>生成: 2026-05-04 12:15 JST | 元URL: https://x.com/Mnilax/status/2050321700802408552</p>
+</header>
+<div class="card"><div class="card-label">リライト投稿</div><div class="post-text" id="p0">【保存版】
+これは知らないと損してた…！
+
+Claude Codeの生みの親・Boris Cherny氏が、トークンを73%も無駄にする9つのパターンを公開。
+プロンプトを入力する前から、すでに消費が始まってるって知ってましたか？
+
+https://x.com/Mnilax/status/2050321700802408552/video/1
+
+ポイントはここ👇
+
+▶︎ CLAUDE.mdだけで14%を消費
+▶︎ 会話履歴の蓄積でさらに13%が消える
+▶︎ 合計9つのパターンが無駄遣いの原因
+
+つまり、
+
+設定ファイルと履歴の管理を見直すだけで、トークン効率はかなり改善できるかもしれません✨
+
+ぜひチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button><div class="source-url">元ツイートURL（動画引用時に使用）:<br>https://x.com/Mnilax/status/2050321700802408552/video/1</div></div>
+<script>
+function copy(id, btn) {
+  var text = document.getElementById(id).innerText;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() { done(btn); }, function() { fallback(text, btn); });
+  } else {
+    fallback(text, btn);
+  }
+}
+function fallback(text, btn) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+  document.body.appendChild(ta);
+  ta.focus(); ta.select(); ta.setSelectionRange(0, 99999);
+  try { document.execCommand('copy'); done(btn); }
+  catch(e) { alert('コピーできませんでした。長押しで選択してください。'); }
+  document.body.removeChild(ta);
+}
+function done(btn) {
+  btn.textContent = 'コピー完了 ✓';
+  btn.classList.add('done');
+  setTimeout(function() { btn.textContent = 'コピー'; btn.classList.remove('done'); }, 2500);
+}
+</script>
+</body>
+</html>
