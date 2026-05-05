@@ -173,7 +173,8 @@ def save_daily_html(posts: list, types: list, review_failed: list,
 
 def save_rewrite_html(text: str, original_url: str, date_str: str):
     """リライト下書きを docs/rewrite.html に保存する"""
-    card = _card("p0", "リライト投稿", text, source_url=original_url)
+    video_url = original_url.rstrip("/") + "/video/1"
+    card = _card("p0", "リライト投稿", text, source_url=video_url)
 
     html_content = _page(
         title=f"リライト下書き {date_str}",
