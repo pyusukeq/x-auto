@@ -84,12 +84,23 @@ class _TextExtractor(HTMLParser):
         return " ".join(self._parts)
 
 
-def to_video_url(tweet_url: str) -> str:
-    """ツイートURLを /video/1 形式に変換する"""
-    url = tweet_url.rstrip("/")
-    if "/video/" not in url:
-        url = url + "/video/1"
-    return url
+def ensure_duplicate_url(text: str, url: str) -> str:
+    """URLを2回含める（1回目→動画インライン変換、2回目→リンクとして残存）"""
+    count = text.count(url)
+    if count >= 2:
+        return text
+    if count == 0:
+        # URLがない場合は先頭に2回挿入
+        lines = text.split("\n")
+        insert_at = min(3, len(lines))
+        lines.insert(insert_at, url)
+        lines.insert(insert_at + 1, url)
+        return "\n".join(lines)
+    # 1回だけある場合：直後に2回目を挿入
+    idx = text.find(url)
+    after = idx + len(url)
+    separator = "\n" if text[after:after+1] != "\n" else ""
+    return text[:after] + separator + "\n" + url + text[after:]
 
 
 def fetch_tweet_content(url: str) -> dict:
@@ -113,13 +124,13 @@ def fetch_tweet_content(url: str) -> dict:
 
 def rewrite_post(tweet: dict, client) -> str:
     """Claude APIで日本語X投稿にリライトする（動画URLを3〜4行目に必ず挿入）"""
-    video_url = to_video_url(tweet["url"])
+    url = tweet["url"]
     prompt = (
         f"以下の英語X投稿を日本語でリライトしてください。\n\n"
         f"【元の投稿】\n"
         f"著者: @{tweet['author']}\n"
         f"内容: {tweet['text']}\n\n"
-        f"【重要】動画URL「{video_url}」をフック（感情的な一言）の直後・3〜4行目に必ず挿入してください。"
+        f"【重要】動画URL「{url}」をフック（感情的な一言）の直後・3〜4行目に必ず挿入してください。"
         f"URLは一切変更・省略しないこと。\n\n"
         f"リライト後の投稿テキストのみを出力してください（説明・コメント不要）。"
     )
@@ -131,14 +142,8 @@ def rewrite_post(tweet: dict, client) -> str:
     )
     text = message.content[0].text.strip()
 
-    # URLが含まれていなければ強制挿入
-    if video_url not in text:
-        lines = text.split("\n")
-        insert_at = min(3, len(lines))
-        lines.insert(insert_at, video_url)
-        text = "\n".join(lines)
-        print(f"  動画URLを強制挿入しました（{insert_at}行目）")
-
+    # URLを必ず2回含める（インライン表示＋リンク残存のため）
+    text = ensure_duplicate_url(text, url)
     return text
 
 
@@ -156,8 +161,7 @@ def main():
         sys.exit(1)
 
     print(f"=== URL指定リライト ===")
-    print(f"URL: {url}")
-    print(f"動画URL: {to_video_url(url)}\n")
+    print(f"URL: {url}\n")
 
     print("ツイート内容を取得中...")
     try:
