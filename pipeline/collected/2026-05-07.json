@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-05-07T08:01:45.134833",
+  "date": "2026-05-07",
+  "total_found": 19,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-07T08:01:43.646601+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.975396276754
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.132: v2.1.132",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "body": "## What's changed\n\n- Added `CLAUDE_CODE_SESSION_ID` environment variable to the Bash tool subprocess environment, matching the `session_id` passed to hooks\n- Added `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` env var to opt out of the fullscreen alternate-screen renderer and keep the conversation in the terminal's native scrollback\n- Added a \"Pasting…\" footer hint while a Ctrl+V image paste is being read from the clipboard\n- Fixed external SIGINT (e.g. IDE stop button, `kill -INT`) not running graceful shutdown — terminal modes are now restored and the `--resume` hint is printed instead of an abru",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T22:08:13Z",
+      "final_score": 1552.8940016097883
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.95.0: sdk: v0.95.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0",
+      "body": "## 0.95.0 (2026-05-06)\n\nFull Changelog: [sdk-v0.94.0...sdk-v0.95.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.94.0...sdk-v0.95.0)\n\n### Features\n\n* **api:** add support for Managed Agents multiagents and outcomes, webhooks, vault validation ([e0c0e9b](https://github.com/anthropics/anthropic-sdk-typescript/commit/e0c0e9bef90b1919a5b806eb252e028981841e68))\n\n\n### Bug Fixes\n\n* **api:** Adjust webhook configuration ([deed3f6](https://github.com/anthropics/anthropic-sdk-typescript/commit/deed3f6290c0728dfc688e19117e1c01efb81a52))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T15:07:56Z",
+      "final_score": 1519.5381815039682
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.100.0: v0.100.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0",
+      "body": "## 0.100.0 (2026-05-06)\n\nFull Changelog: [v0.99.0...v0.100.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.99.0...v0.100.0)\n\n### Features\n\n* **api:** add support for Managed Agents multiagents and outcomes, webhooks, vault validation ([3b3deee](https://github.com/anthropics/anthropic-sdk-python/commit/3b3deee9c479ce5b54411a8572b66c5a90f1d50f))\n\n\n### Bug Fixes\n\n* **api:** Adjust webhook configuration ([8c3339e](https://github.com/anthropics/anthropic-sdk-python/commit/8c3339e532458e93585f2faf4f284ccbb5829717))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T15:07:02Z",
+      "final_score": 1519.4667529325397
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.131: v2.1.131",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.131",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.131",
+      "body": "## What's changed\n\n- Fixed VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (`createRequire` polyfill bug)\n- Fixed Mantle endpoint authentication failing with missing `x-api-key` header\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T07:47:56Z",
+      "final_score": 1484.6175465833333
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.129: v2.1.129",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.129",
+      "body": "## What's changed\n\n- Added `--plugin-url <url>` flag to fetch a plugin `.zip` archive from a URL for the current session\n- Added `CLAUDE_CODE_FORCE_SYNC_OUTPUT=1` env var to force-enable synchronized output on terminals that auto-detection misses (e.g. Emacs `eat`)\n- Added `CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE`: when set on Homebrew or WinGet installations, Claude Code runs the upgrade command in the background and prompts to restart\n- Plugin manifests: `themes` and `monitors` should now be declared under `\"experimental\": { ... }`. Top-level declarations still work but `claude plugin valida",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T01:40:18Z",
+      "final_score": 1455.4402979060847
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.99.0: v0.99.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
+      "body": "## 0.99.0 (2026-05-05)\n\nFull Changelog: [v0.98.1...v0.99.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.98.1...v0.99.0)\n\n### Features\n\n* **client:** allow targeting a workspace for OIDC federation token exchange ([4ba8067](https://github.com/anthropics/anthropic-sdk-python/commit/4ba8067daa634691ea8c8a3b970d42bdaf5f04eb))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-05T16:02:56Z",
+      "final_score": 1409.6175465833333
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.94.0: sdk: v0.94.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.94.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.94.0",
+      "body": "## 0.94.0 (2026-05-05)\n\nFull Changelog: [sdk-v0.93.0...sdk-v0.94.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.93.0...sdk-v0.94.0)\n\n### Features\n\n* **client:** allow targeting a workspace for OIDC federation token exchange ([bde6620](https://github.com/anthropics/anthropic-sdk-typescript/commit/bde6620d68c2dd9e8e641b4cfed8847486ff046f))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-05T16:02:17Z",
+      "final_score": 1409.565959281746
+    },
+    {
+      "source": "Hacker News",
+      "title": "Vibe coding and agentic engineering are getting closer than I'd like",
+      "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "external_url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+      "score": 567,
+      "comments": 606,
+      "created": "2026-05-06T15:06:37+00:00",
+      "final_score": 1379.8986236409376
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.128: v2.1.128",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.128",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.128",
+      "body": "## What's changed\n\n- Bare `/color` (no args) now picks a random session color\n- `/mcp` now shows the tool count for connected servers and flags servers that connected with 0 tools\n- `--plugin-dir` now accepts `.zip` plugin archives in addition to directories\n- `--channels` now works with console (API key) authentication — console orgs with managed settings must set `channelsEnabled: true` to enable\n- Updated `/model` picker: collapsed duplicate Opus 4.7 entries, and current Opus now shows as \"Opus\" instead of \"Opus 4.7\"\n- Subprocesses (Bash, hooks, MCP, LSP) no longer inherit `OTEL_*` environm",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-04T23:01:47Z",
+      "final_score": 1328.5738957896824
+    }
+  ]
+}
