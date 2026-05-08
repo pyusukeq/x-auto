@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-05-07</title>
+<title>X投稿下書き 2026-05-08</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,56 +73,45 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-05-07</h1>
-  <p>生成: 2026-05-07 17:02 JST</p>
+  <h1>X投稿下書き 2026-05-08</h1>
+  <p>生成: 2026-05-08 14:48 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+待ってたやつ！！
 
-Claude Code v2.1.132がリリース。
-BashツールのサブプロセスにセッションIDが環境変数として自動設定されるようになった。
+Claude Code v2.1.132・v2.1.133が相次いでリリース。
+地味に便利な環境変数と設定が追加された。
 
-『CLAUDE_CODE_SESSION_ID』がサブプロセス環境変数として追加。
+具体的には👇
 
-具体的には⏬
+▶︎ `CLAUDE_CODE_SESSION_ID` がBashツールのサブプロセスにも渡るように
+▶︎ `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` でフルスクリーン表示をオフにできる
+▶︎ worktreeのブランチ起点を `fresh` か `head` で選べる新設定追加
 
-▶︎ フックに渡されるsession_idとBashツールを環境変数経由で連携可能に
-▶︎ フルスクリーン表示をオフにできる新環境変数も追加
-▶︎ ターミナル占有が気になる方に嬉しいアップデート✨
+フック連携やターミナル表示まわりの痒いところに手が届くアプデですよね。
 
-つまり、
+詳細はGitHubのリリースノートでチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.133</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最新リリース（v2.1.132〜v2.1.133）について、リリースノートで詳細を確認してみて👀
 
-フックとBashの連携がより柔軟になり
-ターミナル表示も自分好みに調整できるようになりましたね。
+▶︎ v2.1.132のリリースノート:
+https://github.com/anthropics/claude-code/releases/tag/v2.1.132
 
-リリースノートはこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.132</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【最新情報】
+▶︎ v2.1.133のリリースノート:
+https://github.com/anthropics/claude-code/releases/tag/v2.1.133
 
-Claude Code v2.1.132がリリースされています。
-
-詳細な変更内容はリリースノートで確認できます。
-
-最新バージョンへのアップデートはこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.132</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+内容の詳細はリリースノート本文でご確認ください。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【リリース情報】
+TypeScript SDKがアップデート！
 
-TypeScript・Python両SDKのv0.95.0 / v0.100.0で
-Managed Agentsがマルチエージェントに対応。
+anthropic-sdk-typescript v0.95.0・v0.95.1がリリース。
 
-『multiagents・outcomes・webhooks・vault validationを一括サポート』
+確認されたアップデート内容はリリースノートをチェック👀
 
-ポイントはここ👇
+▶︎ v0.95.0: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0
+▶︎ v0.95.1: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.1
 
-▶︎ 複数エージェントの連携をSDKから直接制御できるように
-▶︎ Webhookでエージェントの処理結果を外部サービスへ即連携
-▶︎ Vault validationでシークレット管理もより安全に
-
-本格的なマルチエージェントシステムが
-SDKだけで組める構成が整ってきましたね🙌
-
-リリースはこちら👇
-TypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0
-Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+TypeScript SDKを使っている方は内容を確認してみてください。</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

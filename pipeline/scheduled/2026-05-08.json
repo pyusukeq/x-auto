@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-08",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.132・v2.1.133が相次いでリリース。\n地味に便利な環境変数と設定が追加された。\n\n具体的には👇\n\n▶︎ `CLAUDE_CODE_SESSION_ID` がBashツールのサブプロセスにも渡るように\n▶︎ `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` でフルスクリーン表示をオフにできる\n▶︎ worktreeのブランチ起点を `fresh` か `head` で選べる新設定追加\n\nフック連携やターミナル表示まわりの痒いところに手が届くアプデですよね。\n\n詳細はGitHubのリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+    "Claude Codeの最新リリース（v2.1.132〜v2.1.133）について、リリースノートで詳細を確認してみて👀\n\n▶︎ v2.1.132のリリースノート:\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.132\n\n▶︎ v2.1.133のリリースノート:\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.133\n\n内容の詳細はリリースノート本文でご確認ください。",
+    "【リリース情報】\nTypeScript SDKがアップデート！\n\nanthropic-sdk-typescript v0.95.0・v0.95.1がリリース。\n\n確認されたアップデート内容はリリースノートをチェック👀\n\n▶︎ v0.95.0: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0\n▶︎ v0.95.1: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.1\n\nTypeScript SDKを使っている方は内容を確認してみてください。"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
