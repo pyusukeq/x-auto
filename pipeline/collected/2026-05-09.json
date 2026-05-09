@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-05-09T06:27:42.110843",
+  "date": "2026-05-09",
+  "total_found": 19,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-09T06:27:41.104043+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98335561632
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.137: v2.1.137",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.137",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.137",
+      "body": "## What's changed\n\n- [VSCode] Fixed extension failing to activate on Windows\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-09T00:11:04Z",
+      "final_score": 1570.10831905291
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.136: v2.1.136",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.136",
+      "body": "## What's changed\n\n- Added `CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL` to re-enable the session quality survey for enterprises capturing responses through OpenTelemetry\n- Added `settings.autoMode.hard_deny` for auto mode classifier rules that block unconditionally regardless of user intent or allow exceptions\n- Fixed MCP servers configured in `.mcp.json`, plugins, and claude.ai connectors silently disappearing after `/clear` in the VS Code extension, JetBrains plugin, and Agent SDK\n- Fixed a rare login loop where a concurrent credential write could overwrite a freshly-rotated OAuth token and",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-08T18:39:08Z",
+      "final_score": 1543.7644037089947
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.133: v2.1.133",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+      "body": "## What's changed\n\n- Added `worktree.baseRef` setting (`fresh` | `head`) to choose whether `--worktree`, `EnterWorktree`, and agent-isolation worktrees branch from `origin/<default>` or local `HEAD`. **Note:** the default `fresh` changes `EnterWorktree`'s base back to `origin/<default>` (it has been local `HEAD` since 2.1.128) — set `worktree.baseRef: \"head\"` to keep unpushed commits in new worktrees\n- Added `sandbox.bwrapPath` and `sandbox.socatPath` managed settings (Linux/WSL) to specify custom bubblewrap and socat binary locations\n- Added `parentSettingsBehavior` admin-tier key (`'first-wi",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-07T23:49:04Z",
+      "final_score": 1454.076573021164
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.95.1: sdk: v0.95.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.1",
+      "body": "## 0.95.1 (2026-05-07)\n\nFull Changelog: [sdk-v0.95.0...sdk-v0.95.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.95.0...sdk-v0.95.1)\n\n### Chores\n\n* redact api-key headers in debug logs ([fad8fee](https://github.com/anthropics/anthropic-sdk-typescript/commit/fad8feeb51d1b9bafaf85cf8345bb28627728e00))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-07T15:10:06Z",
+      "final_score": 1412.8887423333333
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.132: v2.1.132",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.132",
+      "body": "## What's changed\n\n- Added `CLAUDE_CODE_SESSION_ID` environment variable to the Bash tool subprocess environment, matching the `session_id` passed to hooks\n- Added `CLAUDE_CODE_DISABLE_ALTERNATE_SCREEN=1` env var to opt out of the fullscreen alternate-screen renderer and keep the conversation in the terminal's native scrollback\n- Added a \"Pasting…\" footer hint while a Ctrl+V image paste is being read from the clipboard\n- Fixed external SIGINT (e.g. IDE stop button, `kill -INT`) not running graceful shutdown — terminal modes are now restored and the `--resume` hint is printed instead of an abru",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T22:08:13Z",
+      "final_score": 1331.7868904814816
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.95.0: sdk: v0.95.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.0",
+      "body": "## 0.95.0 (2026-05-06)\n\nFull Changelog: [sdk-v0.94.0...sdk-v0.95.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.94.0...sdk-v0.95.0)\n\n### Features\n\n* **api:** add support for Managed Agents multiagents and outcomes, webhooks, vault validation ([e0c0e9b](https://github.com/anthropics/anthropic-sdk-typescript/commit/e0c0e9bef90b1919a5b806eb252e028981841e68))\n\n\n### Bug Fixes\n\n* **api:** Adjust webhook configuration ([deed3f6](https://github.com/anthropics/anthropic-sdk-typescript/commit/deed3f6290c0728dfc688e19117e1c01efb81a52))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T15:07:56Z",
+      "final_score": 1298.4310703756612
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.100.0: v0.100.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0",
+      "body": "## 0.100.0 (2026-05-06)\n\nFull Changelog: [v0.99.0...v0.100.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.99.0...v0.100.0)\n\n### Features\n\n* **api:** add support for Managed Agents multiagents and outcomes, webhooks, vault validation ([3b3deee](https://github.com/anthropics/anthropic-sdk-python/commit/3b3deee9c479ce5b54411a8572b66c5a90f1d50f))\n\n\n### Bug Fixes\n\n* **api:** Adjust webhook configuration ([8c3339e](https://github.com/anthropics/anthropic-sdk-python/commit/8c3339e532458e93585f2faf4f284ccbb5829717))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T15:07:02Z",
+      "final_score": 1298.3596418042328
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.131: v2.1.131",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.131",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.131",
+      "body": "## What's changed\n\n- Fixed VS Code extension failing to activate on Windows due to a hardcoded build path in the bundled SDK (`createRequire` polyfill bug)\n- Fixed Mantle endpoint authentication failing with missing `x-api-key` header\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-06T07:47:56Z",
+      "final_score": 1263.5104354550265
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.99.0: v0.99.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.99.0",
+      "body": "## 0.99.0 (2026-05-05)\n\nFull Changelog: [v0.98.1...v0.99.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.98.1...v0.99.0)\n\n### Features\n\n* **client:** allow targeting a workspace for OIDC federation token exchange ([4ba8067](https://github.com/anthropics/anthropic-sdk-python/commit/4ba8067daa634691ea8c8a3b970d42bdaf5f04eb))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-05T16:02:56Z",
+      "final_score": 1188.5104354550265
+    }
+  ]
+}
