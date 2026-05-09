@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>動画スレッド下書き 2026-05-09</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  padding: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+header { text-align: center; padding: 16px 0 8px; }
+header h1 { font-size: 20px; color: #0f1419; }
+header p { font-size: 13px; color: #536471; margin-top: 4px; }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.card-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #536471;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+.warning { font-size: 12px; color: #f4212e; margin-bottom: 8px; }
+.post-text {
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #0f1419;
+  padding: 12px;
+  background: #f7f9f9;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+.post-text.failed { border-left: 3px solid #f4212e; }
+.copy-btn {
+  display: block;
+  width: 100%;
+  background: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.copy-btn.done { background: #00ba7c; }
+.copy-btn:active { opacity: 0.85; }
+.source-url {
+  font-size: 12px;
+  color: #536471;
+  background: #f7f9f9;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  word-break: break-all;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>動画スレッド下書き 2026-05-09</h1>
+  <p>生成: 2026-05-09 23:22 JST | 5投稿</p>
+</header>
+<div class="card"><div class="card-label">投稿1（用語解説）</div><div class="post-text" id="p0">【まず前提の用語だけ押さえて】
+この動画に出てくる言葉、これだけ知ってればOK↓
+
+- Skills（スキル） ＝ エージェントに覚えさせる「専門知識のかたまり」
+- SKILL.md ＝ スキルの中心となる説明ファイル（読み込むとエージェントが使い方を理解する）
+- Progressive Disclosure ＝ 必要な情報だけ段階的に渡す仕組み
+- Composability ＝ スキル同士を組み合わせて新しい能力を作ること</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Anthropicの中の人が語った核心はこれ。「エージェントを作るな、スキルを作れ」
+
+エージェントは汎用的すぎて制御が難しい。でもスキルは「税務の専門家」「数学の天才」みたいに役割を切り出せる。タスクごとに専門家を呼び出す設計にすると、精度が劇的に上がる。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（解説）</div><div class="post-text" id="p2">スキルの実体はMarkdownファイル1枚。
+
+YAMLで名前と説明を書いて、あとは普通の文章でやり方を説明するだけ。「プレゼン作るときはslide-decks.mdを読め」みたいな参照も書ける。これを読んだClaudeが自分で判断して動く。シンプルすぎて拍子抜けするくらい。</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿4（解説）</div><div class="post-text" id="p3">スキルは育てるもの、という考え方が面白い。
+
+評価（ちゃんと動くか確認）→バージョン管理（日付で履歴を残す）→組み合わせ（Brand Style＋PowerPoint＝Branded Decks）という流れで進化させる。Day1は「賢いだけ」、Day30には「めちゃくちゃ使える」状態になる。</div><button class="copy-btn" onclick="copy('p3', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿5（解説）</div><div class="post-text" id="p4">まとめると、やることはシンプル。
+
+① タスクを専門領域に分解する
+② 各領域をSKILL.mdに書き起こす
+③ テストして改善、バージョンを重ねる
+④ スキル同士を組み合わせてより高度な能力を作る
+
+エージェントを1から設計するより、スキルを積み上げる方が再利用できて圧倒的に効率がいい。</div><button class="copy-btn" onclick="copy('p4', this)">コピー</button></div>
+<div class="card"><div class="card-label">元ツイートURL</div><div class="source-url">https://x.com/1osabori/status/2052652797569675282</div></div>
+<script>
+function copy(id, btn) {
+  var text = document.getElementById(id).innerText;
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() { done(btn); }, function() { fallback(text, btn); });
+  } else {
+    fallback(text, btn);
+  }
+}
+function fallback(text, btn) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+  document.body.appendChild(ta);
+  ta.focus(); ta.select(); ta.setSelectionRange(0, 99999);
+  try { document.execCommand('copy'); done(btn); }
+  catch(e) { alert('コピーできませんでした。長押しで選択してください。'); }
+  document.body.removeChild(ta);
+}
+function done(btn) {
+  btn.textContent = 'コピー完了 ✓';
+  btn.classList.add('done');
+  setTimeout(function() { btn.textContent = 'コピー'; btn.classList.remove('done'); }, 2500);
+}
+</script>
+</body>
+</html>
