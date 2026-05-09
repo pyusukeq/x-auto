@@ -1,0 +1,44 @@
+name: Video Thread from URL
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: '動画付きX投稿のURL（例: https://x.com/username/status/...）'
+        required: true
+        type: string
+
+jobs:
+  video-thread:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Generate video thread
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/video_thread.py "${{ github.event.inputs.url }}"
+
+      - name: Commit draft
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add draft/ docs/
+          git diff --cached --quiet || git commit -m "draft: video thread $(date +'%Y-%m-%d')"
+          git push

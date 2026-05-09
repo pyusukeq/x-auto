@@ -171,6 +171,32 @@ def save_daily_html(posts: list, types: list, review_failed: list,
     print(f"HTML下書き保存: {path}")
 
 
+def save_thread_html(posts: list, original_url: str, date_str: str):
+    """動画スレッド下書きを docs/thread.html に保存する"""
+    cards = []
+    for i, post in enumerate(posts):
+        label = f"投稿{i+1}{'（用語解説）' if i == 0 else '（解説）'}"
+        cards.append(_card(f"p{i}", label, post))
+
+    url_card = (
+        f'<div class="card">'
+        f'<div class="card-label">元ツイートURL</div>'
+        f'<div class="source-url">{_html.escape(original_url)}</div>'
+        f'</div>'
+    )
+
+    html_content = _page(
+        title=f"動画スレッド下書き {date_str}",
+        subtitle=f"生成: {_jst_now()} | {len(posts)}投稿",
+        cards_html="\n".join(cards) + "\n" + url_card,
+    )
+    os.makedirs(DOCS_DIR, exist_ok=True)
+    path = os.path.join(DOCS_DIR, "thread.html")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html_content)
+    print(f"スレッドHTML保存: {path}")
+
+
 def save_rewrite_html(text: str, original_url: str, date_str: str):
     """リライト下書きを docs/rewrite.html に保存する"""
     video_url = original_url.rstrip("/") + "/video/1"
