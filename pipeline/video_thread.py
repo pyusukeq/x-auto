@@ -100,32 +100,38 @@ def download_video(tweet_url: str, output_dir: str) -> str | None:
 
 
 def extract_frames(video_path: str, output_dir: str, num_frames: int = 6) -> list[str]:
-    """ffmpegで均等間隔のフレームを抽出する"""
-    probe = subprocess.run(
-        ["ffprobe", "-v", "quiet", "-print_format", "json",
-         "-show_streams", video_path],
-        capture_output=True, text=True
-    )
+    """ffmpegで均等間隔のフレームを抽出する。ffmpegが使えない場合は空リストを返す"""
     duration = 60.0
     try:
+        probe = subprocess.run(
+            ["ffprobe", "-v", "quiet", "-print_format", "json",
+             "-show_streams", video_path],
+            capture_output=True, text=True, timeout=30
+        )
         info = json.loads(probe.stdout)
         for stream in info.get("streams", []):
             if stream.get("codec_type") == "video":
                 duration = float(stream.get("duration", 60.0))
                 break
-    except Exception:
-        pass
+    except FileNotFoundError:
+        print("  ffprobe が見つかりません（フレーム抽出をスキップ）")
+        return []
+    except Exception as e:
+        print(f"  動画情報取得エラー: {e}")
 
     frames = []
     interval = duration / (num_frames + 1)
     for i in range(num_frames):
         timestamp = interval * (i + 1)
         frame_path = os.path.join(output_dir, f"frame_{i:02d}.jpg")
-        subprocess.run(
-            ["ffmpeg", "-ss", str(timestamp), "-i", video_path,
-             "-vframes", "1", "-q:v", "3", "-y", frame_path],
-            capture_output=True, timeout=30
-        )
+        try:
+            subprocess.run(
+                ["ffmpeg", "-ss", str(timestamp), "-i", video_path,
+                 "-vframes", "1", "-q:v", "3", "-y", frame_path],
+                capture_output=True, timeout=30
+            )
+        except Exception:
+            continue
         if os.path.exists(frame_path):
             frames.append(frame_path)
     return frames
