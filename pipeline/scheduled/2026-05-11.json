@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-11",
+  "posts": [
+    "【速報】\nClaude Code v2.1.137・v2.1.138が連続リリース。\nWindowsユーザーには嬉しいアップデートです。\n\n具体的には👀\n\n▶︎ v2.1.137：VSCode拡張がWindowsで起動しない問題を修正\n▶︎ v2.1.138：追加の修正を含むアップデート\n\n詳細はリリースノートで確認できます。\nWindowsで詰まっていた方には大きな改善かもしれません✨\n\n最新版へのアップデートをチェックしてみて\n→ https://github.com/anthropics/claude-code/releases/tag/v2.1.138",
+    "【Claude Code情報】\n\nClaude Codeのworktreeに\n新しい設定オプション『worktree.baseRef』が追加されました。\n\nポイントはここ\n\n▶︎ `fresh`（デフォルト）は`origin/<default>`からブランチを作成\n▶︎ `head`はローカルのHEADからブランチを作成\n▶︎ `--worktree`・`EnterWorktree`・エージェント分離worktreeに適用される\n\nworktreeの起点をプロジェクトの運用に合わせて選べるようになりました。\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.133",
+    "【新情報】\nClaude Codeに2つの新機能が追加された。\n\n『CLAUDE_CODE_ENABLE_FEEDBACK_SURVEY_FOR_OTEL』\n\n▶︎ OpenTelemetry経由でセッション品質アンケートを収集可能に\n▶︎ `settings.autoMode.hard_deny`で意図に関わらず無条件ブロックするルールも設定できる\n▶︎ 企業の監査・品質管理フローにそのまま組み込める\n\n自社のオブザーバビリティ基盤にClaude Codeの品質データを取り込めるようになったということ。大規模運用している企業には刺さる内容かもしれません🙌\n\n詳細はリリースノートを確認👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.138"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
