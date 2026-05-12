@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-12",
+  "posts": [
+    "【速報】\n神アプデきた！！\n\nClaude Code v2.1.139で\n全セッションを一覧管理できる「Agent View」が登場。\n\n『実行中・ブロック中・完了済みのセッションを1画面で把握できる』\n\n具体的には⏬\n\n▶︎ `claude agents` コマンドで起動\n▶︎ 実行中・ブロック中・完了済みセッションを一覧表示\n▶︎ `/goal` コマンドで完了条件を指定し自律的に作業継続\n\nつまり、\n\n複数の並行タスクをまとめて把握・管理できる時代になってきましたね。\n\n詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+    "【最新情報】\n\nClaude Code v2.1.139がリリースされました。\n\n詳細はリリースノートをご確認ください👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.139\n\nあわせて、Anthropic SDKのアップデートも公開されています。\n\n▶︎ anthropic-sdk-python v0.101.0\n▶︎ anthropic-sdk-typescript sdk-v0.95.2 / aws-sdk-v0.3.0\n\n各リリースの詳細は公式GitHubからご確認を👀",
+    "【リリース情報】\n待ってたやつ！！\n\nPython・TypeScript両方のSDKに\nAWS向けClaudeクライアントが追加された。\n\n『AWS Platform上でClaudeを呼び出す専用クライアントがSDKに統合』\n\n具体的には⏬\n\n▶︎ Python SDK v0.101.0 / TypeScript aws-sdk v0.3.0でリリース\n▶︎ 既存のAWSインフラにClaudeを組み込みやすくなる\n▶︎ AWSユーザーがClaude連携を構築しやすくなる\n\nつまり、\n\nAWS環境で開発しているチームはSDKをアップデートするだけで恩恵を受けられるかもしれません✨\n\n詳細はこちら👇\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
