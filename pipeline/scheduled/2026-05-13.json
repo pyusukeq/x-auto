@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-13",
+  "posts": [
+    "【アップデート情報】\n確認してみて！\n\nClaude Code v2.1.139で\n`claude agents`コマンドによる\nセッション一覧表示機能が追加。\n\n具体的には⏬\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.139\n\n▶︎ 実行中・待機中・完了済みのセッションを一元管理\n▶︎ v2.1.140ではエージェントのカラーパレットも更新済み\n\nつまり、\n\n複数セッションの状態を把握しながら\n作業を進めやすくなりましたね✨\n\n詳細はリリースノートをチェックしてみて👀",
+    "【保存推奨】\n\nClaude Codeの`/goal`コマンド\n使いこなせていますか？\n\n『完了条件を設定してゴールを明示できる新機能』\n\nポイントはここ👇\n\n▶︎ `/goal`で「何を達成したら終わりか」を記述できる\n▶︎ 作業のゴールを明示することでより意図に沿った動作が期待できる\n▶︎ `disableAllHooks`環境でのハング問題も別途修正済み\n\nつまり、\n\n「最後まで意図どおりに任せたい」という場面で\n役立ちそうな機能ですよね😊\n\n`/goal`はv2.1.140、ハング修正はv2.1.139での変更です。詳細はリリースノートを確認してみて👀\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.140\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+    "【地味に便利】\nClaude Codeのエージェント指定が\nより柔軟になったのをご存知ですか？\n\n『`\"Code Reviewer\"`と書いても`code-reviewer`として認識されるように』\n\n結論はこれ👇\n\n▶︎ 大文字・小文字の違いを気にせず指定できる\n▶︎ ハイフン・スペースなどの区切り文字も自動で吸収\n▶︎ エージェント名のタイポによるエラーが激減する\n\nつまり、\n\n細かい表記ゆれを気にせずエージェントを呼び出せるのは\n地味ながら開発体験がじわっと上がる変更ですよね🙌\n\nリリースノートも合わせてチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.140"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
