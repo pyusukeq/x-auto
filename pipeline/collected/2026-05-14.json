@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-05-14T08:08:00.810961",
+  "date": "2026-05-14",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-14T08:08:00.063158+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.987637562426
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.141: v2.1.141",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "body": "## What's changed\n\n- Added `terminalSequence` field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal\n- Added `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key\n- Added `ANTHROPIC_WORKSPACE_ID` environment variable for workload identity federation — scopes the minted token to a specific workspace when the federation rule covers more than one\n- Added `claude agents --cwd <path>` to scope the session list to a directory\n- `/feedback` can now includ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-13T23:19:16Z",
+      "final_score": 1558.0359644007935
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.102.0: v0.102.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
+      "body": "## 0.102.0 (2026-05-13)\n\nFull Changelog: [v0.101.0...v0.102.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.101.0...v0.102.0)\n\n### Features\n\n* **api:** Add BetaManagedAgentsSearchResultBlock types ([3681f10](https://github.com/anthropics/anthropic-sdk-python/commit/3681f1042608b6be4e5a56e8b52e6a619b9210f4))\n* **api:** Add support for cache diagnostics beta ([db51c6c](https://github.com/anthropics/anthropic-sdk-python/commit/db51c6caabb1bede4c2d671a96e6ef88e90ffaba))\n* **internal/types:** support eagerly validating pydantic iterators ([68dabb0](https://github.com/anthropics/ant",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-13T18:12:29Z",
+      "final_score": 1533.68808080291
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.96.0: sdk: v0.96.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.96.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.96.0",
+      "body": "## 0.96.0 (2026-05-13)\n\nFull Changelog: [sdk-v0.95.2...sdk-v0.96.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.95.2...sdk-v0.96.0)\n\n### Features\n\n* **api:** Add BetaManagedAgentsSearchResultBlock types ([08f02f3](https://github.com/anthropics/anthropic-sdk-typescript/commit/08f02f3d0c34a9563b17af40b227acf3b105f8a3))\n* **api:** Add support for cache diagnostics beta ([eafbd6d](https://github.com/anthropics/anthropic-sdk-typescript/commit/eafbd6d78b81253c79cb861de6a9232b18eb60de))\n\n\n### Bug Fixes\n\n* **zod:** ensure only zod/v4 types are used ([#992](https://github.com/",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-13T18:11:16Z",
+      "final_score": 1533.5915199563492
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.140: v2.1.140",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
+      "body": "## What's changed\n\n- Improved Agent tool `subagent_type` matching to accept case- and separator-insensitive values (e.g. `\"Code Reviewer\"` resolves to `code-reviewer`)\n- Updated agent color palette\n- Fixed `/goal` silently hanging when `disableAllHooks` or `allowManagedHooksOnly` is set — now shows a clear message instead of an indicator that never resolves\n- Fixed a regression in settings hot-reload where symlinked settings files caused misattributed change events and spurious `ConfigChange` hooks\n- Fixed `claude --bg` failing with \"connection dropped mid-request\" when the background service ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-12T21:09:45Z",
+      "final_score": 1433.471149585979
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.139: v2.1.139",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "body": "## What's changed\n\n- Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run `claude agents` to get started. See https://code.claude.com/docs/en/agent-view\n- Added `/goal` command: set a completion condition and Claude keeps working across turns until it's met. Works in interactive, `-p`, and Remote Control. Shows live elapsed/turns/tokens as an overlay panel\n- Added `/scroll-speed` command to tune mouse wheel scroll speed with a live preview\n- Added `claude plugin details <name>` to show a plugin's component inventory and project",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-11T18:43:42Z",
+      "final_score": 1307.5941654589947
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.101.0: v0.101.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
+      "body": "## 0.101.0 (2026-05-11)\n\nFull Changelog: [v0.100.0...v0.101.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.100.0...v0.101.0)\n\n### Features\n\n* **aws:** Add AWS client for Claude Platform on AWS ([1e70e3a](https://github.com/anthropics/anthropic-sdk-python/commit/1e70e3a21d57a96721685c1eca9cedd10cdd5b63))\n\n\n### Bug Fixes\n\n* **client:** add missing f-string prefix in file type error message ([06d109a](https://github.com/anthropics/anthropic-sdk-python/commit/06d109aaf36629ec15c8fb076c96aed722933600))\n\n\n### Chores\n\n* **examples:** bump tools_runner.py to claude-sonnet-4-5-2025092",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-11T15:46:22Z",
+      "final_score": 1293.5200913849205
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.3.0: aws-sdk: v0.3.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.0",
+      "body": "## 0.3.0 (2026-05-11)\n\nFull Changelog: [aws-sdk-v0.2.5...aws-sdk-v0.3.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.2.5...aws-sdk-v0.3.0)\n\n### Features\n\n* **aws:** Add AWS client for Claude Platform on AWS ([7a31772](https://github.com/anthropics/anthropic-sdk-typescript/commit/7a3177240660ccec6c4631cf02aeeb32ff4ea60a))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-11T15:46:13Z",
+      "final_score": 1293.5081866230157
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.95.2: sdk: v0.95.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.95.2",
+      "body": "## 0.95.2 (2026-05-11)\n\nFull Changelog: [sdk-v0.95.1...sdk-v0.95.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.95.1...sdk-v0.95.2)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-11T15:46:06Z",
+      "final_score": 1293.4989273637566
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "url": "https://github.com/cactus-compute/needle",
+      "external_url": "https://github.com/cactus-compute/needle",
+      "score": 667,
+      "comments": 188,
+      "created": "2026-05-12T18:03:11+00:00",
+      "final_score": 1276.8113361789501
+    }
+  ]
+}

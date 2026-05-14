@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-05-13</title>
+<title>X投稿下書き 2026-05-14</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,69 +73,63 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-05-13</h1>
-  <p>生成: 2026-05-13 17:21 JST</p>
+  <h1>X投稿下書き 2026-05-14</h1>
+  <p>生成: 2026-05-14 17:08 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【アップデート情報】
-確認してみて！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+待ってたやつ！！
 
-Claude Code v2.1.139で
-`claude agents`コマンドによる
-セッション一覧表示機能が追加。
+Claude Code最新版で
+待望の「Agent View」が登場。
 
-具体的には⏬
-https://github.com/anthropics/claude-code/releases/tag/v2.1.139
+『複数エージェントのセッションを一覧表示』
+
+具体的には👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.141
 
 ▶︎ 実行中・待機中・完了済みのセッションを一元管理
-▶︎ v2.1.140ではエージェントのカラーパレットも更新済み
+▶︎ 複数エージェントの状態を把握しながら長時間タスクを管理
+▶︎ 詳細は上記リリースノートで確認可能
 
 つまり、
 
-複数セッションの状態を把握しながら
-作業を進めやすくなりましたね✨
-
-詳細はリリースノートをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+複数エージェントの状態を把握しながら
+長時間タスクを任せやすくなった感じですよね👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Codeの`/goal`コマンド
-使いこなせていますか？
+Claude Code v2.1.141で
+フック機能がさらに使いやすくなった。
 
-『完了条件を設定してゴールを明示できる新機能』
+具体的には👀
+
+▶︎ `terminalSequence`フィールドをフックのJSON出力に追加
+▶︎ デスクトップ通知・ウィンドウタイトル変更・ベル音をフックから発火可能に
+▶︎ `CLAUDE_CODE_PLUGIN_PREFER_HTTPS`でHTTPS経由のプラグイン取得に対応
+
+つまり、
+
+フックのJSON出力に通知系のターミナルシーケンスを含められるようになったので、作業完了などのタイミングで通知を自動化しやすくなりましたね✨
+
+詳細はリリースノートで確認を↓
+https://github.com/anthropics/claude-code/releases/tag/v2.1.141</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+マジか！！
+
+Claude Code v2.1.141で
+エージェントの呼び出し方がかなり柔軟になった。
+
+『&quot;Code Reviewer&quot;と書いても`code-reviewer`として認識』
 
 ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.141
 
-▶︎ `/goal`で「何を達成したら終わりか」を記述できる
-▶︎ 作業のゴールを明示することでより意図に沿った動作が期待できる
-▶︎ `disableAllHooks`環境でのハング問題も別途修正済み
-
-つまり、
-
-「最後まで意図どおりに任せたい」という場面で
-役立ちそうな機能ですよね😊
-
-`/goal`はv2.1.140、ハング修正はv2.1.139での変更です。詳細はリリースノートを確認してみて👀
-
-https://github.com/anthropics/claude-code/releases/tag/v2.1.140
-https://github.com/anthropics/claude-code/releases/tag/v2.1.139</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【地味に便利】
-Claude Codeのエージェント指定が
-より柔軟になったのをご存知ですか？
-
-『`&quot;Code Reviewer&quot;`と書いても`code-reviewer`として認識されるように』
-
-結論はこれ👇
-
-▶︎ 大文字・小文字の違いを気にせず指定できる
-▶︎ ハイフン・スペースなどの区切り文字も自動で吸収
-▶︎ エージェント名のタイポによるエラーが激減する
+▶︎ 大文字・小文字・区切り文字の違いを自動で吸収
+▶︎ `/goal`コマンドのフック制限時のハングも修正済み
 
 つまり、
 
-細かい表記ゆれを気にせずエージェントを呼び出せるのは
-地味ながら開発体験がじわっと上がる変更ですよね🙌
-
-リリースノートも合わせてチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.140</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+書き方を気にせずエージェント名を書けるようになって
+地味ながら開発体験が上がっているかもしれません😊</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

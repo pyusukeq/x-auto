@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-14",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code最新版で\n待望の「Agent View」が登場。\n\n『複数エージェントのセッションを一覧表示』\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.141\n\n▶︎ 実行中・待機中・完了済みのセッションを一元管理\n▶︎ 複数エージェントの状態を把握しながら長時間タスクを管理\n▶︎ 詳細は上記リリースノートで確認可能\n\nつまり、\n\n複数エージェントの状態を把握しながら\n長時間タスクを任せやすくなった感じですよね👀",
+    "【保存推奨】\n\nClaude Code v2.1.141で\nフック機能がさらに使いやすくなった。\n\n具体的には👀\n\n▶︎ `terminalSequence`フィールドをフックのJSON出力に追加\n▶︎ デスクトップ通知・ウィンドウタイトル変更・ベル音をフックから発火可能に\n▶︎ `CLAUDE_CODE_PLUGIN_PREFER_HTTPS`でHTTPS経由のプラグイン取得に対応\n\nつまり、\n\nフックのJSON出力に通知系のターミナルシーケンスを含められるようになったので、作業完了などのタイミングで通知を自動化しやすくなりましたね✨\n\n詳細はリリースノートで確認を↓\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+    "【これはすごい】\nマジか！！\n\nClaude Code v2.1.141で\nエージェントの呼び出し方がかなり柔軟になった。\n\n『\"Code Reviewer\"と書いても`code-reviewer`として認識』\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.141\n\n▶︎ 大文字・小文字・区切り文字の違いを自動で吸収\n▶︎ `/goal`コマンドのフック制限時のハングも修正済み\n\nつまり、\n\n書き方を気にせずエージェント名を書けるようになって\n地味ながら開発体験が上がっているかもしれません😊"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
