@@ -1,0 +1,115 @@
+{
+  "collected_at": "2026-05-15T08:31:07.690753",
+  "date": "2026-05-15",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-15T08:31:06.846595+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.986044533915
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.142: v2.1.142",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+      "body": "## What's changed\n\n- Added new `claude agents` flags: `--add-dir`, `--settings`, `--mcp-config`, `--plugin-dir`, `--permission-mode`, `--model`, `--effort`, and `--dangerously-skip-permissions` to configure dispatched background sessions\n- Fast mode now uses Opus 4.7 by default (previously Opus 4.6). Set `CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE=1` to pin fast mode to Opus 4.6\n- Plugins with a root-level `SKILL.md` and no `skills/` subdirectory are now surfaced as a skill\n- The `/plugin` details pane and `claude plugin details` now show LSP servers a plugin provides\n- `/web-setup` warns before ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-14T22:55:10Z",
+      "final_score": 1554.2887689074075
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.141: v2.1.141",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.141",
+      "body": "## What's changed\n\n- Added `terminalSequence` field to hook JSON output so hooks can emit desktop notifications, window titles, and bells without a controlling terminal\n- Added `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` to clone GitHub plugin sources over HTTPS instead of SSH, for environments without a GitHub SSH key\n- Added `ANTHROPIC_WORKSPACE_ID` environment variable for workload identity federation — scopes the minted token to a specific workspace when the federation rule covers more than one\n- Added `claude agents --cwd <path>` to scope the session list to a directory\n- `/feedback` can now includ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-13T23:19:16Z",
+      "final_score": 1441.9157530343916
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.102.0: v0.102.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.102.0",
+      "body": "## 0.102.0 (2026-05-13)\n\nFull Changelog: [v0.101.0...v0.102.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.101.0...v0.102.0)\n\n### Features\n\n* **api:** Add BetaManagedAgentsSearchResultBlock types ([3681f10](https://github.com/anthropics/anthropic-sdk-python/commit/3681f1042608b6be4e5a56e8b52e6a619b9210f4))\n* **api:** Add support for cache diagnostics beta ([db51c6c](https://github.com/anthropics/anthropic-sdk-python/commit/db51c6caabb1bede4c2d671a96e6ef88e90ffaba))\n* **internal/types:** support eagerly validating pydantic iterators ([68dabb0](https://github.com/anthropics/ant",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-13T18:12:29Z",
+      "final_score": 1417.5678694365079
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.96.0: sdk: v0.96.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.96.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.96.0",
+      "body": "## 0.96.0 (2026-05-13)\n\nFull Changelog: [sdk-v0.95.2...sdk-v0.96.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.95.2...sdk-v0.96.0)\n\n### Features\n\n* **api:** Add BetaManagedAgentsSearchResultBlock types ([08f02f3](https://github.com/anthropics/anthropic-sdk-typescript/commit/08f02f3d0c34a9563b17af40b227acf3b105f8a3))\n* **api:** Add support for cache diagnostics beta ([eafbd6d](https://github.com/anthropics/anthropic-sdk-typescript/commit/eafbd6d78b81253c79cb861de6a9232b18eb60de))\n\n\n### Bug Fixes\n\n* **zod:** ensure only zod/v4 types are used ([#992](https://github.com/",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-13T18:11:16Z",
+      "final_score": 1417.471308589947
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.140: v2.1.140",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.140",
+      "body": "## What's changed\n\n- Improved Agent tool `subagent_type` matching to accept case- and separator-insensitive values (e.g. `\"Code Reviewer\"` resolves to `code-reviewer`)\n- Updated agent color palette\n- Fixed `/goal` silently hanging when `disableAllHooks` or `allowManagedHooksOnly` is set — now shows a clear message instead of an indicator that never resolves\n- Fixed a regression in settings hot-reload where symlinked settings files caused misattributed change events and spurious `ConfigChange` hooks\n- Fixed `claude --bg` failing with \"connection dropped mid-request\" when the background service ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-12T21:09:45Z",
+      "final_score": 1317.3509382195768
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Needle: We Distilled Gemini Tool Calling into a 26M Model",
+      "url": "https://github.com/cactus-compute/needle",
+      "external_url": "https://github.com/cactus-compute/needle",
+      "score": 735,
+      "comments": 207,
+      "created": "2026-05-12T18:03:11+00:00",
+      "final_score": 1300.2123550447916
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.139: v2.1.139",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
+      "body": "## What's changed\n\n- Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run `claude agents` to get started. See https://code.claude.com/docs/en/agent-view\n- Added `/goal` command: set a completion condition and Claude keeps working across turns until it's met. Works in interactive, `-p`, and Remote Control. Shows live elapsed/turns/tokens as an overlay panel\n- Added `/scroll-speed` command to tune mouse wheel scroll speed with a live preview\n- Added `claude plugin details <name>` to show a plugin's component inventory and project",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-11T18:43:42Z",
+      "final_score": 1191.4739540925925
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude for Small Business",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "external_url": "https://www.anthropic.com/news/claude-for-small-business",
+      "score": 520,
+      "comments": 458,
+      "created": "2026-05-14T03:59:35+00:00",
+      "final_score": 1180.7060198956349
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.101.0: v0.101.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
+      "body": "## 0.101.0 (2026-05-11)\n\nFull Changelog: [v0.100.0...v0.101.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.100.0...v0.101.0)\n\n### Features\n\n* **aws:** Add AWS client for Claude Platform on AWS ([1e70e3a](https://github.com/anthropics/anthropic-sdk-python/commit/1e70e3a21d57a96721685c1eca9cedd10cdd5b63))\n\n\n### Bug Fixes\n\n* **client:** add missing f-string prefix in file type error message ([06d109a](https://github.com/anthropics/anthropic-sdk-python/commit/06d109aaf36629ec15c8fb076c96aed722933600))\n\n\n### Chores\n\n* **examples:** bump tools_runner.py to claude-sonnet-4-5-2025092",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-11T15:46:22Z",
+      "final_score": 1177.3998800185184
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-15",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Code v2.1.142がリリース。\nバックグラウンドエージェントの設定自由度が大幅アップ。\n\n詳細はこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.142\n\n具体的な変更内容はリリースノートで確認できます。\n\ndispatchしたエージェントをより細かく制御できるようになった模様。\nマルチエージェント構成を使ってる方は要チェックです！",
+    "【確認中】\n\nClaude Codeの最新リリース（v2.1.141〜v2.1.142）の詳細は現在確認中です。\n\n現時点で確認できる最新リリース情報はこちら👀\n\n▶︎ v2.1.142のリリースノート\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.142\n\n▶︎ v2.1.141のリリースノート\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.141\n\n機能の詳細は公式リリースノートでご確認ください。\n\n「agent view」など新機能の正確な情報は、上記リンクまたは https://www.anthropic.com/news をチェックしてみて👀",
+    "【これはすごい】\n天才すぎる\n\nClaude Code v2.1.142で\nhooks機能がターミナル不要でデスクトップ通知を送れるようになった。\n\n（hooksとはClaude Codeの処理前後に任意のスクリプトを実行できる機能です）\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.142\n\n▶︎ バックグラウンド処理完了をデスクトップ通知で受け取れる\n▶︎ ウィンドウタイトルの変更やベル音も制御可能\n▶︎ 制御ターミナルなしの環境でも動作\n\nつまり、\n\n長時間タスクを走らせながら別作業できる体験が格段に良くなりそうですよね😊\nぜひ試してみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
