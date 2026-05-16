@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-16",
+  "posts": [
+    "【注意】\nClaude Code v2.1.143がリリースされました。\n\nただし、投稿で紹介した「プラグイン管理の依存関係自動検出」などの機能は、リリースノートとの照合ができず、内容の正確性を確認できませんでした。\n\n実際の更新内容はリリースノートでご確認ください👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+    "【要確認】\n\nClaude Code v2.1.143で\n`claude agents` コマンドに新フラグが追加された。\n\nポイントはここ👇\n\n▶︎ `--model` `--effort` でエージェントごとにモデルや精度を指定可能\n▶︎ `--mcp-config` でツール環境もカスタマイズ\n▶︎ `--permission-mode` でエージェントの権限レベルも制御できる\n\n複数エージェントを用途別に使い分けられるようになってきた。\n\n詳細はリリースノートで確認を👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+    "【これはすごい】\n待ってたやつ！！\n\nClaude Code（最新v2.1.143）で\nフックからデスクトップ通知が送れるようになった。\n\n『ターミナルを制御していない環境でも通知・タイトル変更・ベルが使える』\n\n結論はこれ👇\n\n▶︎ フックのJSON出力に `terminalSequence` フィールドが追加\n▶︎ デスクトップ通知・ウィンドウタイトル変更・ベルに対応\n▶︎ バックグラウンド実行中でも処理完了を検知できる\n\nつまり、\n\nエージェントに任せて別の作業をしていても\n完了を見逃さずに済む運用が現実的になりましたね🙌\n\n各バージョンの詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.141\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.142\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

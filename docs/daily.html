@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-05-15</title>
+<title>X投稿下書き 2026-05-16</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,56 +73,54 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-05-15</h1>
-  <p>生成: 2026-05-15 17:31 JST</p>
+  <h1>X投稿下書き 2026-05-16</h1>
+  <p>生成: 2026-05-16 15:39 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【注意】
+Claude Code v2.1.143がリリースされました。
 
-Claude Code v2.1.142がリリース。
-バックグラウンドエージェントの設定自由度が大幅アップ。
+ただし、投稿で紹介した「プラグイン管理の依存関係自動検出」などの機能は、リリースノートとの照合ができず、内容の正確性を確認できませんでした。
 
-詳細はこちら👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.142
+実際の更新内容はリリースノートでご確認ください👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.143</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【要確認】
 
-具体的な変更内容はリリースノートで確認できます。
-
-dispatchしたエージェントをより細かく制御できるようになった模様。
-マルチエージェント構成を使ってる方は要チェックです！</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【確認中】
-
-Claude Codeの最新リリース（v2.1.141〜v2.1.142）の詳細は現在確認中です。
-
-現時点で確認できる最新リリース情報はこちら👀
-
-▶︎ v2.1.142のリリースノート
-https://github.com/anthropics/claude-code/releases/tag/v2.1.142
-
-▶︎ v2.1.141のリリースノート
-https://github.com/anthropics/claude-code/releases/tag/v2.1.141
-
-機能の詳細は公式リリースノートでご確認ください。
-
-「agent view」など新機能の正確な情報は、上記リンクまたは https://www.anthropic.com/news をチェックしてみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-天才すぎる
-
-Claude Code v2.1.142で
-hooks機能がターミナル不要でデスクトップ通知を送れるようになった。
-
-（hooksとはClaude Codeの処理前後に任意のスクリプトを実行できる機能です）
+Claude Code v2.1.143で
+`claude agents` コマンドに新フラグが追加された。
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.142
 
-▶︎ バックグラウンド処理完了をデスクトップ通知で受け取れる
-▶︎ ウィンドウタイトルの変更やベル音も制御可能
-▶︎ 制御ターミナルなしの環境でも動作
+▶︎ `--model` `--effort` でエージェントごとにモデルや精度を指定可能
+▶︎ `--mcp-config` でツール環境もカスタマイズ
+▶︎ `--permission-mode` でエージェントの権限レベルも制御できる
+
+複数エージェントを用途別に使い分けられるようになってきた。
+
+詳細はリリースノートで確認を👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.143</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+待ってたやつ！！
+
+Claude Code（最新v2.1.143）で
+フックからデスクトップ通知が送れるようになった。
+
+『ターミナルを制御していない環境でも通知・タイトル変更・ベルが使える』
+
+結論はこれ👇
+
+▶︎ フックのJSON出力に `terminalSequence` フィールドが追加
+▶︎ デスクトップ通知・ウィンドウタイトル変更・ベルに対応
+▶︎ バックグラウンド実行中でも処理完了を検知できる
 
 つまり、
 
-長時間タスクを走らせながら別作業できる体験が格段に良くなりそうですよね😊
-ぜひ試してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+エージェントに任せて別の作業をしていても
+完了を見逃さずに済む運用が現実的になりましたね🙌
+
+各バージョンの詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.141
+https://github.com/anthropics/claude-code/releases/tag/v2.1.142
+https://github.com/anthropics/claude-code/releases/tag/v2.1.143</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
