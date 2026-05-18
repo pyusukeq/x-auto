@@ -1,9 +1,9 @@
 {
   "date": "2026-05-18",
   "posts": [
-    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.143がリリース。\n詳細はリリースノートで確認を👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143",
-    "【お知らせ】\n\n現在確認されているClaude Codeの最新バージョンはv2.1.141〜v2.1.143です。\n\n直近のリリース情報はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143\n\n「Agent View」や`claude agents`コマンドなどの機能については、現時点のリリースノートでは確認できていません。\n\n公式の最新情報はこちらで確認を👇\nhttps://www.anthropic.com/news",
-    "Claude Code v2.1.142と v2.1.143がリリースされました。\n\nリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143"
+    "【速報】\nClaude Code v2.1.143がリリース。\nプラグイン管理が改善されました。\n\n具体的には⏬\n\n▶︎ 依存プラグインがある場合、`disable`を自動ブロック\n▶︎ 無効化の順番をコピペできるヒントで案内\n▶︎ `enable`時は依存プラグインを自動で一括有効化\n\nつまり、\n\nプラグインの依存関係を自分で管理しなくてよくなった。\n地味だけど実務でかなり助かる改善ですよね。\n\n詳細はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143",
+    "【最新情報】\n\nClaude Code v2.1.143がリリースされました。\n\n詳細はリリースノートでご確認ください👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143\n\nあわせてv2.1.142のリリースノートもどうぞ👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.142",
+    "【保存必須】\n\nClaude Codeフックに`terminalSequence`フィールドが追加された。\n\nフックからデスクトップ通知・ウィンドウタイトル変更・ベルを\nフォアグラウンドのターミナルがなくても送れるようになった。\n\n結論はこれ👇\n\n▶︎ バックグラウンドで動くエージェントの完了を通知で受け取れる\n▶︎ 別作業中でも処理の終わりを見逃さない\n▶︎ フックのJSON出力に追加するだけで使える\n\nつまり、\n\n「処理終わったかな…」と画面を確認しに戻る手間がなくなる。\n長時間タスクを任せる使い方との相性がよさそうですよね🙌\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.143"
   ],
   "types": [
     "速報",

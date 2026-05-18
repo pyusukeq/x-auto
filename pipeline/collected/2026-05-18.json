@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-05-18T11:55:37.742223",
+  "collected_at": "2026-05-18T22:46:36.139239",
   "date": "2026-05-18",
-  "total_found": 14,
+  "total_found": 11,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-05-18T11:55:36.327731+00:00",
+      "created": "2026-05-18T22:46:35.447710+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.976615252068
+      "final_score": 19997.988567727338
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-15T22:28:22Z",
-      "final_score": 1307.360129388889
+      "final_score": 1255.6955830648149
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-14T22:55:10Z",
-      "final_score": 1195.2013992301588
+      "final_score": 1143.5368529060845
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-13T23:19:16Z",
-      "final_score": 1082.828383357143
+      "final_score": 1031.1638370330688
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-13T18:12:29Z",
-      "final_score": 1058.4804997592591
+      "final_score": 1006.8159534351852
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-13T18:11:16Z",
-      "final_score": 1058.3839389126983
+      "final_score": 1006.7193925886244
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -78,40 +78,37 @@
       "score": 800,
       "comments": 0,
       "created": "2026-05-12T21:09:45Z",
-      "final_score": 958.263568542328
+      "final_score": 906.599022218254
     },
     {
-      "source": "GitHub anthropics/claude-code",
-      "title": "【リリース】claude-code v2.1.139: v2.1.139",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.139",
-      "body": "## What's changed\n\n- Added agent view (Research Preview): a single list of every Claude Code session — running, blocked on you, or done. Run `claude agents` to get started. See https://code.claude.com/docs/en/agent-view\n- Added `/goal` command: set a completion condition and Claude keeps working across turns until it's met. Works in interactive, `-p`, and Remote Control. Shows live elapsed/turns/tokens as an overlay panel\n- Added `/scroll-speed` command to tune mouse wheel scroll speed with a live preview\n- Added `claude plugin details <name>` to show a plugin's component inventory and project",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-05-11T18:43:42Z",
-      "final_score": 832.3865844153438
+      "source": "Hacker News",
+      "title": "Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep",
+      "url": "https://github.com/MinishLab/semble",
+      "external_url": "https://github.com/MinishLab/semble",
+      "score": 427,
+      "comments": 137,
+      "created": "2026-05-17T15:37:07+00:00",
+      "final_score": 843.3065105164005
     },
     {
-      "source": "GitHub anthropics/anthropic-sdk-python",
-      "title": "【リリース】anthropic-sdk-python v0.101.0: v0.101.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.101.0",
-      "body": "## 0.101.0 (2026-05-11)\n\nFull Changelog: [v0.100.0...v0.101.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.100.0...v0.101.0)\n\n### Features\n\n* **aws:** Add AWS client for Claude Platform on AWS ([1e70e3a](https://github.com/anthropics/anthropic-sdk-python/commit/1e70e3a21d57a96721685c1eca9cedd10cdd5b63))\n\n\n### Bug Fixes\n\n* **client:** add missing f-string prefix in file type error message ([06d109a](https://github.com/anthropics/anthropic-sdk-python/commit/06d109aaf36629ec15c8fb076c96aed722933600))\n\n\n### Chores\n\n* **examples:** bump tools_runner.py to claude-sonnet-4-5-2025092",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-05-11T15:46:22Z",
-      "final_score": 818.3125103412699
+      "source": "Hacker News",
+      "title": "Anthropic acquires Stainless",
+      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "external_url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "score": 301,
+      "comments": 212,
+      "created": "2026-05-18T17:01:21+00:00",
+      "final_score": 697.690382109618
     },
     {
-      "source": "GitHub anthropics/anthropic-sdk-typescript",
-      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.3.0: aws-sdk: v0.3.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.0",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.0",
-      "body": "## 0.3.0 (2026-05-11)\n\nFull Changelog: [aws-sdk-v0.2.5...aws-sdk-v0.3.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.2.5...aws-sdk-v0.3.0)\n\n### Features\n\n* **aws:** Add AWS client for Claude Platform on AWS ([7a31772](https://github.com/anthropics/anthropic-sdk-typescript/commit/7a3177240660ccec6c4631cf02aeeb32ff4ea60a))",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-05-11T15:46:13Z",
-      "final_score": 818.3006055793651
+      "source": "Hacker News",
+      "title": "Show HN: InsForge – Open-source Heroku for coding agents",
+      "url": "https://github.com/InsForge/InsForge",
+      "external_url": "https://github.com/InsForge/InsForge",
+      "score": 26,
+      "comments": 5,
+      "created": "2026-05-18T15:40:42+00:00",
+      "final_score": 53.401442428442465
     }
   ]
 }

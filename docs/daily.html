@@ -74,28 +74,52 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 <body>
 <header>
   <h1>X投稿下書き 2026-05-18</h1>
-  <p>生成: 2026-05-18 20:56 JST</p>
+  <p>生成: 2026-05-19 07:47 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
-
 Claude Code v2.1.143がリリース。
-詳細はリリースノートで確認を👇
+プラグイン管理が改善されました。
+
+具体的には⏬
+
+▶︎ 依存プラグインがある場合、`disable`を自動ブロック
+▶︎ 無効化の順番をコピペできるヒントで案内
+▶︎ `enable`時は依存プラグインを自動で一括有効化
+
+つまり、
+
+プラグインの依存関係を自分で管理しなくてよくなった。
+地味だけど実務でかなり助かる改善ですよね。
+
+詳細はリリースノートをチェックしてみて👀
 https://github.com/anthropics/claude-code/releases/tag/v2.1.143</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【お知らせ】
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【最新情報】
 
-現在確認されているClaude Codeの最新バージョンはv2.1.141〜v2.1.143です。
+Claude Code v2.1.143がリリースされました。
 
-直近のリリース情報はこちら👇
+詳細はリリースノートでご確認ください👀
 https://github.com/anthropics/claude-code/releases/tag/v2.1.143
 
-「Agent View」や`claude agents`コマンドなどの機能については、現時点のリリースノートでは確認できていません。
+あわせてv2.1.142のリリースノートもどうぞ👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.142</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【保存必須】
 
-公式の最新情報はこちらで確認を👇
-https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">Claude Code v2.1.142と v2.1.143がリリースされました。
+Claude Codeフックに`terminalSequence`フィールドが追加された。
 
-リリースノートをチェックしてみて👀
+フックからデスクトップ通知・ウィンドウタイトル変更・ベルを
+フォアグラウンドのターミナルがなくても送れるようになった。
+
+結論はこれ👇
+
+▶︎ バックグラウンドで動くエージェントの完了を通知で受け取れる
+▶︎ 別作業中でも処理の終わりを見逃さない
+▶︎ フックのJSON出力に追加するだけで使える
+
+つまり、
+
+「処理終わったかな…」と画面を確認しに戻る手間がなくなる。
+長時間タスクを任せる使い方との相性がよさそうですよね🙌
+
 https://github.com/anthropics/claude-code/releases/tag/v2.1.143</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
