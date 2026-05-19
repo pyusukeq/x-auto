@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-19",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.145がリリース。\nリリースノートに記載の新機能が追加された。\n\n具体的には⏬\n\n▶︎ OTELスパンに `agent_id` / `parent_agent_id` が追加されサブエージェントの追跡が改善\n▶︎ その他の改善・修正も含まれています\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+    "【保存推奨】\n\nKarpathyがAnthropicに入社。\nAI業界にとってかなり大きなニュースかもしれません。\n\n『I've joined Anthropic』\n\nポイントはここ👇\n\n▶︎ OpenAI創業メンバー・元Tesla AI責任者のKarpathyが移籍\n▶︎ AI教育・研究への貢献で知られる世界トップクラスの研究者\n▶︎ Anthropicの研究・開発がさらに加速する可能性\n\nつまり、\n\nClaudeの今後がますます楽しみになってきましたよね✨\n\n続報をチェックしてみて👀\nhttps://twitter.com/karpathy/status/2056753169888334312",
+    "【これはすごい】\nマジか！！\n\nTypeScript SDKにセルフホスト型サンドボックス対応が追加。\nエージェント活用の幅がぐっと広がった。\n\n『Add support for self-hosted sandboxes in CMA with sandbox helpers』\n\n結論はこれ👇\n\n▶︎ 自前のサンドボックス環境でエージェントを動かせるように\n▶︎ セキュリティ要件の厳しい環境でも導入しやすくなる\n▶︎ sdk-v0.97.1で利用可能\n\nつまり、\n\nクラウド任せにしなくてもよくなったのは\n企業ユーザーには嬉しい変化ではないでしょうか😊\n\n詳細はこちら👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.1"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
