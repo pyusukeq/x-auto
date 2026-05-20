@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-20",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.145がリリース。\n\n具体的な変更内容はリリースノートで確認してみて👀\n\nリリースノートはこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+    "【保存推奨】\n\nPython SDK v0.103.1 / TypeScript SDK v0.97.1で\nセルフホスト型サンドボックスのサポートが追加された。\n\n『self-hosted sandboxes with sandbox helpers』\n\nポイントはここ👇\n\n▶︎ 自前のサンドボックス環境をSDKに組み込めるようになった\n▶︎ サンドボックス操作を簡略化するヘルパー関数が用意された\n▶︎ PythonとTypeScript両方で同時対応\n\nつまり、\n\n自社インフラ上でエージェントを安全に動かしたい場合に活用できる機能ですよね✨\n\n詳細はリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.1",
+    "【新機能】\nClaude Code v2.1.145がリリースされました。\n\nリリースノートを確認してみましょう👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.145"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

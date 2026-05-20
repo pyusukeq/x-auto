@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-05-20T23:03:45.098266",
+  "date": "2026-05-20",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-20T23:03:44.350876+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98764440698
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.145: v2.1.145",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.145",
+      "body": "## What's changed\n\n- Added `claude agents --json` to list live Claude sessions as JSON for scripting (tmux-resurrect, status bars, session pickers)\n- Added `agent_id` and `parent_agent_id` attributes to `claude_code.tool` OTEL spans, and fixed trace parenting so background subagent spans nest under the dispatching Agent tool span\n- Status line JSON input now includes GitHub repo and PR information when detected\n- `/plugin` Discover and Browse screens now show a plugin's commands, agents, skills, hooks, and MCP/LSP servers before installation\n- `claude agents` terminal tab title now shows the a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T21:31:07Z",
+      "final_score": 1478.3623039457673
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.103.1: v0.103.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.1",
+      "body": "## 0.103.1 (2026-05-19)\n\nFull Changelog: [v0.103.0...v0.103.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.103.0...v0.103.1)\n\n### Bug Fixes\n\n* **runner:** skip tool calls SessionToolRunner does not own ([#1817](https://github.com/anthropics/anthropic-sdk-python/issues/1817)) ([9425c6a](https://github.com/anthropics/anthropic-sdk-python/commit/9425c6a0c6ff5e1d459ac081914f3df496365884))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T15:43:14Z",
+      "final_score": 1450.752515585979
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.97.1: sdk: v0.97.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.1",
+      "body": "## 0.97.1 (2026-05-19)\n\nFull Changelog: [sdk-v0.97.0...sdk-v0.97.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.97.0...sdk-v0.97.1)\n\n### Bug Fixes\n\n* **runner:** skip tool calls SessionToolRunner does not own ([9987379](https://github.com/anthropics/anthropic-sdk-typescript/commit/9987379abeaf28b17edb5518ac229d2a6caa4bf6))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T15:40:46Z",
+      "final_score": 1450.5567483902116
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.29.2: bedrock-sdk: v0.29.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.29.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.29.2",
+      "body": "## 0.29.2 (2026-05-19)\n\nFull Changelog: [bedrock-sdk-v0.29.1...bedrock-sdk-v0.29.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.29.1...bedrock-sdk-v0.29.2)\n\n### Bug Fixes\n\n* align @types/node in sub-packages to fix CI build ([#1017](https://github.com/anthropics/anthropic-sdk-typescript/issues/1017)) ([9888c76](https://github.com/anthropics/anthropic-sdk-typescript/commit/9888c7691913de036fa85d25cd6707036c167a99))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T07:09:20Z",
+      "final_score": 1409.9668013002645
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.16.1: vertex-sdk: v0.16.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.16.1",
+      "body": "## 0.16.1 (2026-05-19)\n\nFull Changelog: [vertex-sdk-v0.16.0...vertex-sdk-v0.16.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.16.0...vertex-sdk-v0.16.1)\n\n### Bug Fixes\n\n* align @types/node in sub-packages to fix CI build ([#1017](https://github.com/anthropics/anthropic-sdk-typescript/issues/1017)) ([9888c76](https://github.com/anthropics/anthropic-sdk-typescript/commit/9888c7691913de036fa85d25cd6707036c167a99))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T07:09:14Z",
+      "final_score": 1409.958864792328
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.97.0: sdk: v0.97.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.97.0",
+      "body": "## 0.97.0 (2026-05-19)\n\nFull Changelog: [sdk-v0.96.0...sdk-v0.97.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.96.0...sdk-v0.97.0)\n\n### Features\n\n* **client:** Add support for self-hosted sandboxes in CMA with sandbox helpers ([659a343](https://github.com/anthropics/anthropic-sdk-typescript/commit/659a343c820e316229715466b64e420428ee762b))\n\n\n### Bug Fixes\n\n* **typescript:** upgrade tsc-multi so that it works with Node 26 ([623f71c](https://github.com/anthropics/anthropic-sdk-typescript/commit/623f71c848ce9b3b88eb08e009b6b3d08a6e5c1c))\n\n\n### Chores\n\n* **tests:** remov",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T07:09:08Z",
+      "final_score": 1409.9509282843915
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.103.0: v0.103.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.103.0",
+      "body": "## 0.103.0 (2026-05-19)\n\nFull Changelog: [v0.102.0...v0.103.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.102.0...v0.103.0)\n\n### Features\n\n* **client:** Add support for self-hosted sandboxes in CMA with sandbox helpers ([e5625b0](https://github.com/anthropics/anthropic-sdk-python/commit/e5625b0ae2a1e9d25847a53217c8fd70fa67c5ed))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T07:07:51Z",
+      "final_score": 1409.8490764325397
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.144: v2.1.144",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.144",
+      "body": "## What's changed\n\n- Added `/resume` support for background sessions — sessions started via `claude --bg` or agent view now appear alongside interactive ones, marked with `bg`\n- Added elapsed duration to background subagent completion notifications (e.g. \"Agent completed · 3h 2m 5s\")\n- The `/plugin` browse and discover panes now show when a plugin was last updated\n- `/model` now changes the model for the current session only; press `d` in the model picker to set a default for new sessions\n- Renamed \"extra usage\" to \"usage credits\" across CLI copy; `/extra-usage` is now `/usage-credits` (old na",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-19T00:48:51Z",
+      "final_score": 1379.7697113531747
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks",
+      "url": "https://github.com/antoinezambelli/forge",
+      "external_url": "https://github.com/antoinezambelli/forge",
+      "score": 643,
+      "comments": 234,
+      "created": "2026-05-19T12:23:07+00:00",
+      "final_score": 1270.2769557646643
+    }
+  ]
+}
