@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-21",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.147で\nマルチエージェント制御を担う新ツールが追加された。\n\n『Workflowツールによる決定論的なマルチエージェントオーケストレーション』\n\n具体的には⬇︎\n\n▶︎ `CLAUDE_CODE_WORKFLOWS=1` で有効化できる新機能\n▶︎ デフォルトはオフなので既存環境への影響なし\n▶︎ バックグラウンドセッションがアイドル時も維持されるよう改善\n\nつまり、\n\nエージェント同士の連携をより確実に制御できる時代が来たかもしれません✨\n\n詳細はGitHubリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+    "【保存推奨】\n\nClaude Code v2.1.147で\nコードレビューコマンドが刷新された。\n\n`/simplify` が `/code-review` に名称変更され\n努力レベルの指定もできるようになった。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.147\n\n▶︎ `/code-review high` のように深さを調整可能\n▶︎ Auto modeで `AskUserQuestion` が意図せず抑制されていたバグも修正\n▶︎ Windows PowerShellのツール不具合も合わせて解消\n\nつまり、\n\nレビューの粒度をコマンドひとつで変えられるのは\n地味に使いやすくなりましたよね🙌\n\nアップデートしたらぜひ試してみて👀",
+    "【これはすごい】\nマジか！！\n\nClaude Code v2.1.146で\nエージェントセッションをJSONで一覧取得できるようになった。\n\n『tmux-resurrectやステータスバー、セッションピッカーへの連携を想定』\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.146\n\n▶︎ `claude agents --json` でライブセッション情報をスクリプトから取得可能\n▶︎ OTELスパンに `agent_id` と `parent_agent_id` が追加され追跡が容易に\n▶︎ バックグラウンドサブエージェントのトレース構造も正しく整理\n\nつまり、\n\nエージェントの状態を外部ツールから監視・自動化できる幅が\nぐっと広がった感じがします✨\n\nリリースノートを確認しながら、スクリプト活用のアイデアがある方はぜひ試してみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
