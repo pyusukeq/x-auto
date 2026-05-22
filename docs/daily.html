@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-05-21</title>
+<title>X投稿下書き 2026-05-22</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,71 +73,49 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-05-21</h1>
-  <p>生成: 2026-05-22 07:58 JST</p>
+  <h1>X投稿下書き 2026-05-22</h1>
+  <p>生成: 2026-05-23 07:50 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code v2.1.147で
-マルチエージェント制御を担う新ツールが追加された。
+Claude Code v2.1.149がリリース。
+使用量の内訳がひと目でわかるようになった。
 
-『Workflowツールによる決定論的なマルチエージェントオーケストレーション』
+具体的には⏬
+https://github.com/anthropics/claude-code/releases/tag/v2.1.149
 
-具体的には⬇︎
-
-▶︎ `CLAUDE_CODE_WORKFLOWS=1` で有効化できる新機能
-▶︎ デフォルトはオフなので既存環境への影響なし
-▶︎ バックグラウンドセッションがアイドル時も維持されるよう改善
-
-つまり、
-
-エージェント同士の連携をより確実に制御できる時代が来たかもしれません✨
-
-詳細はGitHubリリースノートでチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.147</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
-
-Claude Code v2.1.147で
-コードレビューコマンドが刷新された。
-
-`/simplify` が `/code-review` に名称変更され
-努力レベルの指定もできるようになった。
-
-ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.147
-
-▶︎ `/code-review high` のように深さを調整可能
-▶︎ Auto modeで `AskUserQuestion` が意図せず抑制されていたバグも修正
-▶︎ Windows PowerShellのツール不具合も合わせて解消
+▶︎ `/usage` でカテゴリ別の使用状況を確認可能
+▶︎ `/diff` の差分画面がキーボードでスクロール対応
+▶︎ Markdownのレンダリングも改善
 
 つまり、
 
-レビューの粒度をコマンドひとつで変えられるのは
-地味に使いやすくなりましたよね🙌
+何のコストが積み上がっているか
+すぐ把握できるようになりましたね✨
 
-アップデートしたらぜひ試してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-マジか！！
+リリースノートもチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">⚠️ 情報に誤りが含まれていた可能性があるため、この投稿は取り下げます。
 
-Claude Code v2.1.146で
-エージェントセッションをJSONで一覧取得できるようになった。
+Claude Codeの `/code-review` コマンドや `/simplify` からのリネームについて投稿しましたが、公式リリースノート（v2.1.147〜v2.1.149）での記載を確認できませんでした。
 
-『tmux-resurrectやステータスバー、セッションピッカーへの連携を想定』
+誤情報をお伝えしてしまった可能性があります。申し訳ありません🙏
 
-ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.146
+最新の正確な情報はこちらでご確認ください👀
+→ https://github.com/anthropics/claude-code/releases</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Code最新リリース】
 
-▶︎ `claude agents --json` でライブセッション情報をスクリプトから取得可能
-▶︎ OTELスパンに `agent_id` と `parent_agent_id` が追加され追跡が容易に
-▶︎ バックグラウンドサブエージェントのトレース構造も正しく整理
+claude-code v2.1.147〜v2.1.149が連続リリース。
 
-つまり、
+バックグラウンドセッション管理の改善が含まれています。
 
-エージェントの状態を外部ツールから監視・自動化できる幅が
-ぐっと広がった感じがします✨
+具体的な変更点はリリースノートで確認を👀
 
-リリースノートを確認しながら、スクリプト活用のアイデアがある方はぜひ試してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+▶︎ v2.1.147: https://github.com/anthropics/claude-code/releases/tag/v2.1.147
+▶︎ v2.1.148: https://github.com/anthropics/claude-code/releases/tag/v2.1.148
+▶︎ v2.1.149: https://github.com/anthropics/claude-code/releases/tag/v2.1.149
+
+各バージョンの詳細は上記リリースノートをご確認ください✨</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
