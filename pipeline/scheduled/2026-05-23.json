@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-23",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.150がリリース。\n使いながら気になっていたあの不便さが解消された。\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150\n\n▶︎ `/usage` がカテゴリ別に表示（スキル・サブエージェント・MCP別など）\n▶︎ `/diff` の詳細画面がキーボードでスクロール可能に\n▶︎ Markdownがちゃんとレンダリングされるように\n\nつまり、\n\nコスト管理もコードレビューも\nぐっと使いやすくなりましたね✨",
+    "【最新情報】\n\nClaude Code v2.1.148〜v2.1.150が\nリリースされました。\n\n詳細はリリースノートで確認できます👀\n\n▶︎ v2.1.148: https://github.com/anthropics/claude-code/releases/tag/v2.1.148\n▶︎ v2.1.149: https://github.com/anthropics/claude-code/releases/tag/v2.1.149\n▶︎ v2.1.150: https://github.com/anthropics/claude-code/releases/tag/v2.1.150\n\n最新バージョンへのアップデートをお忘れなく😊",
+    "【アップデート情報】\n\nClaude Code v2.1.148〜v2.1.150がリリースされました。\n\n詳細はリリースノートで確認を⏬\n・v2.1.148: https://github.com/anthropics/claude-code/releases/tag/v2.1.148\n・v2.1.149: https://github.com/anthropics/claude-code/releases/tag/v2.1.149\n・v2.1.150: https://github.com/anthropics/claude-code/releases/tag/v2.1.150\n\n最新の変更内容はリリースノートで確認してみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
