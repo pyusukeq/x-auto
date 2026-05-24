@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-24",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.149で\n`/usage`の表示が大幅に改善された。\n\n『サブエージェント・MCPサーバー別にコスト内訳が確認できるように』\n\n具体的には⏬\n\n▶︎ カテゴリ別の使用量が一目でわかる\n▶︎ `/diff`のキーボードスクロールにも対応\n▶︎ Markdownのレンダリングも改善\n\nつまり、\n\nどこでトークンを使っているかが\n可視化されましたよね✨\n\nなお、v2.1.150もリリース済みです！\n\n最新情報はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+    "⚠️ 確認中の情報です\n\nClaude Codeの最新リリース（v2.1.148〜v2.1.150）が公開されています。\n\n元の投稿に含まれるバージョン番号やコマンド変更の情報は、現時点で公式リリースノートから確認できませんでした。\n\n正確な内容はこちらで確認してください👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+    "【最新情報】\nClaude Code v2.1.150がリリース！\n\nリリース内容はこちらで確認できます👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150\n\n詳細は公式もチェックしてみて✨\nhttps://www.anthropic.com/news"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
