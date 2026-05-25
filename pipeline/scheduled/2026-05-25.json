@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-25",
+  "posts": [
+    "【速報】\n神アプデきた！！\n\nClaude Code v2.1.150で\n地味に嬉しい機能が3つ追加された。\n\n具体的には⏬\n\n▶︎ `/usage` がスキル・サブエージェント・MCP別でコスト内訳を表示\n▶︎ `/diff` の詳細画面がキーボードでスクロール可能に\n▶︎ Markdown出力がきれいにレンダリングされるように\n\nつまり、\n\nどこでコストが膨らんでいるか\n一目で分かるようになった感じですよね✨\n\n最新版はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+    "⚠️ 情報を確認しました\n\nこの投稿で言及していた「Claude Code v2.1.147」および `/simplify` → `/code-review` の名称変更・機能強化については、公式リリース情報で確認が取れませんでした。\n\n誤った情報をお伝えしてしまう恐れがあるため、最新の公式リリース情報を直接ご確認ください👇\n\n最新リリース（v2.1.150）はこちら\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+    "【これは要確認】\n情報訂正です。\n\n「Claude Code v2.1.147」という投稿が出回っていますが、このバージョンは存在しません。\n\n実際にリリースされているのはこちら👇\n\n▶︎ v2.1.148\n▶︎ v2.1.149\n▶︎ v2.1.150\n\n投稿内の「Ctrl+Tでピン留め」「セッション維持」などの機能説明が実際のリリースノートに基づくものか確認が取れていません。\n\n公式リリース情報はこちらで確認を👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.150"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
