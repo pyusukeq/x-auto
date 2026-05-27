@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-27",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.152がリリース。\n詳細な変更内容はリリースノートを確認してみて👀\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+    "【保存推奨】\n\nClaude Code v2.1.152で\n`/usage` コマンドが地味に便利になってる。\n\n『何がコスト・制限を使っているか』が\nカテゴリ別に一目でわかるようになった。\n\n詳細はリリースノートを確認👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.152\n\nアップデートしてから `/usage` を試してみて👀",
+    "【リリース情報】\n\nTypeScript SDK v0.99.0で\nファイルサイズの上限をカスタム設定できるようになった。\n\n『support custom file size caps』\n\n結論はこれ👇\n\n▶︎ 大きなファイル送信時のエラーを柔軟にコントロール可能に\n▶︎ プロジェクトの要件に合わせて上限を調整できる\n\nつまり、\n\nファイルサイズ制限をプロジェクトごとに\n細かく制御できるようになりましたね✨\n\nリリースノートと合わせてチェックしてみて👀\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

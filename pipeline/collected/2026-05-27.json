@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-05-27T23:08:36.644406",
+  "date": "2026-05-27",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-27T23:08:35.801379+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.986063067114
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.152: v2.1.152",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "body": "## What's changed\n\n- `/code-review --fix` now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; `/simplify` now invokes `/code-review --fix`\n- Skills and slash commands can now set `disallowed-tools` in frontmatter to remove tools from the model while the skill is active\n- Added `/reload-skills` command to re-scan skill directories without restarting the session\n- `SessionStart` hooks can now return `reloadSkills: true` to re-scan skill directories, making skills installed by the hook available in the same session\n- `Ses",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-27T01:30:59Z",
+      "final_score": 1497.013697924603
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.99.0: sdk: v0.99.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
+      "body": "## 0.99.0 (2026-05-27)\n\nFull Changelog: [sdk-v0.98.1...sdk-v0.99.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.98.1...sdk-v0.99.0)\n\n### Features\n\n* support custom file size caps ([#1029](https://github.com/anthropics/anthropic-sdk-typescript/issues/1029)) ([814cd4c](https://github.com/anthropics/anthropic-sdk-typescript/commit/814cd4c6b5b01e9640d52738d87fa61fc62991e7))\n\n\n### Bug Fixes\n\n* **streaming:** carry stop_details through message_delta accumulation ([#1027](https://github.com/anthropics/anthropic-sdk-typescript/issues/1027)) ([198bc27](https://github.com/anthr",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-27T01:04:19Z",
+      "final_score": 1494.8972958082009
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.98.1: sdk: v0.98.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
+      "body": "## 0.98.1 (2026-05-26)\n\nFull Changelog: [sdk-v0.98.0...sdk-v0.98.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.98.0...sdk-v0.98.1)\n\n### Bug Fixes\n\n* **client:** preserve directory prefix in skills.versions.create uploads ([#1024](https://github.com/anthropics/anthropic-sdk-typescript/issues/1024)) ([abbcd6a](https://github.com/anthropics/anthropic-sdk-typescript/commit/abbcd6a47d84bc6efcf259f0f803158847f255cf))\n\n\n### Chores\n\n* **client:** swap to using Trusted Publishing ([821a50e](https://github.com/anthropics/anthropic-sdk-typescript/commit/821a50ef1fd64270e09c026a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-26T23:19:03Z",
+      "final_score": 1486.5427984537037
+    },
+    {
+      "source": "Hacker News",
+      "title": "I think Anthropic and OpenAI have found product-market fit",
+      "url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "external_url": "https://simonwillison.net/2026/May/27/product-market-fit/",
+      "score": 550,
+      "comments": 669,
+      "created": "2026-05-27T16:39:13+00:00",
+      "final_score": 1413.253299598297
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.150: v2.1.150",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+      "body": "## What's changed\n\n- Internal infrastructure improvements (no user-facing changes)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-23T04:03:51Z",
+      "final_score": 1052.0031159140212
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.149: v2.1.149",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.149",
+      "body": "## What's changed\n\n- `/usage` now shows a per-category breakdown of what's driving your limits usage — skills, subagents, plugins, and per-MCP-server cost\n- `/diff` detail view can now be scrolled with the keyboard (arrows, `j`/`k`, `PgUp`/`PgDn`, `Space`, `Home`/`End`)\n- Markdown output now renders GFM task list checkboxes (`- [ ] todo` / `- [x] done`) instead of plain bullets\n- Enterprise: added the `allowAllClaudeAiMcps` managed setting to load claude.ai cloud MCP connectors alongside `managed-mcp.json`\n- Fixed a PowerShell permission bypass: built-in `cd` functions (`cd..`, `cd\\`, `cd~`, `",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-22T22:09:29Z",
+      "final_score": 1023.8787772896826
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.104.1: v0.104.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.104.1",
+      "body": "## 0.104.1 (2026-05-21)\n\nFull Changelog: [v0.104.0...v0.104.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.104.0...v0.104.1)\n\n### Bug Fixes\n\n* **streaming:** carry encrypted_content through beta compaction accumulator ([#1821](https://github.com/anthropics/anthropic-sdk-python/issues/1821)) ([f7a720c](https://github.com/anthropics/anthropic-sdk-python/commit/f7a720c514cc5e428b310f46249ca1c807894c2e))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-22T15:36:38Z",
+      "final_score": 992.7002058611113
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.148: v2.1.148",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.148",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.148",
+      "body": "## What's changed\n\n- Fixed the Bash tool returning exit code 127 on every command for some users (a regression introduced in 2.1.147)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-22T01:16:52Z",
+      "final_score": 924.4647561256616
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.147: v2.1.147",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.147",
+      "body": "## What's changed\n\n- Pinned background sessions (`Ctrl+T` in `claude agents`) now stay alive when idle, are restarted in place to apply Claude Code updates, and are shed under memory pressure only after non-pinned sessions\n- Renamed `/simplify` to `/code-review`. It now reports correctness bugs at a chosen effort level (e.g., `/code-review high`); pass `--comment` to post findings as inline GitHub PR comments. The old cleanup-and-fix behavior has been removed\n- Improved auto-updater: retries transient network failures, reports specific error categories and OS error codes on failure, and shows ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-21T20:39:22Z",
+      "final_score": 902.4409466018518
+    }
+  ]
+}
