@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-28",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Code v2.1.154で\nClaude Opus 4.8のサポートが始まった。\n\n具体的には⏬\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.154\n\n▶︎ Claude Opus 4.8がデフォルトで利用可能に\n▶︎ 最も難しい作業を安心して任せられる構成に\n\nつまり、\n\nClaude Codeがさらにパワーアップ。\n難しいタスクも遠慮せず投げてみて👀\n\n詳細はこちら→ https://www.anthropic.com/news/claude-opus-4-8",
+    "⚠️ この投稿は元情報から内容を裏付けられなかったため、公開を推奨しません。\n\n`/code-review --fix` コマンドや `/simplify` の仕様、バージョン番号（v2.1.152）のいずれも、公式リリースノート（v2.1.154）に記載が確認できませんでした。\n\n最新情報はこちらで確認を👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.154",
+    "【注意】\n未確認情報の可能性があります。\n\n「ダイナミックワークフロー」機能や『tens to hundreds of agents in the background』という記述は、現時点で確認できる公式情報（claude-code v2.1.154等）に見当たりませんでした。\n\n最新のClaude Code情報はこちらで確認を👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.154\n\n公式アナウンスはこちら\nhttps://www.anthropic.com/news"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

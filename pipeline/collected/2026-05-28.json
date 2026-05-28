@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-05-28T23:07:00.496281",
+  "date": "2026-05-28",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-05-28T23:06:59.574964+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.984768884377
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Opus 4.8",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "external_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "score": 1101,
+      "comments": 877,
+      "created": "2026-05-28T16:49:14+00:00",
+      "final_score": 2599.237082748621
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.154: v2.1.154",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.154",
+      "body": "## What's changed\n\n- Opus 4.8 is here! Now defaults to high effort · /effort xhigh for your hardest tasks\n- Introducing dynamic workflows: ask Claude to create a workflow and it orchestrates work across tens to hundreds of agents in the background, so you can take on larger, more complex tasks. Run `/workflows` to view your runs\n- Fast mode on Opus 4.8 is now available at a fraction of its previous cost: 2x the standard rate for 2.5x the speed\n- The lean system prompt is now the default for all models except Haiku, Sonnet, and Opus 4.7 and earlier\n- Claude now reserves the multiple-choice ques",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-28T18:00:55Z",
+      "final_score": 1575.707015563492
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.105.0: v0.105.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.0",
+      "body": "## 0.105.0 (2026-05-28)\n\nFull Changelog: [v0.104.1...v0.105.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.104.1...v0.105.0)\n\n### Features\n\n* **api:** Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details ([f18b014](https://github.com/anthropics/anthropic-sdk-python/commit/f18b01414b21b49943a6ba2cdaa30ff7dd6a3025))\n* support custom file size caps ([#1825](https://github.com/anthropics/anthropic-sdk-python/issues/1825)) ([7e5f944](https://github.com/anthropics/anthropic-sdk-python/commit/7e5f944ad85bd99526d9df30dc034f657472adaa))\n\n\n##",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-28T16:52:38Z",
+      "final_score": 1570.28770339418
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.100.0: sdk: v0.100.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.0",
+      "body": "## 0.100.0 (2026-05-28)\n\nFull Changelog: [sdk-v0.99.0...sdk-v0.100.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.99.0...sdk-v0.100.0)\n\n### Features\n\n* **api:** Add support for claude-opus-4-8, mid-conversation system blocks, and usage.output_tokens_details ([bb0bf27](https://github.com/anthropics/anthropic-sdk-typescript/commit/bb0bf278ea0afdf383b6ea711cadf3ab788ea84a))\n\n\n### Documentation\n\n* replace literal newlines ([66ba142](https://github.com/anthropics/anthropic-sdk-typescript/commit/66ba1421737231e50bcef295b4437ce60cc90be2))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-28T16:47:08Z",
+      "final_score": 1569.851195457672
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.153: v2.1.153",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.153",
+      "body": "## What's changed\n\n- Added `skipLfs` option to `github`/`git` plugin marketplace sources to skip Git LFS downloads during clone and update\n- Claude Code now shows a one-time notice when your npm global install can't auto-update; `/doctor` lists the fixes\n- Status line commands now receive `COLUMNS` and `LINES` environment variables so scripts can size output to the terminal width\n- `claude agents`: autocomplete in the dispatch input now suggests native slash commands and bundled skills, not just project skills\n- `claude agents`: PR column now shows `PR #N` for a single PR or `N PRs` for multip",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-28T00:52:08Z",
+      "final_score": 1494.0575446640212
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.152: v2.1.152",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.152",
+      "body": "## What's changed\n\n- `/code-review --fix` now applies review findings to your working tree after the review, surfacing reuse, simplification, and efficiency suggestions; `/simplify` now invokes `/code-review --fix`\n- Skills and slash commands can now set `disallowed-tools` in frontmatter to remove tools from the model while the skill is active\n- Added `/reload-skills` command to re-scan skill directories without restarting the session\n- `SessionStart` hooks can now return `reloadSkills: true` to re-scan skill directories, making skills installed by the hook available in the same session\n- `Ses",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-27T01:30:59Z",
+      "final_score": 1382.8551637116402
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.99.0: sdk: v0.99.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.99.0",
+      "body": "## 0.99.0 (2026-05-27)\n\nFull Changelog: [sdk-v0.98.1...sdk-v0.99.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.98.1...sdk-v0.99.0)\n\n### Features\n\n* support custom file size caps ([#1029](https://github.com/anthropics/anthropic-sdk-typescript/issues/1029)) ([814cd4c](https://github.com/anthropics/anthropic-sdk-typescript/commit/814cd4c6b5b01e9640d52738d87fa61fc62991e7))\n\n\n### Bug Fixes\n\n* **streaming:** carry stop_details through message_delta accumulation ([#1027](https://github.com/anthropics/anthropic-sdk-typescript/issues/1027)) ([198bc27](https://github.com/anthr",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-27T01:04:19Z",
+      "final_score": 1380.7387615952382
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.98.1: sdk: v0.98.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.98.1",
+      "body": "## 0.98.1 (2026-05-26)\n\nFull Changelog: [sdk-v0.98.0...sdk-v0.98.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.98.0...sdk-v0.98.1)\n\n### Bug Fixes\n\n* **client:** preserve directory prefix in skills.versions.create uploads ([#1024](https://github.com/anthropics/anthropic-sdk-typescript/issues/1024)) ([abbcd6a](https://github.com/anthropics/anthropic-sdk-typescript/commit/abbcd6a47d84bc6efcf259f0f803158847f255cf))\n\n\n### Chores\n\n* **client:** swap to using Trusted Publishing ([821a50e](https://github.com/anthropics/anthropic-sdk-typescript/commit/821a50ef1fd64270e09c026a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-26T23:19:03Z",
+      "final_score": 1372.3842642407408
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.150: v2.1.150",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.150",
+      "body": "## What's changed\n\n- Internal infrastructure improvements (no user-facing changes)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-23T04:03:51Z",
+      "final_score": 937.8445817010582
+    }
+  ]
+}
