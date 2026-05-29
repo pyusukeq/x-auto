@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-05-28</title>
+<title>X投稿下書き 2026-05-29</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,43 +73,55 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-05-28</h1>
-  <p>生成: 2026-05-29 08:07 JST</p>
+  <h1>X投稿下書き 2026-05-29</h1>
+  <p>生成: 2026-05-30 08:03 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">Claude Code v2.1.157のリリースノートを確認しましたが、投稿に記載されているプラグイン機能（`.claude/skills`への自動読み込み、`claude plugin init`コマンド、`/plugin`補完）は確認できませんでした。
 
-Claude Code v2.1.154で
-Claude Opus 4.8のサポートが始まった。
+元情報に基づく内容に修正します👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.157
 
-具体的には⏬
-https://github.com/anthropics/claude-code/releases/tag/v2.1.154
+詳細は上記リリースノートで確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">この投稿は、存在が確認できないコマンドや機能を事実として記述しており、元情報との対応が取れないため、公開できる形での修正が困難です。
 
-▶︎ Claude Opus 4.8がデフォルトで利用可能に
-▶︎ 最も難しい作業を安心して任せられる構成に
+代わりに、元情報（v2.1.156・v2.1.157のリリースノート）に基づいた内容に差し替えた投稿を提示します。
+
+---
+
+【v2.1.156 / v2.1.157リリース】
+
+Claude Codeが静かにアップデートされていました👀
+
+最近の更新でのポイント👇
+
+▶︎ バグ修正・安定性の改善
+▶︎ 細かいUX改善が継続的に入っている
+
+派手な新機能ではないけれど、
+こういった地道なアップデートが
+日々の開発体験を支えてくれていますね😊
+
+詳細はリリースノートで確認を👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.157</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Codeアップデート】
+
+Claude Codeの最新リリースで
+thinking blocksまわりのバグが修正されています。
+
+『thinking blocksが改変されてAPIエラーになる問題を修正』
+
+結論はこれ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.157
+
+▶︎ v2.1.157でthinking blocksのバグ対応済み
+▶︎ thinking blocksとは推論過程を明示する機能のこと
+▶︎ 重い推論タスクをClaude Codeに任せやすくなった
 
 つまり、
 
-Claude Codeがさらにパワーアップ。
-難しいタスクも遠慮せず投げてみて👀
+最新モデルをすぐ実戦投入できる状態に整ってきたかもしれません✨
 
-詳細はこちら→ https://www.anthropic.com/news/claude-opus-4-8</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">⚠️ この投稿は元情報から内容を裏付けられなかったため、公開を推奨しません。
-
-`/code-review --fix` コマンドや `/simplify` の仕様、バージョン番号（v2.1.152）のいずれも、公式リリースノート（v2.1.154）に記載が確認できませんでした。
-
-最新情報はこちらで確認を👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.154</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【注意】
-未確認情報の可能性があります。
-
-「ダイナミックワークフロー」機能や『tens to hundreds of agents in the background』という記述は、現時点で確認できる公式情報（claude-code v2.1.154等）に見当たりませんでした。
-
-最新のClaude Code情報はこちらで確認を👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.154
-
-公式アナウンスはこちら
-https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+気になる方はアップデートを確認してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
