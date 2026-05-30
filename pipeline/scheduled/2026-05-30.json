@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-30",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.158で\nAuto Modeがサードパーティクラウド環境にも対応。\n\n『Bedrock・Vertex AIでもオプトイン可能に』\n\n具体的には👀\n\n▶︎ サードパーティクラウド経由でも利用可能に\n▶︎ 有効化方法はリリースノートをチェック\n▶︎ 自社クラウド環境でもAuto Modeの恩恵を受けられる\n\nつまり、\n\nAnthropic直接契約以外のユーザーにも\nAuto Modeが届くようになりましたね✨\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.158",
+    "【最新情報】\n\nClaude Code v2.1.156〜v2.1.158のリリースノートが公開されています。\n\n各バージョンの変更内容はこちらから確認できます👀\n\n▶︎ v2.1.156: https://github.com/anthropics/claude-code/releases/tag/v2.1.156\n▶︎ v2.1.157: https://github.com/anthropics/claude-code/releases/tag/v2.1.157\n▶︎ v2.1.158: https://github.com/anthropics/claude-code/releases/tag/v2.1.158\n\n細かいアップデートが続いているので、\n使っている方はリリースノートをチェックしてみて😊",
+    "【これはすごい】\nマジか！！\n\nClaude Opus 4.8がリリース。\nOpus系の最新モデルが登場した。\n\n『Thinking Blocksの不具合もv2.1.157〜v2.1.158で修正済み』\n\n具体的には⬇︎\n\n▶︎ Opus 4.8はAuto Modeにも対応（v2.1.158〜）\n▶︎ Thinking blocks修正でAPIエラーが解消\n▶︎ Bedrock・Vertex両プラットフォームで利用可能に\n\nつまり、\n\nOpus系モデルが安定して使える状態に\n仕上がってきた感じがしますね✨\n\n詳細はAnthropicの公式ページで確認してみて👀\nhttps://www.anthropic.com/news/claude-opus-4-8"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
