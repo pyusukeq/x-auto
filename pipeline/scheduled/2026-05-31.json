@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-31",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.159で\nBedrock・Vertex・Foundryにもオートモードが解放。\n\n『CLAUDE_CODE_ENABLE_AUTO_MODE=1 で有効化』\n\n具体的には👀\n\n▶︎ claude-opus-4系モデルで利用可能\n▶︎ 環境変数1行でオプトイン\n▶︎ クラウド基盤ユーザーも恩恵を受けられるように\n\n※FoundryはMicrosoft Azure上でモデルを提供するサービスです\n\nつまり、\n\nAWSやGCP・Azure経由でClaude Codeを使っている方にも\nオートモードが届いた、うれしいアップデートですよね✨\n\n詳細はこちら→ https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+    "【注意】\n投稿内容の根拠確認ができませんでした。\n\n今回の投稿で紹介したプラグイン関連の機能（`.claude/skills` への自動ロード、`claude plugin init` コマンド、`/plugin` オートコンプリート）について、公式リリースノートとの照合が取れませんでした。\n\n情報の正確性を確保するため、詳細は公式をご確認ください👀\n\n🔗 v2.1.156〜v2.1.159のリリースノート\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.159\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.158\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.157\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.156",
+    "【要確認】\n\nClaude Codeのスキル管理、\nどこに置けばいいか迷っていませんか？\n\n`.claude/skills` フォルダへの配置や `claude plugin init` コマンドについて話題になっていますが、現時点で公式リリースノートからは詳細が確認できていません。\n\n最新情報はこちらで確認を👀\nhttps://github.com/anthropics/claude-code/releases"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
