@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-06-01T23:21:01.164675",
+  "date": "2026-06-01",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-01T23:21:00.507223+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98913127878
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.159: v2.1.159",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+      "body": "## What's changed\n\n- Internal infrastructure improvements (no user-facing changes)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-31T19:42:49Z",
+      "final_score": 1468.396607633598
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.158: v2.1.158",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.158",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.158",
+      "body": "## What's changed\n\n- Auto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by setting `CLAUDE_CODE_ENABLE_AUTO_MODE=1`\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-30T02:42:16Z",
+      "final_score": 1273.114861601852
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.157: v2.1.157",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "body": "## What's changed\n\n- Plugins in `.claude/skills` directories are now automatically loaded, no marketplace required\n- Added `claude plugin init <name>` to scaffold a new plugin in `.claude/skills`\n- Added autocomplete for `/plugin` arguments: subcommands, installed plugin names, and plugins from known marketplaces\n- `claude agents`: the `agent` field in `settings.json` is now honored for dispatched sessions, with `--agent <name>` to override it\n- `EnterWorktree` can now switch between Claude-managed worktrees mid-session\n- `tool_decision` telemetry events now include `tool_parameters` (bash com",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T20:20:38Z",
+      "final_score": 1242.826501813492
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.156: v2.1.156",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.156",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.156",
+      "body": "## What's changed\n\n- Fixed an issue when using Opus 4.8 where thinking blocks were modified, leading to API errors.\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T01:42:23Z",
+      "final_score": 1154.076501813492
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.105.2: v0.105.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
+      "body": "## 0.105.2 (2026-05-29)\n\nFull Changelog: [v0.105.1...v0.105.2](https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.1...v0.105.2)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:20:59Z",
+      "final_score": 1147.6161843531745
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.3.1: aws-sdk: v0.3.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.1",
+      "body": "## 0.3.1 (2026-05-29)\n\nFull Changelog: [aws-sdk-v0.3.0...aws-sdk-v0.3.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.3.0...aws-sdk-v0.3.1)\n\n### Chores\n\n* **client:** update lockfiles to have proper dependencies on standardwebhooks ([5e9b523](https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5237e53aefda65637bd11eb0d07f50bbc952))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:08:35Z",
+      "final_score": 1146.6320573690475
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.2.4: foundry-sdk: v0.2.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.4",
+      "body": "## 0.2.4 (2026-05-29)\n\nFull Changelog: [foundry-sdk-v0.2.3...foundry-sdk-v0.2.4](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.2.3...foundry-sdk-v0.2.4)\n\n### Chores\n\n* **client:** update lockfiles to have proper dependencies on standardwebhooks ([5e9b523](https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5237e53aefda65637bd11eb0d07f50bbc952))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:08:24Z",
+      "final_score": 1146.6175071044975
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.100.1: sdk: v0.100.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.100.1",
+      "body": "## 0.100.1 (2026-05-29)\n\nFull Changelog: [sdk-v0.100.0...sdk-v0.100.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.100.0...sdk-v0.100.1)\n\n### Bug Fixes\n\n* **streaming:** carry encrypted_content on beta compaction blocks ([#1025](https://github.com/anthropics/anthropic-sdk-typescript/issues/1025)) ([eccddf3](https://github.com/anthropics/anthropic-sdk-typescript/commit/eccddf3ed28645bceed2f3b6eb7826466377f1e8))\n\n\n### Chores\n\n* **client:** update lockfiles to have proper dependencies on standardwebhooks ([5e9b523](https://github.com/anthropics/anthropic-sdk-typescript/c",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:08:17Z",
+      "final_score": 1146.608247845238
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.105.1: v0.105.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.1",
+      "body": "## 0.105.1 (2026-05-29)\n\nFull Changelog: [v0.105.0...v0.105.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.0...v0.105.1)\n\n### Chores\n\n* **internal:** use Trusted Publishing for PyPI releases ([1d04fc5](https://github.com/anthropics/anthropic-sdk-python/commit/1d04fc52d2dd1f88e22808de2c53b0d66913631f))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:07:37Z",
+      "final_score": 1146.555337792328
+    }
+  ]
+}

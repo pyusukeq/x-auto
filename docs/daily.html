@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-05-31</title>
+<title>X投稿下書き 2026-06-01</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,52 +73,56 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-05-31</h1>
-  <p>生成: 2026-06-01 07:48 JST</p>
+  <h1>X投稿下書き 2026-06-01</h1>
+  <p>生成: 2026-06-02 08:21 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code v2.1.159で
-Bedrock・Vertex・Foundryにもオートモードが解放。
+Claude Code最新版で
+Bedrock・Vertex・Foundryにも「Auto mode」が解放された。
 
-『CLAUDE_CODE_ENABLE_AUTO_MODE=1 で有効化』
+『CLAUDE_CODE_ENABLE_AUTO_MODE=1 でオプトイン』
 
-具体的には👀
+具体的には👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.158
 
-▶︎ claude-opus-4系モデルで利用可能
-▶︎ 環境変数1行でオプトイン
-▶︎ クラウド基盤ユーザーも恩恵を受けられるように
+▶︎ 環境変数1つで有効化できる
+▶︎ クラウド環境でのAuto mode運用がついに現実的に
 
-※FoundryはMicrosoft Azure上でモデルを提供するサービスです
+※対応モデル・詳細はリリースノートで確認を。モデル名等は公式情報をもとにご確認ください。
 
 つまり、
 
-AWSやGCP・Azure経由でClaude Codeを使っている方にも
-オートモードが届いた、うれしいアップデートですよね✨
+自社インフラ上でClaudeのAuto modeを使える選択肢が増えましたね✨</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最近のアップデートで
+プラグインの使い方がシンプルになったようです。
 
-詳細はこちら→ https://github.com/anthropics/claude-code/releases/tag/v2.1.159</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
-投稿内容の根拠確認ができませんでした。
+マーケットプレイス不要で
+自作プラグインをすぐ使えるとの情報があります。
 
-今回の投稿で紹介したプラグイン関連の機能（`.claude/skills` への自動ロード、`claude plugin init` コマンド、`/plugin` オートコンプリート）について、公式リリースノートとの照合が取れませんでした。
+報告されているポイント：
 
-情報の正確性を確保するため、詳細は公式をご確認ください👀
+▶︎ `.claude/skills` に置くだけで自動ロード
+▶︎ `claude plugin init &lt;名前&gt;` で雛形をスキャフォールド
+▶︎ `/plugin` コマンドの引数補完も追加
 
-🔗 v2.1.156〜v2.1.159のリリースノート
-https://github.com/anthropics/claude-code/releases/tag/v2.1.159
-https://github.com/anthropics/claude-code/releases/tag/v2.1.158
-https://github.com/anthropics/claude-code/releases/tag/v2.1.157
-https://github.com/anthropics/claude-code/releases/tag/v2.1.156</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
+詳細はリリースノートで確認を👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.157</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは要確認】
+気になる情報が。
 
-Claude Codeのスキル管理、
-どこに置けばいいか迷っていませんか？
+Claude Codeの最近のリリース（v2.1.156〜v2.1.159）で
+いくつかの機能追加が行われています。
 
-`.claude/skills` フォルダへの配置や `claude plugin init` コマンドについて話題になっていますが、現時点で公式リリースノートからは詳細が確認できていません。
+詳細はリリースノートで確認してみて👀
 
-最新情報はこちらで確認を👀
-https://github.com/anthropics/claude-code/releases</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+▶︎ v2.1.156: https://github.com/anthropics/claude-code/releases/tag/v2.1.156
+▶︎ v2.1.157: https://github.com/anthropics/claude-code/releases/tag/v2.1.157
+▶︎ v2.1.158: https://github.com/anthropics/claude-code/releases/tag/v2.1.158
+▶︎ v2.1.159: https://github.com/anthropics/claude-code/releases/tag/v2.1.159
+
+各バージョンの変更内容はリンク先で直接ご確認ください✨</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
