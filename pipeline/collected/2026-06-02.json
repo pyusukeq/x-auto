@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-06-02T23:26:25.183789",
+  "date": "2026-06-02",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-02T23:26:23.931513+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.979297209375
+    },
+    {
+      "source": "Hacker News",
+      "title": "Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",
+      "url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
+      "external_url": "https://www.economist.com/finance-and-economics/2026/06/01/can-the-stockmarket-swallow-anthropic-spacex-and-openai",
+      "score": 675,
+      "comments": 1180,
+      "created": "2026-06-01T23:45:46+00:00",
+      "final_score": 1844.8669824296876
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.161: v2.1.161",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
+      "body": "## What's changed\n\n- `OTEL_RESOURCE_ATTRIBUTES` values are now included as labels on metric datapoints, so you can slice usage metrics by custom dimensions like team or repo\n- `claude agents` rows now show `done/total` before the detail when work is fanned out; peek shows the longest-running item\n- `/mcp` now collapses claude.ai connectors you've never signed in to behind a \"Show unused connectors\" row\n- Parallel tool calls: a failed Bash command no longer cancels other calls in the same batch — each tool returns its own result independently\n- Fullscreen mode: clipboard now uses `wl-copy`/`xcl",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-02T21:58:22Z",
+      "final_score": 1593.0116617156084
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.160: v2.1.160",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.160",
+      "body": "## What's changed\n\n- Added a prompt before writing to shell startup files (`.zshenv`, `.zlogin`, `.bash_login`) and `~/.config/git/`, which could otherwise lead to unintended command execution\n- `acceptEdits` mode now prompts before writing build-tool config files that grant code execution (`.npmrc`, `.yarnrc*`, `bunfig.toml`, `.bazelrc`, `.pre-commit-config.yaml`, `.devcontainer/`, etc.)\n- Edit no longer requires a separate Read after viewing a file with `grep`: single-file `grep`/`egrep`/`fgrep` commands now satisfy the read-before-edit check\n- Fixed copy-on-select not writing to the Windows",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-02T02:10:25Z",
+      "final_score": 1498.7299156838624
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.159: v2.1.159",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.159",
+      "body": "## What's changed\n\n- Internal infrastructure improvements (no user-facing changes)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-31T19:42:49Z",
+      "final_score": 1353.6822966362433
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.158: v2.1.158",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.158",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.158",
+      "body": "## What's changed\n\n- Auto mode is now available on Bedrock, Vertex, and Foundry for Opus 4.7 and Opus 4.8. Opt in by setting `CLAUDE_CODE_ENABLE_AUTO_MODE=1`\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-30T02:42:16Z",
+      "final_score": 1158.4005506044973
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.157: v2.1.157",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.157",
+      "body": "## What's changed\n\n- Plugins in `.claude/skills` directories are now automatically loaded, no marketplace required\n- Added `claude plugin init <name>` to scaffold a new plugin in `.claude/skills`\n- Added autocomplete for `/plugin` arguments: subcommands, installed plugin names, and plugins from known marketplaces\n- `claude agents`: the `agent` field in `settings.json` is now honored for dispatched sessions, with `--agent <name>` to override it\n- `EnterWorktree` can now switch between Claude-managed worktrees mid-session\n- `tool_decision` telemetry events now include `tool_parameters` (bash com",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T20:20:38Z",
+      "final_score": 1128.1121908161376
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.105.2: v0.105.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.105.2",
+      "body": "## 0.105.2 (2026-05-29)\n\nFull Changelog: [v0.105.1...v0.105.2](https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.1...v0.105.2)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:20:59Z",
+      "final_score": 1032.90187335582
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.3.1: aws-sdk: v0.3.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.3.1",
+      "body": "## 0.3.1 (2026-05-29)\n\nFull Changelog: [aws-sdk-v0.3.0...aws-sdk-v0.3.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.3.0...aws-sdk-v0.3.1)\n\n### Chores\n\n* **client:** update lockfiles to have proper dependencies on standardwebhooks ([5e9b523](https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5237e53aefda65637bd11eb0d07f50bbc952))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:08:35Z",
+      "final_score": 1031.917746371693
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.2.4: foundry-sdk: v0.2.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.2.4",
+      "body": "## 0.2.4 (2026-05-29)\n\nFull Changelog: [foundry-sdk-v0.2.3...foundry-sdk-v0.2.4](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.2.3...foundry-sdk-v0.2.4)\n\n### Chores\n\n* **client:** update lockfiles to have proper dependencies on standardwebhooks ([5e9b523](https://github.com/anthropics/anthropic-sdk-typescript/commit/5e9b5237e53aefda65637bd11eb0d07f50bbc952))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-05-29T00:08:24Z",
+      "final_score": 1031.903196107143
+    }
+  ]
+}
