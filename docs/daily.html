@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-02</title>
+<title>X投稿下書き 2026-06-03</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,61 +73,64 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-02</h1>
-  <p>生成: 2026-06-03 08:27 JST</p>
+  <h1>X投稿下書き 2026-06-03</h1>
+  <p>生成: 2026-06-04 08:26 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">UberがAIツールの利用上限を
+月1,500ドルに設定したことが注目されています。
 
-Claude Code v2.1.161がリリース。
-OpenTelemetryのリソース属性をメトリクスのラベルとして活用できるようになった。
-
-『OTEL_RESOURCE_ATTRIBUTES の値がメトリクスのラベルに』
+『この上限額がAIツール価格の実態を示すシグナルになる』
 
 具体的には⏬
 
-▶︎ カスタムディメンション（チーム・リポジトリ名など）でメトリクスを分類可能に
-▶︎ `claude agents` の一覧に done/total の進捗が表示される
-▶︎ 最も時間のかかっているタスクをpeekで確認できる
+▶︎ 大企業でも野放しにしないコスト管理が始まっている
+▶︎ 開発者1人あたりの適正なAI利用コストの議論が加速
+▶︎ 個人開発者にとっても予算感の参考になりそう
 
 つまり、
 
-大規模チームでの運用管理が
-ぐっとやりやすくなりそうですね✨
+AIツールの「適正価格」を考えるうえで
+企業の上限設定は重要な指標になってきたかもしれません。
 
-リリース詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.161</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【最新情報】
+詳しくはこちら👇
+https://simonwillison.net/2026/Jun/3/uber-caps-usage/</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注目】
 
-Claude Code v2.1.159〜v2.1.161のリリースノートが公開されています。
+YC P26バッチ出身のHyperが
+「Company Brain」という概念を提唱している。
 
-最新バージョンの変更内容を確認したい方はこちら👇
-
-▶︎ v2.1.161: https://github.com/anthropics/claude-code/releases/tag/v2.1.161
-▶︎ v2.1.160: https://github.com/anthropics/claude-code/releases/tag/v2.1.160
-▶︎ v2.1.159: https://github.com/anthropics/claude-code/releases/tag/v2.1.159
-
-また、Anthropicの公式ニュースページでも最新情報を確認できます👇
-https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-マジか！！
-
-Claude Code v2.1.160で
-シェル設定ファイルへの書き込みに確認ステップが追加された。
+コードベースだけでなく
+会社全体の知識をエージェントに持たせる発想が新しい。
 
 ポイントはここ👇
 
-▶︎ `.zshenv` `.bash_login` など起動ファイルへの変更は必ず確認を求める
-▶︎ `.npmrc` などパッケージ設定ファイルも同様に保護
-▶︎ 意図しないコマンド実行のリスクを未然に防げる
+▶︎ ドキュメント・過去の意思決定・文化まで丸ごと学習させる
+▶︎ エージェントが文脈を理解した上で開発を支援
+▶︎ チームの「暗黙知」をAIに引き継がせるイメージ
 
 つまり、
 
-自動化を進めながらも
-セキュリティをちゃんと守ってくれる設計、嬉しいですよね🙌
+コードを書かせるだけでなく
+「会社を知っているAI」を育てる時代になってきたかもしれません。
 
-詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.160</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+HNのスレッドをチェックしてみて👀
+https://news.ycombinator.com/item?id=48387095</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【注目】
+Hyper（YC P26）が面白いアプローチを取っている。
+
+『会社の文脈を理解したエージェントが自律的に開発を進める』
+
+具体的には⏬
+
+▶︎ 新メンバーのオンボーディング時間を短縮
+▶︎ 「なぜこの設計にしたか」という背景もエージェントが把握
+▶︎ 属人化していた知識がチーム全体の資産になる
+
+個人の頭の中にあった知識を
+組織全体で共有できる仕組みに変えてくれるかもしれない。
+
+気になる方はこちら👀
+https://news.ycombinator.com/item?id=48387095</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

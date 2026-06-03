@@ -1,0 +1,38 @@
+{
+  "collected_at": "2026-06-03T23:25:40.061207",
+  "date": "2026-06-03",
+  "total_found": 3,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-03T23:25:39.487182+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.990510456326
+    },
+    {
+      "source": "Hacker News",
+      "title": "Uber's $1,500/month AI limit is a useful signal for AI tool pricing",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+      "external_url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/",
+      "score": 326,
+      "comments": 414,
+      "created": "2026-06-03T12:25:14+00:00",
+      "final_score": 837.6407143841898
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: Hyper (YC P26) – Company brain to power agentic development",
+      "url": "https://news.ycombinator.com/item?id=48387095",
+      "external_url": "",
+      "score": 47,
+      "comments": 46,
+      "created": "2026-06-03T17:39:53+00:00",
+      "final_score": 115.38771184714119
+    }
+  ]
+}
