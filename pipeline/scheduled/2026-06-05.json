@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-05",
+  "posts": [
+    "【SDKアップデート情報】\n\nanthropic-sdk-python v0.106.0がリリース。\nPython・TypeScript両SDKが一斉アップデート。\n\n具体的には↓\n\n▶︎ anthropic-sdk-python v0.106.0でモデルのdeprecated対応を追加\n▶︎ TypeScript SDK（aws/bedrock/foundry）も同時期に対応\n▶︎ 複数のプラットフォームSDKが横断的に更新\n\n利用中のモデルがdeprecated扱いになっていないか、\n早めにリリースノートで確認しておくのが安心かもしれません。\n\n詳細は各GitHubリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
+    "【最新情報】\n\nanthropic-sdk-python v0.106.0が\nリリースされました。\n\nTypeScript SDKもAWS・Foundry・Bedrockの\n各バリアント版が更新されています。\n\n主なポイントはリリースノートで確認を👀\n\n▶︎ Python SDK v0.106.0\n▶︎ TypeScript AWS SDK v0.4.0\n▶︎ TypeScript Foundry SDK v0.3.0\n▶︎ TypeScript Bedrock SDK v0.30.0\n\n各リリースノートはこちら👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.0\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.0",
+    "Anthropic SDK（Python・TypeScript）が複数アップデート。\nバグ修正と安定性の改善が中心のリリースです。\n\n『Bug fixes and reliability improvements』\n\nポイントはここ👇\n\n▶︎ 地道なバグ修正が積み重なって動作が安定していく\n▶︎ 大きな機能追加より「使っていて壊れない」信頼性が実は大事\n▶︎ 日々のアップデートがSDKの完成度を少しずつ上げている\n\nつまり、\n\n派手さはないけれど\nこういう改善の積み重ねが開発体験を支えているかもしれません🙌\n\n最新版への更新はこちら👀\n・Python SDK v0.106.0: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0\n・TS SDK (AWS): https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

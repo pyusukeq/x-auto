@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-06-05T22:57:17.029433",
+  "date": "2026-06-05",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-05T22:57:15.904871+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.981408654956
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.106.0: v0.106.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
+      "body": "## 0.106.0 (2026-06-05)\n\nFull Changelog: [v0.105.2...v0.106.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.2...v0.106.0)\n\n### Features\n\n* **api:** mark Claude Opus 4.1 as deprecated ([85068cc](https://github.com/anthropics/anthropic-sdk-python/commit/85068cc4cb42feecb80a378942cec71e1baa8dcf))\n\n\n### Bug Fixes\n\n* **client:** make Foundry client copy() and with_options() work ([94146ac](https://github.com/anthropics/anthropic-sdk-python/commit/94146acdc1c6f66f187d5a42e4afbb911e692fe8))\n* **transform schema:** preserve $defs when schema root is a $ref ([#1642](https://github.",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T21:13:11Z",
+      "final_score": 1591.7380563650793
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.4.0: aws-sdk: v0.4.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0",
+      "body": "## 0.4.0 (2026-06-05)\n\nFull Changelog: [aws-sdk-v0.3.1...aws-sdk-v0.4.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.3.1...aws-sdk-v0.4.0)\n\n### Features\n\n* **api:** mark Claude Opus 4.1 as deprecated ([4ee46f2](https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb210ae8b50))\n* **client:** add support for middleware ([9b01120](https://github.com/anthropics/anthropic-sdk-typescript/commit/9b011207965540211cefb19d44d758b7942aedab))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T19:49:00Z",
+      "final_score": 1585.0568394338623
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.3.0: foundry-sdk: v0.3.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.0",
+      "body": "## 0.3.0 (2026-06-05)\n\nFull Changelog: [foundry-sdk-v0.2.4...foundry-sdk-v0.3.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.2.4...foundry-sdk-v0.3.0)\n\n### Features\n\n* **api:** mark Claude Opus 4.1 as deprecated ([4ee46f2](https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb210ae8b50))\n* **client:** add support for middleware ([9b01120](https://github.com/anthropics/anthropic-sdk-typescript/commit/9b011207965540211cefb19d44d758b7942aedab))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T19:48:49Z",
+      "final_score": 1585.0422891693122
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.30.0: bedrock-sdk: v0.30.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.0",
+      "body": "## 0.30.0 (2026-06-05)\n\nFull Changelog: [bedrock-sdk-v0.29.2...bedrock-sdk-v0.30.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.29.2...bedrock-sdk-v0.30.0)\n\n### Features\n\n* **api:** mark Claude Opus 4.1 as deprecated ([4ee46f2](https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb210ae8b50))\n* **client:** add support for middleware ([9b01120](https://github.com/anthropics/anthropic-sdk-typescript/commit/9b011207965540211cefb19d44d758b7942aedab))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T19:48:38Z",
+      "final_score": 1585.027738904762
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.17.0: vertex-sdk: v0.17.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.0",
+      "body": "## 0.17.0 (2026-06-05)\n\nFull Changelog: [vertex-sdk-v0.16.1...vertex-sdk-v0.17.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.16.1...vertex-sdk-v0.17.0)\n\n### Features\n\n* **api:** mark Claude Opus 4.1 as deprecated ([4ee46f2](https://github.com/anthropics/anthropic-sdk-typescript/commit/4ee46f24cb2a5388027d7efb0b44fcb210ae8b50))\n* **client:** add support for middleware ([9b01120](https://github.com/anthropics/anthropic-sdk-typescript/commit/9b011207965540211cefb19d44d758b7942aedab))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T19:48:32Z",
+      "final_score": 1585.0198023968253
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.101.0: sdk: v0.101.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.101.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.101.0",
+      "body": "## 0.101.0 (2026-06-05)\n\nFull Changelog: [sdk-v0.100.1...sdk-v0.101.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.100.1...sdk-v0.101.0)\n\n### Features\n\n* **client:** add support for middleware ([9b01120](https://github.com/anthropics/anthropic-sdk-typescript/commit/9b011207965540211cefb19d44d758b7942aedab))\n\n\n### Bug Fixes\n\n* apply request timeout to inner fetch only, not middleware chain ([#40](https://github.com/anthropics/anthropic-sdk-typescript/issues/40)) ([25c13f6](https://github.com/anthropics/anthropic-sdk-typescript/commit/25c13f6183391f006396f16a9bd9a2c2f71",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T19:48:24Z",
+      "final_score": 1585.0092203862434
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.165: v2.1.165",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.165",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.165",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T05:45:06Z",
+      "final_score": 1518.0806489576719
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.163: v2.1.163",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
+      "body": "## What's changed\n\n- Added `requiredMinimumVersion` and `requiredMaximumVersion` managed settings — Claude Code refuses to start if its version is outside the allowed range and directs the user to an approved version\n- Added `/plugin list` command to list installed plugins, with `--enabled`/`--disabled` filters\n- Added a \"c to copy\" shortcut to `/btw` that copies the raw markdown answer to the clipboard, preserving formatting when pasted elsewhere\n- Hooks: Stop and SubagentStop hooks can now return `hookSpecificOutput.additionalContext` to give Claude feedback and keep the turn going without b",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-04T21:52:51Z",
+      "final_score": 1480.6004902275133
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.162: v2.1.162",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
+      "body": "## What's changed\n\n- `claude agents --json` now includes `waitingFor` showing what a waiting session is blocked on (e.g. permission prompt)\n- `--tools`: explicitly listing Grep/Glob now provides the dedicated search tools on native builds with embedded search (previously these names were silently ignored)\n- `/effort` now confirms when your chosen level will persist as the default for new sessions\n- Clicking a slash command in the autocomplete menu now fills it into your prompt instead of running it immediately; press Enter to run\n- Remote Control now shows as a persistent footer pill (with a l",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-03T21:31:35Z",
+      "final_score": 1364.6269452539682
+    }
+  ]
+}

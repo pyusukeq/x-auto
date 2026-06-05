@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-04</title>
+<title>X投稿下書き 2026-06-05</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,72 +73,64 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-04</h1>
-  <p>生成: 2026-06-05 08:01 JST</p>
+  <h1>X投稿下書き 2026-06-05</h1>
+  <p>生成: 2026-06-06 07:58 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【SDKアップデート情報】
 
-Claude Codeの最新バージョンで
-チーム向けのバージョン管理機能が追加された。
+anthropic-sdk-python v0.106.0がリリース。
+Python・TypeScript両SDKが一斉アップデート。
 
-『requiredMinimumVersion / requiredMaximumVersion』
+具体的には↓
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases
+▶︎ anthropic-sdk-python v0.106.0でモデルのdeprecated対応を追加
+▶︎ TypeScript SDK（aws/bedrock/foundry）も同時期に対応
+▶︎ 複数のプラットフォームSDKが横断的に更新
 
-▶︎ 許可範囲外のバージョンは起動を拒否する設定が可能に
-▶︎ 承認済みバージョンへの誘導メッセージも自動表示
-▶︎ `/plugin list` でインストール済みプラグインを一覧確認できるように
+利用中のモデルがdeprecated扱いになっていないか、
+早めにリリースノートで確認しておくのが安心かもしれません。
 
-つまり、
+詳細は各GitHubリリースノートでチェックしてみて👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【最新情報】
 
-チームでClaude Codeを使うとき
-バージョンを統一管理できるようになりましたね。
+anthropic-sdk-python v0.106.0が
+リリースされました。
 
-詳細はGitHubのリリースノートをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
+TypeScript SDKもAWS・Foundry・Bedrockの
+各バリアント版が更新されています。
 
-Claude Codeのエージェント実行状況
-ちゃんと把握できていますか？
+主なポイントはリリースノートで確認を👀
 
-v2.1.161〜v2.1.163の連続アップデートで
-`claude agents` コマンドの視認性がかなり上がった。
+▶︎ Python SDK v0.106.0
+▶︎ TypeScript AWS SDK v0.4.0
+▶︎ TypeScript Foundry SDK v0.3.0
+▶︎ TypeScript Bedrock SDK v0.30.0
 
-ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.163
+各リリースノートはこちら👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.0
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">Anthropic SDK（Python・TypeScript）が複数アップデート。
+バグ修正と安定性の改善が中心のリリースです。
 
-▶︎ `claude agents --json` に `waitingFor` が追加され、何待ちか一目でわかる
-▶︎ ファンアウト実行時に `done/total` 進捗が表示されるように
-▶︎ 最も時間がかかっているタスクをpeekで確認できる
-
-つまり、
-
-複数エージェントが並走するとき
-どこで詰まっているか素早く特定できますよね✨
-
-v2.1.163以降に更新してぜひ試してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【注目】
-
-Claude Codeがシェルの設定ファイルを
-勝手に書き換えていたかもしれない、という話。
-
-v2.1.161〜v2.1.163のリリースで
-シェル起動ファイルへの書き込み前に
-確認プロンプトが追加された。
+『Bug fixes and reliability improvements』
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.163
 
-▶︎ シェル起動ファイルへの書き込みで確認が入るように
-▶︎ 意図しないコマンド実行リスクを事前に防げる
+▶︎ 地道なバグ修正が積み重なって動作が安定していく
+▶︎ 大きな機能追加より「使っていて壊れない」信頼性が実は大事
+▶︎ 日々のアップデートがSDKの完成度を少しずつ上げている
 
 つまり、
 
-自動化を進めるほど見落としがちな
-セキュリティ面が丁寧に整備されてきましたね🙌
+派手さはないけれど
+こういう改善の積み重ねが開発体験を支えているかもしれません🙌
 
-最新バージョンへのアップデートを確認してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+最新版への更新はこちら👀
+・Python SDK v0.106.0: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0
+・TS SDK (AWS): https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
