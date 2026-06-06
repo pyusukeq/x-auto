@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-06",
+  "posts": [
+    "【未確認情報につきご注意】\n待ってたやつ！！\n\nClaude Codeに「フォールバックモデル」機能が追加されたとの情報があります。\n\n『プライマリモデルが過負荷や利用不可のとき、代替モデルを順番に試す』\n\n具体的には\n\n▶︎ `fallbackModel` 設定で代替モデルを指定可能\n▶︎ `--fallback-model` オプションがインタラクティブセッションにも対応\n▶︎ denyルールのツール名にglobパターンが使えるように\n\nモデルが混雑しても作業が止まらない安心設計ですね✨\n\n※バージョン詳細など正確な情報は公式ページで確認してみて👀\nhttps://www.anthropic.com/news",
+    "【保存推奨】\n\nAnthropicのPython SDKと\nTypeScript系パッケージが更新された。\n\nManaged Agents周りの型定義が\n静かに改善されている。\n\nポイントはここ👇\n\n▶︎ Python SDK v0.107.0：Managed Agents型の小規模アップデート\n▶︎ TypeScript aws-sdk v0.4.1：AWS向け派生パッケージを更新\n▶︎ TypeScript bedrock-sdk v0.30.1：Bedrock向け派生パッケージを更新\n\nつまり、\n\nManaged Agentsを使っているなら\n早めに最新バージョンへ上げておくと安心かもしれません😊\n\nGitHubのリリースページで確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
+    "【Anthropic SDK最新リリース】\n\nanthropic-sdk-python v0.107.0 ほか、複数のSDKが同時アップデート。\n\n今回のリリースはこちら👇\n\n▶︎ anthropic-sdk-python v0.107.0\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0\n▶︎ anthropic-sdk-typescript aws-sdk-v0.4.1\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1\n▶︎ anthropic-sdk-typescript bedrock-sdk-v0.30.1\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1\n\n各リリースノートで変更内容を確認してみて👀\n\n最新情報は公式サイトもチェック→ https://www.anthropic.com/news"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
