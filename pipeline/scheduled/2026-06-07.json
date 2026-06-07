@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-07",
+  "posts": [
+    "【速報】\n注目！\n\nanthropic-sdk-python v0.107.1 と\naws-sdk-typescript v0.4.1 が\n相次いでリリースされた。\n\n具体的には⏬\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1\n\n▶︎ Python SDK は v0.107.0 → v0.107.1 へ更新\n▶︎ TypeScript AWS SDK も v0.4.1 がリリース\n\n詳細はGitHubのリリースノートでチェックしてみて👀",
+    "【保存推奨】\n\nanthropic-sdk-typescript の AWS向けサブパッケージ\naws-sdk-v0.4.1 がリリースされました。\n\nAWS・Bedrockでエージェント開発をしている人には\n地味だけど見逃せない変更かもしれません。\n\nポイントはここ👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1\n\n▶︎ ミドルウェアがリクエスト署名前に実行されるよう修正（AWS・Bedrock SDK）\n▶︎ Python SDK v0.107.0 でも同様の更新が適用済み\n\nつまり、\n\nSDKの信頼性が着々と高まっている。\nAWS・Bedrock経由でエージェント系のコードを書くなら今のうちにアップデートしておくと安心ですよね✨\n\n最新バージョンへの更新はお早めに👀",
+    "【リリース情報】\n\nAnthropicのTypeScript SDK（aws-sdkパッケージ）v0.4.1で\n「ミドルウェアがリクエスト署名前に実行される」という修正が入った。\n\n『run middleware before request signing』\n\nこれが何を意味するか⏩\n\n▶︎ 署名前にリクエスト内容を自在に加工できる\n▶︎ 認証まわりのカスタマイズが格段に柔軟に\n\nつまり、\n\nAWS Bedrock経由でAnthropicのAPIを使う開発者にとって\n地味な修正に見えて、実はかなり大きな改善かもしれません🙌\n\n詳細はこちらで確認を👀\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

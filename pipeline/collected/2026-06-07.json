@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-06-07T22:53:19.819181",
+  "date": "2026-06-07",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-07T22:53:19.049292+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.987272436905
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.107.1: v0.107.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
+      "body": "## 0.107.1 (2026-06-07)\n\nFull Changelog: [v0.107.0...v0.107.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.107.0...v0.107.1)\n\n### Bug Fixes\n\n* **foundry:** send x-api-key header for API-key auth ([#62](https://github.com/anthropics/anthropic-sdk-python/issues/62)) ([1338141](https://github.com/anthropics/anthropic-sdk-python/commit/13381413d22ad14d85e66836c67cc8a13bd2b7bd)), closes [#1661](https://github.com/anthropics/anthropic-sdk-python/issues/1661)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-07T17:18:45Z",
+      "final_score": 1573.4460064391535
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.168: v2.1.168",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.168",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.168",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T23:41:53Z",
+      "final_score": 1489.5676995608464
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.4.1: aws-sdk: v0.4.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1",
+      "body": "## 0.4.1 (2026-06-06)\n\nFull Changelog: [aws-sdk-v0.4.0...aws-sdk-v0.4.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.4.0...aws-sdk-v0.4.1)\n\n### Bug Fixes\n\n* **client:** run middleware before request signing ([#45](https://github.com/anthropics/anthropic-sdk-typescript/issues/45)) ([95f1a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/95f1a4a406c95aa31855fa1178fedfcb19978e16))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:27Z",
+      "final_score": 1458.7396572328043
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.107.0: v0.107.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
+      "body": "## 0.107.0 (2026-06-06)\n\nFull Changelog: [v0.106.0...v0.107.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.106.0...v0.107.0)\n\n### Features\n\n* **api:** small updates to Managed Agents types ([72923f9](https://github.com/anthropics/anthropic-sdk-python/commit/72923f986f808597f86482a7eae4fba9a791e6ae))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:25Z",
+      "final_score": 1458.7370117301587
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.30.1: bedrock-sdk: v0.30.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1",
+      "body": "## 0.30.1 (2026-06-06)\n\nFull Changelog: [bedrock-sdk-v0.30.0...bedrock-sdk-v0.30.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.30.0...bedrock-sdk-v0.30.1)\n\n### Bug Fixes\n\n* **client:** run middleware before request signing ([#45](https://github.com/anthropics/anthropic-sdk-typescript/issues/45)) ([95f1a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/95f1a4a406c95aa31855fa1178fedfcb19978e16))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:16Z",
+      "final_score": 1458.725106968254
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.102.0: sdk: v0.102.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.102.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.102.0",
+      "body": "## 0.102.0 (2026-06-06)\n\nFull Changelog: [sdk-v0.101.0...sdk-v0.102.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.101.0...sdk-v0.102.0)\n\n### Features\n\n* **api:** small updates to Managed Agents types ([8ba4f92](https://github.com/anthropics/anthropic-sdk-typescript/commit/8ba4f92df32eb434503b8c69bc7328adc5edcbec))\n\n\n### Bug Fixes\n\n* **client:** run middleware before request signing ([#45](https://github.com/anthropics/anthropic-sdk-typescript/issues/45)) ([95f1a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/95f1a4a406c95aa31855fa1178fedfcb19978e16)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:10Z",
+      "final_score": 1458.7171704603174
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.167: v2.1.167",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T01:33:35Z",
+      "final_score": 1384.1470646402117
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.166: v2.1.166",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "body": "## What's changed\n\n- Added `fallbackModel` setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; `--fallback-model` now also applies to interactive sessions\n- Added glob pattern support in deny rule tool-name position (`\"*\"` denies all tools); allow rules reject non-MCP globs, and unknown tool names in deny rules warn at startup\n- Hardened cross-session messaging: messages relayed via `SendMessage` from other Claude sessions no longer carry user authority — receivers refuse relayed permission requests, and auto mode blocks them\n- `",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T00:55:18Z",
+      "final_score": 1381.1087048518518
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.106.0: v0.106.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.106.0",
+      "body": "## 0.106.0 (2026-06-05)\n\nFull Changelog: [v0.105.2...v0.106.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.105.2...v0.106.0)\n\n### Features\n\n* **api:** mark Claude Opus 4.1 as deprecated ([85068cc](https://github.com/anthropics/anthropic-sdk-python/commit/85068cc4cb42feecb80a378942cec71e1baa8dcf))\n\n\n### Bug Fixes\n\n* **client:** make Foundry client copy() and with_options() work ([94146ac](https://github.com/anthropics/anthropic-sdk-python/commit/94146acdc1c6f66f187d5a42e4afbb911e692fe8))\n* **transform schema:** preserve $defs when schema root is a $ref ([#1642](https://github.",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-05T21:13:11Z",
+      "final_score": 1363.480397973545
+    }
+  ]
+}

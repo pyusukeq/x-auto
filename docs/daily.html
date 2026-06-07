@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-06</title>
+<title>X投稿下書き 2026-06-07</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,63 +73,63 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-06</h1>
-  <p>生成: 2026-06-07 07:55 JST</p>
+  <h1>X投稿下書き 2026-06-07</h1>
+  <p>生成: 2026-06-08 07:54 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【未確認情報につきご注意】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+注目！
 
-Claude Codeに「フォールバックモデル」機能が追加されたとの情報があります。
+anthropic-sdk-python v0.107.1 と
+aws-sdk-typescript v0.4.1 が
+相次いでリリースされた。
 
-『プライマリモデルが過負荷や利用不可のとき、代替モデルを順番に試す』
+具体的には⏬
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1
 
-具体的には
+▶︎ Python SDK は v0.107.0 → v0.107.1 へ更新
+▶︎ TypeScript AWS SDK も v0.4.1 がリリース
 
-▶︎ `fallbackModel` 設定で代替モデルを指定可能
-▶︎ `--fallback-model` オプションがインタラクティブセッションにも対応
-▶︎ denyルールのツール名にglobパターンが使えるように
-
-モデルが混雑しても作業が止まらない安心設計ですね✨
-
-※バージョン詳細など正確な情報は公式ページで確認してみて👀
-https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+詳細はGitHubのリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-AnthropicのPython SDKと
-TypeScript系パッケージが更新された。
+anthropic-sdk-typescript の AWS向けサブパッケージ
+aws-sdk-v0.4.1 がリリースされました。
 
-Managed Agents周りの型定義が
-静かに改善されている。
+AWS・Bedrockでエージェント開発をしている人には
+地味だけど見逃せない変更かもしれません。
 
 ポイントはここ👇
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1
 
-▶︎ Python SDK v0.107.0：Managed Agents型の小規模アップデート
-▶︎ TypeScript aws-sdk v0.4.1：AWS向け派生パッケージを更新
-▶︎ TypeScript bedrock-sdk v0.30.1：Bedrock向け派生パッケージを更新
+▶︎ ミドルウェアがリクエスト署名前に実行されるよう修正（AWS・Bedrock SDK）
+▶︎ Python SDK v0.107.0 でも同様の更新が適用済み
 
 つまり、
 
-Managed Agentsを使っているなら
-早めに最新バージョンへ上げておくと安心かもしれません😊
+SDKの信頼性が着々と高まっている。
+AWS・Bedrock経由でエージェント系のコードを書くなら今のうちにアップデートしておくと安心ですよね✨
 
-GitHubのリリースページで確認してみて👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Anthropic SDK最新リリース】
+最新バージョンへの更新はお早めに👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【リリース情報】
 
-anthropic-sdk-python v0.107.0 ほか、複数のSDKが同時アップデート。
+AnthropicのTypeScript SDK（aws-sdkパッケージ）v0.4.1で
+「ミドルウェアがリクエスト署名前に実行される」という修正が入った。
 
-今回のリリースはこちら👇
+『run middleware before request signing』
 
-▶︎ anthropic-sdk-python v0.107.0
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0
-▶︎ anthropic-sdk-typescript aws-sdk-v0.4.1
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1
-▶︎ anthropic-sdk-typescript bedrock-sdk-v0.30.1
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1
+これが何を意味するか⏩
 
-各リリースノートで変更内容を確認してみて👀
+▶︎ 署名前にリクエスト内容を自在に加工できる
+▶︎ 認証まわりのカスタマイズが格段に柔軟に
 
-最新情報は公式サイトもチェック→ https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+つまり、
+
+AWS Bedrock経由でAnthropicのAPIを使う開発者にとって
+地味な修正に見えて、実はかなり大きな改善かもしれません🙌
+
+詳細はこちらで確認を👀
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
