@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-08",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Code v2.1.168・v2.1.169がリリース。\nトラブル時に役立つ新機能が2つ追加された。\n\n具体的には👇\n\n▶︎ `--safe-mode` フラグでCLAUDE.md・MCP・フックなどを全部無効化して起動できる\n▶︎ `/cd` コマンドでキャッシュを壊さずに作業ディレクトリを変更できる\n\nどちらもデバッグや原因の切り分けがしやすくなる改善✨\n\n環境が壊れたときや動作確認をしたいときに\n助かる機能が増えましたよね。\n\n詳細はGitHubで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.168\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+    "【注意】\n\nClaude Codeで挙動がおかしいとき、原因の特定に手間取っていませんか？\n\nv2.1.169のリリースノートを確認したところ、`--safe-mode` に関する機能追加は確認できませんでした。\n\nそのため、この投稿の内容（`--safe-mode` オプション・`CLAUDE_CODE_SAFE_MODE` 環境変数・無効化対象の列挙）は**元情報から裏付けが取れないため、公開を推奨しません。**\n\nリリースノートはこちらで確認できます👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+    "【確認中】\n情報の信頼性に注意\n\nClaude Code v2.1.169の `/cd` コマンドについて話題になっていますが、リリースノートの内容が現時点で確認できていません。\n\n▶︎ 「プロンプトキャッシュを壊さずにディレクトリ移動できる」との情報あり\n▶︎ ただし公式リリースノートでの裏付けが取れていない状態です\n\n公式リリースノートはこちらで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.169\n\n実際に試した方がいれば、ぜひ感想を聞かせてください🙌"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

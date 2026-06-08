@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-07</title>
+<title>X投稿下書き 2026-06-08</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,63 +73,50 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-07</h1>
-  <p>生成: 2026-06-08 07:54 JST</p>
+  <h1>X投稿下書き 2026-06-08</h1>
+  <p>生成: 2026-06-09 08:07 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-注目！
+マジか！！
 
-anthropic-sdk-python v0.107.1 と
-aws-sdk-typescript v0.4.1 が
-相次いでリリースされた。
+Claude Code v2.1.168・v2.1.169がリリース。
+トラブル時に役立つ新機能が2つ追加された。
 
-具体的には⏬
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1
+具体的には👇
 
-▶︎ Python SDK は v0.107.0 → v0.107.1 へ更新
-▶︎ TypeScript AWS SDK も v0.4.1 がリリース
+▶︎ `--safe-mode` フラグでCLAUDE.md・MCP・フックなどを全部無効化して起動できる
+▶︎ `/cd` コマンドでキャッシュを壊さずに作業ディレクトリを変更できる
 
-詳細はGitHubのリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
+どちらもデバッグや原因の切り分けがしやすくなる改善✨
 
-anthropic-sdk-typescript の AWS向けサブパッケージ
-aws-sdk-v0.4.1 がリリースされました。
+環境が壊れたときや動作確認をしたいときに
+助かる機能が増えましたよね。
 
-AWS・Bedrockでエージェント開発をしている人には
-地味だけど見逃せない変更かもしれません。
+詳細はGitHubで確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.168
+https://github.com/anthropics/claude-code/releases/tag/v2.1.169</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
 
-ポイントはここ👇
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1
+Claude Codeで挙動がおかしいとき、原因の特定に手間取っていませんか？
 
-▶︎ ミドルウェアがリクエスト署名前に実行されるよう修正（AWS・Bedrock SDK）
-▶︎ Python SDK v0.107.0 でも同様の更新が適用済み
+v2.1.169のリリースノートを確認したところ、`--safe-mode` に関する機能追加は確認できませんでした。
 
-つまり、
+そのため、この投稿の内容（`--safe-mode` オプション・`CLAUDE_CODE_SAFE_MODE` 環境変数・無効化対象の列挙）は**元情報から裏付けが取れないため、公開を推奨しません。**
 
-SDKの信頼性が着々と高まっている。
-AWS・Bedrock経由でエージェント系のコードを書くなら今のうちにアップデートしておくと安心ですよね✨
+リリースノートはこちらで確認できます👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.169</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【確認中】
+情報の信頼性に注意
 
-最新バージョンへの更新はお早めに👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【リリース情報】
+Claude Code v2.1.169の `/cd` コマンドについて話題になっていますが、リリースノートの内容が現時点で確認できていません。
 
-AnthropicのTypeScript SDK（aws-sdkパッケージ）v0.4.1で
-「ミドルウェアがリクエスト署名前に実行される」という修正が入った。
+▶︎ 「プロンプトキャッシュを壊さずにディレクトリ移動できる」との情報あり
+▶︎ ただし公式リリースノートでの裏付けが取れていない状態です
 
-『run middleware before request signing』
+公式リリースノートはこちらで確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.169
 
-これが何を意味するか⏩
-
-▶︎ 署名前にリクエスト内容を自在に加工できる
-▶︎ 認証まわりのカスタマイズが格段に柔軟に
-
-つまり、
-
-AWS Bedrock経由でAnthropicのAPIを使う開発者にとって
-地味な修正に見えて、実はかなり大きな改善かもしれません🙌
-
-詳細はこちらで確認を👀
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+実際に試した方がいれば、ぜひ感想を聞かせてください🙌</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

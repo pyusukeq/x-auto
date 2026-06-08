@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-06-08T23:06:55.976974",
+  "date": "2026-06-08",
+  "total_found": 15,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-08T23:06:55.253867+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.988045805327
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.169: v2.1.169",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.169",
+      "body": "## What's changed\n\n- Added `--safe-mode` flag (and `CLAUDE_CODE_SAFE_MODE`) to start Claude Code with all customizations (CLAUDE.md, plugins, skills, hooks, MCP servers) disabled for troubleshooting\n- Added `/cd` command to move a session to a new working directory without breaking the prompt cache mid-session\n- Added a `disableBundledSkills` setting and `CLAUDE_CODE_DISABLE_BUNDLED_SKILLS` environment variable to hide bundled skills, workflows, and built-in slash commands from the model\n- Fixed Up/Down arrows jumping to command history past the wrapped rows of a long input line — they now mov",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-08T21:57:18Z",
+      "final_score": 1594.4735754907408
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.107.1: v0.107.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1",
+      "body": "## 0.107.1 (2026-06-07)\n\nFull Changelog: [v0.107.0...v0.107.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.107.0...v0.107.1)\n\n### Bug Fixes\n\n* **foundry:** send x-api-key header for API-key auth ([#62](https://github.com/anthropics/anthropic-sdk-python/issues/62)) ([1338141](https://github.com/anthropics/anthropic-sdk-python/commit/13381413d22ad14d85e66836c67cc8a13bd2b7bd)), closes [#1661](https://github.com/anthropics/anthropic-sdk-python/issues/1661)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-07T17:18:45Z",
+      "final_score": 1458.0807183478835
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.168: v2.1.168",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.168",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.168",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T23:41:53Z",
+      "final_score": 1374.2024114695766
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.4.1: aws-sdk: v0.4.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.4.1",
+      "body": "## 0.4.1 (2026-06-06)\n\nFull Changelog: [aws-sdk-v0.4.0...aws-sdk-v0.4.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.4.0...aws-sdk-v0.4.1)\n\n### Bug Fixes\n\n* **client:** run middleware before request signing ([#45](https://github.com/anthropics/anthropic-sdk-typescript/issues/45)) ([95f1a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/95f1a4a406c95aa31855fa1178fedfcb19978e16))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:27Z",
+      "final_score": 1343.3743691415343
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.107.0: v0.107.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.0",
+      "body": "## 0.107.0 (2026-06-06)\n\nFull Changelog: [v0.106.0...v0.107.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.106.0...v0.107.0)\n\n### Features\n\n* **api:** small updates to Managed Agents types ([72923f9](https://github.com/anthropics/anthropic-sdk-python/commit/72923f986f808597f86482a7eae4fba9a791e6ae))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:25Z",
+      "final_score": 1343.3717236388889
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.30.1: bedrock-sdk: v0.30.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.1",
+      "body": "## 0.30.1 (2026-06-06)\n\nFull Changelog: [bedrock-sdk-v0.30.0...bedrock-sdk-v0.30.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.30.0...bedrock-sdk-v0.30.1)\n\n### Bug Fixes\n\n* **client:** run middleware before request signing ([#45](https://github.com/anthropics/anthropic-sdk-typescript/issues/45)) ([95f1a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/95f1a4a406c95aa31855fa1178fedfcb19978e16))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:16Z",
+      "final_score": 1343.3598188769843
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.102.0: sdk: v0.102.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.102.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.102.0",
+      "body": "## 0.102.0 (2026-06-06)\n\nFull Changelog: [sdk-v0.101.0...sdk-v0.102.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.101.0...sdk-v0.102.0)\n\n### Features\n\n* **api:** small updates to Managed Agents types ([8ba4f92](https://github.com/anthropics/anthropic-sdk-typescript/commit/8ba4f92df32eb434503b8c69bc7328adc5edcbec))\n\n\n### Bug Fixes\n\n* **client:** run middleware before request signing ([#45](https://github.com/anthropics/anthropic-sdk-typescript/issues/45)) ([95f1a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/95f1a4a406c95aa31855fa1178fedfcb19978e16)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T17:13:10Z",
+      "final_score": 1343.3518823690476
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.167: v2.1.167",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.167",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T01:33:35Z",
+      "final_score": 1268.781776548942
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.166: v2.1.166",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.166",
+      "body": "## What's changed\n\n- Added `fallbackModel` setting to configure up to three fallback models tried in order when the primary model is overloaded or unavailable; `--fallback-model` now also applies to interactive sessions\n- Added glob pattern support in deny rule tool-name position (`\"*\"` denies all tools); allow rules reject non-MCP globs, and unknown tool names in deny rules warn at startup\n- Hardened cross-session messaging: messages relayed via `SendMessage` from other Claude sessions no longer carry user authority — receivers refuse relayed permission requests, and auto mode blocks them\n- `",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-06T00:55:18Z",
+      "final_score": 1265.743416760582
+    }
+  ]
+}
