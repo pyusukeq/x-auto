@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-06-09T23:09:22.217030",
+  "date": "2026-06-09",
+  "total_found": 23,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-09T23:09:21.138112+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.982163457116
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Fable 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "external_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "score": 1580,
+      "comments": 1260,
+      "created": "2026-06-09T16:58:01+00:00",
+      "final_score": 3731.7917942808863
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.0: sdk: v0.104.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
+      "body": "## 0.104.0 (2026-06-09)\n\nFull Changelog: [sdk-v0.103.0...sdk-v0.104.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.103.0...sdk-v0.104.0)\n\n### Features\n\n* **api:** add support for Managed Agents deployments and environment variable credentials ([d01e38b](https://github.com/anthropics/anthropic-sdk-typescript/commit/d01e38b5b6f62400450b727d9724ea00a6b1eaf5))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T20:04:21Z",
+      "final_score": 1585.315850563492
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.0: v0.109.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
+      "body": "## 0.109.0 (2026-06-09)\n\nFull Changelog: [v0.108.0...v0.109.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.108.0...v0.109.0)\n\n### Features\n\n* **api:** add support for Managed Agents deployments and environment variable credentials ([47633bf](https://github.com/anthropics/anthropic-sdk-python/commit/47633bff658d4aaced3cd920ef6782c48cf31a9a))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T20:04:14Z",
+      "final_score": 1585.3065913042328
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.170: v2.1.170",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
+      "body": "## What's changed\n\n- Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ever made generally available. Update to version 2.1.170 for access. https://www.anthropic.com/news/claude-fable-5-mythos-5\n- Fixed sessions not saving transcripts (and not appearing in --resume) when launched from the VS Code integrated terminal or any shell that inherited Claude Code environment variables.\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T17:23:09Z",
+      "final_score": 1572.5221997698413
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.108.0: v0.108.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
+      "body": "## 0.108.0 (2026-06-09)\n\nFull Changelog: [v0.107.1...v0.108.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.107.1...v0.108.0)\n\n### Features\n\n* **api:** add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal ([6b76649](https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782d2300f2a6aa3f4a3f040af324))\n* **client:** adds client-side fallbacks middleware for API providers that do not support server-side fallbacks ([6b76649](https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782d2300f2a6aa3f4a3f040a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T16:37:30Z",
+      "final_score": 1568.8991838968252
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.3.1: foundry-sdk: v0.3.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.3.1",
+      "body": "## 0.3.1 (2026-06-09)\n\nFull Changelog: [foundry-sdk-v0.3.0...foundry-sdk-v0.3.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.3.0...foundry-sdk-v0.3.1)\n\n### Bug Fixes\n\n* **client:** 3p middleware ordering ([#53](https://github.com/anthropics/anthropic-sdk-typescript/issues/53)) ([2a4c339](https://github.com/anthropics/anthropic-sdk-typescript/commit/2a4c339e6887aa2e8e1278c7b22d3732cf64a76c))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T16:37:02Z",
+      "final_score": 1568.8621468597883
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.30.2: bedrock-sdk: v0.30.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.30.2",
+      "body": "## 0.30.2 (2026-06-09)\n\nFull Changelog: [bedrock-sdk-v0.30.1...bedrock-sdk-v0.30.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.30.1...bedrock-sdk-v0.30.2)\n\n### Bug Fixes\n\n* **client:** 3p middleware ordering ([#53](https://github.com/anthropics/anthropic-sdk-typescript/issues/53)) ([2a4c339](https://github.com/anthropics/anthropic-sdk-typescript/commit/2a4c339e6887aa2e8e1278c7b22d3732cf64a76c))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T16:36:53Z",
+      "final_score": 1568.8502420978834
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.17.1: vertex-sdk: v0.17.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.17.1",
+      "body": "## 0.17.1 (2026-06-09)\n\nFull Changelog: [vertex-sdk-v0.17.0...vertex-sdk-v0.17.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.17.0...vertex-sdk-v0.17.1)\n\n### Bug Fixes\n\n* **client:** 3p middleware ordering ([#53](https://github.com/anthropics/anthropic-sdk-typescript/issues/53)) ([2a4c339](https://github.com/anthropics/anthropic-sdk-typescript/commit/2a4c339e6887aa2e8e1278c7b22d3732cf64a76c))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T16:36:40Z",
+      "final_score": 1568.8330463306877
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.103.0: sdk: v0.103.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.103.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.103.0",
+      "body": "## 0.103.0 (2026-06-09)\n\nFull Changelog: [sdk-v0.102.0...sdk-v0.103.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.102.0...sdk-v0.103.0)\n\n### Features\n\n* **api:** add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal ([cc337f7](https://github.com/anthropics/anthropic-sdk-typescript/commit/cc337f72dcf22d2ffd92f511918330f37ffab652))\n* **client:** adds client-side fallbacks middleware for API providers that do not support server-side fallbacks ([cc337f7](https://github.com/anthropics/anthropic-sdk-typescript/commit/cc337f72",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T16:36:30Z",
+      "final_score": 1568.8198188174604
+    }
+  ]
+}

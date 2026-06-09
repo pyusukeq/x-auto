@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-09",
+  "posts": [
+    "【速報】\n注目！\n\nClaude Code v2.1.170がリリース。\n新モデル「Claude Sonnet 4」などへの対応も進むAnthropicが、最新SDKをアップデート。\n\n具体的には⏬\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0\n\n▶︎ anthropic-sdk-python v0.109.0 リリース\n▶︎ anthropic-sdk-typescript sdk-v0.104.0 リリース\n▶︎ claude-code v2.1.170ではセッション関連のバグ修正も適用済み\n\nつまり、\n\n各SDKを最新版にアップデートするだけで修正・改善が反映されます。\n\n最新版へのアップデートはお早めに👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.170",
+    "Python・TypeScript両方のSDKで\n新バージョンがリリースされました。\n\nエージェント開発まわりの記述がシンプルになるかもしれません。\n\nポイントはここ👇\n\n▶︎ PythonはSDK v0.109.0\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0\n\n▶︎ TSはSDK v0.104.0\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0\n\n各リリースノートで変更内容を確認してみて👀",
+    "【注意：未確認情報含む】\n\nAnthropicのSDKに\n「server-side fallbacks on refusal」という仕組みが追加されたようです。\n\nただし、「Claude Fable 5 / Mythos 5」の公式発表は現時点で未確認です。\n\n現在確認できるSDKリリースは⏬\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0\n\n公式ニュースページで最新情報を確認してみて👀\nhttps://www.anthropic.com/news"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
