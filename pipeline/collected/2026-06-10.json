@@ -1,0 +1,115 @@
+{
+  "collected_at": "2026-06-10T23:18:04.530895",
+  "date": "2026-06-10",
+  "total_found": 25,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-10T23:18:03.768800+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98740144186
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Fable 5",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "external_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "score": 2545,
+      "comments": 2073,
+      "created": "2026-06-09T16:58:01+00:00",
+      "final_score": 5666.971253339674
+    },
+    {
+      "source": "Hacker News",
+      "title": "If Claude Fable stops helping you, you'll never know",
+      "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+      "external_url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+      "score": 997,
+      "comments": 491,
+      "created": "2026-06-09T21:19:11+00:00",
+      "final_score": 2085.3119539608315
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.172: v2.1.172",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+      "body": "## What's changed\n\n- Sub-agents can now spawn their own sub-agents (up to 5 levels deep)\n- Amazon Bedrock now reads the AWS region from `~/.aws` config files when `AWS_REGION` isn't set, matching AWS SDK precedence; `/status` shows where the region came from\n- Added a search bar when browsing a marketplace's plugins in `/plugin`\n- Added `model` attribute to the `claude_code.lines_of_code.count` OTEL metric\n- Fixed sessions using 1M context without usage credits getting permanently stuck — the session now automatically compacts back under the standard context limit\n- Fixed a repeating \"an image",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-10T20:44:15Z",
+      "final_score": 1587.791625876984
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.1: sdk: v0.104.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
+      "body": "## 0.104.1 (2026-06-09)\n\nFull Changelog: [sdk-v0.104.0...sdk-v0.104.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.104.0...sdk-v0.104.1)\n\n### Bug Fixes\n\n* **api:** add `frontier_llm` refusal category ([465e686](https://github.com/anthropics/anthropic-sdk-typescript/commit/465e6866d66952c0a0a9eb2c465b2e4389da58f1))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T23:55:23Z",
+      "final_score": 1488.675223760582
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.1: v0.109.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "body": "## 0.109.1 (2026-06-09)\n\nFull Changelog: [v0.109.0...v0.109.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.0...v0.109.1)\n\n### Bug Fixes\n\n* **api:** add `frontier_llm` refusal category ([d3a806b](https://github.com/anthropics/anthropic-sdk-python/commit/d3a806b454d8aaf5806db11c651deebe61836131))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T23:55:10Z",
+      "final_score": 1488.6580279933862
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.0: sdk: v0.104.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
+      "body": "## 0.104.0 (2026-06-09)\n\nFull Changelog: [sdk-v0.103.0...sdk-v0.104.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.103.0...sdk-v0.104.0)\n\n### Features\n\n* **api:** add support for Managed Agents deployments and environment variable credentials ([d01e38b](https://github.com/anthropics/anthropic-sdk-typescript/commit/d01e38b5b6f62400450b727d9724ea00a6b1eaf5))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T20:04:21Z",
+      "final_score": 1470.3392449246032
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.0: v0.109.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0",
+      "body": "## 0.109.0 (2026-06-09)\n\nFull Changelog: [v0.108.0...v0.109.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.108.0...v0.109.0)\n\n### Features\n\n* **api:** add support for Managed Agents deployments and environment variable credentials ([47633bf](https://github.com/anthropics/anthropic-sdk-python/commit/47633bff658d4aaced3cd920ef6782c48cf31a9a))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T20:04:14Z",
+      "final_score": 1470.3299856653439
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.170: v2.1.170",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
+      "body": "## What's changed\n\n- Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use. Fable’s capabilities exceed those of any model we’ve ever made generally available. Update to version 2.1.170 for access. https://www.anthropic.com/news/claude-fable-5-mythos-5\n- Fixed sessions not saving transcripts (and not appearing in --resume) when launched from the VS Code integrated terminal or any shell that inherited Claude Code environment variables.\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T17:23:09Z",
+      "final_score": 1457.5455941309524
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.108.0: v0.108.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0",
+      "body": "## 0.108.0 (2026-06-09)\n\nFull Changelog: [v0.107.1...v0.108.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.107.1...v0.108.0)\n\n### Features\n\n* **api:** add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal ([6b76649](https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782d2300f2a6aa3f4a3f040af324))\n* **client:** adds client-side fallbacks middleware for API providers that do not support server-side fallbacks ([6b76649](https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782d2300f2a6aa3f4a3f040a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T16:37:30Z",
+      "final_score": 1453.9225782579365
+    }
+  ]
+}

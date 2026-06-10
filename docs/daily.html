@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-09</title>
+<title>X投稿下書き 2026-06-10</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,55 +73,70 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-09</h1>
-  <p>生成: 2026-06-10 08:10 JST</p>
+  <h1>X投稿下書き 2026-06-10</h1>
+  <p>生成: 2026-06-11 08:18 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-注目！
+マジか！！
 
-Claude Code v2.1.170がリリース。
-新モデル「Claude Sonnet 4」などへの対応も進むAnthropicが、最新SDKをアップデート。
+claude-code v2.1.172で
+サブエージェントの階層生成が可能に。
+
+『Sub-agents can now spawn their own sub-agents (up to 5 levels deep)』
 
 具体的には⏬
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0
 
-▶︎ anthropic-sdk-python v0.109.0 リリース
-▶︎ anthropic-sdk-typescript sdk-v0.104.0 リリース
-▶︎ claude-code v2.1.170ではセッション関連のバグ修正も適用済み
+▶︎ サブエージェントが自分のサブエージェントを生成できるように
+▶︎ 最大5階層まで入れ子構造で動作
+▶︎ マークダウン閲覧時の検索バーも追加
 
 つまり、
 
-各SDKを最新版にアップデートするだけで修正・改善が反映されます。
+エージェントが自律的に作業を細分化して
+より複雑なタスクを処理できる幅が広がりましたね。
 
-最新版へのアップデートはお早めに👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.170</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Python・TypeScript両方のSDKで
-新バージョンがリリースされました。
+リリース詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.172</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-エージェント開発まわりの記述がシンプルになるかもしれません。
+Claude Code v2.1.172で
+AWS BedrockユーザーのRegion設定がもっと楽になった。
+
+以前は環境変数 `AWS_REGION` を必ず設定する必要があったけれど
+今回のアップデートで対応方法が増えています。
 
 ポイントはここ👇
 
-▶︎ PythonはSDK v0.109.0
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0
+▶︎ `~/.aws` のconfigファイルからリージョンを自動読み取り
+▶︎ 既存のAWS設定ファイルがあれば追加の環境変数なしで動作する可能性あり
 
-▶︎ TSはSDK v0.104.0
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0
+つまり、
 
-各リリースノートで変更内容を確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【注意：未確認情報含む】
+既存のAWS設定ファイルがあれば
+追加の環境変数なしでそのまま動くかもしれません✨
 
-AnthropicのSDKに
-「server-side fallbacks on refusal」という仕組みが追加されたようです。
+詳細はリリースノートを確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.172</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【SDK更新情報】
 
-ただし、「Claude Fable 5 / Mythos 5」の公式発表は現時点で未確認です。
+AnthropicのTypeScript SDKに
+`frontier_llm` という拒否カテゴリが追加された。
 
-現在確認できるSDKリリースは⏬
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0
+『add `frontier_llm` refusal category』
 
-公式ニュースページで最新情報を確認してみて👀
-https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+これが何を意味するか⏬
+
+▶︎ 拒否理由をより細かく分類できる新カテゴリ
+▶︎ エラーハンドリングの実装がより明確に
+▶︎ TypeScript SDK v0.104.1で対応済み
+
+つまり、
+
+拒否応答の種別を判定するコードを
+より丁寧に書けるようになりましたね😊
+
+詳細はこちら👇
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

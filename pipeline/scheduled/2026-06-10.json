@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-10",
+  "posts": [
+    "【速報】\nマジか！！\n\nclaude-code v2.1.172で\nサブエージェントの階層生成が可能に。\n\n『Sub-agents can now spawn their own sub-agents (up to 5 levels deep)』\n\n具体的には⏬\n\n▶︎ サブエージェントが自分のサブエージェントを生成できるように\n▶︎ 最大5階層まで入れ子構造で動作\n▶︎ マークダウン閲覧時の検索バーも追加\n\nつまり、\n\nエージェントが自律的に作業を細分化して\nより複雑なタスクを処理できる幅が広がりましたね。\n\nリリース詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+    "【保存推奨】\n\nClaude Code v2.1.172で\nAWS BedrockユーザーのRegion設定がもっと楽になった。\n\n以前は環境変数 `AWS_REGION` を必ず設定する必要があったけれど\n今回のアップデートで対応方法が増えています。\n\nポイントはここ👇\n\n▶︎ `~/.aws` のconfigファイルからリージョンを自動読み取り\n▶︎ 既存のAWS設定ファイルがあれば追加の環境変数なしで動作する可能性あり\n\nつまり、\n\n既存のAWS設定ファイルがあれば\n追加の環境変数なしでそのまま動くかもしれません✨\n\n詳細はリリースノートを確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+    "【SDK更新情報】\n\nAnthropicのTypeScript SDKに\n`frontier_llm` という拒否カテゴリが追加された。\n\n『add `frontier_llm` refusal category』\n\nこれが何を意味するか⏬\n\n▶︎ 拒否理由をより細かく分類できる新カテゴリ\n▶︎ エラーハンドリングの実装がより明確に\n▶︎ TypeScript SDK v0.104.1で対応済み\n\nつまり、\n\n拒否応答の種別を判定するコードを\nより丁寧に書けるようになりましたね😊\n\n詳細はこちら👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
