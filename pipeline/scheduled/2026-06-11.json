@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-11",
+  "posts": [
+    "【速報】\nこれ、ついにきた！！\n\nClaude Code v2.1.172 / v2.1.173で\nサブエージェントの機能が強化。\n\n具体的には⏬\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.173\n\n▶︎ サブエージェント同士が連携して並列タスクをこなせる\n▶︎ Amazon BedrockのAWSリージョンを設定ファイルから自動取得\n▶︎ `/status` でリージョンの取得元も確認可能に\n\nエージェントの自律性が一段階上がった感じですね✨\n詳細はリリースノートをチェックしてみて👀",
+    "【最新情報】\n\nClaude Code v2.1.172・v2.1.173が\nリリースされました。\n\nリリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.173\n\n最新情報は公式ページもあわせてチェックしてみて👀\nhttps://www.anthropic.com/news",
+    "【アップデート情報】\nClaude CodeとAnthropicのSDKがアップデートされました。\n\n最新バージョン：\n▶︎ claude-code v2.1.172 / v2.1.173\n▶︎ anthropic-sdk-typescript sdk-v0.104.1\n▶︎ anthropic-sdk-python v0.109.1\n\nバグ修正・安定性改善が中心のマイナーアップデートです。\n\n詳細はこちらで確認できます👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.173\nhttps://www.anthropic.com/news"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
