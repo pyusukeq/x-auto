@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-06-12T23:06:21.946671",
+  "date": "2026-06-12",
+  "total_found": 23,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-12T23:06:21.061320+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.985363699227
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Fable is relentlessly proactive",
+      "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+      "external_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+      "score": 723,
+      "comments": 621,
+      "created": "2026-06-12T01:06:51+00:00",
+      "final_score": 1661.8561600521232
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.176: v2.1.176",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "body": "## What's changed\n\n- Session titles are now generated in the language of your conversation (set the `language` setting to pin a specific language)\n- Added `footerLinksRegexes` setting for regex-matched link badges in the footer row, configurable via user or managed settings\n- Improved Bedrock credential caching: credentials from `awsCredentialExport` are now cached until their `Expiration` instead of a fixed 1 hour\n- Fixed `availableModels` enforcement: alias model picks can no longer be redirected to a blocked model via `ANTHROPIC_DEFAULT_*_MODEL` environment variables, and `/fast` now refuse",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-12T21:53:27Z",
+      "final_score": 1594.2130335820107
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.175: v2.1.175",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+      "body": "## What's changed\n\n- Added `enforceAvailableModels` managed setting — when enabled, the `availableModels` allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first allowed model), and user or project settings can no longer widen a managed `availableModels` list\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-12T04:23:51Z",
+      "final_score": 1510.9114462804232
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.174: v2.1.174",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
+      "body": "## What's changed\n\n- Added `wheelScrollAccelerationEnabled` setting to disable mouse-wheel scroll acceleration in fullscreen mode\n- Fixed the `/model` picker hiding the model family that Default resolves to — Opus now appears as its own row on Max/Team Premium/Enterprise plans, Sonnet on Pro/Team plans, and Opus on pay-as-you-go API accounts\n- Fixed `/model` picker showing a hardcoded Sonnet version label when `ANTHROPIC_DEFAULT_SONNET_MODEL` pins a different Sonnet\n- Fixed the \"Fable 5 is now consuming usage credits\" banner incorrectly showing for enterprise accounts with usage-based billing\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-12T01:16:36Z",
+      "final_score": 1496.0503351693121
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.173: v2.1.173",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.173",
+      "body": "## What's changed\n\n- Fixed Fable 5 model names with a `[1m]` suffix not being normalized — Fable 5 includes 1M context by default, so the suffix is now stripped automatically\n- Fixed a spurious \"sandbox dependencies missing\" startup warning on Windows when sandbox was enabled in settings\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-11T05:41:54Z",
+      "final_score": 1402.8201764391533
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.172: v2.1.172",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.172",
+      "body": "## What's changed\n\n- Sub-agents can now spawn their own sub-agents (up to 5 levels deep)\n- Amazon Bedrock now reads the AWS region from `~/.aws` config files when `AWS_REGION` isn't set, matching AWS SDK precedence; `/status` shows where the region came from\n- Added a search bar when browsing a marketplace's plugins in `/plugin`\n- Added `model` attribute to the `claude_code.lines_of_code.count` OTEL metric\n- Fixed sessions using 1M context without usage credits getting permanently stuck — the session now automatically compacts back under the standard context limit\n- Fixed a repeating \"an image",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-10T20:44:15Z",
+      "final_score": 1360.1495415185186
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.1: sdk: v0.104.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.1",
+      "body": "## 0.104.1 (2026-06-09)\n\nFull Changelog: [sdk-v0.104.0...sdk-v0.104.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.104.0...sdk-v0.104.1)\n\n### Bug Fixes\n\n* **api:** add `frontier_llm` refusal category ([465e686](https://github.com/anthropics/anthropic-sdk-typescript/commit/465e6866d66952c0a0a9eb2c465b2e4389da58f1))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T23:55:23Z",
+      "final_score": 1261.0331394021164
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.1: v0.109.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "body": "## 0.109.1 (2026-06-09)\n\nFull Changelog: [v0.109.0...v0.109.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.0...v0.109.1)\n\n### Bug Fixes\n\n* **api:** add `frontier_llm` refusal category ([d3a806b](https://github.com/anthropics/anthropic-sdk-python/commit/d3a806b454d8aaf5806db11c651deebe61836131))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T23:55:10Z",
+      "final_score": 1261.0159436349206
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.0: sdk: v0.104.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.0",
+      "body": "## 0.104.0 (2026-06-09)\n\nFull Changelog: [sdk-v0.103.0...sdk-v0.104.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.103.0...sdk-v0.104.0)\n\n### Features\n\n* **api:** add support for Managed Agents deployments and environment variable credentials ([d01e38b](https://github.com/anthropics/anthropic-sdk-typescript/commit/d01e38b5b6f62400450b727d9724ea00a6b1eaf5))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T20:04:21Z",
+      "final_score": 1242.6971605661374
+    }
+  ]
+}
