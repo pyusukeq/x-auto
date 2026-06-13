@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-13",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.176・v2.1.177がリリース。\nセッションタイトルが会話の言語で自動生成されるようになった。\n\n『language設定で特定言語に固定も可能』\n\n具体的には⏬\n\n▶︎ 日本語で会話すればタイトルも日本語に\n▶︎ `footerLinksRegexes` 設定で正規表現マッチのリンクバッジをフッターに追加可能\n▶︎ Bedrockの認証まわりも改善\n\nつまり、\n\n多言語で使うほど恩恵を感じやすいアップデートですね。\n\nリリースノートはこちら👇\nv2.1.176: https://github.com/anthropics/claude-code/releases/tag/v2.1.176\nv2.1.177: https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
+    "Claude Code v2.1.175で\n管理者によるモデル制御が強化された。\n\n`enforceAvailableModels` という新設定が追加。\n\nポイントはここ👇\n\n▶︎ 許可リスト外のモデルをDefaultに設定できなくなる\n▶︎ 違反した場合は自動で最初の許可モデルにフォールバック\n▶︎ ユーザーやプロジェクト側からの上書きも不可に\n\nチーム・企業利用でモデルを統一管理したい場面に刺さる機能かもしれません。\n\n※なお最新リリースはv2.1.177です。\n\n詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+    "【最新情報】\nClaude Code v2.1.177がリリース！\n\n詳細はリリースノートを確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.177\n\nまた、v2.1.175・v2.1.176も順次リリースされています。\n\n最新の変更内容はGitHubのリリースページからご確認ください😊"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

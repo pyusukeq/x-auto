@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-12</title>
+<title>X投稿下書き 2026-06-13</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,58 +73,56 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-12</h1>
-  <p>生成: 2026-06-13 08:07 JST</p>
+  <h1>X投稿下書き 2026-06-13</h1>
+  <p>生成: 2026-06-14 07:53 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code v2.1.176がリリース。
-セッションタイトルが会話言語に自動対応するようになった。
+Claude Code v2.1.176・v2.1.177がリリース。
+セッションタイトルが会話の言語で自動生成されるようになった。
 
 『language設定で特定言語に固定も可能』
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.176
+具体的には⏬
 
-▶︎ 日本語で話せばタイトルも日本語で生成
-▶︎ 多言語環境での使い勝手が向上
+▶︎ 日本語で会話すればタイトルも日本語に
+▶︎ `footerLinksRegexes` 設定で正規表現マッチのリンクバッジをフッターに追加可能
+▶︎ Bedrockの認証まわりも改善
 
 つまり、
 
-多言語環境で使う人には地味に嬉しいアップデートですよね✨
+多言語で使うほど恩恵を感じやすいアップデートですね。
 
-詳細はリリースノートをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最近のリリース（v2.1.174〜v2.1.176）で
-企業・チーム向けのモデル管理機能が追加された。
+リリースノートはこちら👇
+v2.1.176: https://github.com/anthropics/claude-code/releases/tag/v2.1.176
+v2.1.177: https://github.com/anthropics/claude-code/releases/tag/v2.1.177</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.175で
+管理者によるモデル制御が強化された。
 
-『enforceAvailableModels』設定により、
-管理者がモデルの利用範囲を厳密にコントロールできるようになった。
+`enforceAvailableModels` という新設定が追加。
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.175
 
-▶︎ 許可リスト外のモデルをDefaultに設定できないよう制限可能
-▶︎ ユーザー・プロジェクト側から許可範囲を広げることも防止
-▶︎ 組織のガバナンスやコスト管理に活用しやすい
+▶︎ 許可リスト外のモデルをDefaultに設定できなくなる
+▶︎ 違反した場合は自動で最初の許可モデルにフォールバック
+▶︎ ユーザーやプロジェクト側からの上書きも不可に
 
-エンタープライズ環境でのAI利用をより安全に管理したい方に刺さる機能かもしれません😊
+チーム・企業利用でモデルを統一管理したい場面に刺さる機能かもしれません。
 
-詳細は上記リリースノートで確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは要確認】
-気になる情報が…
+※なお最新リリースはv2.1.177です。
 
-Claude Codeの最新バージョン（v2.1.174〜v2.1.176）周辺で、エージェント関連の動きが出てきている。
+詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.175</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【最新情報】
+Claude Code v2.1.177がリリース！
 
-ただし現時点で確認できていること👇
+詳細はリリースノートを確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.177
 
-▶︎ v2.1.174〜v2.1.176のリリースが立て続けに公開
-▶︎ サブエージェントの階層的な動作については公式リリースノートで要確認
-▶︎ エージェント設計の進化は継続中
+また、v2.1.175・v2.1.176も順次リリースされています。
 
-「5階層の入れ子」などの具体的な仕様は現時点で公式情報から確認できていないため、詳細はリリースノートで直接確かめてみて👀
-
-https://github.com/anthropics/claude-code/releases/tag/v2.1.176</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+最新の変更内容はGitHubのリリースページからご確認ください😊</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
