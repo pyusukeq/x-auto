@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-14",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.176〜v2.1.177がリリース。\nセッションタイトルが会話の言語で自動生成されるようになった。\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.177\n\n▶︎ セッションタイトルが日本語会話なら日本語で表示（v2.1.177）\n▶︎ `footerLinksRegexes` でフッターのリンクバッジをカスタマイズ可能に（v2.1.176）\n▶︎ Bedrockの認証情報まわりも改善（v2.1.176）\n\n多言語環境でのセッション管理がぐっと楽になりますね。\n\n詳細はリリースノートをチェックしてみて👀",
+    "【情報共有】\n\nClaude Code v2.1.175で\n企業向けのモデル管理設定が追加された。\n\n`enforceAvailableModels` という設定が追加。\n\nポイントはここ👇\n\n▶︎ 許可リストにないモデルをデフォルトで使えないよう制限できる\n▶︎ ユーザーやプロジェクト側が勝手に制限を緩める操作も防げる\n▶︎ 管理者がモデル利用範囲をコントロールできる仕組み\n\nチーム・Enterprise利用での「使えるモデルを統一したい」ニーズに応える設定です。\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+    "Claude Codeの/modelピッカーの表示が改善された。\n\n地味な変更だけど、モデル選択で混乱しやすかった部分が整理された。\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.174\n\n▶︎ DefaultがどのモデルになるかがUIで分かりやすく表示\n▶︎ 上位プランではOpusが独立した行に表示\n▶︎ 標準プランではSonnetが同様に表示される\n\n「今どのモデルを使っているのか分からない」という地味なストレスが解消されますね✨\n\n※正確なプラン区分はリリースノートをご確認ください"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
