@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-14</title>
+<title>X投稿下書き 2026-06-15</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,56 +73,60 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-14</h1>
-  <p>生成: 2026-06-15 07:59 JST</p>
+  <h1>X投稿下書き 2026-06-15</h1>
+  <p>生成: 2026-06-16 08:29 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+注目！
 
-Claude Code v2.1.176〜v2.1.177がリリース。
-セッションタイトルが会話の言語で自動生成されるようになった。
+Claude Code v2.1.178で
+パーミッションルールがさらに細かく制御できるようになった。
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.177
+『Tool(param:value)構文でツールの入力パラメータを条件に指定可能』
 
-▶︎ セッションタイトルが日本語会話なら日本語で表示（v2.1.177）
-▶︎ `footerLinksRegexes` でフッターのリンクバッジをカスタマイズ可能に（v2.1.176）
-▶︎ Bedrockの認証情報まわりも改善（v2.1.176）
+具体的には⏬
 
-多言語環境でのセッション管理がぐっと楽になりますね。
+▶︎ `Agent(model:opus)` でOpusサブエージェントだけをブロックできる
+▶︎ `*`ワイルドカードで柔軟なマッチングに対応
+▶︎ ネストした `.claude/skills` ディレクトリのスキルも自動ロード
 
-詳細はリリースノートをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【情報共有】
+つまり、
 
-Claude Code v2.1.175で
-企業向けのモデル管理設定が追加された。
+モデルや引数単位でエージェントの動作を細かく制御できる時代に。
 
-`enforceAvailableModels` という設定が追加。
+※詳細はリリースノートで要確認👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.178</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-ポイントはここ👇
+Claude Code v2.1.178で
+地味に便利な設定が追加されていた。
 
-▶︎ 許可リストにないモデルをデフォルトで使えないよう制限できる
-▶︎ ユーザーやプロジェクト側が勝手に制限を緩める操作も防げる
-▶︎ 管理者がモデル利用範囲をコントロールできる仕組み
-
-チーム・Enterprise利用での「使えるモデルを統一したい」ニーズに応える設定です。
+セッションタイトルの多言語対応と
+フッターのカスタマイズができるようになったらしい。
 
 詳細はリリースノートで確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.175</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">Claude Codeの/modelピッカーの表示が改善された。
+https://github.com/anthropics/claude-code/releases/tag/v2.1.178</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【必見】
 
-地味な変更だけど、モデル選択で混乱しやすかった部分が整理された。
+Claude Code v2.1.178で
+企業向け管理機能がひっそり強化されていた。
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.174
+`enforceAvailableModels` という設定が追加され
+モデルの使用範囲を管理者側でしっかり縛れるように。
 
-▶︎ DefaultがどのモデルになるかがUIで分かりやすく表示
-▶︎ 上位プランではOpusが独立した行に表示
-▶︎ 標準プランではSonnetが同様に表示される
+具体的には⏬
 
-「今どのモデルを使っているのか分からない」という地味なストレスが解消されますね✨
+▶︎ `availableModels` の許可リストが「デフォルトモデル」にも適用される
+▶︎ 許可されていないモデルが選ばれた場合は自動で許可リスト先頭にフォールバック
+▶︎ ユーザーやプロジェクト設定でも許可範囲を広げられなくなる
 
-※正確なプラン区分はリリースノートをご確認ください</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+つまり、
+
+チームでClaude Codeを運用するとき
+モデル選択を管理者が完全にコントロールできますよね✨
+
+詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.178</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

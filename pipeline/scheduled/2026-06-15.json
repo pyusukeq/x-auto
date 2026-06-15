@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-15",
+  "posts": [
+    "【速報】\n注目！\n\nClaude Code v2.1.178で\nパーミッションルールがさらに細かく制御できるようになった。\n\n『Tool(param:value)構文でツールの入力パラメータを条件に指定可能』\n\n具体的には⏬\n\n▶︎ `Agent(model:opus)` でOpusサブエージェントだけをブロックできる\n▶︎ `*`ワイルドカードで柔軟なマッチングに対応\n▶︎ ネストした `.claude/skills` ディレクトリのスキルも自動ロード\n\nつまり、\n\nモデルや引数単位でエージェントの動作を細かく制御できる時代に。\n\n※詳細はリリースノートで要確認👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+    "【保存推奨】\n\nClaude Code v2.1.178で\n地味に便利な設定が追加されていた。\n\nセッションタイトルの多言語対応と\nフッターのカスタマイズができるようになったらしい。\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+    "【必見】\n\nClaude Code v2.1.178で\n企業向け管理機能がひっそり強化されていた。\n\n`enforceAvailableModels` という設定が追加され\nモデルの使用範囲を管理者側でしっかり縛れるように。\n\n具体的には⏬\n\n▶︎ `availableModels` の許可リストが「デフォルトモデル」にも適用される\n▶︎ 許可されていないモデルが選ばれた場合は自動で許可リスト先頭にフォールバック\n▶︎ ユーザーやプロジェクト設定でも許可範囲を広げられなくなる\n\nつまり、\n\nチームでClaude Codeを運用するとき\nモデル選択を管理者が完全にコントロールできますよね✨\n\n詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.178"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
