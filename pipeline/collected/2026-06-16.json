@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-06-16T23:17:11.482564",
+  "date": "2026-06-16",
+  "total_found": 14,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-16T23:17:10.303528+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98050798445
+    },
+    {
+      "source": "Hacker News",
+      "title": "Ask HN: Has anyone replaced Claude/GPT with a local model for daily coding?",
+      "url": "https://news.ycombinator.com/item?id=48542100",
+      "external_url": "",
+      "score": 1235,
+      "comments": 524,
+      "created": "2026-06-15T14:46:53+00:00",
+      "final_score": 2493.048568260739
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.179: v2.1.179",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
+      "body": "## What's changed\n\n- Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\"\n- Fixed mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172)\n- Fixed a sandbox `denyRead`/`allowRead` glob over a large directory tree making the Bash tool description enormous and the session unusable on Linux\n- Fixed the feedback survey capturing a single-digit reply as a session rating immediately after a turn completes\n- Fixed the welcome screen stacking multiple promotional ban",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-16T20:22:14Z",
+      "final_score": 1586.114441107143
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.178: v2.1.178",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+      "body": "## What's changed\n\n- Added `Tool(param:value)` syntax for permission rules to match a tool's input parameters (with `*` wildcard), e.g. `Agent(model:opus)` to block Opus subagents\n- Skills in nested `.claude/skills` directories now load when working on files there; on a name clash, the nested skill appears as `<dir>:<name>` so both stay available\n- Nested `.claude/` directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing `.claude/workflows/`\n- Improved auto mode: subagent spawn",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-15T21:35:55Z",
+      "final_score": 1477.6766104193123
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.2: v0.109.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
+      "body": "## 0.109.2 (2026-06-15)\n\nFull Changelog: [v0.109.1...v0.109.2](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.1...v0.109.2)\n\n### Chores\n\n* **api:** remove retired models from API and SDKs ([d4bcfcc](https://github.com/anthropics/anthropic-sdk-python/commit/d4bcfcc257bd0c97d5e75060bd19c97abddd9f49))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-15T17:30:11Z",
+      "final_score": 1458.1739649166668
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.2: sdk: v0.104.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
+      "body": "## 0.104.2 (2026-06-15)\n\nFull Changelog: [sdk-v0.104.1...sdk-v0.104.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.104.1...sdk-v0.104.2)\n\n### Chores\n\n* **api:** remove retired models from API and SDKs ([a942876](https://github.com/anthropics/anthropic-sdk-typescript/commit/a94287690a383ba34aa0d2ad9e0262eeb9241bd3))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-15T16:49:40Z",
+      "final_score": 1454.9583564510583
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.177: v2.1.177",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
+      "body": "\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-13T01:25:15Z",
+      "final_score": 1153.0205257632274
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.176: v2.1.176",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "body": "## What's changed\n\n- Session titles are now generated in the language of your conversation (set the `language` setting to pin a specific language)\n- Added `footerLinksRegexes` setting for regex-matched link badges in the footer row, configurable via user or managed settings\n- Improved Bedrock credential caching: credentials from `awsCredentialExport` are now cached until their `Expiration` instead of a fixed 1 hour\n- Fixed `availableModels` enforcement: alias model picks can no longer be redirected to a blocked model via `ANTHROPIC_DEFAULT_*_MODEL` environment variables, and `/fast` now refuse",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-12T21:53:27Z",
+      "final_score": 1136.2110019537038
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.175: v2.1.175",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+      "body": "## What's changed\n\n- Added `enforceAvailableModels` managed setting — when enabled, the `availableModels` allowlist also constrains the Default model (a Default that would resolve to a disallowed model now falls back to the first allowed model), and user or project settings can no longer widen a managed `availableModels` list\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-12T04:23:51Z",
+      "final_score": 1052.9094146521163
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.1: v0.109.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.1",
+      "body": "## 0.109.1 (2026-06-09)\n\nFull Changelog: [v0.109.0...v0.109.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.0...v0.109.1)\n\n### Bug Fixes\n\n* **api:** add `frontier_llm` refusal category ([d3a806b](https://github.com/anthropics/anthropic-sdk-python/commit/d3a806b454d8aaf5806db11c651deebe61836131))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-09T23:55:10Z",
+      "final_score": 803.0139120066136
+    }
+  ]
+}

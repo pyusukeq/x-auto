@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-15</title>
+<title>X投稿下書き 2026-06-16</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,60 +73,67 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-15</h1>
-  <p>生成: 2026-06-16 08:29 JST</p>
+  <h1>X投稿下書き 2026-06-16</h1>
+  <p>生成: 2026-06-17 08:18 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-注目！
+マジか！！
 
-Claude Code v2.1.178で
-パーミッションルールがさらに細かく制御できるようになった。
+Claude Code v2.1.178〜v2.1.179で
+パーミッション設定がかなり柔軟になった。
 
-『Tool(param:value)構文でツールの入力パラメータを条件に指定可能』
+『Tool(param:value)構文』で
+ツールの入力パラメータ単位で制御できるように。
 
-具体的には⏬
+具体的には👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.178
 
-▶︎ `Agent(model:opus)` でOpusサブエージェントだけをブロックできる
-▶︎ `*`ワイルドカードで柔軟なマッチングに対応
-▶︎ ネストした `.claude/skills` ディレクトリのスキルも自動ロード
-
-つまり、
-
-モデルや引数単位でエージェントの動作を細かく制御できる時代に。
-
-※詳細はリリースノートで要確認👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.178</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
-
-Claude Code v2.1.178で
-地味に便利な設定が追加されていた。
-
-セッションタイトルの多言語対応と
-フッターのカスタマイズができるようになったらしい。
-
-詳細はリリースノートで確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.178</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【必見】
-
-Claude Code v2.1.178で
-企業向け管理機能がひっそり強化されていた。
-
-`enforceAvailableModels` という設定が追加され
-モデルの使用範囲を管理者側でしっかり縛れるように。
-
-具体的には⏬
-
-▶︎ `availableModels` の許可リストが「デフォルトモデル」にも適用される
-▶︎ 許可されていないモデルが選ばれた場合は自動で許可リスト先頭にフォールバック
-▶︎ ユーザーやプロジェクト設定でも許可範囲を広げられなくなる
+▶︎ `Agent(model:opus)` でOpusサブエージェントだけブロック可能に
+▶︎ `*` ワイルドカードで柔軟な条件指定にも対応
+▶︎ ネストした `.claude/skills` のスキルも自動でロードされるよう改善（v2.1.179）
 
 つまり、
 
-チームでClaude Codeを運用するとき
-モデル選択を管理者が完全にコントロールできますよね✨
+「このモデルだけ使わせない」といった
+細かい制御が実現できるようになりました👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><p class="warning">⚠️ レビュー未通過（投稿スキップ推奨）</p><div class="post-text failed" id="p1">【保存推奨】
 
-詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.178</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+Claude Code v2.1.179の
+地味だけど助かるバグ修正まとめ。
+
+『途中で通信が切れても部分レスポンスが保持される』ようになった。
+
+ポイントはここ👇
+
+▶︎ ストリーミング中の接続切れで生のエラー表示→応答保持に改善
+▶︎ ツール実行中にスピナーが止まらない問題も解消
+▶︎ WSL2（Windows Terminal・VS Code）のマウスホイール不具合も修正
+
+つまり、
+
+長い処理中に接続が落ちても
+それまでの回答が消えなくなったのは地味にうれしいですよね✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
+地味に便利
+
+Claude Code v2.1.178か v2.1.179で
+セッションタイトルが会話の言語で自動生成されるように。
+
+`language` 設定で固定もできる。
+
+ポイントはここ👇
+
+▶︎ 日本語で話しかければタイトルも日本語で生成される
+▶︎ `language` 設定で言語を固定することも可能
+▶︎ フッターのリンクバッジも正規表現で柔軟に設定できる `footerLinksRegexes` が追加
+
+つまり、
+
+複数セッションを管理するとき
+タイトルが母国語で並ぶだけでかなり見やすくなりますよね😊
+
+リリースノートはこちらで確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.179</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
