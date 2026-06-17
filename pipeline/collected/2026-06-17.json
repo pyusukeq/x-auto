@@ -1,0 +1,115 @@
+{
+  "collected_at": "2026-06-17T23:15:58.962217",
+  "date": "2026-06-17",
+  "total_found": 13,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-17T23:15:57.703877+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.979196905253
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.181: v2.1.181",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.181",
+      "body": "## What's changed\n\n- Added `/config key=value` syntax to set any setting from the prompt (e.g. `/config thinking=false`) — works in interactive, `-p`, and Remote Control\n- Added `sandbox.allowAppleEvents` opt-in setting that lets sandboxed commands send Apple Events on macOS\n- Added `CLAUDE_CLIENT_PRESENCE_FILE` environment variable: point it at a marker file to suppress mobile push notifications while you're at the machine\n- Upgraded the bundled Bun runtime to 1.4\n- Improved streaming of long paragraphs: text now appears line-by-line instead of waiting for the first line break\n- Improved auto",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-17T22:07:41Z",
+      "final_score": 1594.5794151137566
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.179: v2.1.179",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.179",
+      "body": "## What's changed\n\n- Fixed mid-stream connection drops: partial responses are now preserved instead of showing a raw error, and the spinner no longer gets stuck at \"running tool\"\n- Fixed mouse-wheel scrolling in WSL2 under Windows Terminal and VS Code (regression in 2.1.172)\n- Fixed a sandbox `denyRead`/`allowRead` glob over a large directory tree making the Bash tool description enormous and the session unusable on Linux\n- Fixed the feedback survey capturing a single-digit reply as a session rating immediately after a turn completes\n- Fixed the welcome screen stacking multiple promotional ban",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-16T20:22:14Z",
+      "final_score": 1471.9246532089946
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.178: v2.1.178",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+      "body": "## What's changed\n\n- Added `Tool(param:value)` syntax for permission rules to match a tool's input parameters (with `*` wildcard), e.g. `Agent(model:opus)` to block Opus subagents\n- Skills in nested `.claude/skills` directories now load when working on files there; on a name clash, the nested skill appears as `<dir>:<name>` so both stay available\n- Nested `.claude/` directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing `.claude/workflows/`\n- Improved auto mode: subagent spawn",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-15T21:35:55Z",
+      "final_score": 1363.486822521164
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.109.2: v0.109.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.2",
+      "body": "## 0.109.2 (2026-06-15)\n\nFull Changelog: [v0.109.1...v0.109.2](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.1...v0.109.2)\n\n### Chores\n\n* **api:** remove retired models from API and SDKs ([d4bcfcc](https://github.com/anthropics/anthropic-sdk-python/commit/d4bcfcc257bd0c97d5e75060bd19c97abddd9f49))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-15T17:30:11Z",
+      "final_score": 1343.9841770185187
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.104.2: sdk: v0.104.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.104.2",
+      "body": "## 0.104.2 (2026-06-15)\n\nFull Changelog: [sdk-v0.104.1...sdk-v0.104.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.104.1...sdk-v0.104.2)\n\n### Chores\n\n* **api:** remove retired models from API and SDKs ([a942876](https://github.com/anthropics/anthropic-sdk-typescript/commit/a94287690a383ba34aa0d2ad9e0262eeb9241bd3))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-15T16:49:40Z",
+      "final_score": 1340.76856855291
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.177: v2.1.177",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.177",
+      "body": "\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-13T01:25:15Z",
+      "final_score": 1038.8307378650793
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.176: v2.1.176",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+      "body": "## What's changed\n\n- Session titles are now generated in the language of your conversation (set the `language` setting to pin a specific language)\n- Added `footerLinksRegexes` setting for regex-matched link badges in the footer row, configurable via user or managed settings\n- Improved Bedrock credential caching: credentials from `awsCredentialExport` are now cached until their `Expiration` instead of a fixed 1 hour\n- Fixed `availableModels` enforcement: alias model picks can no longer be redirected to a blocked model via `ANTHROPIC_DEFAULT_*_MODEL` environment variables, and `/fast` now refuse",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-12T21:53:27Z",
+      "final_score": 1022.0212140555557
+    },
+    {
+      "source": "Hacker News",
+      "title": "A robot is sprinting towards you. Do you want it running on Claude or Grok?",
+      "url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
+      "external_url": "https://openrouter.ai/blog/insights/royale-last-agent-standing/",
+      "score": 128,
+      "comments": 106,
+      "created": "2026-06-17T21:00:07+00:00",
+      "final_score": 307.27471700021164
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: Adam (YC W25) – Open-Source AI CAD",
+      "url": "https://github.com/Adam-CAD/CADAM",
+      "external_url": "https://github.com/Adam-CAD/CADAM",
+      "score": 136,
+      "comments": 70,
+      "created": "2026-06-17T16:14:04+00:00",
+      "final_score": 301.3074820508201
+    }
+  ]
+}

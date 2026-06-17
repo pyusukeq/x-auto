@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-16</title>
+<title>X投稿下書き 2026-06-17</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,66 +73,54 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-16</h1>
-  <p>生成: 2026-06-17 08:18 JST</p>
+  <h1>X投稿下書き 2026-06-17</h1>
+  <p>生成: 2026-06-18 08:16 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">⚠️ 情報確認中
 
-Claude Code v2.1.178〜v2.1.179で
-パーミッション設定がかなり柔軟になった。
+Claude Code v2.1.181のリリースノートを確認しましたが、投稿内容（`/config key=value` 構文・`thinking=false` 例・`-p` やリモートでの動作）の裏付けが取れませんでした。
 
-『Tool(param:value)構文』で
-ツールの入力パラメータ単位で制御できるように。
+確認できた変更点はmacOSでのApple Events許可設定の追加などです。
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.178
+詳細はリリースノートでご確認ください👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.181</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.178で
+パーミッション設定がもっと細かくできるようになった。
 
-▶︎ `Agent(model:opus)` でOpusサブエージェントだけブロック可能に
-▶︎ `*` ワイルドカードで柔軟な条件指定にも対応
-▶︎ ネストした `.claude/skills` のスキルも自動でロードされるよう改善（v2.1.179）
-
-つまり、
-
-「このモデルだけ使わせない」といった
-細かい制御が実現できるようになりました👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><p class="warning">⚠️ レビュー未通過（投稿スキップ推奨）</p><div class="post-text failed" id="p1">【保存推奨】
-
-Claude Code v2.1.179の
-地味だけど助かるバグ修正まとめ。
-
-『途中で通信が切れても部分レスポンスが保持される』ようになった。
+『Agent(model:opus) でOpusサブエージェントだけをブロック』
 
 ポイントはここ👇
 
-▶︎ ストリーミング中の接続切れで生のエラー表示→応答保持に改善
-▶︎ ツール実行中にスピナーが止まらない問題も解消
-▶︎ WSL2（Windows Terminal・VS Code）のマウスホイール不具合も修正
+▶︎ `Tool(param:value)` 構文でツールの入力パラメータ単位で制御可能
+▶︎ `*` ワイルドカードで柔軟なルール設定も対応
 
 つまり、
 
-長い処理中に接続が落ちても
-それまでの回答が消えなくなったのは地味にうれしいですよね✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
-地味に便利
+「このモデルだけ禁止」「この条件のときだけ許可」など
+より意図した通りの権限管理ができるようになりましたね😊
 
-Claude Code v2.1.178か v2.1.179で
-セッションタイトルが会話の言語で自動生成されるように。
+※現在はv2.1.181がリリース済みです。最新情報はリリースページをご確認ください👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.181</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【地味にありがたい】
+バグ修正がじわる
 
-`language` 設定で固定もできる。
+Claude Code v2.1.179で
+接続が途中で切れても応答が消えなくなった。
 
-ポイントはここ👇
+『途中まで生成されたレスポンスがそのまま保持される』
 
-▶︎ 日本語で話しかければタイトルも日本語で生成される
-▶︎ `language` 設定で言語を固定することも可能
-▶︎ フッターのリンクバッジも正規表現で柔軟に設定できる `footerLinksRegexes` が追加
+結論はこれ👇
+
+▶︎ ストリーム中断時も部分レスポンスを保存・表示
+▶︎ 「running tool」でスピナーが止まるバグも修正
+▶︎ WSL2環境でのマウスホイールスクロールも復活
 
 つまり、
 
-複数セッションを管理するとき
-タイトルが母国語で並ぶだけでかなり見やすくなりますよね😊
+ネットが不安定な環境でも
+長い生成が途中で消える悩みが解消されるかもしれません✨
 
-リリースノートはこちらで確認してみて👀
+詳細はこちら👇
 https://github.com/anthropics/claude-code/releases/tag/v2.1.179</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {

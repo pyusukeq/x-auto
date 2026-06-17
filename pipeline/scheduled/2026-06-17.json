@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-17",
+  "posts": [
+    "⚠️ 情報確認中\n\nClaude Code v2.1.181のリリースノートを確認しましたが、投稿内容（`/config key=value` 構文・`thinking=false` 例・`-p` やリモートでの動作）の裏付けが取れませんでした。\n\n確認できた変更点はmacOSでのApple Events許可設定の追加などです。\n\n詳細はリリースノートでご確認ください👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.181",
+    "Claude Code v2.1.178で\nパーミッション設定がもっと細かくできるようになった。\n\n『Agent(model:opus) でOpusサブエージェントだけをブロック』\n\nポイントはここ👇\n\n▶︎ `Tool(param:value)` 構文でツールの入力パラメータ単位で制御可能\n▶︎ `*` ワイルドカードで柔軟なルール設定も対応\n\nつまり、\n\n「このモデルだけ禁止」「この条件のときだけ許可」など\nより意図した通りの権限管理ができるようになりましたね😊\n\n※現在はv2.1.181がリリース済みです。最新情報はリリースページをご確認ください👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.181",
+    "【地味にありがたい】\nバグ修正がじわる\n\nClaude Code v2.1.179で\n接続が途中で切れても応答が消えなくなった。\n\n『途中まで生成されたレスポンスがそのまま保持される』\n\n結論はこれ👇\n\n▶︎ ストリーム中断時も部分レスポンスを保存・表示\n▶︎ 「running tool」でスピナーが止まるバグも修正\n▶︎ WSL2環境でのマウスホイールスクロールも復活\n\nつまり、\n\nネットが不安定な環境でも\n長い生成が途中で消える悩みが解消されるかもしれません✨\n\n詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.179"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
