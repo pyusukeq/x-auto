@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-18",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nAnthropicのPython SDKが\nアップデートリリース。\n\n『新しいcode_execution_20260120ツールのサポートが追加』\n\n具体的には⏬\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0\n\n▶︎ Python SDK v0.111.0がリリース\n▶︎ TypeScript SDK（AWS・Bedrock・Foundry向け）も同時期に更新\n▶︎ コード実行ツールをAPIから直接呼び出せるように\n\nつまり、\n\nClaudeにコードを書かせるだけでなく\n実行まで任せる時代が近づいていますよね。\n\n詳細はGitHubでチェックしてみて👀",
+    "【保存推奨】\n\nTypeScript SDK（Bedrock・Vertex・Foundry・AWS）の\n各プラットフォーム版で地味に便利な改善が入った。\n\n『ストリーミング時のツールJSON入力を段階的にパース』\n\nポイントはここ👀\n\n▶︎ ツール呼び出しのJSONを受信しながら少しずつ処理\n▶︎ bedrock / vertex / foundry（Palantir）/ aws-sdk 全対応\n▶︎ 大きなJSONでも応答が詰まりにくくなる\n\nつまり、\n\nストリーミングの体感速度が上がって\nエージェント系の実装がより快適になりそうですね✨\n\nリリースノートはこちら→\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
+    "【Python SDK v0.111.0 アップデート】\n\nAnthropic Python SDKに\n`refusal-fallback-middleware`タグによる\nリクエスト識別機能が追加。\n\n結論はこれ👇\n\n▶︎ 拒否フォールバック処理のリクエストをタグで識別できるように\n▶︎ 通常リクエストと区別できるので分析・デバッグが楽に\n▶︎ 本番運用でのエラーハンドリング設計の参考に\n\nつまり、\n\nClaudeの拒否ケースを前提にした\nアプリ設計時のログ分析がしやすくなりましたよね。\n\n詳細はGitHubのリリースノートで確認を👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

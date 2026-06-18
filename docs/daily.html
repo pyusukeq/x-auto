@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-17</title>
+<title>X投稿下書き 2026-06-18</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,55 +73,69 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-17</h1>
-  <p>生成: 2026-06-18 08:16 JST</p>
+  <h1>X投稿下書き 2026-06-18</h1>
+  <p>生成: 2026-06-19 08:28 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">⚠️ 情報確認中
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+待ってたやつ！！
 
-Claude Code v2.1.181のリリースノートを確認しましたが、投稿内容（`/config key=value` 構文・`thinking=false` 例・`-p` やリモートでの動作）の裏付けが取れませんでした。
+AnthropicのPython SDKが
+アップデートリリース。
 
-確認できた変更点はmacOSでのApple Events許可設定の追加などです。
+『新しいcode_execution_20260120ツールのサポートが追加』
 
-詳細はリリースノートでご確認ください👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.181</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.178で
-パーミッション設定がもっと細かくできるようになった。
+具体的には⏬
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0
 
-『Agent(model:opus) でOpusサブエージェントだけをブロック』
-
-ポイントはここ👇
-
-▶︎ `Tool(param:value)` 構文でツールの入力パラメータ単位で制御可能
-▶︎ `*` ワイルドカードで柔軟なルール設定も対応
+▶︎ Python SDK v0.111.0がリリース
+▶︎ TypeScript SDK（AWS・Bedrock・Foundry向け）も同時期に更新
+▶︎ コード実行ツールをAPIから直接呼び出せるように
 
 つまり、
 
-「このモデルだけ禁止」「この条件のときだけ許可」など
-より意図した通りの権限管理ができるようになりましたね😊
+Claudeにコードを書かせるだけでなく
+実行まで任せる時代が近づいていますよね。
 
-※現在はv2.1.181がリリース済みです。最新情報はリリースページをご確認ください👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.181</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【地味にありがたい】
-バグ修正がじわる
+詳細はGitHubでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.179で
-接続が途中で切れても応答が消えなくなった。
+TypeScript SDK（Bedrock・Vertex・Foundry・AWS）の
+各プラットフォーム版で地味に便利な改善が入った。
 
-『途中まで生成されたレスポンスがそのまま保持される』
+『ストリーミング時のツールJSON入力を段階的にパース』
+
+ポイントはここ👀
+
+▶︎ ツール呼び出しのJSONを受信しながら少しずつ処理
+▶︎ bedrock / vertex / foundry（Palantir）/ aws-sdk 全対応
+▶︎ 大きなJSONでも応答が詰まりにくくなる
+
+つまり、
+
+ストリーミングの体感速度が上がって
+エージェント系の実装がより快適になりそうですね✨
+
+リリースノートはこちら→
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Python SDK v0.111.0 アップデート】
+
+Anthropic Python SDKに
+`refusal-fallback-middleware`タグによる
+リクエスト識別機能が追加。
 
 結論はこれ👇
 
-▶︎ ストリーム中断時も部分レスポンスを保存・表示
-▶︎ 「running tool」でスピナーが止まるバグも修正
-▶︎ WSL2環境でのマウスホイールスクロールも復活
+▶︎ 拒否フォールバック処理のリクエストをタグで識別できるように
+▶︎ 通常リクエストと区別できるので分析・デバッグが楽に
+▶︎ 本番運用でのエラーハンドリング設計の参考に
 
 つまり、
 
-ネットが不安定な環境でも
-長い生成が途中で消える悩みが解消されるかもしれません✨
+Claudeの拒否ケースを前提にした
+アプリ設計時のログ分析がしやすくなりましたよね。
 
-詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.179</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はGitHubのリリースノートで確認を👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
