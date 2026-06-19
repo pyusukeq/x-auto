@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-18</title>
+<title>X投稿下書き 2026-06-19</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,69 +73,55 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-18</h1>
-  <p>生成: 2026-06-19 08:28 JST</p>
+  <h1>X投稿下書き 2026-06-19</h1>
+  <p>生成: 2026-06-20 07:43 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【注意】
+Claude Code v2.1.183のリリースが確認されましたが、投稿に記載した機能の詳細（gitコマンドの自動ブロック等）はリリースノートから直接確認できていません。
 
-AnthropicのPython SDKが
-アップデートリリース。
+内容に誤りが含まれる可能性があるため、詳細は公式リリースノートでご確認ください👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.183</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
 
-『新しいcode_execution_20260120ツールのサポートが追加』
+Python SDK v0.111.0がリリースされました。
+
+リリースノートの詳細は確認中ですが、
+APIのアップデートが続いており、
+エージェント系アプリへの応用範囲が
+広がってきています。
+
+ポイントはここ👇
+
+▶︎ anthropic-sdk-python v0.111.0 がリリース
+▶︎ APIの機能拡充が継続中
+▶︎ エージェント系アプリへの応用に注目
+
+AnthropicのAPIでできることが
+また一歩広がった感じですよね✨
+
+詳細はこちら👇
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは便利】
+TypeScript SDKが複数のパッケージで
+ストリーミングの仕組みを改善。
+
+『ツールのJSON入力を途中から少しずつ解析できる』
+lazy parseという発想が面白い。
 
 具体的には⏬
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0
 
-▶︎ Python SDK v0.111.0がリリース
-▶︎ TypeScript SDK（AWS・Bedrock・Foundry向け）も同時期に更新
-▶︎ コード実行ツールをAPIから直接呼び出せるように
-
-つまり、
-
-Claudeにコードを書かせるだけでなく
-実行まで任せる時代が近づいていますよね。
-
-詳細はGitHubでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
-
-TypeScript SDK（Bedrock・Vertex・Foundry・AWS）の
-各プラットフォーム版で地味に便利な改善が入った。
-
-『ストリーミング時のツールJSON入力を段階的にパース』
-
-ポイントはここ👀
-
-▶︎ ツール呼び出しのJSONを受信しながら少しずつ処理
-▶︎ bedrock / vertex / foundry（Palantir）/ aws-sdk 全対応
-▶︎ 大きなJSONでも応答が詰まりにくくなる
+▶︎ AWS SDK・Foundry SDKに対応
+▶︎ ストリーミング中のtool inputを部分的に処理可能に
+▶︎ 応答の待ち時間を体感で短くできる可能性がある
 
 つまり、
 
-ストリーミングの体感速度が上がって
-エージェント系の実装がより快適になりそうですね✨
+リアルタイム処理の品質が上がって
+ユーザー体験がよりなめらかになりそうですよね。
 
-リリースノートはこちら→
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Python SDK v0.111.0 アップデート】
-
-Anthropic Python SDKに
-`refusal-fallback-middleware`タグによる
-リクエスト識別機能が追加。
-
-結論はこれ👇
-
-▶︎ 拒否フォールバック処理のリクエストをタグで識別できるように
-▶︎ 通常リクエストと区別できるので分析・デバッグが楽に
-▶︎ 本番運用でのエラーハンドリング設計の参考に
-
-つまり、
-
-Claudeの拒否ケースを前提にした
-アプリ設計時のログ分析がしやすくなりましたよね。
-
-詳細はGitHubのリリースノートで確認を👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はこちら👇
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
