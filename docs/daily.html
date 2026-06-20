@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-19</title>
+<title>X投稿下書き 2026-06-20</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,55 +73,58 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-19</h1>
-  <p>生成: 2026-06-20 07:43 JST</p>
+  <h1>X投稿下書き 2026-06-20</h1>
+  <p>生成: 2026-06-21 07:58 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【注意】
-Claude Code v2.1.183のリリースが確認されましたが、投稿に記載した機能の詳細（gitコマンドの自動ブロック等）はリリースノートから直接確認できていません。
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+マジか！！
 
-内容に誤りが含まれる可能性があるため、詳細は公式リリースノートでご確認ください👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.183</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
+Claude Code v2.1.185で
+autoモードの安全性が大幅に強化された。
 
-Python SDK v0.111.0がリリースされました。
-
-リリースノートの詳細は確認中ですが、
-APIのアップデートが続いており、
-エージェント系アプリへの応用範囲が
-広がってきています。
-
-ポイントはここ👇
-
-▶︎ anthropic-sdk-python v0.111.0 がリリース
-▶︎ APIの機能拡充が継続中
-▶︎ エージェント系アプリへの応用に注目
-
-AnthropicのAPIでできることが
-また一歩広がった感じですよね✨
-
-詳細はこちら👇
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは便利】
-TypeScript SDKが複数のパッケージで
-ストリーミングの仕組みを改善。
-
-『ツールのJSON入力を途中から少しずつ解析できる』
-lazy parseという発想が面白い。
+『自分で指示していない破壊的な操作を自動でブロック』
 
 具体的には⏬
+https://github.com/anthropics/claude-code/releases/tag/v2.1.185
 
-▶︎ AWS SDK・Foundry SDKに対応
-▶︎ ストリーミング中のtool inputを部分的に処理可能に
-▶︎ 応答の待ち時間を体感で短くできる可能性がある
+▶︎ `git reset --hard` など複数の破壊的コマンドを自動ブロック
+▶︎ 意図しないコード消去・履歴改変を未然に防ぐ
 
 つまり、
 
-リアルタイム処理の品質が上がって
-ユーザー体験がよりなめらかになりそうですよね。
+エージェントが勝手に大切なコードを消す心配が減りますよね。
+autoモードがより安心して使えるようになりましたね👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.183で
+API待機中のヒント表示が改善された。
 
-詳細はこちら👇
+地味だけど、長時間作業での安心感が変わるかもしれません。
+
+ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.183
+
+▶︎ 無応答が続いたときの待機メッセージが改善
+▶︎ 「応答なし」より「待機中」の表現で状況が分かりやすく
+
+つまり、
+
+「あれ、止まってる？」という不安が減りそうな小さな改善ですよね。
+アップデート済みの方はぜひ確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Anthropic SDK更新情報】
+
+TypeScript SDKのAWS向けサブパッケージ（aws-sdk）がv0.5.0にアップデート。
+
+『ツールのJSON入力をストリーミング中に少しずつ解析できるように』
+
+ポイントはここ👇
+
+▶︎ ツール呼び出し時のJSONを受信しながら逐次パース
+▶︎ 完全受信を待たずにデータ処理が始まる
+▶︎ AWS SDK向けの更新（v0.5.0）
+
 https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+
+エージェント系のアプリで体感できるレスポンス改善が期待できますよね。
+使っている方はバージョンを確認してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

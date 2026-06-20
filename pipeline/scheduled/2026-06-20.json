@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-20",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Code v2.1.185で\nautoモードの安全性が大幅に強化された。\n\n『自分で指示していない破壊的な操作を自動でブロック』\n\n具体的には⏬\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.185\n\n▶︎ `git reset --hard` など複数の破壊的コマンドを自動ブロック\n▶︎ 意図しないコード消去・履歴改変を未然に防ぐ\n\nつまり、\n\nエージェントが勝手に大切なコードを消す心配が減りますよね。\nautoモードがより安心して使えるようになりましたね👀",
+    "Claude Code v2.1.183で\nAPI待機中のヒント表示が改善された。\n\n地味だけど、長時間作業での安心感が変わるかもしれません。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.183\n\n▶︎ 無応答が続いたときの待機メッセージが改善\n▶︎ 「応答なし」より「待機中」の表現で状況が分かりやすく\n\nつまり、\n\n「あれ、止まってる？」という不安が減りそうな小さな改善ですよね。\nアップデート済みの方はぜひ確認してみて👀",
+    "【Anthropic SDK更新情報】\n\nTypeScript SDKのAWS向けサブパッケージ（aws-sdk）がv0.5.0にアップデート。\n\n『ツールのJSON入力をストリーミング中に少しずつ解析できるように』\n\nポイントはここ👇\n\n▶︎ ツール呼び出し時のJSONを受信しながら逐次パース\n▶︎ 完全受信を待たずにデータ処理が始まる\n▶︎ AWS SDK向けの更新（v0.5.0）\n\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0\n\nエージェント系のアプリで体感できるレスポンス改善が期待できますよね。\n使っている方はバージョンを確認してみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
