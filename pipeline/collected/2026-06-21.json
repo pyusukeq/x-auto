@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-06-21T22:58:59.450923",
+  "date": "2026-06-21",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-21T22:58:58.707707+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98771331543
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.185: v2.1.185",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.185",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.185",
+      "body": "## What's changed\n\n- The stream-stall hint now reads \"Waiting for API response · will retry in …\" instead of \"No response from API · Retrying in …\", and triggers after 20s of silence instead of 10s\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-20T20:59:19Z",
+      "final_score": 1476.2163348148147
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.183: v2.1.183",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+      "body": "## What's changed\n\n- Improved auto mode safety: destructive git commands (`git reset --hard`, `git checkout -- .`, `git clean -fd`, `git stash drop`) are now blocked when you didn't ask to discard local work, `git commit --amend` is blocked when the commit wasn't made by the agent this session, and `terraform destroy`/`pulumi destroy`/`cdk destroy` are blocked unless you asked for the specific stack\n- Added a warning when the requested model is deprecated or automatically updated to a newer model, shown on stderr in print mode (`-p`) and now also covering models set in agent frontmatter\n- Adde",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-19T01:20:50Z",
+      "final_score": 1268.4001972486772
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.111.0: v0.111.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0",
+      "body": "## 0.111.0 (2026-06-18)\n\nFull Changelog: [v0.110.0...v0.111.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.110.0...v0.111.0)\n\n### Features\n\n* **helpers:** tag refusal-fallback middleware requests with fallback-refusal-middleware ([#96](https://github.com/anthropics/anthropic-sdk-python/issues/96)) ([2f8ac78](https://github.com/anthropics/anthropic-sdk-python/commit/2f8ac789506efc0719b06f1f646c9a98bb25ce7b))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:31:32Z",
+      "final_score": 1231.1541655026454
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.5.0: aws-sdk: v0.5.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0",
+      "body": "## 0.5.0 (2026-06-18)\n\nFull Changelog: [aws-sdk-v0.4.2...aws-sdk-v0.5.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.4.2...aws-sdk-v0.5.0)\n\n### Features\n\n* **stream:** lazily parse partial tool json input ([#99](https://github.com/anthropics/anthropic-sdk-typescript/issues/99)) ([e55ceee](https://github.com/anthropics/anthropic-sdk-typescript/commit/e55ceee5e3053ada96a7fe008b1fd6ebc0e42544))\n\n\n### Chores\n\n* **tests:** stop using deprecated models ([#98](https://github.com/anthropics/anthropic-sdk-typescript/issues/98)) ([65ae1af](https://github.com/anthropics/anth",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:19:04Z",
+      "final_score": 1230.1647475132277
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.0: foundry-sdk: v0.4.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.0",
+      "body": "## 0.4.0 (2026-06-18)\n\nFull Changelog: [foundry-sdk-v0.3.1...foundry-sdk-v0.4.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.3.1...foundry-sdk-v0.4.0)\n\n### Features\n\n* **stream:** lazily parse partial tool json input ([#99](https://github.com/anthropics/anthropic-sdk-typescript/issues/99)) ([e55ceee](https://github.com/anthropics/anthropic-sdk-typescript/commit/e55ceee5e3053ada96a7fe008b1fd6ebc0e42544))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:18:55Z",
+      "final_score": 1230.1528427513226
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.31.0: bedrock-sdk: v0.31.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.31.0",
+      "body": "## 0.31.0 (2026-06-18)\n\nFull Changelog: [bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.30.2...bedrock-sdk-v0.31.0)\n\n### Features\n\n* **stream:** lazily parse partial tool json input ([#99](https://github.com/anthropics/anthropic-sdk-typescript/issues/99)) ([e55ceee](https://github.com/anthropics/anthropic-sdk-typescript/commit/e55ceee5e3053ada96a7fe008b1fd6ebc0e42544))\n\n\n### Chores\n\n* **tests:** stop using deprecated models ([#98](https://github.com/anthropics/anthropic-sdk-typescript/issues/98)) ([65ae1af](https://githu",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:18:46Z",
+      "final_score": 1230.140937989418
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.18.0: vertex-sdk: v0.18.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.18.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.18.0",
+      "body": "## 0.18.0 (2026-06-18)\n\nFull Changelog: [vertex-sdk-v0.17.1...vertex-sdk-v0.18.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.17.1...vertex-sdk-v0.18.0)\n\n### Features\n\n* **stream:** lazily parse partial tool json input ([#99](https://github.com/anthropics/anthropic-sdk-typescript/issues/99)) ([e55ceee](https://github.com/anthropics/anthropic-sdk-typescript/commit/e55ceee5e3053ada96a7fe008b1fd6ebc0e42544))\n\n\n### Chores\n\n* **tests:** stop using deprecated models ([#98](https://github.com/anthropics/anthropic-sdk-typescript/issues/98)) ([65ae1af](https://github.co",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:18:40Z",
+      "final_score": 1230.1330014814814
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.110.0: v0.110.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.110.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.110.0",
+      "body": "## 0.110.0 (2026-06-18)\n\nFull Changelog: [v0.109.2...v0.110.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.2...v0.110.0)\n\n### Features\n\n* **api:** add support for new code_execution_20260120 tool ([5e23212](https://github.com/anthropics/anthropic-sdk-python/commit/5e23212dc0883174c879b97ef8e7e33ead4e8da5))\n\n\n### Bug Fixes\n\n* append x-stainless-helper across header merges instead of clobbering ([#105](https://github.com/anthropics/anthropic-sdk-python/issues/105)) ([922558e](https://github.com/anthropics/anthropic-sdk-python/commit/922558e2ce52e18863dab27bcc04067068827364)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:18:34Z",
+      "final_score": 1230.1250649735448
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.105.0: sdk: v0.105.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.105.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.105.0",
+      "body": "## 0.105.0 (2026-06-18)\n\nFull Changelog: [sdk-v0.104.2...sdk-v0.105.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.104.2...sdk-v0.105.0)\n\n### Features\n\n* **api:** add support for new code_execution_20260120 tool ([8dc2b54](https://github.com/anthropics/anthropic-sdk-typescript/commit/8dc2b54ee9f19cfc0a8f5cb49d0e1b93f4a4cadd))\n* **stream:** lazily parse partial tool json input ([#99](https://github.com/anthropics/anthropic-sdk-typescript/issues/99)) ([e55ceee](https://github.com/anthropics/anthropic-sdk-typescript/commit/e55ceee5e3053ada96a7fe008b1fd6ebc0e42544))\n\n\n###",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-18T17:18:32Z",
+      "final_score": 1230.1224194708996
+    }
+  ]
+}
