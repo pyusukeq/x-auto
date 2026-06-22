@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-21</title>
+<title>X投稿下書き 2026-06-22</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,67 +73,63 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-21</h1>
-  <p>生成: 2026-06-22 07:59 JST</p>
+  <h1>X投稿下書き 2026-06-22</h1>
+  <p>生成: 2026-06-23 08:12 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+待ってたやつ！！
 
-Claude Code最新版で
-安全性が大きく強化された。
+Claude Code v2.1.186がリリース。
+`--no-browser`オプションでSSH環境でのMCP追加に対応した。
 
-『自分で頼んでいない破壊的操作を自動でブロック』
+『リモート環境でもブラウザなしでMCPサーバーを登録可能に』
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.183
+具体的には⏬
+https://github.com/anthropics/claude-code/releases/tag/v2.1.186
 
-▶︎ `git reset --hard` などの破壊的コマンドを自動ブロック
-▶︎ 自分が作ったコミット以外への `git commit --amend` も制限
-▶︎ ローカルの作業を意図せず消される事故を防止
+▶︎ `claude mcp add --no-browser` でブラウザ不要の認証フローが可能に
+▶︎ SSHリモート環境でもstdin経由で認証できる
+▶︎ GUIが使えないサーバー環境での開発がスムーズに
 
 つまり、
 
-「お願いしていないのにコードが消えた」
-というトラブルが減りそうですよね✨
+リモート開発環境でもMCPの認証がスムーズになりますよね。
 
-詳細はリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.185</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+詳細はリリースノートをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.185で
-API待機中のメッセージが改善された。
+Claude Codeで
+意図しないファイル破壊を防ぐ仕組みが強化された。
 
-地味だけど、長時間タスクで不安になりにくくなる変更です。
+『スコープ外の操作を制限』
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.185
+https://github.com/anthropics/claude-code/releases/tag/v2.1.183
 
-▶︎ 以前：『No response from API · Retrying in …』（10秒後に表示）
-▶︎ 変更後：『Waiting for API response · will retry in …』（20秒後に表示）
-▶︎ 「落ちた？」ではなく「待ってます」と伝わる文言に
+▶︎ 破壊的なgitコマンドの実行に確認が入るよう改善
+▶︎ セッション外コミットへの意図しない変更を抑制
+▶︎ 明示的な指示なしに安全側に動作する設計
 
 つまり、
 
-表示タイミングと言葉の選び方を変えるだけで
-体感ストレスがかなり違ってきますよね😊
+「気づいたら大事なコードが消えてた」という事故を防いでくれる設計ですよね。
 
-v2.1.185はすでに配信中なので確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
-TypeScript AWS SDKがv0.5.0にアップデート。
+詳細は公式リリースノートで確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【新機能】
+Claude Codeの`/workflows`エージェントにステータスフィルター機能が追加されました。
 
-ポイントはここ👇
+キー一つでワークフローを絞り込める操作感が実現。
 
-▶︎ ツール呼び出しの途中データをリアルタイムで扱えるストリーム処理の改善
-▶︎ AWS SDK向けの適用
-▶︎ ストリーミングを使ったエージェント開発がより滑らかに
+具体的には⏬
+https://github.com/anthropics/claude-code/releases
 
-つまり、
+▶︎ 実行中・完了・失敗など状態別にワークフローを素早く確認
+▶︎ 大量のタスクを抱えていても目的のものにすぐアクセス可能
+▶︎ UIを開いたままキー一つで切り替えられる操作感
 
-AWS環境でエージェントを作っている方には
-見逃せないアップデートかもしれません🙌
+並列タスクを複数走らせている人ほど恩恵が大きい改善かもしれません✨
 
-リリースノートはこちら👇
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.5.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+リリースノートで詳細を確認してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
