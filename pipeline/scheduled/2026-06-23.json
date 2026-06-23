@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-23",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.187で\nセキュリティ設定が強化された。\n\n『サンドボックスがクレデンシャルファイルを読めないようにブロック可能』\n\n具体的な内容はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.187\n\nチームや組織で使う場合に\nより安全に運用できる設定が整ってきましたね✨",
+    "【Claude Codeの新機能】\n\nMCPサーバーの認証がCLIから直接できるようになりました。\n\n毎回インタラクティブメニューを開かなくて済む、地味に嬉しい改善かもしれません。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases\n\n▶︎ `claude mcp login <name>` でCLIから直接ログイン\n▶︎ `claude mcp logout <name>` でログアウトも同様に\n\nリモート環境での認証フローもよりスムーズになりますね🙌\n\n詳細はリリースノートで確認してみて👀",
+    "【これはすごい】\nマジか！！\n\n最近のClaude Codeアップデートで\nautoモードの「危険なgitコマンド」が自動ブロックされるようになった。\n\n『自分で頼んでいないのに git reset --hard が実行される事故を防ぐ』\n\n結論はこれ👇\n\n▶︎ `git reset --hard` `git clean -fd` などを意図しない実行からガード\n▶︎ ローカルの作業が勝手に消えるリスクが大幅に低下\n\nつまり、\n\n「AIに任せたら大事なコードが消えた」という\n怖い体験が起きにくくなりますね✨\n\nアップデート内容はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
