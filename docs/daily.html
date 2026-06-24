@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-23</title>
+<title>X投稿下書き 2026-06-24</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,57 +73,49 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-23</h1>
-  <p>生成: 2026-06-24 07:59 JST</p>
+  <h1>X投稿下書き 2026-06-24</h1>
+  <p>生成: 2026-06-25 07:58 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code v2.1.187で
-セキュリティ設定が強化された。
+Claude Code v2.1.191がリリース。
+新コマンド `/rewind` が追加された。
 
-『サンドボックスがクレデンシャルファイルを読めないようにブロック可能』
+具体的には⏬
 
-具体的な内容はリリースノートで確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.187
+▶︎ `/rewind` コマンドが追加
+▶︎ スクロール中に画面が下に飛ぶ挙動を修正
+▶︎ 停止したはずのバックグラウンドエージェントが復活してしまうバグも解消
 
-チームや組織で使う場合に
-より安全に運用できる設定が整ってきましたね✨</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【Claude Codeの新機能】
+詳細はリリースノートで確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.191</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.191で
+セキュリティまわりの設定が強化された。
 
-MCPサーバーの認証がCLIから直接できるようになりました。
-
-毎回インタラクティブメニューを開かなくて済む、地味に嬉しい改善かもしれません。
+組織ルールをモデル選択に反映できるようになり
+チーム開発での管理が楽になりそう😊
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases
 
-▶︎ `claude mcp login &lt;name&gt;` でCLIから直接ログイン
-▶︎ `claude mcp logout &lt;name&gt;` でログアウトも同様に
-
-リモート環境での認証フローもよりスムーズになりますね🙌
-
-詳細はリリースノートで確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-マジか！！
-
-最近のClaude Codeアップデートで
-autoモードの「危険なgitコマンド」が自動ブロックされるようになった。
-
-『自分で頼んでいないのに git reset --hard が実行される事故を防ぐ』
-
-結論はこれ👇
-
-▶︎ `git reset --hard` `git clean -fd` などを意図しない実行からガード
-▶︎ ローカルの作業が勝手に消えるリスクが大幅に低下
+▶︎ `sandbox.credentials` で認証情報・シークレットの読み取りをブロック可能に
+▶︎ 組織が設定したモデル制限を `--model` や `/model` にも自動適用
+▶︎ サンドボックス環境での意図しない情報漏えいリスクを軽減
 
 つまり、
 
-「AIに任せたら大事なコードが消えた」という
-怖い体験が起きにくくなりますね✨
+個人利用より企業・チーム利用での恩恵が大きいアップデートですね。
 
-アップデート内容はリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.191</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【最新リリース】
+Claude Code v2.1.191がリリースされました。
+
+詳細はリリースノートで確認を👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.191
+
+あわせてv2.1.190も公開されています。
+https://github.com/anthropics/claude-code/releases/tag/v2.1.190</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
