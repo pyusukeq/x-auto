@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-25",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.191で\n会話を巻き戻せる `/rewind` コマンドが追加された。\n\n『直前の操作を取り消して、その時点から再開できる』\n\n具体的には👇\n\n▶︎ `/clear` 実行前の状態に戻れる（可能性あり・要確認）\n▶︎ 停止したはずのバックグラウンドエージェントが再起動してしまうバグを修正\n▶︎ ストリーミング中のスクロール挙動も改善\n\nつまり、\n\n「あ、消しすぎた」が起きても安心できる\n地味に嬉しいアップデートですよね。\n\n詳細はGitHubのリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.191",
+    "Claude Code v2.1.193のリリースノートを確認してみて👀\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.193\n\nシェルコマンドの自動分類まわりに変更があった模様。\n\n気になる人はリリースノートで詳細を確認してみて。",
+    "【最新情報】\n\nClaude Code v2.1.193／v2.1.191で\n組織レベルのモデル制限機能が追加された。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.193\n\n▶︎ org管理者がモデルの選択肢を制限できる\n▶︎ --model・/model・ANTHROPIC_MODELすべてに制限が反映される\n▶︎ サンドボックス環境での認証情報漏洩リスクを低減\n\nつまり、\n\nチーム・企業利用での\nセキュリティ管理がぐっと厳密にできるようになりましたよね😊\n\nセキュリティ設定を見直したい方はリリースノートをチェックしてみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
