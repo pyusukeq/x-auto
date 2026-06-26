@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-26",
+  "posts": [
+    "【リリース情報】\n\nClaude Code v2.1.195がリリース。\nhookの挙動に関する修正が入った。\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.195\n\n▶︎ `code-reviewer` や `mcp__brave-search` など\n　ハイフン含む識別子の部分一致バグを修正\n▶︎ 今後は完全一致のみで動作（意図しない誤マッチを防止）\n▶︎ マウス操作を無効化できる環境変数も追加\n\nハイフン含む識別子でhookを設定しているなら\n動作確認してみて👀",
+    "Claude Code v2.1.193で\nauto-modeの制御がより細かくできるようになった。\n\nShellコマンドの扱いが気になっていた方に\n朗報かもしれません。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.193\n\n▶︎ `autoMode.classifyAllShell` を有効にすると\n　すべてのShellコマンドをauto-modeで分類対象に\n▶︎ 許可・拒否の理由がトランスクリプトに記録されるように\n▶︎ `/permissions` で最近の拒否履歴も確認可能に\n\nどのコマンドがなぜ止められたか\n可視化されるのはありがたいですよね✨\n\n設定を見直してみて👀",
+    "【要確認】\nClaude Code 最新版で\n`/rewind` コマンドが強化されたようです。\n\n『/clear した後でも会話を巻き戻せる』\n\n具体的には\n\n▶︎ `/clear` 実行前の状態に会話を戻せるように\n▶︎ バックグラウンドエージェントを停止しても\n　勝手に復活するバグも修正済み\n▶︎ ストリーミング中のスクロール位置ズレも改善\n\n「あ、消しちゃった」という\n焦りが減るアップデートかもしれません😊\n\n詳細はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.191"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-25</title>
+<title>X投稿下書き 2026-06-26</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,55 +73,60 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-25</h1>
-  <p>生成: 2026-06-26 08:07 JST</p>
+  <h1>X投稿下書き 2026-06-26</h1>
+  <p>生成: 2026-06-27 07:59 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【リリース情報】
 
-Claude Code v2.1.191で
-会話を巻き戻せる `/rewind` コマンドが追加された。
-
-『直前の操作を取り消して、その時点から再開できる』
+Claude Code v2.1.195がリリース。
+hookの挙動に関する修正が入った。
 
 具体的には👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.195
 
-▶︎ `/clear` 実行前の状態に戻れる（可能性あり・要確認）
-▶︎ 停止したはずのバックグラウンドエージェントが再起動してしまうバグを修正
-▶︎ ストリーミング中のスクロール挙動も改善
+▶︎ `code-reviewer` や `mcp__brave-search` など
+　ハイフン含む識別子の部分一致バグを修正
+▶︎ 今後は完全一致のみで動作（意図しない誤マッチを防止）
+▶︎ マウス操作を無効化できる環境変数も追加
 
-つまり、
+ハイフン含む識別子でhookを設定しているなら
+動作確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.193で
+auto-modeの制御がより細かくできるようになった。
 
-「あ、消しすぎた」が起きても安心できる
-地味に嬉しいアップデートですよね。
-
-詳細はGitHubのリリースノートでチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.191</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.193のリリースノートを確認してみて👀
-
-https://github.com/anthropics/claude-code/releases/tag/v2.1.193
-
-シェルコマンドの自動分類まわりに変更があった模様。
-
-気になる人はリリースノートで詳細を確認してみて。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【最新情報】
-
-Claude Code v2.1.193／v2.1.191で
-組織レベルのモデル制限機能が追加された。
+Shellコマンドの扱いが気になっていた方に
+朗報かもしれません。
 
 ポイントはここ👇
 https://github.com/anthropics/claude-code/releases/tag/v2.1.193
 
-▶︎ org管理者がモデルの選択肢を制限できる
-▶︎ --model・/model・ANTHROPIC_MODELすべてに制限が反映される
-▶︎ サンドボックス環境での認証情報漏洩リスクを低減
+▶︎ `autoMode.classifyAllShell` を有効にすると
+　すべてのShellコマンドをauto-modeで分類対象に
+▶︎ 許可・拒否の理由がトランスクリプトに記録されるように
+▶︎ `/permissions` で最近の拒否履歴も確認可能に
 
-つまり、
+どのコマンドがなぜ止められたか
+可視化されるのはありがたいですよね✨
 
-チーム・企業利用での
-セキュリティ管理がぐっと厳密にできるようになりましたよね😊
+設定を見直してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
+Claude Code 最新版で
+`/rewind` コマンドが強化されたようです。
 
-セキュリティ設定を見直したい方はリリースノートをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+『/clear した後でも会話を巻き戻せる』
+
+具体的には
+
+▶︎ `/clear` 実行前の状態に会話を戻せるように
+▶︎ バックグラウンドエージェントを停止しても
+　勝手に復活するバグも修正済み
+▶︎ ストリーミング中のスクロール位置ズレも改善
+
+「あ、消しちゃった」という
+焦りが減るアップデートかもしれません😊
+
+詳細はリリースノートをチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.191</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
