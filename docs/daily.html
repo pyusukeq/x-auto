@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-26</title>
+<title>X投稿下書き 2026-06-27</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,60 +73,71 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-26</h1>
-  <p>生成: 2026-06-27 07:59 JST</p>
+  <h1>X投稿下書き 2026-06-27</h1>
+  <p>生成: 2026-06-28 07:53 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【リリース情報】
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+マジか！！
 
-Claude Code v2.1.195がリリース。
-hookの挙動に関する修正が入った。
+Anthropicが「Mythos AI」を
+一部の米国組織に限定リリース。
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.195
+『米政府がAnthropicへのリリースを許可。対象は「信頼できる」米国組織のみ』
 
-▶︎ `code-reviewer` や `mcp__brave-search` など
-　ハイフン含む識別子の部分一致バグを修正
-▶︎ 今後は完全一致のみで動作（意図しない誤マッチを防止）
-▶︎ マウス操作を無効化できる環境変数も追加
+具体的には⏬
+https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies
 
-ハイフン含む識別子でhookを設定しているなら
-動作確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.193で
-auto-modeの制御がより細かくできるようになった。
+▶︎ 通常の一般公開とは異なる限定的なリリース形式
+▶︎ 対象は選定された米国企業・機関に限定
+▶︎ Anthropicの中でも特別な位置づけのモデルと報じられている
 
-Shellコマンドの扱いが気になっていた方に
-朗報かもしれません。
+つまり、
+
+一般公開とは別ルートで
+強力なモデルが動き始めているかもしれません✨</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
+
+Claude・Codex・Cursor上で
+スマートなモデルルーティングができるOSSが登場。
+
+『workweave/router』というツールで、ClaudeやCodexといったAIモデルの中から最適なものを自動で選べる仕組みとのこと。
+（CursorはAIコードエディタであり、モデルではなく統合先のひとつです）
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.193
 
-▶︎ `autoMode.classifyAllShell` を有効にすると
-　すべてのShellコマンドをauto-modeで分類対象に
-▶︎ 許可・拒否の理由がトランスクリプトに記録されるように
-▶︎ `/permissions` で最近の拒否履歴も確認可能に
+▶︎ Claude・Codex・Cursorに直接組み込める
+▶︎ タスクに応じて最適なモデルへ自動ルーティング
+▶︎ GitHubで公開されており無料で試せる
 
-どのコマンドがなぜ止められたか
-可視化されるのはありがたいですよね✨
+つまり、
 
-設定を見直してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
-Claude Code 最新版で
-`/rewind` コマンドが強化されたようです。
+「どのモデルを使うか」を
+自分で毎回考えなくてよくなるかもしれません😊
 
-『/clear した後でも会話を巻き戻せる』
+GitHubはこちら👇
+https://github.com/workweave/router</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
 
-具体的には
+Anthropicが発表した内容が衝撃的で。
 
-▶︎ `/clear` 実行前の状態に会話を戻せるように
-▶︎ バックグラウンドエージェントを停止しても
-　勝手に復活するバグも修正済み
-▶︎ ストリーミング中のスクロール位置ズレも改善
+Alibabaが2万5000以上のアカウントを使い
+Claudeの能力を大量収集しようとしていたと主張。
 
-「あ、消しちゃった」という
-焦りが減るアップデートかもしれません😊
+『米国の対中AI輸出規制（トランプ政権方針）に反して攻撃が行われた』とも報じられている
 
-詳細はリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.191</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+結論はこれ👇
+
+▶︎ 大規模アカウントでモデルの応答を組織的に収集した疑い
+▶︎ AnthropicがAlibaba関与を公式に名指しで指摘
+▶︎ AI競争が技術だけでなく安全・政策面にまで広がってきた
+
+つまり、
+
+AI開発の裏側で
+ここまで大きな動きが起きていたんですね🙌
+
+詳細はこちら👇
+https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

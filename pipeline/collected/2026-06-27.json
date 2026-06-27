@@ -1,0 +1,58 @@
+{
+  "collected_at": "2026-06-27T22:52:59.545290",
+  "date": "2026-06-27",
+  "total_found": 5,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-27T22:52:59.294669+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.99585706116
+    },
+    {
+      "source": "Hacker News",
+      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+      "external_url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+      "score": 540,
+      "comments": 734,
+      "created": "2026-06-26T22:48:28+00:00",
+      "final_score": 1369.6146917330357
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "url": "https://github.com/workweave/router",
+      "external_url": "https://github.com/workweave/router",
+      "score": 199,
+      "comments": 108,
+      "created": "2026-06-26T16:40:11+00:00",
+      "final_score": 416.21140789262404
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Adrafinil – keep a lid-closed Mac awake only while agents work",
+      "url": "https://github.com/kageroumado/adrafinil",
+      "external_url": "https://github.com/kageroumado/adrafinil",
+      "score": 46,
+      "comments": 33,
+      "created": "2026-06-27T20:34:53+00:00",
+      "final_score": 107.8697402746131
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic says Alibaba used 25k accounts to mine Claude",
+      "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+      "external_url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+      "score": 27,
+      "comments": 22,
+      "created": "2026-06-27T16:16:20+00:00",
+      "final_score": 63.9375203009375
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-27",
+  "posts": [
+    "【速報】\nマジか！！\n\nAnthropicが「Mythos AI」を\n一部の米国組織に限定リリース。\n\n『米政府がAnthropicへのリリースを許可。対象は「信頼できる」米国組織のみ』\n\n具体的には⏬\nhttps://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies\n\n▶︎ 通常の一般公開とは異なる限定的なリリース形式\n▶︎ 対象は選定された米国企業・機関に限定\n▶︎ Anthropicの中でも特別な位置づけのモデルと報じられている\n\nつまり、\n\n一般公開とは別ルートで\n強力なモデルが動き始めているかもしれません✨",
+    "【必見】\n\nClaude・Codex・Cursor上で\nスマートなモデルルーティングができるOSSが登場。\n\n『workweave/router』というツールで、ClaudeやCodexといったAIモデルの中から最適なものを自動で選べる仕組みとのこと。\n（CursorはAIコードエディタであり、モデルではなく統合先のひとつです）\n\nポイントはここ👇\n\n▶︎ Claude・Codex・Cursorに直接組み込める\n▶︎ タスクに応じて最適なモデルへ自動ルーティング\n▶︎ GitHubで公開されており無料で試せる\n\nつまり、\n\n「どのモデルを使うか」を\n自分で毎回考えなくてよくなるかもしれません😊\n\nGitHubはこちら👇\nhttps://github.com/workweave/router",
+    "【これはすごい】\n\nAnthropicが発表した内容が衝撃的で。\n\nAlibabaが2万5000以上のアカウントを使い\nClaudeの能力を大量収集しようとしていたと主張。\n\n『米国の対中AI輸出規制（トランプ政権方針）に反して攻撃が行われた』とも報じられている\n\n結論はこれ👇\n\n▶︎ 大規模アカウントでモデルの応答を組織的に収集した疑い\n▶︎ AnthropicがAlibaba関与を公式に名指しで指摘\n▶︎ AI競争が技術だけでなく安全・政策面にまで広がってきた\n\nつまり、\n\nAI開発の裏側で\nここまで大きな動きが起きていたんですね🙌\n\n詳細はこちら👇\nhttps://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
