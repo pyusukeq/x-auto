@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-28",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Code v2.1.191に\n待望の `/rewind` 機能が追加された。\n\n『直前の操作を巻き戻せる』\n\n具体的には⬇️\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.191\n\n▶︎ `/rewind` で直前の操作を取り消して会話を巻き戻せる\n▶︎ バックグラウンドエージェントを停止したら本当に止まるよう修正\n▶︎ ストリーミング中のスクロール位置バグも解消\n\nつまり、\n\n「あ、やり直したい」がもう怖くない。\n最新はv2.1.195、アップデートはお早めに👀",
+    "【最近のアップデート情報】\n\nClaude Code（v2.1.191〜v2.1.195）で\nHookの挙動が地味に大きく変わった。\n\n『ハイフン入り識別子が部分一致ではなく完全一致に』\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.195\n\n▶︎ `code-reviewer` や `mcp__brave-search` が意図せず別のHookにマッチしていた挙動を変更\n▶︎ 複数Hookを使っているときは設定の見直しを推奨\n▶︎ フルスクリーンモードでマウス操作を無効にする環境変数も追加\n\nつまり、\n\nHookを複数設定している方は\n動作が変わっている可能性があるので要確認です✨",
+    "【アップデート情報】\n注目の機能追加です\n\nClaude Code（最新v2.1.191〜v2.1.195）に\n組織レベルのモデル制限機能が追加された。\n\n『org側で許可するモデルを絞り込めるようになった』\n\n具体的には\n\n▶︎ モデルピッカー・`--model`・`ANTHROPIC_MODEL` すべてに制限が適用\n▶︎ サンドボックス環境でクレデンシャルファイルの読み取りをブロックする設定も追加\n▶︎ セキュリティ要件の厳しいチームでも安心して使える構成に\n\n企業利用の壁だった「モデル管理」と「認証情報保護」が\nまとめて解決された形ですよね🙌\n\n詳細はリリースノートをチェックしてみて👀\n→ https://github.com/anthropics/claude-code/releases/tag/v2.1.195"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
