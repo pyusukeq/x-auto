@@ -1,0 +1,115 @@
+{
+  "collected_at": "2026-06-29T22:45:17.742644",
+  "date": "2026-06-29",
+  "total_found": 14,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-06-29T22:45:16.885087+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.985822962157
+    },
+    {
+      "source": "Hacker News",
+      "title": "GLM 5.2 beats Claude in our benchmarks",
+      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+      "external_url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+      "score": 1056,
+      "comments": 495,
+      "created": "2026-06-28T17:50:47+00:00",
+      "final_score": 2177.789179587302
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.107.0: sdk: v0.107.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.107.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.107.0",
+      "body": "## 0.107.0 (2026-06-29)\n\nFull Changelog: [sdk-v0.106.0...sdk-v0.107.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.106.0...sdk-v0.107.0)\n\n### Features\n\n* **api:** add support for 20260318 web fetch and support tools ([d7057ea](https://github.com/anthropics/anthropic-sdk-typescript/commit/d7057ea73ba564d1e89cff40c58a85d9375ccbbf))\n\n\n### Bug Fixes\n\n* **agent-toolset:** bound canonicalize symlink hops; resolve glob matches before confinement check ([#142](https://github.com/anthropics/anthropic-sdk-typescript/issues/142)) ([277be80](https://github.com/anthropics/anthropi",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-29T15:01:46Z",
+      "final_score": 1563.2119806878309
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.113.0: v0.113.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.113.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.113.0",
+      "body": "## 0.113.0 (2026-06-29)\n\nFull Changelog: [v0.112.0...v0.113.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.112.0...v0.113.0)\n\n### Features\n\n* **api:** add support for 20260318 web fetch and support tools ([88dbfb1](https://github.com/anthropics/anthropic-sdk-python/commit/88dbfb14a2a838eda889469ad7fe07a47618e85f))\n\n\n### Bug Fixes\n\n* async count_tokens missing output_format/output_config merge block ([#162](https://github.com/anthropics/anthropic-sdk-python/issues/162)) ([122c958](https://github.com/anthropics/anthropic-sdk-python/commit/122c95811566bf6f5cbc682ae0a74972ae75a22",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-29T14:57:11Z",
+      "final_score": 1562.848224074074
+    },
+    {
+      "source": "Hacker News",
+      "title": "I used Claude Code to get a second opinion on my MRI",
+      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+      "external_url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
+      "score": 544,
+      "comments": 676,
+      "created": "2026-06-28T16:35:19+00:00",
+      "final_score": 1328.3185913121692
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.195: v2.1.195",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.195",
+      "body": "## What's changed\n\n- Added `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` to disable mouse click/drag/hover in fullscreen mode while keeping wheel scroll\n- Fixed hook matchers with hyphenated identifiers (e.g. `code-reviewer`, `mcp__brave-search`) accidentally substring-matching — they now exact-match. Use `mcp__brave-search__.*` to match all tools from a hyphenated MCP server.\n- Fixed voice dictation on macOS capturing silence in long-running sessions after the default input device changes\n- Fixed voice dictation auto-submit never firing for languages written without spaces (Japanese, Chinese, Thai)\n- Fi",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-26T21:29:42Z",
+      "final_score": 1251.1431976190477
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.193: v2.1.193",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.193",
+      "body": "## What's changed\n\n- Added `autoMode.classifyAllShell` setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns\n- Added auto-mode denial reasons to the transcript, the denial toast, and `/permissions` recent denials\n- Added `claude_code.assistant_response` OpenTelemetry log event containing the model's response text. Redacted unless `OTEL_LOG_ASSISTANT_RESPONSES=1`; when that var is unset it follows `OTEL_LOG_USER_PROMPTS`, so deployments that already log prompt content will start receiving response content on upgrade — se",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-25T21:45:57Z",
+      "final_score": 1138.1471658730159
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.191: v2.1.191",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.191",
+      "body": "## What's changed\n\n- Added `/rewind` support for resuming a conversation from before `/clear` was run\n- Fixed scroll position jumping to the bottom while reading earlier output during a streaming response\n- Fixed background agents resurrecting after being stopped — stopping an agent from the tasks panel is now permanent\n- Fixed `/voice` showing a generic \"not available\" message when disabled by an organization's policy — it now explains the restriction\n- Fixed `/login` URL opening truncated in Windows Terminal when it wraps across lines\n- Fixed Cmd+click on links in fullscreen mode for Ghostty",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-24T21:58:12Z",
+      "final_score": 1024.8336738095238
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.106.0: sdk: v0.106.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.106.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.106.0",
+      "body": "## 0.106.0 (2026-06-24)\n\nFull Changelog: [sdk-v0.105.0...sdk-v0.106.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.105.0...sdk-v0.106.0)\n\n### Features\n\n* **client:** add support for system.message streaming events ([a7c14b7](https://github.com/anthropics/anthropic-sdk-typescript/commit/a7c14b7ffc8295e34d8c159d1374f170d2b87767))\n\n\n### Bug Fixes\n\n* **helpers:** single source for x-stainless-helper, append semantics, and tag the fallback middleware ([#107](https://github.com/anthropics/anthropic-sdk-typescript/issues/107)) ([106bea0](https://github.com/anthropics/anthrop",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-24T18:48:27Z",
+      "final_score": 1009.77415
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.112.0: v0.112.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.112.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.112.0",
+      "body": "## 0.112.0 (2026-06-24)\n\nFull Changelog: [v0.111.0...v0.112.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.111.0...v0.112.0)\n\n### Features\n\n* **client:** add support for system.message streaming events ([2450d59](https://github.com/anthropics/anthropic-sdk-python/commit/2450d595731f9532080bb94eb8a43c0bd5189659))\n\n\n### Bug Fixes\n\n* **memory tool:** create parent directories with the correct permissions ([#135](https://github.com/anthropics/anthropic-sdk-python/issues/135)) ([f2fc2a9](https://github.com/anthropics/anthropic-sdk-python/commit/f2fc2a9e0ad8507e4108e9a6b85d023416c2",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-06-24T18:45:45Z",
+      "final_score": 1009.5598642857143
+    }
+  ]
+}

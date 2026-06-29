@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-28</title>
+<title>X投稿下書き 2026-06-29</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,65 +73,60 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-28</h1>
-  <p>生成: 2026-06-29 07:53 JST</p>
+  <h1>X投稿下書き 2026-06-29</h1>
+  <p>生成: 2026-06-30 07:46 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+<div class="card"><div class="card-label">投稿1（速報）</div><p class="warning">⚠️ レビュー未通過（投稿スキップ推奨）</p><div class="post-text failed" id="p0">【速報】
+待ってたやつ！！
 
-Claude Code v2.1.191に
-待望の `/rewind` 機能が追加された。
+TypeScript・Python SDKが同日アップデート。
+APIに新しいツールが追加された。
 
-『直前の操作を巻き戻せる』
+『web fetch と support tools が20260318仕様で対応』
 
-具体的には⬇️
-https://github.com/anthropics/claude-code/releases/tag/v2.1.191
+具体的には⏬
 
-▶︎ `/rewind` で直前の操作を取り消して会話を巻き戻せる
-▶︎ バックグラウンドエージェントを停止したら本当に止まるよう修正
-▶︎ ストリーミング中のスクロール位置バグも解消
-
-つまり、
-
-「あ、やり直したい」がもう怖くない。
-最新はv2.1.195、アップデートはお早めに👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【最近のアップデート情報】
-
-Claude Code（v2.1.191〜v2.1.195）で
-Hookの挙動が地味に大きく変わった。
-
-『ハイフン入り識別子が部分一致ではなく完全一致に』
-
-ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.195
-
-▶︎ `code-reviewer` や `mcp__brave-search` が意図せず別のHookにマッチしていた挙動を変更
-▶︎ 複数Hookを使っているときは設定の見直しを推奨
-▶︎ フルスクリーンモードでマウス操作を無効にする環境変数も追加
+▶︎ TypeScript SDK v0.107.0がリリース
+▶︎ Python SDK v0.113.0がリリース
+▶︎ どちらもweb fetchとsupport toolsを新サポート
 
 つまり、
 
-Hookを複数設定している方は
-動作が変わっている可能性があるので要確認です✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
-注目の機能追加です
+AIエージェントがウェブ情報を取得したり
+外部ツールと連携しやすくなりましたね✨
 
-Claude Code（最新v2.1.191〜v2.1.195）に
-組織レベルのモデル制限機能が追加された。
+詳細はリリースノートをチェックして👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
 
-『org側で許可するモデルを絞り込めるようになった』
+Claude Codeのフック挙動に関する更新情報として投稿が出回っていますが、現時点では公式リリースノートでの確認が取れていません。
 
-具体的には
+「v2.1.195でのフックマッチャー完全一致修正」「`CLAUDE_CODE_DISABLE_MOUSE_CLICKS`追加」などの情報は、一次ソースが不明なため、そのままシェアするのはお控えください。
 
-▶︎ モデルピッカー・`--model`・`ANTHROPIC_MODEL` すべてに制限が適用
-▶︎ サンドボックス環境でクレデンシャルファイルの読み取りをブロックする設定も追加
-▶︎ セキュリティ要件の厳しいチームでも安心して使える構成に
+最新情報は公式サイトで確認を👀
+https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは興味深い】
+読んでみた
 
-企業利用の壁だった「モデル管理」と「認証情報保護」が
-まとめて解決された形ですよね🙌
+Claude Codeを使って
+自分のMRI画像を理解しようとした事例が海外で話題に。
 
-詳細はリリースノートをチェックしてみて👀
-→ https://github.com/anthropics/claude-code/releases/tag/v2.1.195</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+『MRIのセカンドオピニオン的な使い方をClaude Codeで試してみた』
+
+結論はこれ👇
+
+▶︎ 専門用語の解説や気になる点の整理に活用
+▶︎ 自分の体への理解を深めるサポートとして使用
+▶︎ 「自分の体のことを自分でもっと理解できた」という感想
+
+つまり、
+
+Claude Codeはコードだけじゃなく
+複雑な情報を自分なりに整理・理解するツールとしても活用できますね🙌
+
+※あくまで情報理解のサポートであり、医療診断の代替にはなりません
+
+詳細はリンクからどうぞ👀
+https://antoine.fi/mri-analysis-using-claude-code-opus</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

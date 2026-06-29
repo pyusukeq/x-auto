@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-29",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nTypeScript・Python SDKが同日アップデート。\nAPIに新しいツールが追加された。\n\n『web fetch と support tools が20260318仕様で対応』\n\n具体的には⏬\n\n▶︎ TypeScript SDK v0.107.0がリリース\n▶︎ Python SDK v0.113.0がリリース\n▶︎ どちらもweb fetchとsupport toolsを新サポート\n\nつまり、\n\nAIエージェントがウェブ情報を取得したり\n外部ツールと連携しやすくなりましたね✨\n\n詳細はリリースノートをチェックして👀",
+    "【注意】\n\nClaude Codeのフック挙動に関する更新情報として投稿が出回っていますが、現時点では公式リリースノートでの確認が取れていません。\n\n「v2.1.195でのフックマッチャー完全一致修正」「`CLAUDE_CODE_DISABLE_MOUSE_CLICKS`追加」などの情報は、一次ソースが不明なため、そのままシェアするのはお控えください。\n\n最新情報は公式サイトで確認を👀\nhttps://www.anthropic.com/news",
+    "【これは興味深い】\n読んでみた\n\nClaude Codeを使って\n自分のMRI画像を理解しようとした事例が海外で話題に。\n\n『MRIのセカンドオピニオン的な使い方をClaude Codeで試してみた』\n\n結論はこれ👇\n\n▶︎ 専門用語の解説や気になる点の整理に活用\n▶︎ 自分の体への理解を深めるサポートとして使用\n▶︎ 「自分の体のことを自分でもっと理解できた」という感想\n\nつまり、\n\nClaude Codeはコードだけじゃなく\n複雑な情報を自分なりに整理・理解するツールとしても活用できますね🙌\n\n※あくまで情報理解のサポートであり、医療診断の代替にはなりません\n\n詳細はリンクからどうぞ👀\nhttps://antoine.fi/mri-analysis-using-claude-code-opus"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    true,
+    false,
+    false
+  ]
+}
