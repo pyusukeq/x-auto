@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-30",
+  "posts": [
+    "【速報】\nこれ、待ってたやつ！！\n\nClaude Sonnet 4が正式リリース。\nAnthropicの最新モデルがついに登場した。\n\n具体的には⏬\n\n▶︎ Claude 3.5 Sonnetの後継にあたる新モデル\n▶︎ 公式ページで詳細なスペックを確認可能\n▶︎ API経由でもすぐ利用可能\n\nつまり、\n\n日々の開発で使えるモデルの選択肢が\nまた一つ増えたかもしれません✨\n\n詳細はこちら👇\nhttps://www.anthropic.com/news/claude-sonnet-5",
+    "【注目】\n\nClaude Codeがリクエストに\n識別情報を埋め込んでいる？\n\n海外で話題になっている発見がある。\n『Claude Codeは見えない形でリクエストにメタデータを付与している』\n\nポイントはここ👇\n\n▶︎ 通常のAPIリクエストと区別できる識別情報が含まれる\n▶︎ ユーザーには見えない形で付与される仕組み\n▶︎ 目的はClaude Code由来のリクエストを識別するためとみられる\n\nつまり、\n\nClaude Codeは内部的に\nリクエストの送信元を区別できるようにしているようです。\n\n元記事をチェックしてみて👀\nhttps://thereallo.dev/blog/claude-code-prompt-steganography",
+    "【SDK更新情報】\n\nPython・TypeScript両SDKが同日アップデートされ\nManaged Agentsの機能が追加された。\n\n『delta streaming・agent overridesなどが追加』\n\n結論はこれ👇\n\n▶︎ エージェントのイベントをストリーミングで受け取れるように\n▶︎ エージェントの動作を実行時に上書き（override）可能に\n\nつまり、\n\nエージェント開発の細かい制御が\nSDKだけで完結できる時代になってきましたね🙌\n\n詳細はリリースノートで確認してみて👀\nPython: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0\nTypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

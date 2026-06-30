@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-29</title>
+<title>X投稿下書き 2026-06-30</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,60 +73,69 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-29</h1>
-  <p>生成: 2026-06-30 07:46 JST</p>
+  <h1>X投稿下書き 2026-06-30</h1>
+  <p>生成: 2026-07-01 08:03 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><p class="warning">⚠️ レビュー未通過（投稿スキップ推奨）</p><div class="post-text failed" id="p0">【速報】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+これ、待ってたやつ！！
 
-TypeScript・Python SDKが同日アップデート。
-APIに新しいツールが追加された。
-
-『web fetch と support tools が20260318仕様で対応』
+Claude Sonnet 4が正式リリース。
+Anthropicの最新モデルがついに登場した。
 
 具体的には⏬
 
-▶︎ TypeScript SDK v0.107.0がリリース
-▶︎ Python SDK v0.113.0がリリース
-▶︎ どちらもweb fetchとsupport toolsを新サポート
+▶︎ Claude 3.5 Sonnetの後継にあたる新モデル
+▶︎ 公式ページで詳細なスペックを確認可能
+▶︎ API経由でもすぐ利用可能
 
 つまり、
 
-AIエージェントがウェブ情報を取得したり
-外部ツールと連携しやすくなりましたね✨
+日々の開発で使えるモデルの選択肢が
+また一つ増えたかもしれません✨
 
-詳細はリリースノートをチェックして👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
+詳細はこちら👇
+https://www.anthropic.com/news/claude-sonnet-5</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注目】
 
-Claude Codeのフック挙動に関する更新情報として投稿が出回っていますが、現時点では公式リリースノートでの確認が取れていません。
+Claude Codeがリクエストに
+識別情報を埋め込んでいる？
 
-「v2.1.195でのフックマッチャー完全一致修正」「`CLAUDE_CODE_DISABLE_MOUSE_CLICKS`追加」などの情報は、一次ソースが不明なため、そのままシェアするのはお控えください。
+海外で話題になっている発見がある。
+『Claude Codeは見えない形でリクエストにメタデータを付与している』
 
-最新情報は公式サイトで確認を👀
-https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは興味深い】
-読んでみた
+ポイントはここ👇
 
-Claude Codeを使って
-自分のMRI画像を理解しようとした事例が海外で話題に。
+▶︎ 通常のAPIリクエストと区別できる識別情報が含まれる
+▶︎ ユーザーには見えない形で付与される仕組み
+▶︎ 目的はClaude Code由来のリクエストを識別するためとみられる
 
-『MRIのセカンドオピニオン的な使い方をClaude Codeで試してみた』
+つまり、
+
+Claude Codeは内部的に
+リクエストの送信元を区別できるようにしているようです。
+
+元記事をチェックしてみて👀
+https://thereallo.dev/blog/claude-code-prompt-steganography</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【SDK更新情報】
+
+Python・TypeScript両SDKが同日アップデートされ
+Managed Agentsの機能が追加された。
+
+『delta streaming・agent overridesなどが追加』
 
 結論はこれ👇
 
-▶︎ 専門用語の解説や気になる点の整理に活用
-▶︎ 自分の体への理解を深めるサポートとして使用
-▶︎ 「自分の体のことを自分でもっと理解できた」という感想
+▶︎ エージェントのイベントをストリーミングで受け取れるように
+▶︎ エージェントの動作を実行時に上書き（override）可能に
 
 つまり、
 
-Claude Codeはコードだけじゃなく
-複雑な情報を自分なりに整理・理解するツールとしても活用できますね🙌
+エージェント開発の細かい制御が
+SDKだけで完結できる時代になってきましたね🙌
 
-※あくまで情報理解のサポートであり、医療診断の代替にはなりません
-
-詳細はリンクからどうぞ👀
-https://antoine.fi/mri-analysis-using-claude-code-opus</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートで確認してみて👀
+Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0
+TypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
