@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-01",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Sonnet 5が登場。\n前世代から性能が向上したと話題になっている。\n\n具体的には⏬\nhttps://www.anthropic.com/news/claude-sonnet-5\n\n▶︎ Anthropic公式からの発表\n▶︎ コーディング・推論・指示理解が向上\n▶︎ 開発者・個人利用どちらにも恩恵あり\n\nまた、米商務省がClaudeの輸出規制を解除したことも同時に発表された。\n\nつまり、\n\nClaudeシリーズがまた一段階進化した。\n気になる方はAnthropicの公式ページをチェックしてみて👀",
+    "【一読推奨】\n\nClaude Codeがリクエストに\nステガノグラフィーで情報を埋め込んでいるという指摘が話題になっている。\n\n『Claude Codeはリクエストに見えない形でマーキングを行っている可能性がある』\n\nポイントはここ👇\nhttps://thereallo.dev/blog/claude-code-prompt-steganography\n\n▶︎ 通常の文字列には見えない形で識別情報が付与されているとの報告がある\n▶︎ AI生成コンテンツのトレーサビリティに関わる技術的な指摘\n▶︎ 第三者調査ベースの記事であり、Anthropic公式が認めた事実かは現時点で不明\n\nつまり、\n\nClaude Codeが何をしているか、\n一度確認しておく価値はありそうですよね。\n\n気になる方は元記事をチェックしてみて👀",
+    "【これはすごい】\n待ってたやつ！！\n\nClaude Sonnet 5がリリースされた。\n\n『知性・速度・コスト、すべてのバランスが向上した新モデル』\n\n結論はこれ👇\nhttps://www.anthropic.com/news/claude-sonnet-5\n\n▶︎ 知性・速度・コストのバランスを最適化\n▶︎ 実用ユースケースに最も適したモデルと位置付け\n▶︎ 商用利用も即日対応可能\n\nつまり、\n\n日常的なタスクから高度な処理まで\n幅広く使える時代になりましたね✨"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

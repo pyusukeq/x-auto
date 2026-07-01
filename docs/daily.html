@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-06-30</title>
+<title>X投稿下書き 2026-07-01</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,69 +73,66 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-06-30</h1>
-  <p>生成: 2026-07-01 08:03 JST</p>
+  <h1>X投稿下書き 2026-07-01</h1>
+  <p>生成: 2026-07-02 08:01 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-これ、待ってたやつ！！
+マジか！！
 
-Claude Sonnet 4が正式リリース。
-Anthropicの最新モデルがついに登場した。
+Claude Sonnet 5が登場。
+前世代から性能が向上したと話題になっている。
 
 具体的には⏬
+https://www.anthropic.com/news/claude-sonnet-5
 
-▶︎ Claude 3.5 Sonnetの後継にあたる新モデル
-▶︎ 公式ページで詳細なスペックを確認可能
-▶︎ API経由でもすぐ利用可能
+▶︎ Anthropic公式からの発表
+▶︎ コーディング・推論・指示理解が向上
+▶︎ 開発者・個人利用どちらにも恩恵あり
+
+また、米商務省がClaudeの輸出規制を解除したことも同時に発表された。
 
 つまり、
 
-日々の開発で使えるモデルの選択肢が
-また一つ増えたかもしれません✨
-
-詳細はこちら👇
-https://www.anthropic.com/news/claude-sonnet-5</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注目】
+Claudeシリーズがまた一段階進化した。
+気になる方はAnthropicの公式ページをチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【一読推奨】
 
 Claude Codeがリクエストに
-識別情報を埋め込んでいる？
+ステガノグラフィーで情報を埋め込んでいるという指摘が話題になっている。
 
-海外で話題になっている発見がある。
-『Claude Codeは見えない形でリクエストにメタデータを付与している』
+『Claude Codeはリクエストに見えない形でマーキングを行っている可能性がある』
 
 ポイントはここ👇
+https://thereallo.dev/blog/claude-code-prompt-steganography
 
-▶︎ 通常のAPIリクエストと区別できる識別情報が含まれる
-▶︎ ユーザーには見えない形で付与される仕組み
-▶︎ 目的はClaude Code由来のリクエストを識別するためとみられる
+▶︎ 通常の文字列には見えない形で識別情報が付与されているとの報告がある
+▶︎ AI生成コンテンツのトレーサビリティに関わる技術的な指摘
+▶︎ 第三者調査ベースの記事であり、Anthropic公式が認めた事実かは現時点で不明
 
 つまり、
 
-Claude Codeは内部的に
-リクエストの送信元を区別できるようにしているようです。
+Claude Codeが何をしているか、
+一度確認しておく価値はありそうですよね。
 
-元記事をチェックしてみて👀
-https://thereallo.dev/blog/claude-code-prompt-steganography</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【SDK更新情報】
+気になる方は元記事をチェックしてみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+待ってたやつ！！
 
-Python・TypeScript両SDKが同日アップデートされ
-Managed Agentsの機能が追加された。
+Claude Sonnet 5がリリースされた。
 
-『delta streaming・agent overridesなどが追加』
+『知性・速度・コスト、すべてのバランスが向上した新モデル』
 
 結論はこれ👇
+https://www.anthropic.com/news/claude-sonnet-5
 
-▶︎ エージェントのイベントをストリーミングで受け取れるように
-▶︎ エージェントの動作を実行時に上書き（override）可能に
+▶︎ 知性・速度・コストのバランスを最適化
+▶︎ 実用ユースケースに最も適したモデルと位置付け
+▶︎ 商用利用も即日対応可能
 
 つまり、
 
-エージェント開発の細かい制御が
-SDKだけで完結できる時代になってきましたね🙌
-
-詳細はリリースノートで確認してみて👀
-Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.0
-TypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+日常的なタスクから高度な処理まで
+幅広く使える時代になりましたね✨</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
