@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-02",
+  "posts": [
+    "【速報】\nAnthropic SDKがアップデート！\n\nTypeScript SDK v0.110.0、Python SDK v0.116.0が相次いでリリースされました。\n\n具体的には⏬\n\n▶︎ anthropic-sdk-typescript sdk-v0.110.0\n▶︎ anthropic-sdk-python v0.116.0\n▶︎ マイナーアップデート版も同時リリース\n\nSDKを利用中の方はバージョンアップをご確認ください✨\n\n詳細はこちら👇\nTypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0\nPython: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
+    "Anthropic SDKの最新リリースをまとめました。\n\nPython・TypeScript両SDKがアップデート。\n\n最新バージョンはこちら👇\n\n▶︎ anthropic-sdk-python v0.116.0\n▶︎ anthropic-sdk-python v0.115.1\n▶︎ anthropic-sdk-typescript sdk-v0.110.0\n▶︎ anthropic-sdk-typescript sdk-v0.109.1\n\n詳細は公式リリースノートをチェックしてみて👀\n\nPython SDK:\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0\n\nTypeScript SDK:\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
+    "【Anthropic SDK更新情報】\n確認してみて！\n\nPython・TypeScript両SDKに\n『agent-memory-2026-07-22』ベータヘッダーが追加。\n\n▶︎ v0.116.0（Python）・v0.110.0（TS）で対応\n▶︎ 「agent-memory」という名称のベータヘッダーが追加\n▶︎ 具体的な機能仕様は現時点では未公開\n\nベータヘッダーの追加は、\n関連機能の開発が進んでいるサインかもしれません。\n\n詳細はリリースノートで確認を👇\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
