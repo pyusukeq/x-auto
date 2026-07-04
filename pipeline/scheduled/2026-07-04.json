@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-04",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Code v2.1.200で\nデフォルトの権限モードが変更された。\n\n『AskUserQuestionダイアログが自動続行しなくなった』\n\n具体的には⏬\n\n▶︎ 確認ダイアログがデフォルトで止まるように\n▶︎ アイドルタイムアウトは `/config` でオプトイン可能\n▶︎ CLI・VS Code・JetBrains全てに反映済み\n\nつまり、\n\nClaudeが勝手に進めず\n人間の確認を待つ設計に変わったということ。\n\n※ v2.1.201も公開済み。最新情報は公式リリースページを確認してね。\n\n詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+    "【保存推奨】\n\nClaude Codeの最新バージョン（v2.1.199〜v2.1.201）で\nスラッシュスキルの呼び出し方が進化した。\n\n複数スキルをまとめて呼び出せるようになったのは地味に便利ですよね。\n\nポイントはここ👇\n\n▶︎ `/skill-a /skill-b タスク` のように連続指定が可能に\n▶︎ 複数スキルの同時ロードに対応\n▶︎ TLSプロキシなどSSL証明書エラー時のガイダンスも改善\n\nつまり、\n\n複数スキルを組み合わせた\nより柔軟なワークフローが組みやすくなった✨\n\n各バージョンの詳細はこちら👀\nv2.1.199→ https://github.com/anthropics/claude-code/releases/tag/v2.1.199\nv2.1.200→ https://github.com/anthropics/claude-code/releases/tag/v2.1.200\nv2.1.201→ https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
+    "【これはすごい】\n待ってたやつ！！\n\nTypeScript SDK（v0.110.0）に\n「agent-memory」関連のベータヘッダーが追加された。\n\n『エージェントにメモリ機能が乗ってくる予兆』\n\n結論はこれ👇\n\n▶︎ sdk-v0.110.0（TS）で追加を確認\n▶︎ ベータ段階だが、エージェントの記憶保持に関わる可能性がある機能\n▶︎ 長期タスクの継続性が変わるかもしれない\n\nつまり、\n\nエージェントが「覚えている」AIへ\n進化する布石かもしれません🙌\n\n詳細はこちら👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
