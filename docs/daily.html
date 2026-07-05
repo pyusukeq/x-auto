@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-04</title>
+<title>X投稿下書き 2026-07-05</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,74 +73,71 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-04</h1>
-  <p>生成: 2026-07-05 07:46 JST</p>
+  <h1>X投稿下書き 2026-07-05</h1>
+  <p>生成: 2026-07-06 07:50 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 マジか！！
 
-Claude Code v2.1.200で
-デフォルトの権限モードが変更された。
+Claude Code v2.1.201で
+デフォルトの権限モードが「Manual」に変わった。
 
-『AskUserQuestionダイアログが自動続行しなくなった』
+『AskUserQuestion ダイアログが自動続行しなくなった』
 
 具体的には⏬
 
-▶︎ 確認ダイアログがデフォルトで止まるように
-▶︎ アイドルタイムアウトは `/config` でオプトイン可能
-▶︎ CLI・VS Code・JetBrains全てに反映済み
+▶︎ ダイアログはデフォルトでユーザー応答待ちに
+▶︎ タイムアウトで自動続行したい場合は `/config` で設定可能
+▶︎ CLI・VS Code・JetBrains全てで「Manual」がデフォルトに
 
 つまり、
 
 Claudeが勝手に進めず
-人間の確認を待つ設計に変わったということ。
+確認を取るようになったということですよね✨
 
-※ v2.1.201も公開済み。最新情報は公式リリースページを確認してね。
-
-詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.200</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+アップデート詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.201</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Codeの最新バージョン（v2.1.199〜v2.1.201）で
-スラッシュスキルの呼び出し方が進化した。
+Claude Codeの最近のアップデートで
+スラッシュコマンドの呼び出し方が便利になった。
 
-複数スキルをまとめて呼び出せるようになったのは地味に便利ですよね。
+以前は複数コマンドを並べても
+最初の1つしか読み込まれなかった。
 
 ポイントはここ👇
 
-▶︎ `/skill-a /skill-b タスク` のように連続指定が可能に
-▶︎ 複数スキルの同時ロードに対応
-▶︎ TLSプロキシなどSSL証明書エラー時のガイダンスも改善
+▶︎ `/skill-a /skill-b do XYZ` のように複数指定が可能に
+▶︎ 複数のスラッシュコマンドを同時ロードできる
+▶︎ SSLエラー時の案内も改善（TLSプロキシ・証明書切れなど）
 
 つまり、
 
-複数スキルを組み合わせた
-より柔軟なワークフローが組みやすくなった✨
-
-各バージョンの詳細はこちら👀
-v2.1.199→ https://github.com/anthropics/claude-code/releases/tag/v2.1.199
-v2.1.200→ https://github.com/anthropics/claude-code/releases/tag/v2.1.200
-v2.1.201→ https://github.com/anthropics/claude-code/releases/tag/v2.1.201</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-待ってたやつ！！
-
-TypeScript SDK（v0.110.0）に
-「agent-memory」関連のベータヘッダーが追加された。
-
-『エージェントにメモリ機能が乗ってくる予兆』
-
-結論はこれ👇
-
-▶︎ sdk-v0.110.0（TS）で追加を確認
-▶︎ ベータ段階だが、エージェントの記憶保持に関わる可能性がある機能
-▶︎ 長期タスクの継続性が変わるかもしれない
-
-つまり、
-
-エージェントが「覚えている」AIへ
-進化する布石かもしれません🙌
+複数コマンドをまとめて呼び出せるので
+複雑なタスクがぐっとシンプルに書けますよね😊
 
 詳細はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.199</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要チェック】
+TypeScript SDKに注目の更新！
+
+anthropic-sdk-typescript v0.110.0で
+「agent-memory-2026-07-22」ベータヘッダーが追加された。
+
+『エージェントメモリ機能のベータ公開に向けた準備が進行中』
+
+具体的には⏬
+
+▶︎ TypeScript SDK v0.110.0 で対応を確認
+▶︎ ベータヘッダーを指定することでメモリ機能を試せる可能性
+▶︎ 会話をまたいで状態を保持できるエージェント開発への布石か
+
+つまり、
+
+長期記憶を持つエージェントに向けた
+SDK側の準備が着々と進んでいます👀
+
+詳細はこちら
 https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
