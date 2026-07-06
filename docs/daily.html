@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-05</title>
+<title>X投稿下書き 2026-07-06</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,72 +73,59 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-05</h1>
-  <p>生成: 2026-07-06 07:50 JST</p>
+  <h1>X投稿下書き 2026-07-06</h1>
+  <p>生成: 2026-07-07 07:56 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">Claude Code v2.1.202がリリース。
+ワークフローのサイズを指定できる設定が追加された。
 
-Claude Code v2.1.201で
-デフォルトの権限モードが「Manual」に変わった。
-
-『AskUserQuestion ダイアログが自動続行しなくなった』
+『Dynamic workflow size』設定が/configから使えるように。
 
 具体的には⏬
 
-▶︎ ダイアログはデフォルトでユーザー応答待ちに
-▶︎ タイムアウトで自動続行したい場合は `/config` で設定可能
-▶︎ CLI・VS Code・JetBrains全てで「Manual」がデフォルトに
+▶︎ small / medium / largeの3段階でワークフロー規模の目安を指定可能
+▶︎ 強制的な上限ではなく「ガイドライン」として機能
+▶︎ OpenTelemetryにworkflow.run_idとworkflow.nameの属性も追加
 
-つまり、
+大規模タスクも小回りの効くタスクも
+ワークフロー規模をコントロールしやすくなった感じ。
 
-Claudeが勝手に進めず
-確認を取るようになったということですよね✨
-
-アップデート詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.201</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+※詳細はリリースノートで確認を👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.202</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Codeの最近のアップデートで
-スラッシュコマンドの呼び出し方が便利になった。
+Claude Code v2.1.201で
+権限まわりの挙動が変更された。
 
-以前は複数コマンドを並べても
-最初の1つしか読み込まれなかった。
+デフォルトの動作が「Manual」モードに切り替わっている。
 
 ポイントはここ👇
 
-▶︎ `/skill-a /skill-b do XYZ` のように複数指定が可能に
-▶︎ 複数のスラッシュコマンドを同時ロードできる
-▶︎ SSLエラー時の案内も改善（TLSプロキシ・証明書切れなど）
+▶︎ `AskUserQuestion`ダイアログが自動続行しなくなった（/configでタイムアウト設定は可能）
+▶︎ CLI・VS Code・JetBrains全てでデフォルトが「Manual」に統一
+▶︎ `--permission-mode manual` や `&quot;defaultMode&quot;: &quot;manual&quot;` も同様に反映
 
 つまり、
 
-複数コマンドをまとめて呼び出せるので
-複雑なタスクがぐっとシンプルに書けますよね😊
+意図しない自動実行が減って
+安全に使いやすい方向に調整された変更ですよね✨
+
+アップデート内容はこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.201</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">claude-code v2.1.199〜v2.1.202がリリースされました。
+
+各バージョンの詳細はリリースノートで確認できます。
+
+ポイントはここ👇
+
+▶︎ v2.1.199〜v2.1.202の連続リリース
+▶︎ 細かな改善・修正が継続的に行われている
+▶︎ 最新情報はAnthropicの公式ニュースページでも確認可能
+
+claude-codeは継続的にアップデートが重ねられています。
 
 詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.199</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要チェック】
-TypeScript SDKに注目の更新！
-
-anthropic-sdk-typescript v0.110.0で
-「agent-memory-2026-07-22」ベータヘッダーが追加された。
-
-『エージェントメモリ機能のベータ公開に向けた準備が進行中』
-
-具体的には⏬
-
-▶︎ TypeScript SDK v0.110.0 で対応を確認
-▶︎ ベータヘッダーを指定することでメモリ機能を試せる可能性
-▶︎ 会話をまたいで状態を保持できるエージェント開発への布石か
-
-つまり、
-
-長期記憶を持つエージェントに向けた
-SDK側の準備が着々と進んでいます👀
-
-詳細はこちら
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+https://github.com/anthropics/claude-code/releases/tag/v2.1.202</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

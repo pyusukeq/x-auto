@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-07-06T22:55:58.546667",
+  "date": "2026-07-06",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-06T22:55:57.467632+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.982161258256
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.202: v2.1.202",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+      "body": "## What's changed\n\n- Added a \"Dynamic workflow size\" setting in `/config` for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap\n- Added `workflow.run_id` and `workflow.name` OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a workflow run's activity can be reconstructed from OTel data\n- Fixed a crash in the inline Ctrl+R history search when accepting or cancelling while the search was still scanning the history file\n- Fixed `/rename` on background sessions being reverted when ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-06T22:51:16Z",
+      "final_score": 1599.6262610753968
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.201: v2.1.201",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
+      "body": "## What's changed\n\n- Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-03T23:50:35Z",
+      "final_score": 1261.4767901759258
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.200: v2.1.200",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.200",
+      "body": "## What's changed\n\n- Changed `AskUserQuestion` dialogs to no longer auto-continue by default; opt into an idle timeout via `/config`\n- Changed the \"default\" permission mode to \"Manual\" across the CLI, `--help`, VS Code, and JetBrains; `--permission-mode manual` and `\"defaultMode\": \"manual\"` are accepted alongside `default`\n- Fixed a crash at startup when `disabledMcpServers` or `enabledMcpServers` in `.claude.json` is set to a non-array value\n- Fixed background sessions silently stopping mid-turn after sleep/wake or when reopening a stalled session\n- Fixed background sessions re-running a turn",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-03T16:52:33Z",
+      "final_score": 1228.2995414986774
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.199: v2.1.199",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.199",
+      "body": "## What's changed\n\n- Stacked slash-skill invocations like `/skill-a /skill-b do XYZ` now load all leading skills (up to 5), not just the first\n- Fixed SSL certificate errors (TLS-inspecting proxies, missing `NODE_EXTRA_CA_CERTS`, expired certs) burning retries before showing actionable guidance — they now fail immediately with the fix hint\n- Fixed streaming responses being discarded when the API emits a mid-stream overloaded/server error after partial output — the partial is now kept with an incomplete-response notice\n- Fixed subagents cut off by a rate limit or server error silently failing i",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-02T23:35:18Z",
+      "final_score": 1145.9781129272487
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.110.0: sdk: v0.110.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
+      "body": "## 0.110.0 (2026-07-02)\n\nFull Changelog: [sdk-v0.109.1...sdk-v0.110.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.109.1...sdk-v0.110.0)\n\n### Features\n\n* **api:** add agent-memory-2026-07-22 beta header ([a470e10](https://github.com/anthropics/anthropic-sdk-typescript/commit/a470e10aaad12078e3e5f2bb9adf6c2652ea9ca0))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-02T19:19:40Z",
+      "final_score": 1125.6897531388888
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.116.0: v0.116.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
+      "body": "## 0.116.0 (2026-07-02)\n\nFull Changelog: [v0.115.1...v0.116.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.115.1...v0.116.0)\n\n### Features\n\n* **api:** add agent-memory-2026-07-22 beta header ([e181d5c](https://github.com/anthropics/anthropic-sdk-python/commit/e181d5c1b233d5b0b313c78b27cf1dd27f620e74))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-02T19:07:55Z",
+      "final_score": 1124.7572134563493
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.109.1: sdk: v0.109.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.109.1",
+      "body": "## 0.109.1 (2026-07-01)\n\nFull Changelog: [sdk-v0.109.0...sdk-v0.109.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.109.0...sdk-v0.109.1)\n\n### Chores\n\n* **api:** remove some nonfunctional types from the SDKs ([cc4dd4e](https://github.com/anthropics/anthropic-sdk-typescript/commit/cc4dd4e257cc3354f14e263b0d2441ddae71759e))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-01T21:55:39Z",
+      "final_score": 1023.7836684828043
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.115.1: v0.115.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.115.1",
+      "body": "## 0.115.1 (2026-07-01)\n\nFull Changelog: [v0.115.0...v0.115.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.115.0...v0.115.1)\n\n### Chores\n\n* **api:** remove some nonfunctional types from the SDKs ([5e7c431](https://github.com/anthropics/anthropic-sdk-python/commit/5e7c431ef31b72b3f1f59902e678316fea14d983))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-01T21:54:06Z",
+      "final_score": 1023.6606526097884
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.198: v2.1.198",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+      "body": "## What's changed\n\n- Subagents now run in the background by default, so Claude keeps working while they run and is notified when they finish (previously a gradual rollout)\n- Claude in Chrome is now generally available\n- Added background agent notifications in `claude agents` — sessions that need input or finish now fire the `Notification` hook (`agent_needs_input` / `agent_completed`)\n- Added `/dataviz` skill for chart and dashboard design guidance with a runnable color-palette validator\n- Gateway: added Claude Platform on AWS (anthropicAws) as an upstream provider; model-not-found responses n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-01T20:45:36Z",
+      "final_score": 1018.2241446732805
+    }
+  ]
+}
