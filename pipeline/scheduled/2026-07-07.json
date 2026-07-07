@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-07",
+  "posts": [
+    "【速報】\nログイン切れを事前に教えてくれるようになった！！\n\nClaude Codeが最新バージョンにアップデート。\nバックグラウンド実行中に認証切れで突然止まる心配が減りそう。\n\n『Added a warning when your login is about to expire』\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.203\n\n▶︎ ログイン期限が近づくと事前に警告が出る\n▶︎ 再認証のタイミングを逃さなくなる\n▶︎ 手動許可モード中はフッターに⏸バッジも表示\n\nつまり、\n\n長時間の自動処理が途中で止まりにくくなりそうですよね。\n\n最新バージョンに更新してみて👀",
+    "Claude Codeのデフォルト権限モードが変更されました。\n\n知らないまま使い続けると\n動作が変わっていて戸惑うかもしれません。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.200\n\n▶︎ CLIの「default」モードが「Manual」に統一\n\nつまり、以前より安全寄りの設計になった変更ですね。\n挙動が変わったと感じたら設定を見直してみてください✨\n\n詳細はリリースノートで確認を👀",
+    "【claude-code最新リリース情報】\n\nclaude-codeがv2.1.200〜v2.1.203まで連続アップデート🎉\n\n具体的には⬇\n\n▶︎ v2.1.200〜v2.1.203が短期間でリリース\n▶︎ 細かな改善・修正が継続的に積み重ねられている\n▶︎ 公式リリースノートで詳細を確認できる\n\nつまり、\n\nClaude Codeが着実にアップデートされ続けています🙌\n\n気になる方は公式リリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
