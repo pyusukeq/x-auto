@@ -1,0 +1,115 @@
+{
+  "collected_at": "2026-07-08T22:54:40.291651",
+  "date": "2026-07-08",
+  "total_found": 14,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-08T22:54:39.511651+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98710515866
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.205: v2.1.205",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "body": "## What's changed\n\n- Added an auto mode rule that blocks tampering with session transcript files\n- Fixed `--json-schema` silently producing unstructured output when the schema was invalid, and schemas using the `format` keyword being rejected\n- Fixed a message sent while Claude was working being silently lost when the turn ended at the `--max-turns` limit\n- Fixed Windows worktree removal deleting files outside the worktree when an NTFS junction or directory symlink existed inside it\n- Fixed background agents staying shown as \"failed\" or \"completed\" in the agent list after being resumed with `S",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-08T21:22:06Z",
+      "final_score": 1592.6530534272488
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.204: v2.1.204",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
+      "body": "## What's changed\n\n- Fixed hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-08T00:27:50Z",
+      "final_score": 1493.1080798822752
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.203: v2.1.203",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "body": "## What's changed\n\n- Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted\n- Added a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible\n- Added the session's additional working directories to MCP `roots/list`, with `notifications/roots/list_changed` sent when the set changes\n- Fixed opening or switching background agent sessions on macOS stalling for 15–20 seconds due to a false low-memory detection (regression in 2.1.196)\n- Fixed background sessions becoming permanently unresponsi",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-07T21:06:12Z",
+      "final_score": 1477.1054343796295
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.202: v2.1.202",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
+      "body": "## What's changed\n\n- Added a \"Dynamic workflow size\" setting in `/config` for controlling how large Claude generally makes dynamic workflows (small/medium/large agent counts) — an advisory guideline, not an enforced cap\n- Added `workflow.run_id` and `workflow.name` OpenTelemetry attributes to telemetry emitted by workflow-spawned agents, so a workflow run's activity can be reconstructed from OTel data\n- Fixed a crash in the inline Ctrl+R history search when accepting or cancelling while the search was still scanning the history file\n- Fixed `/rename` on background sessions being reverted when ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-06T22:51:16Z",
+      "final_score": 1371.1583444325397
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.201: v2.1.201",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.201",
+      "body": "## What's changed\n\n- Claude Sonnet 5 sessions no longer use the mid-conversation system role for harness reminders\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-03T23:50:35Z",
+      "final_score": 1033.0088735330687
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.110.0: sdk: v0.110.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.110.0",
+      "body": "## 0.110.0 (2026-07-02)\n\nFull Changelog: [sdk-v0.109.1...sdk-v0.110.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.109.1...sdk-v0.110.0)\n\n### Features\n\n* **api:** add agent-memory-2026-07-22 beta header ([a470e10](https://github.com/anthropics/anthropic-sdk-typescript/commit/a470e10aaad12078e3e5f2bb9adf6c2652ea9ca0))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-02T19:19:40Z",
+      "final_score": 897.221836496032
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.116.0: v0.116.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.116.0",
+      "body": "## 0.116.0 (2026-07-02)\n\nFull Changelog: [v0.115.1...v0.116.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.115.1...v0.116.0)\n\n### Features\n\n* **api:** add agent-memory-2026-07-22 beta header ([e181d5c](https://github.com/anthropics/anthropic-sdk-python/commit/e181d5c1b233d5b0b313c78b27cf1dd27f620e74))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-02T19:07:55Z",
+      "final_score": 896.289296813492
+    },
+    {
+      "source": "Hacker News",
+      "title": "The classifiers Anthropic puts in front of Fable are too zealous",
+      "url": "https://combine-lab.github.io/blog/2026/07/07/fable-is-not-a-useful-model.html",
+      "external_url": "https://combine-lab.github.io/blog/2026/07/07/fable-is-not-a-useful-model.html",
+      "score": 162,
+      "comments": 149,
+      "created": "2026-07-08T20:41:33+00:00",
+      "final_score": 396.3605468904464
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents",
+      "url": "https://microsoft.github.io/flint-chart/#/",
+      "external_url": "https://microsoft.github.io/flint-chart/#/",
+      "score": 146,
+      "comments": 63,
+      "created": "2026-07-08T17:46:12+00:00",
+      "final_score": 319.0320592345999
+    }
+  ]
+}

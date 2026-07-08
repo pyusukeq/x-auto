@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-08",
+  "posts": [
+    "Claude Code v2.1.202〜v2.1.205がリリース。\nセッションの安全性と出力の信頼性が改善された。\n\n具体的には\n\n▶︎ セッションのトランスクリプトファイルへの書き込み保護をauto modeで強化\n▶︎ `--json-schema` が無効なスキーマを無視して出力していたバグを修正\n▶︎ 作業中に送ったメッセージが無視されていた問題も解消\n\n出力の品質とセキュリティが\nじわじわ強化されていますね✨\n\n各バージョンの詳細はリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+    "【保存推奨】\n\nClaude Code v2.1.203〜v2.1.205の\nうれしい改善が3つ追加された。\n\n地味だけど毎日使うと効いてくる系。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.205\n\n▶︎ ログイン期限切れの前に警告が出るようになった（バックグラウンドセッションが突然切れる問題を防げる）\n▶︎ マニュアル権限モードのとき ⏸ バッジがフッターに常時表示される\n▶︎ セッションの追加作業ディレクトリも見えるように\n\nつまり、\n\n「あれ、なんで止まってる？」がなくなる\n地道な改善かもしれません😊\n\n最新版（v2.1.205）に更新して試してみて👀",
+    "【Claude Codeアップデート】\n\nClaude Code（v2.1.202〜v2.1.205）で\nダイナミックワークフローのサイズを自分で制御できるようになった。\n\n『small / medium / large でワークフローの規模を選択できる』\n\n結論はこれ👇\n\n▶︎ `/config` に「Dynamic workflow size」の設定が追加\n▶︎ タスクの規模に合わせてワークフローサイズを調整できる\n▶︎ OpenTelemetryに `workflow.run_id` / `workflow.name` 属性も追加され観測性も向上\n\nつまり、\n\nマルチエージェントの使い方が\nぐっと細かくコントロールできるようになりましたね✨\n\n/config から設定してみて👀\n詳細はリリースノートで確認を→ https://github.com/anthropics/claude-code/releases/tag/v2.1.205"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
