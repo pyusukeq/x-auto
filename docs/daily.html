@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-08</title>
+<title>X投稿下書き 2026-07-09</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,63 +73,66 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-08</h1>
-  <p>生成: 2026-07-09 07:55 JST</p>
+  <h1>X投稿下書き 2026-07-09</h1>
+  <p>生成: 2026-07-10 08:02 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">Claude Code v2.1.202〜v2.1.205がリリース。
-セッションの安全性と出力の信頼性が改善された。
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+マジか！！
 
-具体的には
+Claude Code v2.1.202〜v2.1.205で
+セッションの安全性まわりが強化された。
 
-▶︎ セッションのトランスクリプトファイルへの書き込み保護をauto modeで強化
-▶︎ `--json-schema` が無効なスキーマを無視して出力していたバグを修正
-▶︎ 作業中に送ったメッセージが無視されていた問題も解消
+『セッショントランスクリプトへの改ざん防止』のルールが追加。
 
-出力の品質とセキュリティが
-じわじわ強化されていますね✨
+具体的には👀
 
-各バージョンの詳細はリリースノートでチェックしてみて👀
+▶︎ auto modeでトランスクリプトの不正操作を防止
+▶︎ `--json-schema`が無効なスキーマを無音で無視していたバグを修正
+▶︎ 作業中に送ったメッセージが消える問題も解消
+
+つまり、
+
+地味に痛かったバグが一気に直った印象ですよね。
+細かいアップデートほど実際の開発フローに効いてくる✨
+
+詳細はGitHubリリースノートでチェックしてみて👀
 https://github.com/anthropics/claude-code/releases/tag/v2.1.205</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.203〜v2.1.205の
-うれしい改善が3つ追加された。
-
-地味だけど毎日使うと効いてくる系。
+Claude Code v2.1.203で
+バックグラウンド処理中の「気づいたら止まってた」が減るかも。
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.205
 
-▶︎ ログイン期限切れの前に警告が出るようになった（バックグラウンドセッションが突然切れる問題を防げる）
-▶︎ マニュアル権限モードのとき ⏸ バッジがフッターに常時表示される
-▶︎ セッションの追加作業ディレクトリも見えるように
-
-つまり、
-
-「あれ、なんで止まってる？」がなくなる
-地道な改善かもしれません😊
-
-最新版（v2.1.205）に更新して試してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Codeアップデート】
-
-Claude Code（v2.1.202〜v2.1.205）で
-ダイナミックワークフローのサイズを自分で制御できるようになった。
-
-『small / medium / large でワークフローの規模を選択できる』
-
-結論はこれ👇
-
-▶︎ `/config` に「Dynamic workflow size」の設定が追加
-▶︎ タスクの規模に合わせてワークフローサイズを調整できる
-▶︎ OpenTelemetryに `workflow.run_id` / `workflow.name` 属性も追加され観測性も向上
+▶︎ ログイン期限が近づくと事前に警告が出るように
+▶︎ フッターにグレーの⏸バッジが表示されてパーミッションモードが一目で分かる
+▶︎ 追加の作業ディレクトリがセッション情報に表示される
 
 つまり、
 
-マルチエージェントの使い方が
-ぐっと細かくコントロールできるようになりましたね✨
+認証切れに気づかず作業が止まるリスクが下がりそう。
+長時間のバックグラウンド処理を使う方ほど恩恵が大きそうですよね。
 
-/config から設定してみて👀
-詳細はリリースノートで確認を→ https://github.com/anthropics/claude-code/releases/tag/v2.1.205</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+GitHubリリースノートもチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.203</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
+Claude Code v2.1.202で
+マルチエージェントのワークフロー規模を自分でコントロールできるようになった。
+
+『Dynamic workflow sizeで
+ワークフローの規模感を小・中・大から選べる』
+
+▶︎ `/config`から「Dynamic workflow size」を設定するだけ
+▶︎ small/medium/largeの3段階でワークフロー規模の目安を調整
+▶︎ OpenTelemetryにworkflow情報が追加されてモニタリングも強化
+
+つまり、
+
+大規模タスクには大きく・小さいタスクには軽くと
+用途に合わせた使い分けができるようになりましたよね🙌
+
+詳細はリリースノートを確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.202</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
