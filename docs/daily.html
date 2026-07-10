@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-09</title>
+<title>X投稿下書き 2026-07-10</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,66 +73,67 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-09</h1>
-  <p>生成: 2026-07-10 08:02 JST</p>
+  <h1>X投稿下書き 2026-07-10</h1>
+  <p>生成: 2026-07-11 07:50 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+地味だけど嬉しいアプデ！
 
-Claude Code v2.1.202〜v2.1.205で
-セッションの安全性まわりが強化された。
+Claude Code v2.1.206がリリース。
+細かい開発体験の改善が入っています。
 
-『セッショントランスクリプトへの改ざん防止』のルールが追加。
+具体的には⬇️
 
-具体的には👀
+▶︎ `/cd` コマンドにディレクトリ補完が追加
+▶︎ `/doctor` の機能が強化
+▶︎ `/commit-push-pr` まわりの挙動が改善
 
-▶︎ auto modeでトランスクリプトの不正操作を防止
-▶︎ `--json-schema`が無効なスキーマを無音で無視していたバグを修正
-▶︎ 作業中に送ったメッセージが消える問題も解消
+コマンド操作の手間がじわじわ減っていく嬉しいアップデートですね✨
 
-つまり、
-
-地味に痛かったバグが一気に直った印象ですよね。
-細かいアップデートほど実際の開発フローに効いてくる✨
-
-詳細はGitHubリリースノートでチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.205</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+詳細はリリースノートをチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.206</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.203で
-バックグラウンド処理中の「気づいたら止まってた」が減るかも。
+Claude Code v2.1.205／v2.1.206で
+バックグラウンド作業の安心感が上がった。
+
+ログイン切れによる突然の中断、経験ありませんか？
 
 ポイントはここ👇
 
-▶︎ ログイン期限が近づくと事前に警告が出るように
-▶︎ フッターにグレーの⏸バッジが表示されてパーミッションモードが一目で分かる
-▶︎ 追加の作業ディレクトリがセッション情報に表示される
+▶︎ ログイン期限切れ前に事前警告が表示されるように
+▶︎ 手動許可モード中はフッターに灰色の⏸バッジが常時表示
+▶︎ 追加作業ディレクトリがセッション情報に表示
 
 つまり、
 
-認証切れに気づかず作業が止まるリスクが下がりそう。
-長時間のバックグラウンド処理を使う方ほど恩恵が大きそうですよね。
+今どんな状態で動いているかが
+ひと目で分かるようになりましたね😊
 
-GitHubリリースノートもチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.203</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
-Claude Code v2.1.202で
-マルチエージェントのワークフロー規模を自分でコントロールできるようになった。
+リリースノートはこちら👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.206
+https://github.com/anthropics/claude-code/releases/tag/v2.1.205</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【地味にうれしい改善】
+Claude Codeがアップデート
 
-『Dynamic workflow sizeで
-ワークフローの規模感を小・中・大から選べる』
+Claude Code v2.1.205〜v2.1.206で
+CLAUDE.mdの管理がよりスマートになった。
 
-▶︎ `/config`から「Dynamic workflow size」を設定するだけ
-▶︎ small/medium/largeの3段階でワークフロー規模の目安を調整
-▶︎ OpenTelemetryにworkflow情報が追加されてモニタリングも強化
+『コードベースから推測できる情報は自動でトリミングを提案』
+
+ポイントはこれ👇
+
+▶︎ `/doctor` がCLAUDE.mdの冗長な記述を検出
+▶︎ Claudeが自力で読み取れる内容は削除を推奨
+▶︎ スキーマ不正時に無言で誤動作していたバグも修正
 
 つまり、
 
-大規模タスクには大きく・小さいタスクには軽くと
-用途に合わせた使い分けができるようになりましたよね🙌
+CLAUDE.mdを丁寧に書きすぎていた人ほど
+恩恵を受けられるかもしれません✨
 
-詳細はリリースノートを確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.202</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+リリースノートをチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.206</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

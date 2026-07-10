@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-10",
+  "posts": [
+    "【速報】\n地味だけど嬉しいアプデ！\n\nClaude Code v2.1.206がリリース。\n細かい開発体験の改善が入っています。\n\n具体的には⬇️\n\n▶︎ `/cd` コマンドにディレクトリ補完が追加\n▶︎ `/doctor` の機能が強化\n▶︎ `/commit-push-pr` まわりの挙動が改善\n\nコマンド操作の手間がじわじわ減っていく嬉しいアップデートですね✨\n\n詳細はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+    "【保存推奨】\n\nClaude Code v2.1.205／v2.1.206で\nバックグラウンド作業の安心感が上がった。\n\nログイン切れによる突然の中断、経験ありませんか？\n\nポイントはここ👇\n\n▶︎ ログイン期限切れ前に事前警告が表示されるように\n▶︎ 手動許可モード中はフッターに灰色の⏸バッジが常時表示\n▶︎ 追加作業ディレクトリがセッション情報に表示\n\nつまり、\n\n今どんな状態で動いているかが\nひと目で分かるようになりましたね😊\n\nリリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.206\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+    "【地味にうれしい改善】\nClaude Codeがアップデート\n\nClaude Code v2.1.205〜v2.1.206で\nCLAUDE.mdの管理がよりスマートになった。\n\n『コードベースから推測できる情報は自動でトリミングを提案』\n\nポイントはこれ👇\n\n▶︎ `/doctor` がCLAUDE.mdの冗長な記述を検出\n▶︎ Claudeが自力で読み取れる内容は削除を推奨\n▶︎ スキーマ不正時に無言で誤動作していたバグも修正\n\nつまり、\n\nCLAUDE.mdを丁寧に書きすぎていた人ほど\n恩恵を受けられるかもしれません✨\n\nリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.206"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
