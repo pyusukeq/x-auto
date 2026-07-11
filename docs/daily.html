@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-10</title>
+<title>X投稿下書き 2026-07-11</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,67 +73,60 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-10</h1>
-  <p>生成: 2026-07-11 07:50 JST</p>
+  <h1>X投稿下書き 2026-07-11</h1>
+  <p>生成: 2026-07-12 07:36 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-地味だけど嬉しいアプデ！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【アプデ情報】
+Claude Code v2.1.207で
+BedrockやVertex AIの使い勝手が改善された。
 
-Claude Code v2.1.206がリリース。
-細かい開発体験の改善が入っています。
+『Auto modeがオプトイン不要で即使えるように』
 
 具体的には⬇️
 
-▶︎ `/cd` コマンドにディレクトリ補完が追加
-▶︎ `/doctor` の機能が強化
-▶︎ `/commit-push-pr` まわりの挙動が改善
+▶︎ Bedrock・Vertex AIでAuto modeが標準解放
+▶︎ 無効化は設定で可能
+▶︎ 長いリスト・テーブル表示中のターミナルフリーズも修正
 
-コマンド操作の手間がじわじわ減っていく嬉しいアップデートですね✨
+つまり、
 
-詳細はリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.206</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+環境変数の設定なしで
+そのままAuto modeが使えるようになったということ。
+
+詳細はリリースノートで確認を👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.207</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.205／v2.1.206で
-バックグラウンド作業の安心感が上がった。
+Claude Code v2.1.206で
+CLAUDE.mdの管理がスマートになった。
 
-ログイン切れによる突然の中断、経験ありませんか？
+『コードベースから推測できる内容は削る提案をしてくれる』
+
+ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.206
+
+▶︎ `/doctor` がCLAUDE.mdの整理を提案
+▶︎ `/cd` でディレクトリ移動が便利に
+▶︎ `/commit-push-pr` でgitワークフローを効率化
+
+つまり、
+
+CLAUDE.mdを手動で管理しきれていなかった人に
+うれしいアップデートかもしれません。
+
+リリースノートで詳細を確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">TypeScript SDK v0.111.0で
+「dreaming」のサポートが追加された。
+
+『APIレベルでdreamingが使えるように』
 
 ポイントはここ👇
 
-▶︎ ログイン期限切れ前に事前警告が表示されるように
-▶︎ 手動許可モード中はフッターに灰色の⏸バッジが常時表示
-▶︎ 追加作業ディレクトリがセッション情報に表示
+▶︎ SDKから直接dreamingを呼び出せる機能が実装
+▶︎ 既存のワークフローにそのまま組み込みやすい形で提供
 
-つまり、
-
-今どんな状態で動いているかが
-ひと目で分かるようになりましたね😊
-
-リリースノートはこちら👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.206
-https://github.com/anthropics/claude-code/releases/tag/v2.1.205</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【地味にうれしい改善】
-Claude Codeがアップデート
-
-Claude Code v2.1.205〜v2.1.206で
-CLAUDE.mdの管理がよりスマートになった。
-
-『コードベースから推測できる情報は自動でトリミングを提案』
-
-ポイントはこれ👇
-
-▶︎ `/doctor` がCLAUDE.mdの冗長な記述を検出
-▶︎ Claudeが自力で読み取れる内容は削除を推奨
-▶︎ スキーマ不正時に無言で誤動作していたバグも修正
-
-つまり、
-
-CLAUDE.mdを丁寧に書きすぎていた人ほど
-恩恵を受けられるかもしれません✨
-
-リリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.206</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はGitHubのchangelogでチェックしてみて👀
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

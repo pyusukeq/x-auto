@@ -1,0 +1,114 @@
+{
+  "collected_at": "2026-07-11T22:35:59.644351",
+  "date": "2026-07-11",
+  "total_found": 10,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-11T22:35:58.608360+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.982872827306
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Getting GLM 5.2 running on my slow computer",
+      "url": "https://github.com/JustVugg/colibri",
+      "external_url": "https://github.com/JustVugg/colibri",
+      "score": 889,
+      "comments": 229,
+      "created": "2026-07-09T08:05:04+00:00",
+      "final_score": 1561.6890413425347
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.207: v2.1.207",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "body": "## What's changed\n\n- Auto mode is now available without `CLAUDE_CODE_ENABLE_AUTO_MODE` opt-in on Bedrock, Vertex AI, and Foundry; disable via `disableAutoMode` in settings\n- Fixed the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks\n- Fixed remote managed settings from a non-interactive run (`claude -p`, the SDK) being permanently recorded as consented without ever showing the security consent dialog\n- Fixed spurious prompt-injection warnings triggered by benign system-generated conversation updates\n- Fixed the au",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-11T00:52:10Z",
+      "final_score": 1496.5216345039682
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.111.0: sdk: v0.111.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
+      "body": "## 0.111.0 (2026-07-10)\n\nFull Changelog: [sdk-v0.110.0...sdk-v0.111.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.110.0...sdk-v0.111.0)\n\n### Features\n\n* **api:** add support for dreaming ([77b28a6](https://github.com/anthropics/anthropic-sdk-typescript/commit/77b28a647239fd66d3a31b04fca4a58ebc86e493))\n* **tools:** gate session tool calls on evaluated_permission; bound idle by server stop_reason ([68a6d7b](https://github.com/anthropics/anthropic-sdk-typescript/commit/68a6d7b92aaea4d3eaf3a7567db18e3bf6d695ef))\n\n\n### Chores\n\n* **docs:** small updates to field descriptio",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-10T17:12:15Z",
+      "final_score": 1460.0203117526455
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.206: v2.1.206",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+      "body": "## What's changed\n\n- Added directory path suggestions to `/cd`, matching `/add-dir` behavior\n- Added a `/doctor` check that proposes trimming checked-in `CLAUDE.md` files by cutting content Claude could derive from the codebase\n- `/commit-push-pr` now auto-allows `git push` to the repo's configured push remote (`remote.pushDefault`, or the sole remote when only one is configured) in addition to `origin`\n- Gateway: `/login` now supports Anthropic-operated public gateway endpoints\n- `EnterWorktree` now asks for confirmation before entering a git worktree outside the project's `.claude/worktrees/",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-10T01:45:26Z",
+      "final_score": 1386.4634334457674
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.205: v2.1.205",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "body": "## What's changed\n\n- Added an auto mode rule that blocks tampering with session transcript files\n- Fixed `--json-schema` silently producing unstructured output when the schema was invalid, and schemas using the `format` keyword being rejected\n- Fixed a message sent while Claude was working being silently lost when the turn ended at the `--max-turns` limit\n- Fixed Windows worktree removal deleting files outside the worktree when an NTFS junction or directory symlink existed inside it\n- Fixed background agents staying shown as \"failed\" or \"completed\" in the agent list after being resumed with `S",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-08T21:22:06Z",
+      "final_score": 1251.2782482605821
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.204: v2.1.204",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
+      "body": "## What's changed\n\n- Fixed hook events not streaming during SessionStart hooks in headless sessions, which could cause remote workers to be idle-reaped mid-hook\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-08T00:27:50Z",
+      "final_score": 1151.7332747156086
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.203: v2.1.203",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.203",
+      "body": "## What's changed\n\n- Added a warning when your login is about to expire, so you can re-authenticate before background sessions are interrupted\n- Added a grey ⏸ badge to the footer when in manual permission mode, making the active mode always visible\n- Added the session's additional working directories to MCP `roots/list`, with `notifications/roots/list_changed` sent when the set changes\n- Fixed opening or switching background agent sessions on macOS stalling for 15–20 seconds due to a false low-memory detection (regression in 2.1.196)\n- Fixed background sessions becoming permanently unresponsi",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-07T21:06:12Z",
+      "final_score": 1135.730629212963
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Reverse-engineering web apps into agent tools",
+      "url": "https://news.ycombinator.com/item?id=48847834",
+      "external_url": "",
+      "score": 89,
+      "comments": 36,
+      "created": "2026-07-09T15:45:17+00:00",
+      "final_score": 166.94511351846066
+    },
+    {
+      "source": "Hacker News",
+      "title": "I used to love Claude, but the latest models are slowly ruining it",
+      "url": "https://www.androidauthority.com/claude-latest-models-pushback-bad-3683521/",
+      "external_url": "https://www.androidauthority.com/claude-latest-models-pushback-bad-3683521/",
+      "score": 27,
+      "comments": 32,
+      "created": "2026-07-11T20:21:25+00:00",
+      "final_score": 69.63952480736607
+    }
+  ]
+}
