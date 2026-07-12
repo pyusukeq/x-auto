@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-12",
+  "posts": [
+    "【速報】\nClaude Code アプデきた！\n\nv2.1.207で\nAuto Modeがオプトイン不要になった。\n\n『Bedrock・Vertex AIで標準利用可能に』\n\n具体的には⬇︎\n\n▶︎ 環境変数の設定なしでAuto Modeが使える\n▶︎ 不要な場合は `disableAutoMode` で無効化できる\n▶︎ 長いリスト・テーブル表示中のターミナルフリーズも修正済み\n\nつまり、\n\nBedrockやVertex AIを使っているチームにとって\nセットアップの手間がひとつ減りましたね✨\n\n詳細はリリースノートで確認を👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+    "【注意】\n\nClaude Code v2.1.206のリリースノートを確認しましたが、投稿内容（`/doctor`のスリム化提案、`/commit-push-pr`のgit push自動許可）がリリースノートの記載と一致するか検証できませんでした。\n\n内容の正確性が確認できないため、今回の投稿は一旦見送りをお勧めします。\n\nなお、すでにv2.1.207もリリースされています。\n最新のリリースノートを確認のうえ、正確な情報で改めて投稿することをお勧めします👇\n\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+    "TypeScript SDK v0.111.0で\n「dreaming」のサポートが追加された。\n\n『実験的な機能として追加されたもので、詳細は現在確認中』\n\n具体的には⏬\n\n▶︎ TypeScript SDKに「dreaming」オプションが追加\n▶︎ 実験的な機能として位置づけられている\n▶︎ 詳細な仕様は公式リリースノートを参照\n\n※「dreaming」の正式な機能説明は公式情報をご確認ください。独自解釈での情報拡散にはご注意を。\n\n詳細はこちら👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
