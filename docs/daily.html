@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-13</title>
+<title>X投稿下書き 2026-07-14</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,70 +73,64 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-13</h1>
-  <p>生成: 2026-07-14 07:44 JST</p>
+  <h1>X投稿下書き 2026-07-14</h1>
+  <p>生成: 2026-07-15 07:45 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-神アプデきた！！
+待ってたやつ！！
 
-Claude Code v2.1.207で
-BedrockやVertex AIのAuto modeが正式解放。
+Claude Code v2.1.207〜v2.1.209のアップデートで
+Auto modeがデフォルト解放された。
 
-『デフォルト有効化、オプトアウトも可能に』
+『CLAUDE_CODE_ENABLE_AUTO_MODE のオプトインが不要に』
 
-具体的には⏬
+具体的には
 
-▶︎ Bedrock・Vertex AI対応
-▶︎ 不要な場合は`disableAutoMode`で無効化可能
-▶︎ 長いリストやテーブル表示時のターミナルフリーズも修正
+▶︎ Bedrock・Vertex AIで即利用可能に
+▶︎ 無効化したい場合は設定で `disableAutoMode` を指定
+▶︎ 長いリスト・テーブル表示時のターミナルフリーズも修正
 
 つまり、
 
-環境変数の設定なしでAuto modeが使えるのは
-地味にうれしいアップデートですよね✨
-
-詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.207</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+設定なしでAuto modeが使えるようになった。
+クラウド環境で試している方はすぐ確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.209</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
 <div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.206で
-地味だけどじわじわ便利な機能が追加された。
+Claude Code v2.1.208で
+アクセシビリティ機能が追加された。
 
-『CLAUDE.mdの冗長な記述を提案してくれる』
+スクリーンリーダー対応とVimキーバインドのカスタマイズ。
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.206
+https://github.com/anthropics/claude-code/releases/tag/v2.1.208
 
-▶︎ `/cd`でディレクトリ候補を補完表示
-▶︎ `/doctor`がCLAUDE.mdの冗長な記述を検出・削減を提案
-▶︎ `/commit-push-pr`がgit pushを自動許可するように
+▶︎ `claude --ax-screen-reader` またはenv変数でスクリーンリーダーモードをON
+▶︎ `vimInsertModeRemaps` で `jj` → Escapeなどのキー割り当てが可能に
+▶︎ 設定ファイルに `&quot;axScreenReader&quot;: true` を追加してもOK
 
 つまり、
 
-CLAUDE.mdが膨らみがちな方には
-`/doctor`コマンドをぜひ一度試してみてほしいですね👀
+Vimユーザーや支援技術を使っている方にも
+使いやすくなってきましたよね✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【最近のアップデート情報】
 
-※なお最新版はv2.1.207がリリース済みです。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
+Claude Code の `/doctor` コマンド、
+地味だけど便利な機能が追加されているらしい。
 
-Claude Code v2.1.206〜207で
-セッション管理まわりが静かに強化されていた。
+『CLAUDE.md の冗長な内容をトリミング提案してくれる』
 
-『ログイン期限切れを事前に警告してくれる』
+具体的には👀
 
-ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.207
+▶︎ コードベースから推測できる内容をCLAUDE.mdから削れると提案
+▶︎ `/cd` でディレクトリパスのサジェストが効くように
+▶︎ `/commit-push-pr` がgit pushを自動許可するように改善
 
-▶︎ 認証切れ前に警告が出てバックグラウンド処理が中断されにくくなった
-▶︎ 手動許可モード時にフッターにグレーの⏸バッジが表示
-▶︎ セッションの作業ディレクトリが常に確認できるように
+※ 詳細はリリースノートでご確認ください
+https://github.com/anthropics/claude-code/releases/tag/v2.1.209
 
-つまり、
-
-長時間のバックグラウンド処理を任せている方ほど
-恩恵を感じやすいアップデートかもしれません🙌
-
-※詳細はリリースノートでご確認ください</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+CLAUDE.mdが肥大化してきたなと感じたら
+`/doctor` を一度走らせてみるといいかもしれません🙌</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

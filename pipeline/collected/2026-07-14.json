@@ -1,0 +1,114 @@
+{
+  "collected_at": "2026-07-14T22:44:50.197825",
+  "date": "2026-07-14",
+  "total_found": 12,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-14T22:44:49.461841+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.987832830597
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.209: v2.1.209",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.209",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.209",
+      "body": "## What's changed\n\n- Fixed /model and other dialogs being blocked in `claude agents` background sessions (reverts an overly broad guard)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-14T06:36:28Z",
+      "final_score": 1523.1452410251322
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.208: v2.1.208",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+      "body": "## What's changed\n\n- Added screen reader mode: opt-in plain-text rendering for screen reader users. Run `claude --ax-screen-reader`, set CLAUDE_AX_SCREEN_READER=1, or add \"axScreenReader\": true to settings.\n- Added `vimInsertModeRemaps` setting: map two-key insert-mode sequences like `jj` to Escape in vim mode\n- Added `CLAUDE_CODE_PROCESS_WRAPPER`: agent view and the background service now honor a corporate launcher by running every Claude Code self-spawn through a required wrapper executable\n- Added mouse-click support for multi-select menus and \"Other\" input rows in fullscreen mode\n- Fixed f",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-14T01:10:42Z",
+      "final_score": 1497.290743670635
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.207: v2.1.207",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
+      "body": "## What's changed\n\n- Auto mode is now available without `CLAUDE_CODE_ENABLE_AUTO_MODE` opt-in on Bedrock, Vertex AI, and Foundry; disable via `disableAutoMode` in settings\n- Fixed the terminal freezing and keystrokes lagging while streaming responses containing very long lists, tables, paragraphs, or code blocks\n- Fixed remote managed settings from a non-interactive run (`claude -p`, the SDK) being permanently recorded as consented without ever showing the security consent dialog\n- Fixed spurious prompt-injection warnings triggered by benign system-generated conversation updates\n- Fixed the au",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-11T00:52:10Z",
+      "final_score": 1152.9627013425927
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.111.0: sdk: v0.111.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.111.0",
+      "body": "## 0.111.0 (2026-07-10)\n\nFull Changelog: [sdk-v0.110.0...sdk-v0.111.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.110.0...sdk-v0.111.0)\n\n### Features\n\n* **api:** add support for dreaming ([77b28a6](https://github.com/anthropics/anthropic-sdk-typescript/commit/77b28a647239fd66d3a31b04fca4a58ebc86e493))\n* **tools:** gate session tool calls on evaluated_permission; bound idle by server stop_reason ([68a6d7b](https://github.com/anthropics/anthropic-sdk-typescript/commit/68a6d7b92aaea4d3eaf3a7567db18e3bf6d695ef))\n\n\n### Chores\n\n* **docs:** small updates to field descriptio",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-10T17:12:15Z",
+      "final_score": 1116.4613785912697
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.206: v2.1.206",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+      "body": "## What's changed\n\n- Added directory path suggestions to `/cd`, matching `/add-dir` behavior\n- Added a `/doctor` check that proposes trimming checked-in `CLAUDE.md` files by cutting content Claude could derive from the codebase\n- `/commit-push-pr` now auto-allows `git push` to the repo's configured push remote (`remote.pushDefault`, or the sole remote when only one is configured) in addition to `origin`\n- Gateway: `/login` now supports Anthropic-operated public gateway endpoints\n- `EnterWorktree` now asks for confirmation before entering a git worktree outside the project's `.claude/worktrees/",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-10T01:45:26Z",
+      "final_score": 1042.9045002843914
+    },
+    {
+      "source": "Hacker News",
+      "title": "How to stop Claude from saying load-bearing",
+      "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+      "external_url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
+      "score": 392,
+      "comments": 447,
+      "created": "2026-07-14T11:46:02+00:00",
+      "final_score": 981.8798718060185
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.205: v2.1.205",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
+      "body": "## What's changed\n\n- Added an auto mode rule that blocks tampering with session transcript files\n- Fixed `--json-schema` silently producing unstructured output when the schema was invalid, and schemas using the `format` keyword being rejected\n- Fixed a message sent while Claude was working being silently lost when the turn ended at the `--max-turns` limit\n- Fixed Windows worktree removal deleting files outside the worktree when an NTFS junction or directory symlink existed inside it\n- Fixed background agents staying shown as \"failed\" or \"completed\" in the agent list after being resumed with `S",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-08T21:22:06Z",
+      "final_score": 907.7193150992063
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE",
+      "url": "https://github.com/juggler-ai/juggler",
+      "external_url": "https://github.com/juggler-ai/juggler",
+      "score": 150,
+      "comments": 77,
+      "created": "2026-07-12T18:28:15+00:00",
+      "final_score": 291.8246037239583
+    },
+    {
+      "source": "Hacker News",
+      "title": "The zero-cost fallacy: open-source software in the agentic era",
+      "url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+      "external_url": "https://www.thoughtworks.com/insights/blog/open-source/zero-cost-fallacy-open-source-agentic-era",
+      "score": 87,
+      "comments": 66,
+      "created": "2026-07-10T20:45:43+00:00",
+      "final_score": 156.25759555672124
+    }
+  ]
+}
