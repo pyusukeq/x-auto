@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-15",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code 最新アップデート（v2.1.207〜v2.1.210）で\nツール実行中の「止まってる？」問題が解消。\n\n『長時間のツール呼び出しが視覚的に進捗表示されるように』\n\n具体的には\n\n▶︎ ツール実行中にリアルタイムで経過時間が表示\n▶︎ `Write(path)` などの一部パーミッションに起動時警告\n▶︎ `Edit(path)` / `Read(path)` への移行が推奨に\n\nつまり、\n\n「処理中なのか止まったのか」がひと目で分かるようになりました✨\n\n詳細はリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.210",
+    "Claude Codeの最近のアップデートで\nスクリーンリーダー対応が追加された。\n\nアクセシビリティ向上と\nVimユーザー向けのカスタマイズも同時に強化。\n\nポイントはここ👇\n\n▶︎ `--ax-screen-reader` オプションでプレーンテキスト表示に切替可能\n▶︎ 環境変数 `CLAUDE_AX_SCREEN_READER=1` でも設定OK\n▶︎ `vimInsertModeRemaps` で `jj` → Escapeなどのキーマップが設定可能\n\nスクリーンリーダーを使う方もVimユーザーも、より使いやすくなりました😊\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.208",
+    "【claude-code アップデート情報】\n最近リリースが続いてる！\n\nclaude-codeがv2.1.207〜v2.1.210まで\n短期間に連続アップデートされました。\n\n各リリースの詳細はこちら👀\n\n▶︎ v2.1.210: https://github.com/anthropics/claude-code/releases/tag/v2.1.210\n▶︎ v2.1.209: https://github.com/anthropics/claude-code/releases/tag/v2.1.209\n▶︎ v2.1.208: https://github.com/anthropics/claude-code/releases/tag/v2.1.208\n▶︎ v2.1.207: https://github.com/anthropics/claude-code/releases/tag/v2.1.207\n\n気になる変更点はGitHubのリリースノートで確認してみて✨"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
