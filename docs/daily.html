@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-15</title>
+<title>X投稿下書き 2026-07-16</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,59 +73,71 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-15</h1>
-  <p>生成: 2026-07-16 07:47 JST</p>
+  <h1>X投稿下書き 2026-07-16</h1>
+  <p>生成: 2026-07-17 07:48 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code 最新アップデート（v2.1.207〜v2.1.210）で
-ツール実行中の「止まってる？」問題が解消。
+Claude Code v2.1.211がリリース。
 
-『長時間のツール呼び出しが視覚的に進捗表示されるように』
+地味だけど開発体験がじわじわ上がる
+アップデートが詰まっています。
 
-具体的には
+具体的には⏬
+https://github.com/anthropics/claude-code/releases/tag/v2.1.211
 
-▶︎ ツール実行中にリアルタイムで経過時間が表示
-▶︎ `Write(path)` などの一部パーミッションに起動時警告
-▶︎ `Edit(path)` / `Read(path)` への移行が推奨に
+▶︎ 長時間ツール実行中に経過時間がリアルタイム表示
+▶︎ 非推奨パーミッションへの起動時警告
+▶︎ サブエージェントの思考をJSONストリームに含めるフラグが追加
 
 つまり、
 
-「処理中なのか止まったのか」がひと目で分かるようになりました✨
+「止まってるのかな…」がなくなり
+デバッグもしやすくなる改善ですよね。
 
-詳細はリリースノートでチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.210</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最近のアップデートで
-スクリーンリーダー対応が追加された。
+詳細はリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Python SDK v0.117.0で
+「dreaming」のサポートが追加されました。
 
-アクセシビリティ向上と
-Vimユーザー向けのカスタマイズも同時に強化。
+リリースノートはこちら👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.0
 
-ポイントはここ👇
+ポイントはここ
 
-▶︎ `--ax-screen-reader` オプションでプレーンテキスト表示に切替可能
-▶︎ 環境変数 `CLAUDE_AX_SCREEN_READER=1` でも設定OK
-▶︎ `vimInsertModeRemaps` で `jj` → Escapeなどのキーマップが設定可能
+▶︎ dreamingパラメータがAPIリクエストで指定可能に
+▶︎ Anthropicの拡張思考（extended thinking）に関連するパラメータとみられる
+▶︎ 詳細な仕様はリリースノートで要確認
 
-スクリーンリーダーを使う方もVimユーザーも、より使いやすくなりました😊
+なお、同時期にTypeScript SDK（v0.112.0/0.112.1）もリリースされています。
 
-詳細はリリースノートで確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.208</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【claude-code アップデート情報】
-最近リリースが続いてる！
+実際の挙動はリリースノートで確認してみてください。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+マジか！！
 
-claude-codeがv2.1.207〜v2.1.210まで
-短期間に連続アップデートされました。
+TypeScript SDK v0.112.0で
+MCP Tunnelsのサポートが追加された。
 
-各リリースの詳細はこちら👀
+『add support for MCP Tunnels』
 
-▶︎ v2.1.210: https://github.com/anthropics/claude-code/releases/tag/v2.1.210
-▶︎ v2.1.209: https://github.com/anthropics/claude-code/releases/tag/v2.1.209
-▶︎ v2.1.208: https://github.com/anthropics/claude-code/releases/tag/v2.1.208
-▶︎ v2.1.207: https://github.com/anthropics/claude-code/releases/tag/v2.1.207
+ローカルのMCPサーバーを
+トンネル経由で外部公開できる可能性がある機能。
 
-気になる変更点はGitHubのリリースノートで確認してみて✨</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+現時点での期待として👇
+
+▶︎ ローカル環境のMCPサーバーをクラウドから利用できるかも
+▶︎ 複数環境・チームでのMCP共有がしやすくなるかも
+▶︎ エージェント連携の幅が広がる可能性も
+
+つまり、
+
+MCPの使い方が「個人ローカル」から
+「チーム・リモート」へ広がる転換点かもしれません🙌
+
+※詳細はリリースノートで要確認。なお最新版はv0.112.1です。
+
+リリースノートはこちら👇
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

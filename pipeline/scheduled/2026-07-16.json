@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-16",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.211がリリース。\n\n地味だけど開発体験がじわじわ上がる\nアップデートが詰まっています。\n\n具体的には⏬\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.211\n\n▶︎ 長時間ツール実行中に経過時間がリアルタイム表示\n▶︎ 非推奨パーミッションへの起動時警告\n▶︎ サブエージェントの思考をJSONストリームに含めるフラグが追加\n\nつまり、\n\n「止まってるのかな…」がなくなり\nデバッグもしやすくなる改善ですよね。\n\n詳細はリリースノートでチェックしてみて👀",
+    "Python SDK v0.117.0で\n「dreaming」のサポートが追加されました。\n\nリリースノートはこちら👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.0\n\nポイントはここ\n\n▶︎ dreamingパラメータがAPIリクエストで指定可能に\n▶︎ Anthropicの拡張思考（extended thinking）に関連するパラメータとみられる\n▶︎ 詳細な仕様はリリースノートで要確認\n\nなお、同時期にTypeScript SDK（v0.112.0/0.112.1）もリリースされています。\n\n実際の挙動はリリースノートで確認してみてください。",
+    "【これはすごい】\nマジか！！\n\nTypeScript SDK v0.112.0で\nMCP Tunnelsのサポートが追加された。\n\n『add support for MCP Tunnels』\n\nローカルのMCPサーバーを\nトンネル経由で外部公開できる可能性がある機能。\n\n現時点での期待として👇\n\n▶︎ ローカル環境のMCPサーバーをクラウドから利用できるかも\n▶︎ 複数環境・チームでのMCP共有がしやすくなるかも\n▶︎ エージェント連携の幅が広がる可能性も\n\nつまり、\n\nMCPの使い方が「個人ローカル」から\n「チーム・リモート」へ広がる転換点かもしれません🙌\n\n※詳細はリリースノートで要確認。なお最新版はv0.112.1です。\n\nリリースノートはこちら👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
