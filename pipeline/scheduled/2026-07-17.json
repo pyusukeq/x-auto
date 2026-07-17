@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-17",
+  "posts": [
+    "【速報】\nClaude Code v2.1.212で\n`/fork` の動作が変わった。\n\n『会話を新しいバックグラウンドセッションにコピーして作業を続けられる』\n\n具体的には👀\n\n▶︎ `/fork` で分岐した会話が `claude agents` に独立して表示される\n▶︎ セッション内サブエージェントは `/subtask` に分離\n▶︎ `claude auto-mode reset` でデフォルト設定に一発復元可能に\n\nマルチタスク開発の管理がより直感的になりそうですよね✨\n\nリリースノートはこちら→ https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+    "【注目】\n\nTypeScript SDK v0.112.2 / v0.112.3で\n最新アップデートが届いた。\n\n『ローカルのMCPサーバーを外部からも利用できる』仕組みが整いつつある。\n\nポイントはここ\n\n▶︎ SDK経由でMCP Tunnelsを扱えるように\n▶︎ エージェント間の連携がよりやりやすくなる可能性\n▶︎ anthropic製のGoogle Cloud向けSDK（google-cloud-sdk-v0.0.6）にもバグ修正が入り安定性が向上\n\nつまり、\n\nMCP周辺のエコシステムが\n着実に整ってきていますよね。\n\n詳細はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3",
+    "【TypeScript SDK アップデート】\n見逃せない更新です\n\nanthropic-sdk-typescriptに\nv0.112.2・v0.112.3がリリースされました。\n\nAnthropic公式のTypeScript SDKが着実にアップデートを重ねています。\n\n結論はこれ👇\n\n▶︎ sdk-v0.112.2・v0.112.3が連続リリース\n▶︎ TypeScript開発者はアップデートを確認してみて\n▶︎ 詳細はリリースノートをチェック👀\n\n最新リリースノートはこちら:\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3\n\nTypeScript×Anthropic APIを使っている方は\n早めに確認しておきましょう😊"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
