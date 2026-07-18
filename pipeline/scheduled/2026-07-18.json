@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-18",
+  "posts": [
+    "【速報】\nClaude Code v2.1.214がリリース。\n\nリリースノートに記載の修正内容は現時点で未確認のため、詳細は公式ページでご確認ください。\n\n🔗 https://github.com/anthropics/claude-code/releases/tag/v2.1.214\n\n最新版へのアップデート前に、リリースノートの内容を確認してみて👀",
+    "Claude Code v2.1.214で\n`/fork` コマンドの動作が変わりました。\n\n会話の分岐まわりが整理されて\n使いやすくなっています。\n\nポイントはこちら👀\n\n▶︎ `/fork` で会話をバックグラウンドの新セッションにコピー\n▶︎ 元のセッションはそのまま作業を続けられる\n▶︎ 従来の `/fork`（インセッション起動）は `/subtask` に名称変更\n\n並行して別の検討をしたいとき\n会話を分岐させながら作業できるようになった感じですね。\n\n詳細はリリースノートで確認を✨\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+    "【これはすごい】\n待ってたやつ！！\n\nTypeScript SDKにMCP Tunnelsのサポートが追加された。\n\n『SDKから直接MCPのトンネル機能を扱えるように』\n\n具体的には⬇️\n\n▶︎ sdk v0.112.2 / v0.112.3でMCP Tunnels対応が追加\n▶︎ ローカル環境のMCPサーバーをリモートから繋ぎやすくなる\n▶︎ エージェントやツール連携の幅がさらに広がる可能性も\n\nつまり、\n\nMCPを活用したエージェント構成を\nより柔軟に設計できるようになりそうですね。\n\n詳細はリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

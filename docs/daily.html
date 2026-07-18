@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-17</title>
+<title>X投稿下書き 2026-07-18</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,63 +73,54 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-17</h1>
-  <p>生成: 2026-07-18 07:38 JST</p>
+  <h1>X投稿下書き 2026-07-18</h1>
+  <p>生成: 2026-07-19 07:38 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-Claude Code v2.1.212で
-`/fork` の動作が変わった。
+Claude Code v2.1.214がリリース。
 
-『会話を新しいバックグラウンドセッションにコピーして作業を続けられる』
+リリースノートに記載の修正内容は現時点で未確認のため、詳細は公式ページでご確認ください。
 
-具体的には👀
+🔗 https://github.com/anthropics/claude-code/releases/tag/v2.1.214
 
-▶︎ `/fork` で分岐した会話が `claude agents` に独立して表示される
-▶︎ セッション内サブエージェントは `/subtask` に分離
-▶︎ `claude auto-mode reset` でデフォルト設定に一発復元可能に
+最新版へのアップデート前に、リリースノートの内容を確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.214で
+`/fork` コマンドの動作が変わりました。
 
-マルチタスク開発の管理がより直感的になりそうですよね✨
+会話の分岐まわりが整理されて
+使いやすくなっています。
 
-リリースノートはこちら→ https://github.com/anthropics/claude-code/releases/tag/v2.1.212</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注目】
+ポイントはこちら👀
 
-TypeScript SDK v0.112.2 / v0.112.3で
-最新アップデートが届いた。
+▶︎ `/fork` で会話をバックグラウンドの新セッションにコピー
+▶︎ 元のセッションはそのまま作業を続けられる
+▶︎ 従来の `/fork`（インセッション起動）は `/subtask` に名称変更
 
-『ローカルのMCPサーバーを外部からも利用できる』仕組みが整いつつある。
+並行して別の検討をしたいとき
+会話を分岐させながら作業できるようになった感じですね。
 
-ポイントはここ
+詳細はリリースノートで確認を✨
+https://github.com/anthropics/claude-code/releases/tag/v2.1.214</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+待ってたやつ！！
 
-▶︎ SDK経由でMCP Tunnelsを扱えるように
-▶︎ エージェント間の連携がよりやりやすくなる可能性
-▶︎ anthropic製のGoogle Cloud向けSDK（google-cloud-sdk-v0.0.6）にもバグ修正が入り安定性が向上
+TypeScript SDKにMCP Tunnelsのサポートが追加された。
+
+『SDKから直接MCPのトンネル機能を扱えるように』
+
+具体的には⬇️
+
+▶︎ sdk v0.112.2 / v0.112.3でMCP Tunnels対応が追加
+▶︎ ローカル環境のMCPサーバーをリモートから繋ぎやすくなる
+▶︎ エージェントやツール連携の幅がさらに広がる可能性も
 
 つまり、
 
-MCP周辺のエコシステムが
-着実に整ってきていますよね。
+MCPを活用したエージェント構成を
+より柔軟に設計できるようになりそうですね。
 
-詳細はリリースノートをチェックしてみて👀
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【TypeScript SDK アップデート】
-見逃せない更新です
-
-anthropic-sdk-typescriptに
-v0.112.2・v0.112.3がリリースされました。
-
-Anthropic公式のTypeScript SDKが着実にアップデートを重ねています。
-
-結論はこれ👇
-
-▶︎ sdk-v0.112.2・v0.112.3が連続リリース
-▶︎ TypeScript開発者はアップデートを確認してみて
-▶︎ 詳細はリリースノートをチェック👀
-
-最新リリースノートはこちら:
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3
-
-TypeScript×Anthropic APIを使っている方は
-早めに確認しておきましょう😊</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートでチェックしてみて👀
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
