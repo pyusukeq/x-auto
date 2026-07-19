@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-18</title>
+<title>X投稿下書き 2026-07-19</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,54 +73,56 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-18</h1>
-  <p>生成: 2026-07-19 07:38 JST</p>
+  <h1>X投稿下書き 2026-07-19</h1>
+  <p>生成: 2026-07-20 07:41 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-Claude Code v2.1.214がリリース。
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">Claude Code v2.1.215 と v2.1.214 のリリースノートを確認しました👀
 
-リリースノートに記載の修正内容は現時点で未確認のため、詳細は公式ページでご確認ください。
+具体的な変更内容は公式リリースページに記載されています。
 
-🔗 https://github.com/anthropics/claude-code/releases/tag/v2.1.214
+気になる方はチェックしてみて✨
 
-最新版へのアップデート前に、リリースノートの内容を確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.214で
-`/fork` コマンドの動作が変わりました。
+▶︎ v2.1.215: https://github.com/anthropics/claude-code/releases/tag/v2.1.215
+▶︎ v2.1.214: https://github.com/anthropics/claude-code/releases/tag/v2.1.214
 
-会話の分岐まわりが整理されて
-使いやすくなっています。
+Anthropic全体のニュースはこちら:
+https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【要確認】
 
-ポイントはこちら👀
+Claude Code v2.1.214 および v2.1.215 で
+パーミッション周りのバグ修正が含まれています。
 
-▶︎ `/fork` で会話をバックグラウンドの新セッションにコピー
-▶︎ 元のセッションはそのまま作業を続けられる
-▶︎ 従来の `/fork`（インセッション起動）は `/subtask` に名称変更
+セキュリティ系の修正が含まれている可能性があるので
+早めにアップデートを確認しておくのが安心です。
 
-並行して別の検討をしたいとき
-会話を分岐させながら作業できるようになった感じですね。
+v2.1.215のリリースノートはこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.215
 
-詳細はリリースノートで確認を✨
-https://github.com/anthropics/claude-code/releases/tag/v2.1.214</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+▶︎ `Edit(src/**)` などのallowルールが意図しないパスに適用される問題を修正
+▶︎ Windows PowerShell 5.1でパーミッションチェックをバイパスできた問題を修正
+▶︎ Bashのパーミッション確認にも修正が入っている
+
+パーミッション設定を細かく使っている方は
+特に確認しておく価値があるアップデートですね😊</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
 待ってたやつ！！
 
-TypeScript SDKにMCP Tunnelsのサポートが追加された。
+Claude Code v2.1.214または v2.1.215で
+`/fork` の動作が変わったかも。
 
-『SDKから直接MCPのトンネル機能を扱えるように』
+『会話を丸ごとコピーして別のバックグラウンドセッションに分岐できる』
 
-具体的には⬇️
+具体的には
 
-▶︎ sdk v0.112.2 / v0.112.3でMCP Tunnels対応が追加
-▶︎ ローカル環境のMCPサーバーをリモートから繋ぎやすくなる
-▶︎ エージェントやツール連携の幅がさらに広がる可能性も
+▶︎ `/fork` で今の会話を新しいセッションとして独立させられる
+▶︎ `claude agents` の一覧に別行として表示される
+▶︎ 元の作業を続けながら分岐先も同時に進められる
 
-つまり、
+「このまま試してみたいけど元に戻したい」という場面で
+かなり使えそうな機能ですね✨
 
-MCPを活用したエージェント構成を
-より柔軟に設計できるようになりそうですね。
-
-詳細はリリースノートでチェックしてみて👀
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+リリースノートはこちら👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.215</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

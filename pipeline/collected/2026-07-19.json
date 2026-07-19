@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-07-19T22:40:17.764789",
+  "date": "2026-07-19",
+  "total_found": 15,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-19T22:40:16.796376+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.983990159344
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.215: v2.1.215",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
+      "body": "## What's changed\n\n- Claude no longer runs the `/verify` and `/code-review` skills on its own; invoke them with `/verify` or `/code-review` when you want them\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-19T02:56:01Z",
+      "final_score": 1506.0095704391533
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.214: v2.1.214",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+      "body": "## What's changed\n\n- Fixed single-segment `dir/**` allow rules like `Edit(src/**)` auto-approving writes to nested `dir/` directories anywhere in the tree instead of only `<cwd>/dir`\n- Fixed a permission-check bypass affecting commands run in Windows PowerShell 5.1 sessions\n- Fixed Bash permission checks to fail closed on file-descriptor redirect forms that bash parses differently than the permission analyzer\n- Fixed Bash permission checks misjudging very long commands — commands over 10,000 characters now always prompt instead of running automatically\n- Fixed Bash permission checks treating z",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-18T01:20:30Z",
+      "final_score": 1384.1431683227513
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.6: google-cloud-sdk: v0.0.6",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.6",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.6",
+      "body": "## 0.0.6 (2026-07-17)\n\nFull Changelog: [google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.5...google-cloud-sdk-v0.0.6)\n\n### Bug Fixes\n\n* **google-cloud:** bump google-auth-library to ^10.2.0 ([#230](https://github.com/anthropics/anthropic-sdk-typescript/issues/230)) ([01e74ee](https://github.com/anthropics/anthropic-sdk-typescript/commit/01e74ee298c6f25376ba2b4ed986cd28fb6752cb))\n\n\n### Chores\n\n* **internal:** tidy changelog ([4d3022d](https://github.com/anthropics/anthropic-sdk-typescript/commit/4d3022d92c27d",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-17T20:06:00Z",
+      "final_score": 1359.182850862434
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.112.3: sdk: v0.112.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.3",
+      "body": "## 0.112.3 (2026-07-17)\n\nFull Changelog: [sdk-v0.112.2...sdk-v0.112.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.2...sdk-v0.112.3)\n\n### Chores\n\n* **docs:** small updates ([79fd6c7](https://github.com/anthropics/anthropic-sdk-typescript/commit/79fd6c7dd046e066965aa7ab9897695c174f88bb))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-17T20:05:52Z",
+      "final_score": 1359.1722688518519
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.112.2: sdk: v0.112.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.2",
+      "body": "## 0.112.2 (2026-07-17)\n\nFull Changelog: [sdk-v0.112.1...sdk-v0.112.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.1...sdk-v0.112.2)\n\n### Chores\n\n* **client:** docs updates ([fdb3a65](https://github.com/anthropics/anthropic-sdk-typescript/commit/fdb3a65501a809b4e949131f2097dc0d84e01cc7))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-17T16:36:12Z",
+      "final_score": 1342.5320572116402
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.212: v2.1.212",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+      "body": "## What's changed\n\n- `/fork` now copies your conversation into a new background session (its own row in `claude agents`) while you keep working; the in-session subagent it used to launch is now `/subtask`\n- Added `claude auto-mode reset` to restore the default auto-mode configuration, with a confirmation prompt (pass `--yes` to skip)\n- Added a session-wide limit on WebSearch tool calls (default 200, tunable via `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`) to stop runaway search loops\n- Added a per-session cap on subagent spawns (default 200, override with `CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-17T00:26:27Z",
+      "final_score": 1265.5677714973547
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.112.1: sdk: v0.112.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.1",
+      "body": "## 0.112.1 (2026-07-16)\n\nFull Changelog: [sdk-v0.112.0...sdk-v0.112.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.0...sdk-v0.112.1)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-16T21:06:55Z",
+      "final_score": 1249.7317926613757
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.112.0: sdk: v0.112.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.0",
+      "body": "## 0.112.0 (2026-07-16)\n\nFull Changelog: [sdk-v0.111.0...sdk-v0.112.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.111.0...sdk-v0.112.0)\n\n### Features\n\n* **api:** add support for MCP Tunnels ([597ac41](https://github.com/anthropics/anthropic-sdk-typescript/commit/597ac4181f318e46fb974e716467648587e95362))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-16T19:36:15Z",
+      "final_score": 1242.5360254656084
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.117.0: v0.117.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.0",
+      "body": "## 0.117.0 (2026-07-16)\n\nFull Changelog: [v0.116.0...v0.117.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.116.0...v0.117.0)\n\n### Features\n\n* **api:** add support for dreaming ([642eee7](https://github.com/anthropics/anthropic-sdk-python/commit/642eee707b0fe3c35c21917f60b06846b2a3b291))\n* **api:** add support for MCP Tunnels ([d716df6](https://github.com/anthropics/anthropic-sdk-python/commit/d716df6edb1df7de25f1b5e14dcab33b9aafc2ff))\n\n\n### Bug Fixes\n\n* **credentials:** keep credential material out of traceback frame locals via SecretStr ([aa93a4d](https://github.com/anthropi",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-16T19:36:01Z",
+      "final_score": 1242.51750694709
+    }
+  ]
+}

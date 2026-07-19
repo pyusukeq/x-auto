@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-19",
+  "posts": [
+    "Claude Code v2.1.215 と v2.1.214 のリリースノートを確認しました👀\n\n具体的な変更内容は公式リリースページに記載されています。\n\n気になる方はチェックしてみて✨\n\n▶︎ v2.1.215: https://github.com/anthropics/claude-code/releases/tag/v2.1.215\n▶︎ v2.1.214: https://github.com/anthropics/claude-code/releases/tag/v2.1.214\n\nAnthropic全体のニュースはこちら:\nhttps://www.anthropic.com/news",
+    "【要確認】\n\nClaude Code v2.1.214 および v2.1.215 で\nパーミッション周りのバグ修正が含まれています。\n\nセキュリティ系の修正が含まれている可能性があるので\n早めにアップデートを確認しておくのが安心です。\n\nv2.1.215のリリースノートはこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.215\n\n▶︎ `Edit(src/**)` などのallowルールが意図しないパスに適用される問題を修正\n▶︎ Windows PowerShell 5.1でパーミッションチェックをバイパスできた問題を修正\n▶︎ Bashのパーミッション確認にも修正が入っている\n\nパーミッション設定を細かく使っている方は\n特に確認しておく価値があるアップデートですね😊",
+    "【アップデート情報】\n待ってたやつ！！\n\nClaude Code v2.1.214または v2.1.215で\n`/fork` の動作が変わったかも。\n\n『会話を丸ごとコピーして別のバックグラウンドセッションに分岐できる』\n\n具体的には\n\n▶︎ `/fork` で今の会話を新しいセッションとして独立させられる\n▶︎ `claude agents` の一覧に別行として表示される\n▶︎ 元の作業を続けながら分岐先も同時に進められる\n\n「このまま試してみたいけど元に戻したい」という場面で\nかなり使えそうな機能ですね✨\n\nリリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.215"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
