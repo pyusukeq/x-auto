@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-20",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code の最新版がリリース。\n長いセッションで起きていた\n深刻なパフォーマンス問題が修正された模様。\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.216\n\n▶︎ ターン数が増えるとメッセージ処理コストが増加していた\n▶︎ フリーズや再開の遅延が発生していた\n▶︎ 今回の修正でその挙動が解消\n\n※詳細はリリースノートおよび公式情報（anthropic.com/news）でご確認ください\n\nつまり、\n\n長期セッションで「なんか重いな」と感じていた人は\nアプデで体験がかなり改善されるかもしれません👀\n\n最新版にアップデートしてみて👀",
+    "【注意】\n\nClaude Codeの `/verify` と `/code-review` について情報をシェアしている投稿を見かけますが、現時点でこれらのコマンドの実在・仕様変更を公式情報から確認できていません。\n\n最新のリリース情報はこちらで確認を👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.216\n\n確認できていない情報の拡散にご注意ください。",
+    "【これはすごい】\nマジか！！\n\nClaude Code v2.1.215 / v2.1.216で\nWindowsユーザーに影響していた\n権限チェックの問題が修正された。\n\n『PowerShell・Bashまわりの権限チェック改善と\nディレクトリ許可ルールの誤動作解消』\n\n結論はこれ👇\n\n▶︎ Windows環境での権限まわりの動作が改善\n▶︎ Bashの権限チェックも同様に修正済み\n▶︎ ディレクトリ許可ルールの誤動作も合わせて解消\n\nつまり、\n\nWindowsで使っていた方は要チェックなアプデ。\n早めにバージョンを上げておくのがよさそうですね🙌\n\n詳細はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.216"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
