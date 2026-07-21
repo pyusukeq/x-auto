@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-20</title>
+<title>X投稿下書き 2026-07-21</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,62 +73,46 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-20</h1>
-  <p>生成: 2026-07-21 07:45 JST</p>
+  <h1>X投稿下書き 2026-07-21</h1>
+  <p>生成: 2026-07-22 07:44 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+Claude Code v2.1.217がリリース。
 
-Claude Code の最新版がリリース。
-長いセッションで起きていた
-深刻なパフォーマンス問題が修正された模様。
+リリースノートで詳細を確認してみて👀
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.216
+リリースノートはこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.217</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
 
-▶︎ ターン数が増えるとメッセージ処理コストが増加していた
-▶︎ フリーズや再開の遅延が発生していた
-▶︎ 今回の修正でその挙動が解消
+Claude Code v2.1.216〜v2.1.217で
+長時間セッションの重大なパフォーマンス問題が修正された。
 
-※詳細はリリースノートおよび公式情報（anthropic.com/news）でご確認ください
+『メッセージ正規化コストがターン数の二乗で増加していた』
 
-つまり、
+ポイントはここ👇
 
-長期セッションで「なんか重いな」と感じていた人は
-アプデで体験がかなり改善されるかもしれません👀
-
-最新版にアップデートしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
-
-Claude Codeの `/verify` と `/code-review` について情報をシェアしている投稿を見かけますが、現時点でこれらのコマンドの実在・仕様変更を公式情報から確認できていません。
-
-最新のリリース情報はこちらで確認を👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.216
-
-確認できていない情報の拡散にご注意ください。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-マジか！！
-
-Claude Code v2.1.215 / v2.1.216で
-Windowsユーザーに影響していた
-権限チェックの問題が修正された。
-
-『PowerShell・Bashまわりの権限チェック改善と
-ディレクトリ許可ルールの誤動作解消』
-
-結論はこれ👇
-
-▶︎ Windows環境での権限まわりの動作が改善
-▶︎ Bashの権限チェックも同様に修正済み
-▶︎ ディレクトリ許可ルールの誤動作も合わせて解消
+▶︎ 長いセッションでの数秒単位のフリーズが解消
+▶︎ セッション再開時のもたつきも改善
+▶︎ `sandbox.filesystem.disabled` 設定も新たに追加
 
 つまり、
 
-Windowsで使っていた方は要チェックなアプデ。
-早めにバージョンを上げておくのがよさそうですね🙌
+長時間使うほど効果を感じやすい修正かもしれません。
+ヘビーユーザーほど嬉しいアップデートですよね。
 
-詳細はリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.216</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+最新リリースはこちら👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.217</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
+
+Claude Code v2.1.216 / v2.1.217 のリリースノートを確認しました。
+
+`/verify` や `/code-review` の仕様変更について、現時点の公式情報では確認できませんでした。
+
+元投稿の内容は根拠が不明確なため、最新リリースの詳細はこちらで直接ご確認ください👀
+
+▶︎ v2.1.217: https://github.com/anthropics/claude-code/releases/tag/v2.1.217
+▶︎ v2.1.216: https://github.com/anthropics/claude-code/releases/tag/v2.1.216</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
