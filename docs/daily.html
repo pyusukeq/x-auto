@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-21</title>
+<title>X投稿下書き 2026-07-22</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,46 +73,69 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-21</h1>
-  <p>生成: 2026-07-22 07:44 JST</p>
+  <h1>X投稿下書き 2026-07-22</h1>
+  <p>生成: 2026-07-23 07:52 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-Claude Code v2.1.217がリリース。
+待ってたやつ！！
 
-リリースノートで詳細を確認してみて👀
+Claude Code v2.1.218がリリース。
+`/code-review`の動作が大きく変わった。
 
-リリースノートはこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.217</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
+『バックグラウンドのサブエージェントとして実行されるように』
 
-Claude Code v2.1.216〜v2.1.217で
-長時間セッションの重大なパフォーマンス問題が修正された。
+具体的には👇
 
-『メッセージ正規化コストがターン数の二乗で増加していた』
-
-ポイントはここ👇
-
-▶︎ 長いセッションでの数秒単位のフリーズが解消
-▶︎ セッション再開時のもたつきも改善
-▶︎ `sandbox.filesystem.disabled` 設定も新たに追加
+▶︎ レビュー作業が会話を埋めなくなった
+▶︎ 他のスラッシュコマンドと並行してレビューが実行可能に
+▶︎ スクリーンリーダー向けに削除テキストのアナウンスも追加
 
 つまり、
 
-長時間使うほど効果を感じやすい修正かもしれません。
-ヘビーユーザーほど嬉しいアップデートですよね。
+コードレビューをしながら他の作業も続けられる、
+より快適な開発体験になりそうですよね。
 
-最新リリースはこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.217</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【要確認】
+詳細はリリースノートをチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.218</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-Claude Code v2.1.216 / v2.1.217 のリリースノートを確認しました。
+Claude Code v2.1.218で
+地味だけど嬉しい機能が追加された。
 
-`/verify` や `/code-review` の仕様変更について、現時点の公式情報では確認できませんでした。
+プロンプト入力欄で絵文字ショートコードが使えるように。
 
-元投稿の内容は根拠が不明確なため、最新リリースの詳細はこちらで直接ご確認ください👀
+『`:heart:`と打つと❤️に変換される』
 
-▶︎ v2.1.217: https://github.com/anthropics/claude-code/releases/tag/v2.1.217
-▶︎ v2.1.216: https://github.com/anthropics/claude-code/releases/tag/v2.1.216</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.218
+
+▶︎ `:hea`など途中まで入力すると候補が表示される
+▶︎ 不要なら`emojiCompletionEnabled`でオフにできる
+▶︎ ディスク満杯など保存失敗時に警告も表示されるように
+
+つまり、
+
+コミットメッセージやコメントの絵文字入力が
+ぐっとラクになりますね✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【リリース情報】
+
+AnthropicのSDK（TypeScript v0.113.0・Python v0.118.0）がアップデート。
+Beta APIのThreads・Streaming関連機能が追加されました。
+
+『model effort・initial session events・threads delta streamingをサポート』
+
+ポイントはここ👇
+
+▶︎ モデルの処理量（effort）を指定できるように
+▶︎ セッション開始イベントを取得可能に
+▶︎ スレッドのデルタストリーミングにも対応
+
+エージェントの制御がより細かくできるようになり、
+SDK周りの開発体験が向上した感じがします🙌
+
+詳細はリリースノートを試してみて👀
+TypeScript → https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0
+Python → https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

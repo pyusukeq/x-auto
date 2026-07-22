@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-07-22T22:52:05.947814",
+  "date": "2026-07-22",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-22T22:52:04.656677+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.978654631443
+    },
+    {
+      "source": "Hacker News",
+      "title": "Kimi K3 Is Competitive with Fable; Kimi K3 and Fable Is SoTA",
+      "url": "https://fireworks.ai/blog/kimik3-fable",
+      "external_url": "https://fireworks.ai/blog/kimik3-fable",
+      "score": 849,
+      "comments": 430,
+      "created": "2026-07-21T22:35:24+00:00",
+      "final_score": 1790.307781646617
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.218: v2.1.218",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "body": "## What's changed\n\n- Changed `/code-review` to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as its review target\n- Added screen-reader announcements of deleted text for word and line deletions (`Option+Delete`, `Ctrl+W`, `Cmd+Backspace`, `Ctrl+U`, `Ctrl+K`) in `--ax-screen-reader` mode\n- Fixed Windows paths with `\\u`-prefixed segments (like `C:\\Users\\unicorn`) being corrupted into CJK characters in tool inputs, which made those files inaccessible\n- Fixed the left arrow key discarding the conversation with no undo: presses right",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-22T21:24:56Z",
+      "final_score": 1593.0820796640212
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.113.0: sdk: v0.113.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0",
+      "body": "## 0.113.0 (2026-07-22)\n\nFull Changelog: [sdk-v0.112.5...sdk-v0.113.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.5...sdk-v0.113.0)\n\n### Features\n\n* **api:** add support for Managed Agents model effort, initial session events, and threads delta streaming ([83fef1e](https://github.com/anthropics/anthropic-sdk-typescript/commit/83fef1e5a65f020750b1f90c46d748a415b6f075))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-22T16:44:33Z",
+      "final_score": 1570.8294341613757
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.118.0: v0.118.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
+      "body": "## 0.118.0 (2026-07-22)\n\nFull Changelog: [v0.117.1...v0.118.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.117.1...v0.118.0)\n\n### Features\n\n* **api:** add support for Managed Agents model effort, initial session events, and threads delta streaming ([712bc6f](https://github.com/anthropics/anthropic-sdk-python/commit/712bc6f5e07ca7607e13f24fba4eea57c2e73478))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-22T16:43:45Z",
+      "final_score": 1570.7659420978835
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.117.1: v0.117.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.1",
+      "body": "## 0.117.1 (2026-07-21)\n\nFull Changelog: [v0.117.0...v0.117.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.117.0...v0.117.1)\n\n### Bug Fixes\n\n* **aws:** handle credentials correctly when using AnthropicAWS.copy() ([85d3881](https://github.com/anthropics/anthropic-sdk-python/commit/85d3881b2e178dd30b30f9ac4c462f20ea88693d))\n\n\n### Chores\n\n* **api:** add support for new refusal category ([d1dea0b](https://github.com/anthropics/anthropic-sdk-python/commit/d1dea0b51164c859de1e05a78468f5be2b6a67de))\n* **client:** docs updates ([b14f94c](https://github.com/anthropics/anthropic-sdk-py",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-21T22:27:23Z",
+      "final_score": 1483.7527145846561
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.112.5: sdk: v0.112.5",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.5",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.5",
+      "body": "## 0.112.5 (2026-07-21)\n\nFull Changelog: [sdk-v0.112.4...sdk-v0.112.5](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.4...sdk-v0.112.5)\n\n### Chores\n\n* **api:** add support for new refusal category ([479efe8](https://github.com/anthropics/anthropic-sdk-typescript/commit/479efe8ade0078966e28d754fa3085c75b6d2a58))\n* **internal:** codegen related update ([830fb74](https://github.com/anthropics/anthropic-sdk-typescript/commit/830fb7467c3cc947e31b5d83a2a31d34fc8ebac2))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-21T22:27:16Z",
+      "final_score": 1483.7434553253968
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.217: v2.1.217",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "body": "## What's changed\n\n- Added emoji shortcode autocomplete in the prompt input: type `:heart:` to insert ❤️, or `:hea` for suggestions — disable with the `emojiCompletionEnabled` setting\n- Added warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing transcripts silently\n- Fixed a memory leak where truncated MCP tool outputs kept the full untruncated result in memory for the rest of the session\n- Fixed Windows auto-update failures that could leave `claude.exe` missing; failed updates now restore the pre",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-21T21:35:10Z",
+      "final_score": 1479.6085346904763
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.216: v2.1.216",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.216",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.216",
+      "body": "## What's changed\n\n- Added `sandbox.filesystem.disabled` setting to skip filesystem isolation while keeping network egress control\n- Fixed a slowdown in long sessions where message normalization cost grew quadratically with the number of turns, causing multi-second stalls and slow resumes\n- Fixed auto mode denying commands with \"HTTP 401\" classifier errors after the OAuth token expired or rotated mid-session\n- Fixed AskUserQuestion telling Claude to continue even when your answer asked it to wait or explain first — free-text answers now get neutral wording\n- Fixed Claude Code on the web re-ask",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-20T22:14:00Z",
+      "final_score": 1368.4048309867726
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.6.1: aws-sdk: v0.6.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.1",
+      "body": "## 0.6.1 (2026-07-20)\n\nFull Changelog: [aws-sdk-v0.6.0...aws-sdk-v0.6.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.6.0...aws-sdk-v0.6.1)\n\n### Bug Fixes\n\n* **aws:** preserve AWS options and auth mode across withOptions() ([#214](https://github.com/anthropics/anthropic-sdk-typescript/issues/214)) ([3f7665c](https://github.com/anthropics/anthropic-sdk-typescript/commit/3f7665c5419eb80c489546a70da799648e7d5ff2))\n* **aws:** remove duplicate loggerFor import breaking the build ([#235](https://github.com/anthropics/anthropic-sdk-typescript/issues/235)) ([764004e](https",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-20T20:46:18Z",
+      "final_score": 1361.444513526455
+    }
+  ]
+}
