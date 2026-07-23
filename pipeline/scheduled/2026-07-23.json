@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-23",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.218がリリース。\n`/code-review`の動作が静かに、でも大きく変わった。\n\n『レビュー作業がバックグラウンドで動くように』\n\n具体的には\n\n▶︎ `/code-review`がサブエージェントとして裏で実行\n▶︎ 会話スペースを占有しなくなった\n▶︎ スタックしたスラッシュコマンドへの干渉もなし\n\nつまり、\n\nレビュー中も別の作業を続けられるので\n開発の流れが止まらなくなりますよね✨\n\n詳細はGitHubでチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+    "Python・TypeScript両SDKで\n新しいストップ理由が追加されたのを知ってますか？\n\n`model_context_window_exceeded`という\n新しいstop_reasonが使えるようになった。\n\nポイントはここ👇\n\n▶︎ コンテキストウィンドウ上限に達したことを明示的に検知できる\n▶︎ 「なぜ途中で止まったか」がコードから判断しやすくなった\n▶︎ Python v0.119.0 / TypeScript v0.114.0 で対応済み\n\nリリースノートはこちら👀\nPython: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0\nTypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0\n\nエージェント系を開発している方はぜひ確認を😊",
+    "【これはすごい】\nマジか！！\n\nAnthropic SDKに\nmodel effort・initial session events・threads delta streamingが一気に追加。\n\n『Python v0.119.0 / TypeScript v0.114.0 で同時リリース』\n\n結論はこれ👇\n\n▶︎ モデルの処理量（effort）を指定できるように\n▶︎ セッション開始直後のイベントが取得可能に\n▶︎ スレッドのデルタストリーミングにも対応\n\nつまり、\n\nエージェントの挙動をより細かく制御できる時代に入ってきたかもしれません✨\n\nGitHubで詳細を確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

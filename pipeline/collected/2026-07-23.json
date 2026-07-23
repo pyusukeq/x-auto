@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-07-23T22:45:20.942306",
+  "date": "2026-07-23",
+  "total_found": 21,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-07-23T22:45:19.764158+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98052276472
+    },
+    {
+      "source": "Hacker News",
+      "title": "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample",
+      "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+      "external_url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56",
+      "score": 1078,
+      "comments": 611,
+      "created": "2026-07-22T17:30:40+00:00",
+      "final_score": 2273.8464686587267
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.114.0: sdk: v0.114.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0",
+      "body": "## 0.114.0 (2026-07-23)\n\nFull Changelog: [sdk-v0.113.0...sdk-v0.114.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.113.0...sdk-v0.114.0)\n\n### Features\n\n* **api:** add new stop reason 'model_context_window_exceeded' ([1ec71c1](https://github.com/anthropics/anthropic-sdk-typescript/commit/1ec71c165d9737cb317e3f8fed818f7a1b8169ad))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-23T17:34:26Z",
+      "final_score": 1575.3241504510581
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.119.0: v0.119.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0",
+      "body": "## 0.119.0 (2026-07-23)\n\nFull Changelog: [v0.118.0...v0.119.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.118.0...v0.119.0)\n\n### Features\n\n* **api:** add new stop reason 'model_context_window_exceeded' ([d983cde](https://github.com/anthropics/anthropic-sdk-python/commit/d983cdecdea27fb8ae36fd293930b978c9bebf4f))\n\n\n### Bug Fixes\n\n* **tools:** handle binary files in agent toolset read/edit ([#283](https://github.com/anthropics/anthropic-sdk-python/issues/283)) ([417b76b](https://github.com/anthropics/anthropic-sdk-python/commit/417b76b9adcb69ee9effa2e9af1536dd08e6764e))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-23T17:34:23Z",
+      "final_score": 1575.32018219709
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.218: v2.1.218",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.218",
+      "body": "## What's changed\n\n- Changed `/code-review` to run as a background subagent, so review work no longer fills your conversation and keeps stacked slash commands as its review target\n- Added screen-reader announcements of deleted text for word and line deletions (`Option+Delete`, `Ctrl+W`, `Cmd+Backspace`, `Ctrl+U`, `Ctrl+K`) in `--ax-screen-reader` mode\n- Fixed Windows paths with `\\u`-prefixed segments (like `C:\\Users\\unicorn`) being corrupted into CJK characters in tool inputs, which made those files inaccessible\n- Fixed the left arrow key discarding the conversation with no undo: presses right",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-22T21:24:56Z",
+      "final_score": 1479.3320869589948
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.113.0: sdk: v0.113.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.113.0",
+      "body": "## 0.113.0 (2026-07-22)\n\nFull Changelog: [sdk-v0.112.5...sdk-v0.113.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.5...sdk-v0.113.0)\n\n### Features\n\n* **api:** add support for Managed Agents model effort, initial session events, and threads delta streaming ([83fef1e](https://github.com/anthropics/anthropic-sdk-typescript/commit/83fef1e5a65f020750b1f90c46d748a415b6f075))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-22T16:44:33Z",
+      "final_score": 1457.0794414563493
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.118.0: v0.118.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.118.0",
+      "body": "## 0.118.0 (2026-07-22)\n\nFull Changelog: [v0.117.1...v0.118.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.117.1...v0.118.0)\n\n### Features\n\n* **api:** add support for Managed Agents model effort, initial session events, and threads delta streaming ([712bc6f](https://github.com/anthropics/anthropic-sdk-python/commit/712bc6f5e07ca7607e13f24fba4eea57c2e73478))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-22T16:43:45Z",
+      "final_score": 1457.0159493928572
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.117.1: v0.117.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.117.1",
+      "body": "## 0.117.1 (2026-07-21)\n\nFull Changelog: [v0.117.0...v0.117.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.117.0...v0.117.1)\n\n### Bug Fixes\n\n* **aws:** handle credentials correctly when using AnthropicAWS.copy() ([85d3881](https://github.com/anthropics/anthropic-sdk-python/commit/85d3881b2e178dd30b30f9ac4c462f20ea88693d))\n\n\n### Chores\n\n* **api:** add support for new refusal category ([d1dea0b](https://github.com/anthropics/anthropic-sdk-python/commit/d1dea0b51164c859de1e05a78468f5be2b6a67de))\n* **client:** docs updates ([b14f94c](https://github.com/anthropics/anthropic-sdk-py",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-21T22:27:23Z",
+      "final_score": 1370.0027218796297
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.112.5: sdk: v0.112.5",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.5",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.112.5",
+      "body": "## 0.112.5 (2026-07-21)\n\nFull Changelog: [sdk-v0.112.4...sdk-v0.112.5](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.112.4...sdk-v0.112.5)\n\n### Chores\n\n* **api:** add support for new refusal category ([479efe8](https://github.com/anthropics/anthropic-sdk-typescript/commit/479efe8ade0078966e28d754fa3085c75b6d2a58))\n* **internal:** codegen related update ([830fb74](https://github.com/anthropics/anthropic-sdk-typescript/commit/830fb7467c3cc947e31b5d83a2a31d34fc8ebac2))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-21T22:27:16Z",
+      "final_score": 1369.9934626203703
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.217: v2.1.217",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.217",
+      "body": "## What's changed\n\n- Added emoji shortcode autocomplete in the prompt input: type `:heart:` to insert ❤️, or `:hea` for suggestions — disable with the `emojiCompletionEnabled` setting\n- Added warnings when transcript writes are failing (e.g. disk full) or when session saving is off due to an inherited environment variable, instead of losing transcripts silently\n- Fixed a memory leak where truncated MCP tool outputs kept the full untruncated result in memory for the rest of the session\n- Fixed Windows auto-update failures that could leave `claude.exe` missing; failed updates now restore the pre",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-07-21T21:35:10Z",
+      "final_score": 1365.8585419854496
+    }
+  ]
+}
