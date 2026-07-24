@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-24",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Opus 5がついにリリース。\nClaude Code（v2.1.219）のデフォルトモデルに採用された。\n\n1Mコンテキスト、fast mode対応\n\n具体的には⏬\nhttps://www.anthropic.com/news/claude-opus-5\n\n▶︎ モデル名は `claude-opus-5`\n▶︎ 価格は $10/$50 per Mtok（input/output）\n▶︎ Python・TypeScript SDK（v0.120.0 / v0.115.0）にも対応済み\n\nつまり、\n\nAPIからすぐ呼び出せる状態になっています✨\n詳細はAnthropicの公式ページでチェックしてみて👀\nhttps://www.anthropic.com/news/claude-opus-5",
+    "Claude Code v2.1.219で\n`/code-review` の動作が大きく変わった。\n\nバックグラウンドのサブエージェントとして実行されるようになっている。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.219\n\n▶︎ レビュー処理が会話スペースを圧迫しなくなった\n▶︎ スタックしたスラッシュコマンドの対象を正確に追跡\n▶︎ スクリーンリーダー向けの削除テキスト読み上げも追加\n\nつまり、\n\n長いコードレビューも快適にこなせるようになりましたね😊\n試してみて👀",
+    "【Claude Code v2.1.219】\nセキュリティ強化のアップデートが来た。\n\nサンドボックス環境のネットワーク制御が強化された。\n\n『非許可ホストへの接続をプロンプトなしで自動ブロック』\n\nポイントはここ👇\n\n▶︎ `sandbox.network.strictAllowlist` 設定を追加\n▶︎ 許可リスト外のホストにはそもそも繋がせない\n▶︎ セキュリティ要件の厳しいプロジェクトで効いてくる設定\n\nつまり、\n\nAIエージェントに「外と勝手に通信させない」仕組みが設定できるようになりました🙌\n詳細はGitHubリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.219"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

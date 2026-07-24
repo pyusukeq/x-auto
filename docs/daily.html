@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-23</title>
+<title>X投稿下書き 2026-07-24</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,67 +73,63 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-23</h1>
-  <p>生成: 2026-07-24 07:46 JST</p>
+  <h1>X投稿下書き 2026-07-24</h1>
+  <p>生成: 2026-07-25 07:52 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code v2.1.218がリリース。
-`/code-review`の動作が静かに、でも大きく変わった。
+Claude Opus 5がついにリリース。
+Claude Code（v2.1.219）のデフォルトモデルに採用された。
 
-『レビュー作業がバックグラウンドで動くように』
+1Mコンテキスト、fast mode対応
 
-具体的には
+具体的には⏬
+https://www.anthropic.com/news/claude-opus-5
 
-▶︎ `/code-review`がサブエージェントとして裏で実行
-▶︎ 会話スペースを占有しなくなった
-▶︎ スタックしたスラッシュコマンドへの干渉もなし
+▶︎ モデル名は `claude-opus-5`
+▶︎ 価格は $10/$50 per Mtok（input/output）
+▶︎ Python・TypeScript SDK（v0.120.0 / v0.115.0）にも対応済み
 
 つまり、
 
-レビュー中も別の作業を続けられるので
-開発の流れが止まらなくなりますよね✨
+APIからすぐ呼び出せる状態になっています✨
+詳細はAnthropicの公式ページでチェックしてみて👀
+https://www.anthropic.com/news/claude-opus-5</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.219で
+`/code-review` の動作が大きく変わった。
 
-詳細はGitHubでチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.218</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Python・TypeScript両SDKで
-新しいストップ理由が追加されたのを知ってますか？
+バックグラウンドのサブエージェントとして実行されるようになっている。
 
-`model_context_window_exceeded`という
-新しいstop_reasonが使えるようになった。
+ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.219
+
+▶︎ レビュー処理が会話スペースを圧迫しなくなった
+▶︎ スタックしたスラッシュコマンドの対象を正確に追跡
+▶︎ スクリーンリーダー向けの削除テキスト読み上げも追加
+
+つまり、
+
+長いコードレビューも快適にこなせるようになりましたね😊
+試してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Code v2.1.219】
+セキュリティ強化のアップデートが来た。
+
+サンドボックス環境のネットワーク制御が強化された。
+
+『非許可ホストへの接続をプロンプトなしで自動ブロック』
 
 ポイントはここ👇
 
-▶︎ コンテキストウィンドウ上限に達したことを明示的に検知できる
-▶︎ 「なぜ途中で止まったか」がコードから判断しやすくなった
-▶︎ Python v0.119.0 / TypeScript v0.114.0 で対応済み
-
-リリースノートはこちら👀
-Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0
-TypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.114.0
-
-エージェント系を開発している方はぜひ確認を😊</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
-マジか！！
-
-Anthropic SDKに
-model effort・initial session events・threads delta streamingが一気に追加。
-
-『Python v0.119.0 / TypeScript v0.114.0 で同時リリース』
-
-結論はこれ👇
-
-▶︎ モデルの処理量（effort）を指定できるように
-▶︎ セッション開始直後のイベントが取得可能に
-▶︎ スレッドのデルタストリーミングにも対応
+▶︎ `sandbox.network.strictAllowlist` 設定を追加
+▶︎ 許可リスト外のホストにはそもそも繋がせない
+▶︎ セキュリティ要件の厳しいプロジェクトで効いてくる設定
 
 つまり、
 
-エージェントの挙動をより細かく制御できる時代に入ってきたかもしれません✨
-
-GitHubで詳細を確認してみて👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.119.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+AIエージェントに「外と勝手に通信させない」仕組みが設定できるようになりました🙌
+詳細はGitHubリリースノートをチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.219</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
