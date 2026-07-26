@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-26",
+  "posts": [
+    "【速報】\nマジか！！\n\nClaude Opus 5が登場。\nClaude Code v2.1.220でデフォルトのOpusモデルに設定された。\n\n『1Mコンテキスト、fast modeで$10/$50 per Mtok』\n\n具体的には👀\n\n▶︎ モデル名は `claude-opus-5`\n▶︎ 1Mトークンの超大容量コンテキストに対応\n▶︎ Python・TypeScript SDKにも同日追加済み\n\nつまり、\n\nAPIからもClaude Codeからも\n今すぐOpus 5が使えますよね✨\n\n詳細はこちら→ https://www.anthropic.com/news",
+    "Claude Codeの最新リリース（v2.1.219・v2.1.220）で\nサンドボックスのネットワーク制御が強化された。\n\n新設定 `sandbox.network.strictAllowlist` が追加。\n\nポイントはここ👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.220\n\n▶︎ 許可リスト外のホストへの通信を自動でブロック\n▶︎ プロンプトなしで即時拒否できるように\n▶︎ セキュリティが気になる環境での利用に◎\n\nつまり、\n\nサンドボックス内のコマンドが\n意図しない外部通信をしないよう制御できるようになりましたね😊\n\nリリースノートで詳細を確認してみて👀",
+    "【アップデート情報】\nClaude Code v2.1.219/v2.1.220がリリース\n\n`/code-review` がバックグラウンドのサブエージェントとして動くように。\n\n『レビュー作業が会話に混入しなくなった』\n\n▶︎ レビュー中も会話の流れが途切れない\n▶︎ キュー済みのスラッシュコマンドもレビュー対象に\n▶︎ 複数タスクを並行して進めやすくなった\n\nつまり、\n\nコードレビューしながら別の作業も続けられる。\n地味に開発体験が変わるアップデートかもしれません✨\n\n詳細はリリースノートで確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.220"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

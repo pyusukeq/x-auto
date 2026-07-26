@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-24</title>
+<title>X投稿下書き 2026-07-26</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,63 +73,65 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-24</h1>
-  <p>生成: 2026-07-25 07:52 JST</p>
+  <h1>X投稿下書き 2026-07-26</h1>
+  <p>生成: 2026-07-27 07:49 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+マジか！！
 
-Claude Opus 5がついにリリース。
-Claude Code（v2.1.219）のデフォルトモデルに採用された。
+Claude Opus 5が登場。
+Claude Code v2.1.220でデフォルトのOpusモデルに設定された。
 
-1Mコンテキスト、fast mode対応
+『1Mコンテキスト、fast modeで$10/$50 per Mtok』
 
-具体的には⏬
-https://www.anthropic.com/news/claude-opus-5
+具体的には👀
 
 ▶︎ モデル名は `claude-opus-5`
-▶︎ 価格は $10/$50 per Mtok（input/output）
-▶︎ Python・TypeScript SDK（v0.120.0 / v0.115.0）にも対応済み
+▶︎ 1Mトークンの超大容量コンテキストに対応
+▶︎ Python・TypeScript SDKにも同日追加済み
 
 つまり、
 
-APIからすぐ呼び出せる状態になっています✨
-詳細はAnthropicの公式ページでチェックしてみて👀
-https://www.anthropic.com/news/claude-opus-5</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.219で
-`/code-review` の動作が大きく変わった。
+APIからもClaude Codeからも
+今すぐOpus 5が使えますよね✨
 
-バックグラウンドのサブエージェントとして実行されるようになっている。
+詳細はこちら→ https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最新リリース（v2.1.219・v2.1.220）で
+サンドボックスのネットワーク制御が強化された。
+
+新設定 `sandbox.network.strictAllowlist` が追加。
 
 ポイントはここ👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.219
+https://github.com/anthropics/claude-code/releases/tag/v2.1.220
 
-▶︎ レビュー処理が会話スペースを圧迫しなくなった
-▶︎ スタックしたスラッシュコマンドの対象を正確に追跡
-▶︎ スクリーンリーダー向けの削除テキスト読み上げも追加
-
-つまり、
-
-長いコードレビューも快適にこなせるようになりましたね😊
-試してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Code v2.1.219】
-セキュリティ強化のアップデートが来た。
-
-サンドボックス環境のネットワーク制御が強化された。
-
-『非許可ホストへの接続をプロンプトなしで自動ブロック』
-
-ポイントはここ👇
-
-▶︎ `sandbox.network.strictAllowlist` 設定を追加
-▶︎ 許可リスト外のホストにはそもそも繋がせない
-▶︎ セキュリティ要件の厳しいプロジェクトで効いてくる設定
+▶︎ 許可リスト外のホストへの通信を自動でブロック
+▶︎ プロンプトなしで即時拒否できるように
+▶︎ セキュリティが気になる環境での利用に◎
 
 つまり、
 
-AIエージェントに「外と勝手に通信させない」仕組みが設定できるようになりました🙌
-詳細はGitHubリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.219</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+サンドボックス内のコマンドが
+意図しない外部通信をしないよう制御できるようになりましたね😊
+
+リリースノートで詳細を確認してみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
+Claude Code v2.1.219/v2.1.220がリリース
+
+`/code-review` がバックグラウンドのサブエージェントとして動くように。
+
+『レビュー作業が会話に混入しなくなった』
+
+▶︎ レビュー中も会話の流れが途切れない
+▶︎ キュー済みのスラッシュコマンドもレビュー対象に
+▶︎ 複数タスクを並行して進めやすくなった
+
+つまり、
+
+コードレビューしながら別の作業も続けられる。
+地味に開発体験が変わるアップデートかもしれません✨
+
+詳細はリリースノートで確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.220</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
