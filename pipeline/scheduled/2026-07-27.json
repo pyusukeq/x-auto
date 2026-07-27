@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-27",
+  "posts": [
+    "【リリース情報】\n\nAnthropicのSDKが更新されました。\n\nPython・TypeScript SDKが同日アップデート。\n\n具体的には👀\n\n▶︎ Python SDK：v0.120.0\n▶︎ TypeScript SDK：v0.115.0\n▶︎ Claude Code：v2.1.219 / v2.1.220\n\n詳細はこちら⏬\nhttps://www.anthropic.com/news\n\nSDKを最新版に上げて、最新機能を試してみて✨",
+    "【保存推奨】\n\nTypeScript SDK v0.115.0で\nコンテキスト超過の検知が便利になった。\n\n地味だけど、長文処理をするときに\n知っておくと助かる変更かもしれません。\n\nポイントはここ👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.115.0\n\n▶︎ 新しいstop reason `model_context_window_exceeded` が追加\n▶︎ コンテキスト上限に達したとき明示的に検知できる\n▶︎ Python SDK v0.120.0でも同様に対応済み\n\nつまり、\n\n「なぜ応答が途切れたのか」が\nコードから判断しやすくなりましたね😊\n\n最新SDKへのアップデート、チェックしてみて👀",
+    "【これは便利】\n待ってたやつ！！\n\nClaude Code v2.1.219 / v2.1.220のリリースノートを確認してみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.219\n\n最新バージョンでの変更内容はリリースノートで確認できます。\n\nコードレビュー中も会話の流れが途切れない開発体験の改善など、じわっと上がるアップデートが続いていますね🙌"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
