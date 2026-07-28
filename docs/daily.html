@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-27</title>
+<title>X投稿下書き 2026-07-28</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,55 +73,60 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-27</h1>
-  <p>生成: 2026-07-28 07:50 JST</p>
+  <h1>X投稿下書き 2026-07-28</h1>
+  <p>生成: 2026-07-29 07:51 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【リリース情報】
+claude-code v2.1.219 / v2.1.220 がリリースされました。
 
-AnthropicのSDKが更新されました。
+具体的には⬇️
 
-Python・TypeScript SDKが同日アップデート。
+▶︎ v2.1.219：機能追加・改善
+▶︎ v2.1.220：バグ修正・安定性向上
 
-具体的には👀
+詳細はリリースノートで確認できます。
+https://github.com/anthropics/claude-code/releases/tag/v2.1.219
+https://github.com/anthropics/claude-code/releases/tag/v2.1.220
 
-▶︎ Python SDK：v0.120.0
-▶︎ TypeScript SDK：v0.115.0
-▶︎ Claude Code：v2.1.219 / v2.1.220
+チェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【情報求む】
 
-詳細はこちら⏬
+TypeScript SDK v0.114.0に
+新しいstop reasonが追加された可能性がある。
+
+モデルがコンテキストウィンドウを超えたとき
+原因が判別しやすくなる改善との情報あり。
+
+ただし現時点で確認できている元情報は
+Python SDK（v0.120.x系）のリリースのみ。
+
+TypeScript SDKや該当stop reasonの
+公式リリースノートでの確認を推奨します。
+
+最新情報はこちらで確認してみて👀
 https://www.anthropic.com/news
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【アップデート情報】
+依存関係まわりが改善された
 
-SDKを最新版に上げて、最新機能を試してみて✨</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
+Python SDK v0.120.2で
+MCP SDK v1とv2の両方に対応するようになった。
 
-TypeScript SDK v0.115.0で
-コンテキスト超過の検知が便利になった。
+『mcp extra を v2 以上にピン留めしていた v0.120.1の制約を解除』
 
-地味だけど、長文処理をするときに
-知っておくと助かる変更かもしれません。
+具体的には
 
-ポイントはここ👇
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.115.0
-
-▶︎ 新しいstop reason `model_context_window_exceeded` が追加
-▶︎ コンテキスト上限に達したとき明示的に検知できる
-▶︎ Python SDK v0.120.0でも同様に対応済み
+▶︎ v2以上への強制ピン留めをやめた柔軟な構成に
+▶︎ バージョン依存のエラーに悩まされにくくなった
+▶︎ 既存のMCP実装を壊さずにアップデートできる
 
 つまり、
 
-「なぜ応答が途切れたのか」が
-コードから判断しやすくなりましたね😊
+MCPを使ったプロジェクトで
+依存関係まわりのトラブルが格段に減りそうですよね✨
 
-最新SDKへのアップデート、チェックしてみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは便利】
-待ってたやつ！！
-
-Claude Code v2.1.219 / v2.1.220のリリースノートを確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.219
-
-最新バージョンでの変更内容はリリースノートで確認できます。
-
-コードレビュー中も会話の流れが途切れない開発体験の改善など、じわっと上がるアップデートが続いていますね🙌</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートで確認してみて👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
