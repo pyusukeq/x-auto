@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-30",
+  "posts": [
+    "【Claude Code更新情報】\n\nclaude-code v2.1.219 / v2.1.220に\nアップデートが来ました。\n\n詳細はリリースノートで確認を👀\n\n▶︎ v2.1.219の変更内容:\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.219\n\n▶︎ v2.1.220の変更内容:\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.220\n\n最新情報はAnthropicの公式サイトもチェック:\nhttps://www.anthropic.com/news",
+    "Python SDK v0.120.2がリリースされました。\n\n今回のアップデートの変更内容はこちら👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2\n\nバグ修正や依存関係の更新が含まれている可能性があります。\n\n詳細は上記のリリースノートでご確認ください。\n\nMCP周りの依存関係など、気になる点がある方はリリースノートを直接チェックしてみてください✨",
+    "【Claude Codeが静かにアップデート】\n\nclaude-codeがv2.1.219→v2.1.220へ更新されました。\n\nanthropic-sdk-pythonも同週にv0.120.1・v0.120.2と連続リリース。\n\n具体的には⬇︎\n\n▶︎ claude-code v2.1.220リリース\n▶︎ anthropic-sdk-python v0.120.1 / v0.120.2リリース\n▶︎ 細かな修正・改善が積み重なっている\n\nつまり、\n\nClaudeのツール周りは着実にアップデートが続いている。\n\n詳細はリリースノートで確認してみて👀\n→ https://github.com/anthropics/claude-code/releases/tag/v2.1.220\n→ https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

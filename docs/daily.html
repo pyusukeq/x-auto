@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-07-29</title>
+<title>X投稿下書き 2026-07-30</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,66 +73,53 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-07-29</h1>
-  <p>生成: 2026-07-30 07:47 JST</p>
+  <h1>X投稿下書き 2026-07-30</h1>
+  <p>生成: 2026-07-31 07:56 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【Claude Code更新情報】
 
-Claude Code v2.1.220に
-Claude Opus 5が追加された。
+claude-code v2.1.219 / v2.1.220に
+アップデートが来ました。
 
-具体的には⏬
+詳細はリリースノートで確認を👀
+
+▶︎ v2.1.219の変更内容:
+https://github.com/anthropics/claude-code/releases/tag/v2.1.219
+
+▶︎ v2.1.220の変更内容:
 https://github.com/anthropics/claude-code/releases/tag/v2.1.220
 
-▶︎ `claude-opus-5` がデフォルトのOpusモデルに
-▶︎ 1Mトークンのコンテキストウィンドウに対応
-▶︎ Fast mode対応
+最新情報はAnthropicの公式サイトもチェック:
+https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Python SDK v0.120.2がリリースされました。
 
-つまり、
-
-長大なコードベースも丸ごと扱える
-Opusが使えるようになりましたよね✨
-
-詳細はリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注目】
-
-Claude Codeで
-`sandbox.network.strictAllowlist` という設定が追加された。
-
-サンドボックス内のネットワーク制御が
-より細かくできるようになった改善です。
-
-ポイントはここ👇
-
-▶︎ 許可リストにないホストへの通信をブロック可能に
-▶︎ 毎回プロンプトを出さずに自動で拒否できる
-▶︎ サンドボックスコマンドのセキュリティが一段上がる
-
-つまり、
-
-この設定を有効にすることで意図しない外部通信を防げるので
-セキュリティを気にする開発環境に嬉しい設定かもしれません🙌
-
-リリースノートでぜひ確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.219</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Python SDK v0.120.2リリース】
-
-MCP SDK v1とv2の両方に対応しました。
-
-直前のv0.120.1では
-`mcp extra` をv2未満にピン固定していたのが
-このリリースで解消されています。
-
-ポイントはここ👇
+今回のアップデートの変更内容はこちら👀
 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
 
-▶︎ MCP SDK v1・v2の両方をサポート
-▶︎ バージョン固定の制約がなくなった
-▶︎ 既存プロジェクトへの影響を抑えつつ移行できる
+バグ修正や依存関係の更新が含まれている可能性があります。
 
-MCP周りの依存関係で悩んでいた方には
-さっそくアップデートを試してみる価値がありそうですよね😊</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細は上記のリリースノートでご確認ください。
+
+MCP周りの依存関係など、気になる点がある方はリリースノートを直接チェックしてみてください✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Codeが静かにアップデート】
+
+claude-codeがv2.1.219→v2.1.220へ更新されました。
+
+anthropic-sdk-pythonも同週にv0.120.1・v0.120.2と連続リリース。
+
+具体的には⬇︎
+
+▶︎ claude-code v2.1.220リリース
+▶︎ anthropic-sdk-python v0.120.1 / v0.120.2リリース
+▶︎ 細かな修正・改善が積み重なっている
+
+つまり、
+
+Claudeのツール周りは着実にアップデートが続いている。
+
+詳細はリリースノートで確認してみて👀
+→ https://github.com/anthropics/claude-code/releases/tag/v2.1.220
+→ https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
