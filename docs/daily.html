@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-01</title>
+<title>X投稿下書き 2026-08-02</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,70 +73,51 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-01</h1>
-  <p>生成: 2026-08-02 07:43 JST</p>
+  <h1>X投稿下書き 2026-08-02</h1>
+  <p>生成: 2026-08-03 07:44 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-やっと対応きた！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">AnthropicのPython SDK v0.120.2がリリースされました。
 
-AnthropicのPython SDK v0.120.2で
-MCPとの互換性まわりが修正された。
+MCP関連の互換性が改善されたパッチアップデートです。
 
-具体的には⏬
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
+詳細はリリースノートで確認を👇
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Python SDKのMCPサポートが
+改善されました。
 
-▶︎ MCPのバージョン差異によるエラーが解消
-▶︎ v0.120.1での問題を修正
-▶︎ 既存コードへの影響を最小限に抑えた対応
-
-MCPをPython SDKで使っているなら
-v0.120.2へのアップデートを確認してみてください✨
-
-詳細は上記GitHubのリリースノートをチェックして👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
-
-Python SDK v0.120.x系の変更、
-何が起きていたか整理しておきたい。
-
-今回の一連の更新で
-MCPまわりの依存関係が整理された。
+これまではMCP SDKを入れると
+依存関係でエラーになるケースがあった。
 
 ポイントはここ👇
 
-▶︎ v0.120.1：MCPまわりの依存関係を調整
-▶︎ v0.120.2：MCP v1・v2それぞれへの対応を更新
-▶︎ 詳細はリリースノートで確認を
+▶︎ `mcp` のバージョン制約を見直してインストールしやすく
+▶︎ v0.120.1での依存関係の制限 → v0.120.2で改善
+▶︎ MCPを使うプロジェクトは最新版に上げておくのが安心
 
 つまり、
 
-「MCPのバージョンが合わなくてエラーが出る」という
-よくある詰まりポイントへの対応が進んでいますね。
+依存関係のエラーで詰まっていた方は
+アップデートだけで解決するかもしれません🙌
 
-リリースノートはこちら👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.1
+リリースノートを確認してみて👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">AnthropicのPython SDKを使ってMCPサーバーを呼び出すとき、
+SDKのバージョンが原因でハマることがある。
 
-最新バージョンへの移行、検討してみてください。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【注目】
+『pip install anthropic[mcp]』だけでは
+v2系が混入してエラーになるケースがある。
 
-AIエージェントのUIって
-どんな見た目がベストなんだろう。
+ポイントはここ👇
 
-Hacker Newsで公開された「MarbleOS」が
-エージェント向けGUIの新しいかたちを提案している。
+▶︎ v0.120.1はMCP SDK v2を一時的にピン止めして回避
+▶︎ v0.120.2で根本修正・MCP依存関係の互換性を改善
+▶︎ MCPを本番で使うなら今すぐv0.120.2以上に更新を
 
-『What should the GUI for AI agents look like?』
+MCPまわりの謎エラーに悩んでいたなら
+SDKバージョンを疑ってみる価値がありますよ✨
 
-デモ環境で実際に触って試せる👀
-https://marbleos.com/demo
-
----
-
-エージェントが複雑になるほど
-UIの設計が使いやすさを左右しますよね。
-
-どんな設計が採用されているか、
-ぜひ自分の目で確かめてみて。</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+リリースノートを確認してみて👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

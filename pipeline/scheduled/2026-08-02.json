@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-02",
+  "posts": [
+    "AnthropicのPython SDK v0.120.2がリリースされました。\n\nMCP関連の互換性が改善されたパッチアップデートです。\n\n詳細はリリースノートで確認を👇\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2",
+    "Python SDKのMCPサポートが\n改善されました。\n\nこれまではMCP SDKを入れると\n依存関係でエラーになるケースがあった。\n\nポイントはここ👇\n\n▶︎ `mcp` のバージョン制約を見直してインストールしやすく\n▶︎ v0.120.1での依存関係の制限 → v0.120.2で改善\n▶︎ MCPを使うプロジェクトは最新版に上げておくのが安心\n\nつまり、\n\n依存関係のエラーで詰まっていた方は\nアップデートだけで解決するかもしれません🙌\n\nリリースノートを確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2",
+    "AnthropicのPython SDKを使ってMCPサーバーを呼び出すとき、\nSDKのバージョンが原因でハマることがある。\n\n『pip install anthropic[mcp]』だけでは\nv2系が混入してエラーになるケースがある。\n\nポイントはここ👇\n\n▶︎ v0.120.1はMCP SDK v2を一時的にピン止めして回避\n▶︎ v0.120.2で根本修正・MCP依存関係の互換性を改善\n▶︎ MCPを本番で使うなら今すぐv0.120.2以上に更新を\n\nMCPまわりの謎エラーに悩んでいたなら\nSDKバージョンを疑ってみる価値がありますよ✨\n\nリリースノートを確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
