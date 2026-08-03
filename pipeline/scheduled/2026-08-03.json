@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-03",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nAnthropicのPython SDK v0.120.2がリリース。\nMCP SDK v2との互換性が正式に対応された。\n\n具体的には⏬\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2\n\n▶︎ MCP SDK v1・v2どちらでも動作するよう修正\n▶︎ v0.120.1でのv2対応に伴う問題を解消\n▶︎ 同日2本のバグ修正リリースで迅速に対応\n\nつまり、\n\nMCP SDK のバージョンを意識せずに\nPython SDKを使いやすくなりましたよ✨\n\n詳細はGitHubのリリースノートでチェックしてみて👀",
+    "【保存推奨】\n\nanthropic-sdk-python v0.120.xって\n何が変わったの？と思っていた方へ。\n\nMCPサポートの変遷を整理しておくのがおすすめです。\n\nポイントはここ👇\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2\n\n▶︎ v0.120.1ではMCPサポートを一時的に除外して安定性を確保\n▶︎ v0.120.2でMCPの複数バージョン並行サポートを実現\n▶︎ SDKのバージョン固定（ピン止め）は互換性トラブルの典型的な対処法\n\nつまり、\n\n「ピン止め→正式対応」の2段階リリースは\nライブラリ開発の安全な進め方のお手本かもしれません😊\n\nGitHubのchangelogも読んでみて👀",
+    "【これはすごい】\nマジか！！\n\nMCPサーバー上のエージェントセッションに\nプロダクト分析とevals機能を追加できるサービスが登場。\n\n『Armature』というサービスで\nHacker Newsで話題になっている。\n\n具体的な機能の詳細はサイトで確認できるが、\nエージェントセッションの分析・評価に特化した\nアプローチが注目を集めている。\n\nつまり、\n\nエージェント開発で「うまく動いているか分からない」\nという悩みに刺さるアプローチですよね✨\n\n試してみて👀\nhttps://armature.tech/"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

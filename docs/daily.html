@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-02</title>
+<title>X投稿下書き 2026-08-03</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,51 +73,68 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-02</h1>
-  <p>生成: 2026-08-03 07:44 JST</p>
+  <h1>X投稿下書き 2026-08-03</h1>
+  <p>生成: 2026-08-04 07:51 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">AnthropicのPython SDK v0.120.2がリリースされました。
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+待ってたやつ！！
 
-MCP関連の互換性が改善されたパッチアップデートです。
+AnthropicのPython SDK v0.120.2がリリース。
+MCP SDK v2との互換性が正式に対応された。
 
-詳細はリリースノートで確認を👇
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Python SDKのMCPサポートが
-改善されました。
+具体的には⏬
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
 
-これまではMCP SDKを入れると
-依存関係でエラーになるケースがあった。
-
-ポイントはここ👇
-
-▶︎ `mcp` のバージョン制約を見直してインストールしやすく
-▶︎ v0.120.1での依存関係の制限 → v0.120.2で改善
-▶︎ MCPを使うプロジェクトは最新版に上げておくのが安心
+▶︎ MCP SDK v1・v2どちらでも動作するよう修正
+▶︎ v0.120.1でのv2対応に伴う問題を解消
+▶︎ 同日2本のバグ修正リリースで迅速に対応
 
 つまり、
 
-依存関係のエラーで詰まっていた方は
-アップデートだけで解決するかもしれません🙌
+MCP SDK のバージョンを意識せずに
+Python SDKを使いやすくなりましたよ✨
 
-リリースノートを確認してみて👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">AnthropicのPython SDKを使ってMCPサーバーを呼び出すとき、
-SDKのバージョンが原因でハマることがある。
+詳細はGitHubのリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-『pip install anthropic[mcp]』だけでは
-v2系が混入してエラーになるケースがある。
+anthropic-sdk-python v0.120.xって
+何が変わったの？と思っていた方へ。
+
+MCPサポートの変遷を整理しておくのがおすすめです。
 
 ポイントはここ👇
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
 
-▶︎ v0.120.1はMCP SDK v2を一時的にピン止めして回避
-▶︎ v0.120.2で根本修正・MCP依存関係の互換性を改善
-▶︎ MCPを本番で使うなら今すぐv0.120.2以上に更新を
+▶︎ v0.120.1ではMCPサポートを一時的に除外して安定性を確保
+▶︎ v0.120.2でMCPの複数バージョン並行サポートを実現
+▶︎ SDKのバージョン固定（ピン止め）は互換性トラブルの典型的な対処法
 
-MCPまわりの謎エラーに悩んでいたなら
-SDKバージョンを疑ってみる価値がありますよ✨
+つまり、
 
-リリースノートを確認してみて👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+「ピン止め→正式対応」の2段階リリースは
+ライブラリ開発の安全な進め方のお手本かもしれません😊
+
+GitHubのchangelogも読んでみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
+マジか！！
+
+MCPサーバー上のエージェントセッションに
+プロダクト分析とevals機能を追加できるサービスが登場。
+
+『Armature』というサービスで
+Hacker Newsで話題になっている。
+
+具体的な機能の詳細はサイトで確認できるが、
+エージェントセッションの分析・評価に特化した
+アプローチが注目を集めている。
+
+つまり、
+
+エージェント開発で「うまく動いているか分からない」
+という悩みに刺さるアプローチですよね✨
+
+試してみて👀
+https://armature.tech/</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
