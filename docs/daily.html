@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-03</title>
+<title>X投稿下書き 2026-08-04</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,68 +73,61 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-03</h1>
-  <p>生成: 2026-08-04 07:51 JST</p>
+  <h1>X投稿下書き 2026-08-04</h1>
+  <p>生成: 2026-08-05 07:52 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
-
-AnthropicのPython SDK v0.120.2がリリース。
-MCP SDK v2との互換性が正式に対応された。
-
-具体的には⏬
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
-
-▶︎ MCP SDK v1・v2どちらでも動作するよう修正
-▶︎ v0.120.1でのv2対応に伴う問題を解消
-▶︎ 同日2本のバグ修正リリースで迅速に対応
-
-つまり、
-
-MCP SDK のバージョンを意識せずに
-Python SDKを使いやすくなりましたよ✨
-
-詳細はGitHubのリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
-
-anthropic-sdk-python v0.120.xって
-何が変わったの？と思っていた方へ。
-
-MCPサポートの変遷を整理しておくのがおすすめです。
-
-ポイントはここ👇
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.120.2
-
-▶︎ v0.120.1ではMCPサポートを一時的に除外して安定性を確保
-▶︎ v0.120.2でMCPの複数バージョン並行サポートを実現
-▶︎ SDKのバージョン固定（ピン止め）は互換性トラブルの典型的な対処法
-
-つまり、
-
-「ピン止め→正式対応」の2段階リリースは
-ライブラリ開発の安全な進め方のお手本かもしれません😊
-
-GitHubのchangelogも読んでみて👀</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これはすごい】
 マジか！！
 
-MCPサーバー上のエージェントセッションに
-プロダクト分析とevals機能を追加できるサービスが登場。
+Claude Code v2.1.222で
+セキュリティ周りの重要な修正が入った。
 
-『Armature』というサービスで
-Hacker Newsで話題になっている。
+worktreeを使っている人は要注目
 
-具体的な機能の詳細はサイトで確認できるが、
-エージェントセッションの分析・評価に特化した
-アプローチが注目を集めている。
+▶︎ worktree分離セッションから本体への破壊的gitコマンドを制限
+▶︎ ファイル編集・Bashすべてのセッションタイプに分離が適用
+▶︎ バックグラウンドエージェントのhookがツール制限を迂回するバグも修正
 
 つまり、
 
-エージェント開発で「うまく動いているか分からない」
-という悩みに刺さるアプローチですよね✨
+エージェントが意図せず本体リポジトリを壊すリスクが
+下がった可能性があります✨
 
-試してみて👀
-https://armature.tech/</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートでチェックしてみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.222</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最新バージョン（v2.1.221〜v2.1.222）がリリースされました。
+
+開発中にツールの動作ログが多くて
+画面が散らかると感じたことありませんか？
+
+リリースノートの詳細はこちら👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.222
+https://github.com/anthropics/claude-code/releases/tag/v2.1.221
+
+各バージョンの変更内容は上記リリースノートでご確認ください。
+
+Claude Code使いの方はチェックしてみて🙌</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【必見】
+
+エージェント型コーディングをどこまで
+実用的に使えるか、事例を探していた方へ。
+
+「The Knowledge Chipper」というエージェント型
+コーディングの実体験レポートが公開された。
+
+具体的には⏬
+https://jg.gg/2026/08/04/the-knowledge-chipper/
+
+▶︎ エージェントを使った実際の開発フローを詳細に記録
+▶︎ うまくいった点・詰まった点が正直に書かれている
+▶︎ 「エージェントに任せる粒度」の判断基準が参考になる
+
+つまり、
+
+成功事例より失敗も含めたリアルな話のほうが
+実務の参考になるかもしれません😊
+
+気になる方はチェックしてみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
