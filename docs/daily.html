@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-04</title>
+<title>X投稿下書き 2026-08-05</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,61 +73,57 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-04</h1>
-  <p>生成: 2026-08-05 07:52 JST</p>
+  <h1>X投稿下書き 2026-08-05</h1>
+  <p>生成: 2026-08-06 07:48 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-マジか！！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【リリース情報】
 
 Claude Code v2.1.222で
-セキュリティ周りの重要な修正が入った。
+セキュリティ周りの修正が入りました。
 
-worktreeを使っている人は要注目
+『worktreeセッションが本体のgitリポジトリに破壊的なコマンドを実行できてしまう問題』が修正。
 
-▶︎ worktree分離セッションから本体への破壊的gitコマンドを制限
-▶︎ ファイル編集・Bashすべてのセッションタイプに分離が適用
-▶︎ バックグラウンドエージェントのhookがツール制限を迂回するバグも修正
-
-つまり、
-
-エージェントが意図せず本体リポジトリを壊すリスクが
-下がった可能性があります✨
-
-詳細はリリースノートでチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.222</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Codeの最新バージョン（v2.1.221〜v2.1.222）がリリースされました。
-
-開発中にツールの動作ログが多くて
-画面が散らかると感じたことありませんか？
-
-リリースノートの詳細はこちら👀
+具体的には👇
 https://github.com/anthropics/claude-code/releases/tag/v2.1.222
-https://github.com/anthropics/claude-code/releases/tag/v2.1.221
 
-各バージョンの変更内容は上記リリースノートでご確認ください。
+▶︎ worktree隔離セッションで破壊的なgitコマンドが実行できた問題を修正
+▶︎ バックグラウンドのエージェントタスクでのフック制限バイパス問題も修正
+▶︎ ファイル編集・Bashすべてのセッションタイプに隔離が適用されるように
 
-Claude Code使いの方はチェックしてみて🙌</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【必見】
+マルチエージェント・worktree利用中の方はリリースノートを確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【必見】
 
-エージェント型コーディングをどこまで
-実用的に使えるか、事例を探していた方へ。
+Claude Code v2.1.222で
+VSCodeなどのエディタ向け「Focus view」機能が追加された。
 
-「The Knowledge Chipper」というエージェント型
-コーディングの実体験レポートが公開された。
+作業中にツールの動きが気になって集中できない…
+そんな方に刺さる機能かもしれません。
 
-具体的には⏬
-https://jg.gg/2026/08/04/the-knowledge-chipper/
+リリースノートで確認できるポイント👀
 
-▶︎ エージェントを使った実際の開発フローを詳細に記録
-▶︎ うまくいった点・詰まった点が正直に書かれている
-▶︎ 「エージェントに任せる粒度」の判断基準が参考になる
+▶︎ ツールの動作ログをまとめて折りたためるようになった
+▶︎ 実行中のツールはライブインジケーターで確認できる
+▶︎ コマンドパレットからトグル可能
 
 つまり、
 
-成功事例より失敗も含めたリアルな話のほうが
-実務の参考になるかもしれません😊
+コードに集中したいときと状況確認したいとき、切り替えながら使えるのが嬉しいですね✨
 
-気になる方はチェックしてみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートで確認を→ https://github.com/anthropics/claude-code/releases/tag/v2.1.222</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">Anthropicの最新ニュースが気になる方はチェックを👀
+
+anthropic.com/news で公式情報を確認できます。
+
+最近の動きとして注目されているのが👇
+https://www.anthropic.com/news
+
+▶︎ Claude Codeの継続的なアップデート（v2.1.221〜）
+▶︎ MCPのStateless対応など開発者向け機能の拡充
+▶︎ エージェント活用のユースケースも広がっている
+
+つまり、
+
+モデルだけでなく開発体験の改善にも力を入れているAnthropicの動向は引き続き要注目ですね😊</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

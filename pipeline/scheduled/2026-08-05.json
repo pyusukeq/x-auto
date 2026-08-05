@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-05",
+  "posts": [
+    "【リリース情報】\n\nClaude Code v2.1.222で\nセキュリティ周りの修正が入りました。\n\n『worktreeセッションが本体のgitリポジトリに破壊的なコマンドを実行できてしまう問題』が修正。\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.222\n\n▶︎ worktree隔離セッションで破壊的なgitコマンドが実行できた問題を修正\n▶︎ バックグラウンドのエージェントタスクでのフック制限バイパス問題も修正\n▶︎ ファイル編集・Bashすべてのセッションタイプに隔離が適用されるように\n\nマルチエージェント・worktree利用中の方はリリースノートを確認してみて👀",
+    "【必見】\n\nClaude Code v2.1.222で\nVSCodeなどのエディタ向け「Focus view」機能が追加された。\n\n作業中にツールの動きが気になって集中できない…\nそんな方に刺さる機能かもしれません。\n\nリリースノートで確認できるポイント👀\n\n▶︎ ツールの動作ログをまとめて折りたためるようになった\n▶︎ 実行中のツールはライブインジケーターで確認できる\n▶︎ コマンドパレットからトグル可能\n\nつまり、\n\nコードに集中したいときと状況確認したいとき、切り替えながら使えるのが嬉しいですね✨\n\n詳細はリリースノートで確認を→ https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
+    "Anthropicの最新ニュースが気になる方はチェックを👀\n\nanthropic.com/news で公式情報を確認できます。\n\n最近の動きとして注目されているのが👇\nhttps://www.anthropic.com/news\n\n▶︎ Claude Codeの継続的なアップデート（v2.1.221〜）\n▶︎ MCPのStateless対応など開発者向け機能の拡充\n▶︎ エージェント活用のユースケースも広がっている\n\nつまり、\n\nモデルだけでなく開発体験の改善にも力を入れているAnthropicの動向は引き続き要注目ですね😊"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}

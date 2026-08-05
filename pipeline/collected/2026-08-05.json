@@ -1,0 +1,90 @@
+{
+  "collected_at": "2026-08-05T22:47:42.288697",
+  "date": "2026-08-05",
+  "total_found": 8,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-05T22:47:40.917026+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.977323183914
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.222: v2.1.222",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.222",
+      "body": "## What's changed\n\n- Fixed worktree-isolated sessions and their subagents being able to run destructive git commands against the main checkout; isolation now applies to file edits and Bash in every session type\n- Fixed PreToolUse auto-allow hooks bypassing tool restrictions in background agent tasks (summaries, compaction, renames)\n- Fixed `/usage-credits` on Team and Enterprise showing \"you've already sent a usage credit request\" for members whose earlier request was dismissed, blocking them from sending a new one\n- Fixed the startup connectivity check hanging and then failing behind an HTTPS",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-04T22:39:55Z",
+      "final_score": 1485.0961790251322
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.221: v2.1.221",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
+      "body": "## What's changed\n\n- [VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with `Ctrl+Alt+F` or the \"Claude Code: Toggle Focus view\" command\n- Added `mode: \"mask\"` for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans captured by an `extract` regex) while the sandbox proxy substitutes the real value on egress; on macOS file masking falls back to `deny`\n- Added warnings to `claude plugin validate` when a marketplace or plugin nam",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-04T00:14:23Z",
+      "final_score": 1378.3078192367725
+    },
+    {
+      "source": "Hacker News",
+      "title": "Stateless MCP has recaptured my interest",
+      "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "external_url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+      "score": 372,
+      "comments": 210,
+      "created": "2026-08-01T05:51:36+00:00",
+      "final_score": 598.9294653101786
+    },
+    {
+      "source": "Hacker News",
+      "title": "Building an Advanced Agentic Harness",
+      "url": "https://data4sci.com/blog/building-an-advanced-agentic-harness",
+      "external_url": "https://data4sci.com/blog/building-an-advanced-agentic-harness",
+      "score": 94,
+      "comments": 40,
+      "created": "2026-08-05T13:54:12+00:00",
+      "final_score": 203.02485592963293
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: HyperProbe (YC S26) – Agents that do read-only debugging in prod",
+      "url": "https://www.hyperprobe.co",
+      "external_url": "https://www.hyperprobe.co",
+      "score": 34,
+      "comments": 24,
+      "created": "2026-08-05T16:47:15+00:00",
+      "final_score": 78.78418020116072
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic Is Building Its Own Chip",
+      "url": "https://www.businessinsider.com/anthropic-in-house-silicon-chip-team-claude-2026-8",
+      "external_url": "https://www.businessinsider.com/anthropic-in-house-silicon-chip-team-claude-2026-8",
+      "score": 21,
+      "comments": 11,
+      "created": "2026-08-05T17:32:51+00:00",
+      "final_score": 46.8440524771875
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: HUD, an open-source minimal terminal UI for ClaudeCode, Codex, OpenCode",
+      "url": "https://github.com/adrida/hud-mode",
+      "external_url": "https://github.com/adrida/hud-mode",
+      "score": 10,
+      "comments": 1,
+      "created": "2026-08-05T15:36:20+00:00",
+      "final_score": 20.072052105539022
+    }
+  ]
+}
