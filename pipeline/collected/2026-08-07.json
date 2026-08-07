@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-08-07T01:27:15.811996",
+  "collected_at": "2026-08-07T22:23:39.357016",
   "date": "2026-08-07",
-  "total_found": 7,
+  "total_found": 14,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,86 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-08-07T01:27:15.149165+00:00",
+      "created": "2026-08-07T22:23:38.394724+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.989042117722
+      "final_score": 19997.984091521565
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.121.0: v0.121.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+      "body": "## 0.121.0 (2026-08-07)\n\nFull Changelog: [v0.120.2...v0.121.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.120.2...v0.121.0)\n\n### Features\n\n* **api:** add `mid-conversation-tool-changes-2026-07-01` beta ([c7d1531](https://github.com/anthropics/anthropic-sdk-python/commit/c7d1531d9d63a35430333039f8c975bba4ef0411))\n* **api:** add support for session budgets, advisor tool, pinned inference location and skills auto-loading from GitHub ([193bae0](https://github.com/anthropics/anthropic-sdk-python/commit/193bae02806219047d484d7efcb9b91776a6c45c))\n\n\n### Chores\n\n* **api:** remove ret",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:10:51Z",
+      "final_score": 1575.1741309986774
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.7: google-cloud-sdk: v0.0.7",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7",
+      "body": "## 0.0.7 (2026-08-07)\n\nFull Changelog: [google-cloud-sdk-v0.0.6...google-cloud-sdk-v0.0.7](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.6...google-cloud-sdk-v0.0.7)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthro",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:10:11Z",
+      "final_score": 1575.1212209457674
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.1: foundry-sdk: v0.4.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
+      "body": "## 0.4.1 (2026-08-07)\n\nFull Changelog: [foundry-sdk-v0.4.0...foundry-sdk-v0.4.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.0...foundry-sdk-v0.4.1)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-sdk-t",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:51Z",
+      "final_score": 1575.094765919312
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.32.1: bedrock-sdk: v0.32.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
+      "body": "## 0.32.1 (2026-08-07)\n\nFull Changelog: [bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:42Z",
+      "final_score": 1575.0828611574075
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.1: vertex-sdk: v0.19.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
+      "body": "## 0.19.1 (2026-08-07)\n\nFull Changelog: [vertex-sdk-v0.19.0...vertex-sdk-v0.19.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.0...vertex-sdk-v0.19.1)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-sdk-",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:30Z",
+      "final_score": 1575.0669881415345
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.116.0: sdk: v0.116.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.116.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.116.0",
+      "body": "## 0.116.0 (2026-08-07)\n\nFull Changelog: [sdk-v0.115.0...sdk-v0.116.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.115.0...sdk-v0.116.0)\n\n### Features\n\n* **api:** add `mid-conversation-tool-changes-2026-07-01` beta ([70e04f6](https://github.com/anthropics/anthropic-sdk-typescript/commit/70e04f689baa233e7cb2fed6bb807562f5595928))\n* **api:** add support for session budgets, advisor tool, pinned inference location and skills auto-loading from GitHub ([1336a4a](https://github.com/anthropics/anthropic-sdk-typescript/commit/1336a4a90387a7005f6211b6df5e2b247f4cb6b3))\n* **too",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:23Z",
+      "final_score": 1575.0577288822751
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.224: v2.1.224",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+      "body": "## What's changed\n\n- Added self-hosted environments: `claude self-hosted-runner` turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans\n- Added `archive` plugin source: install plugins from a zip over HTTPS without git or npm, with optional SHA-256 pinning\n- Added a cancel-and-confirm step when removing an unavailable paste changes a command's text\n- Added `ANTHROPIC_BEDROCK_REGION_PREFIX` env var for Bedrock to prefer a specific cross-region inference profile over the `AWS_REGION`-derived one\n- Added `crossSession",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T04:00:59Z",
+      "final_score": 1512.4863003108467
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +100,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-06T00:52:37Z",
-      "final_score": 1482.9645344391533
+      "final_score": 1383.2508505753967
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,48 +111,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-04T22:39:55Z",
-      "final_score": 1358.147074121693
-    },
-    {
-      "source": "GitHub anthropics/claude-code",
-      "title": "【リリース】claude-code v2.1.221: v2.1.221",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.221",
-      "body": "## What's changed\n\n- [VSCode] Added Focus view: a chat-menu toggle that hides tool activity behind an expandable per-turn summary with a live running-tool indicator, toggled with `Ctrl+Alt+F` or the \"Claude Code: Toggle Focus view\" command\n- Added `mode: \"mask\"` for sandbox credential files on Linux and WSL — sandboxed commands read a sentinel copy (the whole file, or just the spans captured by an `extract` regex) while the sandbox proxy substitutes the real value on egress; on macOS file masking falls back to `deny`\n- Added warnings to `claude plugin validate` when a marketplace or plugin nam",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-08-04T00:14:23Z",
-      "final_score": 1251.3587143333332
-    },
-    {
-      "source": "Hacker News",
-      "title": "Qwen3.8 Max now ranked as the best overall model by agentic index",
-      "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
-      "external_url": "https://artificialanalysis.ai/?intelligence=agentic-index",
-      "score": 422,
-      "comments": 272,
-      "created": "2026-08-06T18:44:49+00:00",
-      "final_score": 963.1515300118915
-    },
-    {
-      "source": "Hacker News",
-      "title": "Launch HN: HyperProbe (YC S26) – Agents that do read-only debugging in prod",
-      "url": "https://www.hyperprobe.co",
-      "external_url": "https://www.hyperprobe.co",
-      "score": 67,
-      "comments": 52,
-      "created": "2026-08-05T16:47:15+00:00",
-      "final_score": 146.9721322725066
-    },
-    {
-      "source": "Hacker News",
-      "title": "Spin audit of SQD/QSCI quantum-chemistry benchmarks on iron–sulfur clusters",
-      "url": "https://zenodo.org/records/21359923",
-      "external_url": "https://zenodo.org/records/21359923",
-      "score": 6,
-      "comments": 1,
-      "created": "2026-08-06T22:50:09+00:00",
-      "final_score": 12.406480040039682
+      "final_score": 1258.4333902579365
     }
   ]
 }
