@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-08",
+  "posts": [
+    "【速報】\n\nClaude Code v2.1.225 / v2.1.226がリリース。\nゲートウェイの使用上限まわりの体験が改善された。\n\n具体的には（v2.1.225）\n\n▶︎ 使用上限に達したとき上限名・リセット時間・オペレーターメッセージを表示\n▶︎ `claude agents` で未信頼ディレクトリへのワークスペース信頼プロンプトを追加\n\nv2.1.226ではバグ修正と安定性向上も対応済み👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.226\n\nつまり、\n\nエージェント利用時の安全性と使用管理が\nより細かく制御できるようになりましたよ👀",
+    "【保存推奨】\n\nPython SDK v0.121.0で\nツール変更系のベータ機能が追加された。\n\n会話の途中でツールを変更できる\n『mid-conversation-tool-changes-2026-07-01』ベータが使えるように。\n※日付は将来日付だが、現在のSDKで利用可能なベータヘッダー名として記載されている。\n\nポイントはここ👇\n\n▶︎ 会話の途中でツール定義を差し替えられる\n▶︎ ベータヘッダーを追加するだけで有効化可能\n▶︎ 長い会話でのエージェント設計がより柔軟に\n\nつまり、\n\n「途中でツール構成を変えたい」という\n複雑なエージェント実装の悩みが解消されそうですよね✨\n\n詳細はGitHubのリリースノートでチェックしてみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+    "TypeScript SDK（Google Cloud向け）が更新されました。\n\ngoogle-cloud-sdk-v0.0.7リリース🙌\n\n具体的には⏬\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7\n\n▶︎ User-Agentの生成方法を修正・安定化\n▶︎ コンストラクタ名依存からハードコードされた文字列に変更\n▶︎ Google Cloud環境での動作がより安定に\n\n地味だけど確実に効いてくる修正です。\n\nGoogle Cloud上でAnthropicのAPIを使っているチームはチェックしてみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
