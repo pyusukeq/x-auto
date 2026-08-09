@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-08</title>
+<title>X投稿下書き 2026-08-09</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,62 +73,69 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-08</h1>
-  <p>生成: 2026-08-09 07:17 JST</p>
+  <h1>X投稿下書き 2026-08-09</h1>
+  <p>生成: 2026-08-10 07:18 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+待ってたやつ！！
 
-Claude Code v2.1.225 / v2.1.226がリリース。
-ゲートウェイの使用上限まわりの体験が改善された。
+Claude Code v2.1.226で
+ゲートウェイの使用制限まわりが大きく改善された。
 
-具体的には（v2.1.225）
+『制限に達したとき、上限名・リセット時間・オペレーターのメッセージが表示されるように』
 
-▶︎ 使用上限に達したとき上限名・リセット時間・オペレーターメッセージを表示
-▶︎ `claude agents` で未信頼ディレクトリへのワークスペース信頼プロンプトを追加
-
-v2.1.226ではバグ修正と安定性向上も対応済み👇
+具体的には👇
 https://github.com/anthropics/claude-code/releases/tag/v2.1.226
 
+▶︎ APIゲートウェイのspend-limit（コスト上限）に対応した使用警告が追加
+▶︎ どの上限に引っかかったか名前で確認できる
+▶︎ `claude agents` で信頼されていないディレクトリを操作しようとした際に確認プロンプトが表示されるように
+
 つまり、
 
-エージェント利用時の安全性と使用管理が
-より細かく制御できるようになりましたよ👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
+チームや企業での利用時に
+コスト管理がぐっとわかりやすくなりますね✨
+
+詳細はGitHubのリリースノートをチェックして👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意：ベータ機能情報】
 
 Python SDK v0.121.0で
-ツール変更系のベータ機能が追加された。
+会話の途中でツールを変更できるベータ機能が追加された。
 
-会話の途中でツールを変更できる
-『mid-conversation-tool-changes-2026-07-01』ベータが使えるように。
-※日付は将来日付だが、現在のSDKで利用可能なベータヘッダー名として記載されている。
+`mid-conversation-tool-changes-2026-07-01` というベータヘッダーで有効化できる（※ヘッダー名に「2026」が含まれるが、公式リリースノートの表記をそのまま引用）。
 
-ポイントはここ👇
+ポイントはここ
 
-▶︎ 会話の途中でツール定義を差し替えられる
-▶︎ ベータヘッダーを追加するだけで有効化可能
-▶︎ 長い会話でのエージェント設計がより柔軟に
+▶︎ 会話の途中でツール定義を差し替えられるようになった
+▶︎ ベータ機能なので `betas=[&quot;mid-conversation-tool-changes-2026-07-01&quot;]` で明示的に有効化
+▶︎ 動的にツールを追加・削除したいエージェント設計に活用できる
 
 つまり、
 
-「途中でツール構成を変えたい」という
-複雑なエージェント実装の悩みが解消されそうですよね✨
+長い会話の中でもツール構成を柔軟に変えられる。
+エージェント開発の幅が広がりそうですね🙌
 
-詳細はGitHubのリリースノートでチェックしてみて👀
+ベータ機能のため仕様変更の可能性あり。詳細はリリースノートで確認を👀
 https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">TypeScript SDK（Google Cloud向け）が更新されました。
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【注目】
 
-google-cloud-sdk-v0.0.7リリース🙌
+TypeScript SDKのgoogle-cloud-sdkで
+User-Agentの扱いが地味に修正された。
 
-具体的には⏬
+『コンストラクタ名ではなくハードコードされた文字列を使用するよう変更』
+
+ポイントはここ👇
 https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7
 
-▶︎ User-Agentの生成方法を修正・安定化
-▶︎ コンストラクタ名依存からハードコードされた文字列に変更
-▶︎ Google Cloud環境での動作がより安定に
+▶︎ minificationなどビルド最適化を経てもUser-Agentが崩れなくなった
+▶︎ 本番環境でのデバッグ・ログ解析がより安定する
 
-地味だけど確実に効いてくる修正です。
+つまり、
 
-Google Cloud上でAnthropicのAPIを使っているチームはチェックしてみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+小さな修正に見えて
+本番運用の安定性に効いてくる変更かもしれません。
+
+リリースノートも確認してみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

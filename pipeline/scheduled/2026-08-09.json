@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-09",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.226で\nゲートウェイの使用制限まわりが大きく改善された。\n\n『制限に達したとき、上限名・リセット時間・オペレーターのメッセージが表示されるように』\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.226\n\n▶︎ APIゲートウェイのspend-limit（コスト上限）に対応した使用警告が追加\n▶︎ どの上限に引っかかったか名前で確認できる\n▶︎ `claude agents` で信頼されていないディレクトリを操作しようとした際に確認プロンプトが表示されるように\n\nつまり、\n\nチームや企業での利用時に\nコスト管理がぐっとわかりやすくなりますね✨\n\n詳細はGitHubのリリースノートをチェックして👀",
+    "【注意：ベータ機能情報】\n\nPython SDK v0.121.0で\n会話の途中でツールを変更できるベータ機能が追加された。\n\n`mid-conversation-tool-changes-2026-07-01` というベータヘッダーで有効化できる（※ヘッダー名に「2026」が含まれるが、公式リリースノートの表記をそのまま引用）。\n\nポイントはここ\n\n▶︎ 会話の途中でツール定義を差し替えられるようになった\n▶︎ ベータ機能なので `betas=[\"mid-conversation-tool-changes-2026-07-01\"]` で明示的に有効化\n▶︎ 動的にツールを追加・削除したいエージェント設計に活用できる\n\nつまり、\n\n長い会話の中でもツール構成を柔軟に変えられる。\nエージェント開発の幅が広がりそうですね🙌\n\nベータ機能のため仕様変更の可能性あり。詳細はリリースノートで確認を👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+    "【注目】\n\nTypeScript SDKのgoogle-cloud-sdkで\nUser-Agentの扱いが地味に修正された。\n\n『コンストラクタ名ではなくハードコードされた文字列を使用するよう変更』\n\nポイントはここ👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7\n\n▶︎ minificationなどビルド最適化を経てもUser-Agentが崩れなくなった\n▶︎ 本番環境でのデバッグ・ログ解析がより安定する\n\nつまり、\n\n小さな修正に見えて\n本番運用の安定性に効いてくる変更かもしれません。\n\nリリースノートも確認してみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
