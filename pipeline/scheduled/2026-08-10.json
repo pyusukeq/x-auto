@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-10",
+  "posts": [
+    "【速報】\n\nClaude Code v2.1.225 / v2.1.226がリリース。\nゲートウェイの使用上限に関する通知が賢くなった。\n\n『上限名・リセット時刻・オペレーターメッセージを表示』\n\n具体的には\n\n▶︎ 使用量の警告にゲートウェイ上限情報が追加\n▶︎ リセット時刻も表示されるので次の利用タイミングが分かりやすい\n▶︎ `claude agents` で未信頼ディレクトリへのトラスト確認も追加\n\nつまり、\n\nチームや企業での運用がより安心になるアップデートですね。\n\n詳細はGitHubで確認してみて👀\nv2.1.225: https://github.com/anthropics/claude-code/releases/tag/v2.1.225\nv2.1.226: https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+    "【保存推奨】\n\nPython SDK v0.121.0で\n会話中にツールを変更できるベータ機能が追加された。\n\nベータヘッダーで有効化できる（ヘッダー名はリリースノートを要確認）。\n\nポイントはここ👇\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0\n\n▶︎ 会話の途中でツール定義を切り替え可能に\n▶︎ ベータヘッダーを付与するだけで利用できる\n▶︎ 動的なツール切り替えに対応したエージェント設計が可能に\n\nより柔軟なエージェント設計が現実的になってきましたね。\nエージェント開発している方はリリースノートを確認してみて👀",
+    "TypeScript SDKのGoogle Cloud向けパッケージ（google-cloud-sdk-v0.0.7）がアップデート。\n\n『User-Agentをコンストラクタ名ではなくハードコード文字列で管理するように変更』\n\n▶︎ クライアント識別が安定し予期せぬ動作を防げる\n▶︎ 内部実装の修正だが、安定性向上につながる地味に大事な対応\n\nGoogle Cloud向けのAnthropicクライアントを使っている方はバージョンを確認してみて👀\n\nリリース詳細はこちら:\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.7"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
