@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-08-11T22:30:27.273359",
+  "date": "2026-08-11",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-11T22:30:26.401152+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.985580707948
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.228: v2.1.228",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.228",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.228",
+      "body": "## What's changed\n\n- Fixed interactive sessions that could stop redrawing entirely, while the process kept running, after a rare internal layout error\n- Fixed `git` / Git Bash not being found on Windows when Claude Code is launched from a parent folder of the git installation\n- Fixed `/tui` reverting the session to an earlier model when `/model` had been changed since the last response\n- Fixed cross-session messaging sometimes starting without an inbox in the first session after install or upgrade\n- Fixed Remote Control `/resume` while connected leaking the resumed conversation's title or hist",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-11T19:50:59Z",
+      "final_score": 1587.3435538121694
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.227: v2.1.227",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.227",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.227",
+      "body": "## What's changed\n\n- Fixed feature flags being evaluated without the user's subscription tier when a session started with an expired login token, which could wrongly prompt Max plan users to enable usage credits for Fable\n- Fixed every Bash command failing under `claude-code-action` with `allowed_non_write_users` on GitHub-hosted runners\n- Fixed `/tui` bringing back a conversation that had been rewound to before its first message\n- Improved slash-command menu: blue now marks only the selected row, matched characters are bolded instead of recolored, and emoji or accented names keep their glyphs",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-10T22:56:53Z",
+      "final_score": 1487.8118077804234
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.226: v2.1.226",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-08T02:48:05Z",
+      "final_score": 1163.303871272487
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.225: v2.1.225",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+      "body": "## What's changed\n\n- Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225)\n- Added a workspace trust prompt to `claude agents` for untrusted directories, matching the behavior of `claude`\n- Fixed a transient 401 replacing a long-lived `CLAUDE_CODE_OAUTH_TOKEN` with a stored login's short-lived token, breaking headless sessions until restart\n- Fixed MCP OAuth servers on macOS intermittently failing with a burst of 401 errors, as if never authenticated, after a ke",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-08T01:09:26Z",
+      "final_score": 1155.4745061931217
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.121.0: v0.121.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0",
+      "body": "## 0.121.0 (2026-08-07)\n\nFull Changelog: [v0.120.2...v0.121.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.120.2...v0.121.0)\n\n### Features\n\n* **api:** add `mid-conversation-tool-changes-2026-07-01` beta ([c7d1531](https://github.com/anthropics/anthropic-sdk-python/commit/c7d1531d9d63a35430333039f8c975bba4ef0411))\n* **api:** add support for session budgets, advisor tool, pinned inference location and skills auto-loading from GitHub ([193bae0](https://github.com/anthropics/anthropic-sdk-python/commit/193bae02806219047d484d7efcb9b91776a6c45c))\n\n\n### Chores\n\n* **api:** remove ret",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:10:51Z",
+      "final_score": 1117.4917019603174
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.6.2: aws-sdk: v0.6.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.2",
+      "body": "## 0.6.2 (2026-08-07)\n\nFull Changelog: [aws-sdk-v0.6.1...aws-sdk-v0.6.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.6.1...aws-sdk-v0.6.2)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-sdk-typescript/commit",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:10:02Z",
+      "final_score": 1117.4268871455026
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.1: foundry-sdk: v0.4.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.1",
+      "body": "## 0.4.1 (2026-08-07)\n\nFull Changelog: [foundry-sdk-v0.4.0...foundry-sdk-v0.4.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.0...foundry-sdk-v0.4.1)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-sdk-t",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:51Z",
+      "final_score": 1117.4123368809524
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.32.1: bedrock-sdk: v0.32.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.32.1",
+      "body": "## 0.32.1 (2026-08-07)\n\nFull Changelog: [bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.32.0...bedrock-sdk-v0.32.1)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:42Z",
+      "final_score": 1117.4004321190478
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.1: vertex-sdk: v0.19.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.1",
+      "body": "## 0.19.1 (2026-08-07)\n\nFull Changelog: [vertex-sdk-v0.19.0...vertex-sdk-v0.19.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.0...vertex-sdk-v0.19.1)\n\n### Bug Fixes\n\n* **client:** use hardcoded User-Agent strings instead of constructor names ([0b97f04](https://github.com/anthropics/anthropic-sdk-typescript/commit/0b97f04042584d234162a7ff8a5c4b8095ad800e))\n\n\n### Chores\n\n* **internal/deps:** install tsc-multi from the npm registry ([#265](https://github.com/anthropics/anthropic-sdk-typescript/issues/265)) ([c787f90](https://github.com/anthropics/anthropic-sdk-",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-07T17:09:30Z",
+      "final_score": 1117.3845591031745
+    }
+  ]
+}
