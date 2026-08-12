@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-12",
+  "posts": [
+    "【速報】\n\nClaude Code v2.1.229がリリース。\n\n詳細はリリースノートで確認を👀\n\n詳細はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.229",
+    "Claude Code v2.1.226で\nゲートウェイの使用量上限まわりが改善された。\n\n上限に達したときのメッセージがより親切になっています。\n\nポイントはここ👇\n\n▶︎ 上限名・リセット時刻・オペレーターのメッセージが表示されるように\n▶︎ `claude agents` でのワークスペース信頼確認も追加\n▶︎ 知らないうちに課金が進む前に気づきやすくなった\n\nつまり、\n\n「なぜ止まったのか」がちゃんと分かるようになった。\nチームやCI環境で使っている人には嬉しいアップデートですよね🙌\n\n公式はこちら👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+    "【これは要確認】\n待ってたやつ！！\n\nPython SDK v0.121.0に\n『mid-conversation-tool-changes』ベータ機能が追加された模様。\n\n会話の途中でツール定義を変えられるベータAPIが追加されたとの情報あり。\n\n結論はこれ👇\n\n▶︎ 会話中にツールの追加・変更・削除が可能に\n▶︎ セッションを最初からやり直す必要がなくなる\n▶︎ 動的なエージェント設計がより現実的になった\n\nベータ機能のため「正式リリース」ではなく試験的な位置づけです。\n\n「途中でツールを差し替えたい」という場面での活用が期待されます。\nエージェント設計の自由度がぐっと広がりそうですよね✨\n\n詳細はリリースページで確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
