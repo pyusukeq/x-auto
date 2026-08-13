@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-12</title>
+<title>X投稿下書き 2026-08-13</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,56 +73,51 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-12</h1>
-  <p>生成: 2026-08-13 07:29 JST</p>
+  <h1>X投稿下書き 2026-08-13</h1>
+  <p>生成: 2026-08-14 07:30 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【お知らせ】
 
-Claude Code v2.1.229がリリース。
+anthropic-sdk-typescript の最新版がリリースされました。
 
-詳細はリリースノートで確認を👀
+具体的には
 
-詳細はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.229</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">Claude Code v2.1.226で
-ゲートウェイの使用量上限まわりが改善された。
+▶︎ sdk-v0.117.1 がリリース
+▶︎ vertex-sdk-v0.19.2 〜 v0.19.4 も順次リリース
+▶︎ TypeScript SDK を使っている方は更新を確認してみてください
 
-上限に達したときのメッセージがより親切になっています。
+詳細はリリースノートをチェックしてみて👀
+
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【お知らせ】
+
+AnthropicのTypeScript SDK（v0.117.1）に
+アップデートが入っています。
+
+詳細はGitHubのリリースノートで確認を👀
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1
+
+※「Dream機能」や`output_behavior`パラメータについては、現時点で公式リリースノートからの裏付けが取れていないため、内容の正確性を確認中です。情報が確定次第、改めてお伝えします。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【セキュリティ修正】
+
+Vertex SDK for TypeScript の最新版
+**v0.19.4**で重要なセキュリティ修正が入った。
+
+『ambient first-party credentialsをプロバイダーエンドポイントに送らないように』
 
 ポイントはここ👇
 
-▶︎ 上限名・リセット時刻・オペレーターのメッセージが表示されるように
-▶︎ `claude agents` でのワークスペース信頼確認も追加
-▶︎ 知らないうちに課金が進む前に気づきやすくなった
+▶︎ Vertexで認証情報の意図しない送信を防止
+▶︎ サードパーティエンドポイントへの情報漏えいリスクを低減
+▶︎ 本番環境で使っている方は早めのアップデートが安心
 
 つまり、
 
-「なぜ止まったのか」がちゃんと分かるようになった。
-チームやCI環境で使っている人には嬉しいアップデートですよね🙌
+Vertex経由でClaudeを使っているプロジェクトは
+セキュリティ観点からもアップデートを確認しておくといいかもしれません🙌
 
-公式はこちら👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.226</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【これは要確認】
-待ってたやつ！！
-
-Python SDK v0.121.0に
-『mid-conversation-tool-changes』ベータ機能が追加された模様。
-
-会話の途中でツール定義を変えられるベータAPIが追加されたとの情報あり。
-
-結論はこれ👇
-
-▶︎ 会話中にツールの追加・変更・削除が可能に
-▶︎ セッションを最初からやり直す必要がなくなる
-▶︎ 動的なエージェント設計がより現実的になった
-
-ベータ機能のため「正式リリース」ではなく試験的な位置づけです。
-
-「途中でツールを差し替えたい」という場面での活用が期待されます。
-エージェント設計の自由度がぐっと広がりそうですよね✨
-
-詳細はリリースページで確認してみて👀
-https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.121.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+リリースノートはこちらから確認してみて👀
+https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

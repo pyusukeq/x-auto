@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-13",
+  "posts": [
+    "【お知らせ】\n\nanthropic-sdk-typescript の最新版がリリースされました。\n\n具体的には\n\n▶︎ sdk-v0.117.1 がリリース\n▶︎ vertex-sdk-v0.19.2 〜 v0.19.4 も順次リリース\n▶︎ TypeScript SDK を使っている方は更新を確認してみてください\n\n詳細はリリースノートをチェックしてみて👀\n\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1",
+    "【お知らせ】\n\nAnthropicのTypeScript SDK（v0.117.1）に\nアップデートが入っています。\n\n詳細はGitHubのリリースノートで確認を👀\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1\n\n※「Dream機能」や`output_behavior`パラメータについては、現時点で公式リリースノートからの裏付けが取れていないため、内容の正確性を確認中です。情報が確定次第、改めてお伝えします。",
+    "【セキュリティ修正】\n\nVertex SDK for TypeScript の最新版\n**v0.19.4**で重要なセキュリティ修正が入った。\n\n『ambient first-party credentialsをプロバイダーエンドポイントに送らないように』\n\nポイントはここ👇\n\n▶︎ Vertexで認証情報の意図しない送信を防止\n▶︎ サードパーティエンドポイントへの情報漏えいリスクを低減\n▶︎ 本番環境で使っている方は早めのアップデートが安心\n\nつまり、\n\nVertex経由でClaudeを使っているプロジェクトは\nセキュリティ観点からもアップデートを確認しておくといいかもしれません🙌\n\nリリースノートはこちらから確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
