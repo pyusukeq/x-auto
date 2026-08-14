@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-08-14T22:11:12.136773",
+  "date": "2026-08-14",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-14T22:11:11.323392+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.986553361996
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.232: v2.1.232",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+      "body": "## What's changed\n\n- Subagent forking is now on by default: a `subagent_type: \"fork\"` subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the background by default\n- Type `@` in the prompt to mention another Claude session by name; Claude then uses `SendMessage` to reach that session directly\n- `SendMessage` now delivers to a bare name that exactly matches one live session, instead of asking to confirm with a ref first\n- Interactive sessions on one machine now keep unique names: starting or renaming a session to a name anot",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T23:29:59Z",
+      "final_score": 1491.966750362434
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.4: vertex-sdk: v0.19.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.4",
+      "body": "## 0.19.4 (2026-08-13)\n\nFull Changelog: [vertex-sdk-v0.19.3...vertex-sdk-v0.19.4](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.3...vertex-sdk-v0.19.4)\n\n### Chores\n\n* **internal:** empty commit to trigger builds ([#1148](https://github.com/anthropics/anthropic-sdk-typescript/issues/1148)) ([c5c1d5c](https://github.com/anthropics/anthropic-sdk-typescript/commit/c5c1d5c0f84c564dd25ea2a65488ad8b282cb603))\n* **internal:** empty commit to trigger builds ([#1148](https://github.com/anthropics/anthropic-sdk-typescript/issues/1148)) ([366ca73](https://github.com/anthr",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T22:06:54Z",
+      "final_score": 1485.3728350185186
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.117.1: sdk: v0.117.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1",
+      "body": "## 0.117.1 (2026-08-13)\n\nFull Changelog: [sdk-v0.117.0...sdk-v0.117.1](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.117.0...sdk-v0.117.1)\n\n### Chores\n\n* **ci:** allow manually re-publishing a package to npm from the release workflow ([af60c1f](https://github.com/anthropics/anthropic-sdk-typescript/commit/af60c1f980557368fb10c3701d8dc8a1fa75d70e))\n* **internal:** tag uploaded preview builds with the branch name ([#295](https://github.com/anthropics/anthropic-sdk-typescript/issues/295)) ([228f44e](https://github.com/anthropics/anthropic-sdk-typescript/commit/228f44ee4848",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T22:06:48Z",
+      "final_score": 1485.364898510582
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.3: vertex-sdk: v0.19.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.3",
+      "body": "## 0.19.3 (2026-08-13)\n\nFull Changelog: [vertex-sdk-v0.19.2...vertex-sdk-v0.19.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.2...vertex-sdk-v0.19.3)\n\n### Chores\n\n* **internal:** empty commit to trigger builds ([#1148](https://github.com/anthropics/anthropic-sdk-typescript/issues/1148)) ([940dab8](https://github.com/anthropics/anthropic-sdk-typescript/commit/940dab810542b38bf73aeae84d6e9ceaf2a44730))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T20:16:24Z",
+      "final_score": 1476.6029937486771
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.2: vertex-sdk: v0.19.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.2",
+      "body": "## 0.19.2 (2026-08-13)\n\nFull Changelog: [vertex-sdk-v0.19.1...vertex-sdk-v0.19.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.1...vertex-sdk-v0.19.2)\n\n### Bug Fixes\n\n* **vertex,bedrock:** never send ambient first-party credentials to provider endpoints ([#287](https://github.com/anthropics/anthropic-sdk-typescript/issues/287)) ([75e5eed](https://github.com/anthropics/anthropic-sdk-typescript/commit/75e5eedc265f1ff339ae7de1e97a0f26b284a2eb))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T19:53:43Z",
+      "final_score": 1474.8027291984126
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.117.0: sdk: v0.117.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.0",
+      "body": "## 0.117.0 (2026-08-13)\n\nFull Changelog: [sdk-v0.116.0...sdk-v0.117.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.116.0...sdk-v0.117.0)\n\n### Features\n\n* **api:** add output_behavior to dream creation (create a new memory store or update the input store in place) ([6a5bd0f](https://github.com/anthropics/anthropic-sdk-typescript/commit/6a5bd0f34d214759f97d485e46b09203fff3ea99))\n\n\n### Bug Fixes\n\n* **build:** include dotfiles when flattening dist during git installs ([917dbbb](https://github.com/anthropics/anthropic-sdk-typescript/commit/917dbbb40070dbd1f861b16fcf297720d",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T19:53:37Z",
+      "final_score": 1474.794792690476
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.122.0: v0.122.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.122.0",
+      "body": "## 0.122.0 (2026-08-13)\n\nFull Changelog: [v0.121.0...v0.122.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.121.0...v0.122.0)\n\n### Features\n\n* **api:** add output_behavior to dream creation (create a new memory store or update the input store in place) ([852c4bb](https://github.com/anthropics/anthropic-sdk-python/commit/852c4bbe4a3a425a8780e89ea6c3cae54836e8bb))\n\n\n### Bug Fixes\n\n* **bedrock,aws:** run SigV4 signing off the event loop in async clients ([#334](https://github.com/anthropics/anthropic-sdk-python/issues/334)) ([2bae6c8](https://github.com/anthropics/anthropic-sdk-p",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T18:35:49Z",
+      "final_score": 1468.6201895158729
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.231: v2.1.231",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
+      "body": "## What's changed\n\n- Fixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-13T08:38:50Z",
+      "final_score": 1421.2405598862433
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.229: v2.1.229",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
+      "body": "## What's changed\n\n- Documented `claude remote-control --continue` for resuming the most recent Remote Control session\n- Added server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment behavior\n- Added SSE keepalive pings to gateway streaming responses during long thinking pauses, preventing idle-timeout disconnects on Vertex and Bedrock upstreams\n- Added plugin marketplace `command` sources: a local command (e.g. an IDE) prints the plugin directory, which is re-resolved each session and applied without a restart; `mode: \"link\"` uses it in place\n- `",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-12T20:56:22Z",
+      "final_score": 1365.4892371349206
+    }
+  ]
+}
