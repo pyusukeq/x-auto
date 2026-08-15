@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-15",
+  "posts": [
+    "【速報】\n待ってたやつ！！\n\nClaude Code v2.1.232／v2.1.233で\nサブエージェントの動作が大きく変わった。\n\n『subagent_type: \"fork\"がデフォルトONに』\n\n具体的には\n\n▶︎ フォーク型サブエージェントが会話履歴・プロンプトキャッシュを丸ごと引き継ぐ\n▶︎ インタラクティブセッションでのエージェント起動がバックグラウンド実行に\n▶︎ `@`メンションで別のClaudeセッションを指定できるように\n\nつまり、\n\nマルチエージェント開発が\nよりスムーズに回せるようになりましたね✨\n\n詳細はリリースノートをチェックしてみて👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.233\n\n※記載の機能変更は公式リリースノートをもとにしていますが、内容の正確性は各自リリースノートでご確認ください。",
+    "【保存版】\n\nClaude Codeの最近のリリースで\nGitLabとの連携が強化された。\n\n`--worktree`フラグとエージェントビューで\nGitLabのMRがサポートされるようになっている。\n\nポイントはここ👇\n\n▶︎ `--worktree`にGitLab MRのURLを渡せるように\n▶︎ `claude agents`ビューでMRが`!N`形式で表示される\n▶︎ `forward_user_identity`設定でユーザー情報をプロキシに転送可能に\n\nつまり、\n\nGitHubだけでなくGitLabを使っているチームにも\nClaude Codeが使いやすくなってきましたね🙌\n\n詳細はリリースノートで確認できます👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.233\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+    "Anthropic TypeScript SDK v0.117.1で\nMemory Store（Dream）まわりに新機能が追加された可能性がある。\n\n『output_behaviorでメモリの保存先をコントロール』\n\nポイントはここ👇\nhttps://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1\n\n▶︎ 新しいメモリストアを作成するか、入力ストアを上書きするかを選択できる\n▶︎ ドリーム生成時の出力動作を細かく指定可能に\n▶︎ エージェントの「記憶の管理」がより柔軟になった\n\nAIエージェントに長期記憶を持たせる設計が\nSDKレベルで整いつつあるかもしれません😊\n\nリリースノートも合わせてチェックしてみて👀"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
