@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-15</title>
+<title>X投稿下書き 2026-08-16</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,70 +73,48 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-15</h1>
-  <p>生成: 2026-08-16 07:09 JST</p>
+  <h1>X投稿下書き 2026-08-16</h1>
+  <p>生成: 2026-08-17 07:10 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
 待ってたやつ！！
 
-Claude Code v2.1.232／v2.1.233で
-サブエージェントの動作が大きく変わった。
+Claude Code v2.1.232 / v2.1.233で
+サブエージェントの挙動が大きく変わった。
 
-『subagent_type: &quot;fork&quot;がデフォルトONに』
+詳細はリリースノートをチェックして👀
+→ https://github.com/anthropics/claude-code/releases/tag/v2.1.232
+→ https://github.com/anthropics/claude-code/releases/tag/v2.1.233</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
 
-具体的には
+Claude Code v2.1.233の
+リリースノートが公開されています。
 
-▶︎ フォーク型サブエージェントが会話履歴・プロンプトキャッシュを丸ごと引き継ぐ
-▶︎ インタラクティブセッションでのエージェント起動がバックグラウンド実行に
-▶︎ `@`メンションで別のClaudeセッションを指定できるように
+ただし、今回のリリースの具体的な変更内容は
+元情報から確認できていません。
 
-つまり、
+詳細はリリースノートを直接ご確認ください👇
 
-マルチエージェント開発が
-よりスムーズに回せるようになりましたね✨
+https://github.com/anthropics/claude-code/releases/tag/v2.1.233</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【新機能】
+Claude Code v2.1.233に追加された
+`forward_user_identity`という設定が地味にすごい。
 
-詳細はリリースノートをチェックしてみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.233
+『サインイン中のユーザーのIDをヘッダーとして転送できる』
 
-※記載の機能変更は公式リリースノートをもとにしていますが、内容の正確性は各自リリースノートでご確認ください。</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存版】
+具体的には⏬
 
-Claude Codeの最近のリリースで
-GitLabとの連携が強化された。
-
-`--worktree`フラグとエージェントビューで
-GitLabのMRがサポートされるようになっている。
-
-ポイントはここ👇
-
-▶︎ `--worktree`にGitLab MRのURLを渡せるように
-▶︎ `claude agents`ビューでMRが`!N`形式で表示される
-▶︎ `forward_user_identity`設定でユーザー情報をプロキシに転送可能に
+▶︎ アプリゲートウェイ側でオプトイン設定するだけ
+▶︎ プロキシ側でリクエストの送信者を特定・追跡できるように
+▶︎ チーム・組織での利用監査やアクセス制御がしやすくなる
 
 つまり、
 
-GitHubだけでなくGitLabを使っているチームにも
-Claude Codeが使いやすくなってきましたね🙌
+チームでClaude Codeを使う場面で
+セキュリティ・管理面がぐっと強化されますよね。
 
-詳細はリリースノートで確認できます👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.233
-https://github.com/anthropics/claude-code/releases/tag/v2.1.232</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">Anthropic TypeScript SDK v0.117.1で
-Memory Store（Dream）まわりに新機能が追加された可能性がある。
-
-『output_behaviorでメモリの保存先をコントロール』
-
-ポイントはここ👇
-https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.117.1
-
-▶︎ 新しいメモリストアを作成するか、入力ストアを上書きするかを選択できる
-▶︎ ドリーム生成時の出力動作を細かく指定可能に
-▶︎ エージェントの「記憶の管理」がより柔軟になった
-
-AIエージェントに長期記憶を持たせる設計が
-SDKレベルで整いつつあるかもしれません😊
-
-リリースノートも合わせてチェックしてみて👀</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートで確認してみて👀
+https://github.com/anthropics/claude-code/releases/tag/v2.1.233</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
