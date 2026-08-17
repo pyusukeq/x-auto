@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-16</title>
+<title>X投稿下書き 2026-08-17</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,48 +73,52 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-16</h1>
-  <p>生成: 2026-08-17 07:10 JST</p>
+  <h1>X投稿下書き 2026-08-17</h1>
+  <p>生成: 2026-08-18 07:14 JST</p>
 </header>
 <div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【速報】
-待ってたやつ！！
 
-Claude Code v2.1.232 / v2.1.233で
-サブエージェントの挙動が大きく変わった。
+Claude Code v2.1.234がリリース。
+セッション管理まわりが地味に便利になった。
 
-詳細はリリースノートをチェックして👀
-→ https://github.com/anthropics/claude-code/releases/tag/v2.1.232
-→ https://github.com/anthropics/claude-code/releases/tag/v2.1.233</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【注意】
+具体的には👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.234
 
-Claude Code v2.1.233の
-リリースノートが公開されています。
-
-ただし、今回のリリースの具体的な変更内容は
-元情報から確認できていません。
-
-詳細はリリースノートを直接ご確認ください👇
-
-https://github.com/anthropics/claude-code/releases/tag/v2.1.233</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【新機能】
-Claude Code v2.1.233に追加された
-`forward_user_identity`という設定が地味にすごい。
-
-『サインイン中のユーザーのIDをヘッダーとして転送できる』
-
-具体的には⏬
-
-▶︎ アプリゲートウェイ側でオプトイン設定するだけ
-▶︎ プロキシ側でリクエストの送信者を特定・追跡できるように
-▶︎ チーム・組織での利用監査やアクセス制御がしやすくなる
+▶︎ `CLAUDE_CODE_PROJECT_DIR_NAME` でプロジェクトのデータ保存ディレクトリ名をカスタマイズ可能に
+▶︎ `selection:clear` キーバインドが追加、テキスト選択状態をキー一発でクリアできる
 
 つまり、
 
-チームでClaude Codeを使う場面で
-セキュリティ・管理面がぐっと強化されますよね。
+細かいところへの配慮が積み重なって
+使い心地がじわじわ上がっていく感じですよね。
 
-詳細はリリースノートで確認してみて👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.233</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+詳細はリリースノートでチェックしてみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【GitLab連携が強化】
+
+Claude Code v2.1.234で
+GitLabユーザー向けの連携が強化された。
+
+`--worktree` フラグがGitLab MRのURLに対応。
+開発フローに組み込みやすくなってきた。
+
+ポイントはここ👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.234
+
+▶︎ GitLab MRのURLを `--worktree` に渡せるように
+▶︎ `claude agents` ビューでMRが `!N` 形式で表示される
+▶︎ `forward_user_identity` 設定でユーザー情報をプロキシ経由で送れる
+
+GitHubだけでなくGitLabでも
+Claude Codeをフルに活用できる環境が整ってきたかもしれません✨</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude Code最新情報】
+確認してみた👀
+
+Claude Code v2.1.233〜v2.1.234のリリースノートが公開。
+
+詳細はリリースノートで確認を👇
+https://github.com/anthropics/claude-code/releases/tag/v2.1.234
+
+※投稿時点で把握している内容に基づいており、機能の詳細は公式情報をご確認ください。</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;
