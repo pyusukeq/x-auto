@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-18",
+  "posts": [
+    "【確認中】\n要チェック！\n\nClaude Code v2.1.235のリリースノートで\nスペルチェック機能の追加が報告されています。\n\n『タイプ中にミスした単語をリアルタイムで下線表示』\n\n具体的には👇\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.235\n\n▶︎ `spellcheck` 設定をオンにするだけで有効\n▶︎ aspell・hunspell・ispell に対応\n▶︎ プロンプト入力中のタイポを即座に検知\n\nコードだけでなく入力品質のサポートも\n強化されてきた印象。\n\nリリースノートを確認してみて👀",
+    "【確認推奨】\n\nClaude Code v2.1.232〜v2.1.235で\nサブエージェント関連の変更が入っています。\n\n並列処理を活用したい人は詳細を確認してみてください。\n\n各バージョンのリリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases/tag/v2.1.235\n\n変更の概要（リリースノートをご確認ください）\n\n▶︎ サブエージェントの挙動に関する更新\n▶︎ フォーク型エージェントの動作変更\n▶︎ バックグラウンド実行に関する調整\n\n詳細はリリースノートで内容をご確認ください。",
+    "【Claude CodeがGitLabのMRに対応】\n待ってたやつ！！\n\nClaude Code（v2.1.232〜v2.1.235）で\nGitLabのMRが扱えるようになった模様。\n\nリリースノートはこちら👀\nhttps://github.com/anthropics/claude-code/releases\n\n結論はこれ👇\n\n▶︎ GitHubだけでなくGitLabユーザーもworktree活用できる\n▶︎ agentsビューでは `!N` 形式でMRが表示される\n▶︎ GitLabをメインに使うチームでの運用がラクになりそう\n\n詳細はリリースノートで確認してみて😊\n\nGitLabユーザーはチェック！"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
