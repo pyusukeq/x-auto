@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>X投稿下書き 2026-08-18</title>
+<title>X投稿下書き 2026-08-19</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -73,63 +73,66 @@ header p { font-size: 13px; color: #536471; margin-top: 4px; }
 </head>
 <body>
 <header>
-  <h1>X投稿下書き 2026-08-18</h1>
-  <p>生成: 2026-08-19 07:11 JST</p>
+  <h1>X投稿下書き 2026-08-19</h1>
+  <p>生成: 2026-08-20 07:14 JST</p>
 </header>
-<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【確認中】
-要チェック！
+<div class="card"><div class="card-label">投稿1（速報）</div><div class="post-text" id="p0">【Anthropic SDK 最新リリース情報】
 
-Claude Code v2.1.235のリリースノートで
-スペルチェック機能の追加が報告されています。
+Python・TypeScript向けSDKが続々アップデート！
 
-『タイプ中にミスした単語をリアルタイムで下線表示』
+具体的には⏬
 
-具体的には👇
-https://github.com/anthropics/claude-code/releases/tag/v2.1.235
+▶︎ anthropic-sdk-python v0.125.0
+▶︎ anthropic-sdk-typescript sdk-v0.120.0
+▶︎ anthropic-sdk-typescript vertex-sdk-v0.19.5
+▶︎ anthropic-sdk-typescript google-cloud-sdk-v0.0.10
 
-▶︎ `spellcheck` 設定をオンにするだけで有効
-▶︎ aspell・hunspell・ispell に対応
-▶︎ プロンプト入力中のタイポを即座に検知
+各リリースの詳細はこちら👀
+・Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0
+・TS: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0
 
-コードだけでなく入力品質のサポートも
-強化されてきた印象。
+最新情報はこちらもチェック✨
+https://www.anthropic.com/news</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【保存推奨】
 
-リリースノートを確認してみて👀</div><button class="copy-btn" onclick="copy('p0', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿2（解説）</div><div class="post-text" id="p1">【確認推奨】
+AnthropicのPython・TypeScript SDKが
+アップデート。
 
-Claude Code v2.1.232〜v2.1.235で
-サブエージェント関連の変更が入っています。
+エージェント開発に関わる機能が
+まとめて追加された。
 
-並列処理を活用したい人は詳細を確認してみてください。
+ポイントはここ👇
 
-各バージョンのリリースノートはこちら👀
-https://github.com/anthropics/claude-code/releases/tag/v2.1.235
+▶︎ Files APIのサポートが強化
+▶︎ Computer Use・Browser Use のツールセットが追加
+▶︎ ウェブ検索などのエージェント向け設定が拡充
 
-変更の概要（リリースノートをご確認ください）
+つまり、
 
-▶︎ サブエージェントの挙動に関する更新
-▶︎ フォーク型エージェントの動作変更
-▶︎ バックグラウンド実行に関する調整
+ブラウザ操作やファイル管理をエージェントに
+任せる実装がしやすくなってきたかもしれません😊
 
-詳細はリリースノートで内容をご確認ください。</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
-<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Claude CodeがGitLabのMRに対応】
-待ってたやつ！！
+SDKのリリースノートもあわせて確認してみて👀
+Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0
+TypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0</div><button class="copy-btn" onclick="copy('p1', this)">コピー</button></div>
+<div class="card"><div class="card-label">投稿3（事例）</div><div class="post-text" id="p2">【Anthropic SDKアップデート】
+新バージョンが続々リリース！
 
-Claude Code（v2.1.232〜v2.1.235）で
-GitLabのMRが扱えるようになった模様。
-
-リリースノートはこちら👀
-https://github.com/anthropics/claude-code/releases
+TypeScript SDK・Python SDK・Vertex SDK・Google Cloud SDKのリリースがまとめて公開された。
 
 結論はこれ👇
 
-▶︎ GitHubだけでなくGitLabユーザーもworktree活用できる
-▶︎ agentsビューでは `!N` 形式でMRが表示される
-▶︎ GitLabをメインに使うチームでの運用がラクになりそう
+▶︎ anthropic-sdk-python v0.125.0
+▶︎ anthropic-sdk-typescript sdk-v0.120.0
+▶︎ vertex-sdk-v0.19.5 / google-cloud-sdk-v0.0.10
 
-詳細はリリースノートで確認してみて😊
+つまり、
 
-GitLabユーザーはチェック！</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
+主要プラットフォーム向けのSDKが
+着実にアップデートされています✨
+
+詳細はリリースノートを確認してみて👀
+https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0</div><button class="copy-btn" onclick="copy('p2', this)">コピー</button></div>
 <script>
 function copy(id, btn) {
   var text = document.getElementById(id).innerText;

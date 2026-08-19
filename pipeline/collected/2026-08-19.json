@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-08-19T22:13:07.773456",
+  "date": "2026-08-19",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-19T22:13:06.503933+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.97901200311
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.10: google-cloud-sdk: v0.0.10",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.10",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.10",
+      "body": "## 0.0.10 (2026-08-19)\n\nFull Changelog: [google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10)\n\n### Chores\n\n* **internal:** use a single pnpm workspace lockfile ([#359](https://github.com/anthropics/anthropic-sdk-typescript/issues/359)) ([3c32145](https://github.com/anthropics/anthropic-sdk-typescript/commit/3c32145d2bc4d53888c6c6857c9af216eec95fb9))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:52Z",
+      "final_score": 1599.0267547433864
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.125.0: v0.125.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
+      "body": "## 0.125.0 (2026-08-19)\n\nFull Changelog: [v0.124.0...v0.125.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.124.0...v0.125.0)\n\n### Features\n\n* **api:** managed agents web search config and self hosted sandbox memory ([b75afd6](https://github.com/anthropics/anthropic-sdk-python/commit/b75afd6ffa210ff2e98bc5e90d6f1f3367038f0b))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:31Z",
+      "final_score": 1598.9989769656083
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.5: vertex-sdk: v0.19.5",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.5",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.5",
+      "body": "## 0.19.5 (2026-08-19)\n\nFull Changelog: [vertex-sdk-v0.19.4...vertex-sdk-v0.19.5](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.4...vertex-sdk-v0.19.5)\n\n### Chores\n\n* **internal:** use a single pnpm workspace lockfile ([#359](https://github.com/anthropics/anthropic-sdk-typescript/issues/359)) ([3c32145](https://github.com/anthropics/anthropic-sdk-typescript/commit/3c32145d2bc4d53888c6c6857c9af216eec95fb9))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:22Z",
+      "final_score": 1598.9870722037035
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.120.0: sdk: v0.120.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0",
+      "body": "## 0.120.0 (2026-08-19)\n\nFull Changelog: [sdk-v0.119.0...sdk-v0.120.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.119.0...sdk-v0.120.0)\n\n### Features\n\n* **api:** managed agents web search config and self hosted sandbox memory ([ba8ec50](https://github.com/anthropics/anthropic-sdk-typescript/commit/ba8ec50ffe31e10781971a942d54289439307424))\n\n\n### Chores\n\n* **internal:** use a single pnpm workspace lockfile ([#359](https://github.com/anthropics/anthropic-sdk-typescript/issues/359)) ([3c32145](https://github.com/anthropics/anthropic-sdk-typescript/commit/3c32145d2bc4d53",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:16Z",
+      "final_score": 1598.9791356957671
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.236: v2.1.236",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+      "body": "## What's changed\n\n- Added `ANTHROPIC_DEFAULT_MODEL` environment variable: sets the model new sessions start on, while a `/model` pick still overrides it and persists across restarts (unlike `ANTHROPIC_MODEL`)\n- Added `notify_when_idle` to cross-session `SendMessage`: ask another Claude Code session on this machine to send one notice when it next goes idle — opt-in, one-shot, no polling (macOS and Linux)\n- Sandbox: on macOS, wildcard read-deny rules (e.g. `**/.env`) now take precedence inside allowed read regions, cover matched directories' contents, and can't be bypassed by renaming the denie",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T20:02:05Z",
+      "final_score": 1589.5995060661376
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.124.0: v0.124.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.124.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.124.0",
+      "body": "## 0.124.0 (2026-08-19)\n\nFull Changelog: [v0.123.0...v0.124.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.123.0...v0.124.0)\n\n### Features\n\n* **api:** Files and Skills APIs are now GA; add computer use and browser use toolsets ([9a09e84](https://github.com/anthropics/anthropic-sdk-python/commit/9a09e84608944172088acf371e7584133ca19844))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T16:51:20Z",
+      "final_score": 1574.4606171772487
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.119.0: sdk: v0.119.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.119.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.119.0",
+      "body": "## 0.119.0 (2026-08-19)\n\nFull Changelog: [sdk-v0.118.0...sdk-v0.119.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.118.0...sdk-v0.119.0)\n\n### Features\n\n* **api:** Files and Skills APIs are now GA; add computer use and browser use toolsets ([ab41aa3](https://github.com/anthropics/anthropic-sdk-typescript/commit/ab41aa32b92a7964b35beb42a6be5b0bec1dd735))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T16:50:57Z",
+      "final_score": 1574.4301938968254
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.123.0: v0.123.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.123.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.123.0",
+      "body": "## 0.123.0 (2026-08-18)\n\nFull Changelog: [v0.122.0...v0.123.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.122.0...v0.123.0)\n\n### Features\n\n* **api:** additions to files and memory stores ([09ce187](https://github.com/anthropics/anthropic-sdk-python/commit/09ce187e1c21029d636534fbabc7dd328f037c68))\n* **api:** updates to skill, files, and user profiles ([c6cbffd](https://github.com/anthropics/anthropic-sdk-python/commit/c6cbffdb6df46d96d873c613d0ca5baff6745768))\n* **client:** add helpers for accessing the workspace ID in response headers ([f79882b](https://github.com/anthropic",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T13:31:54Z",
+      "final_score": 1558.6325748492063
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.118.0: sdk: v0.118.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.118.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.118.0",
+      "body": "## 0.118.0 (2026-08-18)\n\nFull Changelog: [sdk-v0.117.1...sdk-v0.118.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.117.1...sdk-v0.118.0)\n\n### Features\n\n* **api:** additions to files and memory stores ([fdc0379](https://github.com/anthropics/anthropic-sdk-typescript/commit/fdc03790dc3e7fb0352298382f8a9603e92e19c2))\n* **api:** updates to skill, files, and user profiles ([671e6b1](https://github.com/anthropics/anthropic-sdk-typescript/commit/671e6b187f475b5a7a797adbbe5b908bd74d3935))\n* **client:** add helpers for accessing the workspace ID in response headers ([28aa5af](",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T13:29:19Z",
+      "final_score": 1558.42754839418
+    }
+  ]
+}

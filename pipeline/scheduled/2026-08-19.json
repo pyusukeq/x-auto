@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-19",
+  "posts": [
+    "【Anthropic SDK 最新リリース情報】\n\nPython・TypeScript向けSDKが続々アップデート！\n\n具体的には⏬\n\n▶︎ anthropic-sdk-python v0.125.0\n▶︎ anthropic-sdk-typescript sdk-v0.120.0\n▶︎ anthropic-sdk-typescript vertex-sdk-v0.19.5\n▶︎ anthropic-sdk-typescript google-cloud-sdk-v0.0.10\n\n各リリースの詳細はこちら👀\n・Python: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0\n・TS: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0\n\n最新情報はこちらもチェック✨\nhttps://www.anthropic.com/news",
+    "【保存推奨】\n\nAnthropicのPython・TypeScript SDKが\nアップデート。\n\nエージェント開発に関わる機能が\nまとめて追加された。\n\nポイントはここ👇\n\n▶︎ Files APIのサポートが強化\n▶︎ Computer Use・Browser Use のツールセットが追加\n▶︎ ウェブ検索などのエージェント向け設定が拡充\n\nつまり、\n\nブラウザ操作やファイル管理をエージェントに\n任せる実装がしやすくなってきたかもしれません😊\n\nSDKのリリースノートもあわせて確認してみて👀\nPython: https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0\nTypeScript: https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.120.0",
+    "【Anthropic SDKアップデート】\n新バージョンが続々リリース！\n\nTypeScript SDK・Python SDK・Vertex SDK・Google Cloud SDKのリリースがまとめて公開された。\n\n結論はこれ👇\n\n▶︎ anthropic-sdk-python v0.125.0\n▶︎ anthropic-sdk-typescript sdk-v0.120.0\n▶︎ vertex-sdk-v0.19.5 / google-cloud-sdk-v0.0.10\n\nつまり、\n\n主要プラットフォーム向けのSDKが\n着実にアップデートされています✨\n\n詳細はリリースノートを確認してみて👀\nhttps://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0"
+  ],
+  "types": [
+    "速報",
+    "解説",
+    "事例"
+  ],
+  "quote_tweet_ids": [
+    null,
+    null,
+    null
+  ],
+  "review_failed": [
+    false,
+    false,
+    false
+  ]
+}
