@@ -1,0 +1,78 @@
+{
+  "collected_at": "2026-08-21T22:12:00.584699",
+  "date": "2026-08-21",
+  "total_found": 7,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-21T22:12:00.492766+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.998480674436
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
+      "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+      "external_url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+      "score": 148,
+      "comments": 105,
+      "created": "2026-08-21T14:31:52+00:00",
+      "final_score": 341.7439310015344
+    },
+    {
+      "source": "Hacker News",
+      "title": "Quick impressions: A week of using Codex more than Claude",
+      "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "external_url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "score": 60,
+      "comments": 67,
+      "created": "2026-08-21T19:51:48+00:00",
+      "final_score": 152.66541818809523
+    },
+    {
+      "source": "Hacker News",
+      "title": "Building an (almost) fully self-hosted, sandboxed, agentic software factory",
+      "url": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/",
+      "external_url": "https://blog.jakesaunders.dev/building-an-almost-fully-self-hosted-sandboxed-agentic-software-factory/",
+      "score": 65,
+      "comments": 42,
+      "created": "2026-08-21T16:27:52+00:00",
+      "final_score": 148.78082340747355
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: Vendo (YC S26) – Let users build features on top of your product",
+      "url": "https://github.com/runvendo/vendo",
+      "external_url": "https://github.com/runvendo/vendo",
+      "score": 57,
+      "comments": 22,
+      "created": "2026-08-20T15:29:52+00:00",
+      "final_score": 114.5831195009127
+    },
+    {
+      "source": "Hacker News",
+      "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
+      "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+      "external_url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+      "score": 34,
+      "comments": 27,
+      "created": "2026-08-21T18:48:28+00:00",
+      "final_score": 80.81344596796296
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Proliferate- open-source, self-hostable Codex for any coding agent",
+      "url": "https://github.com/proliferate-ai/proliferate",
+      "external_url": "https://github.com/proliferate-ai/proliferate",
+      "score": 34,
+      "comments": 14,
+      "created": "2026-08-21T16:47:15+00:00",
+      "final_score": 73.90458022722221
+    }
+  ]
+}
