@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-08-25T22:14:19.307095",
+  "date": "2026-08-25",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-25T22:14:18.256437+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.982630523496
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.245: v2.1.245",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
+      "body": "## What's changed\n\n- Fixed a crash on startup on Linux distributions that ship glibc 2.44 (for example Arch Linux, CachyOS and Fedora Rawhide)\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-25T05:13:24Z",
+      "final_score": 1518.9744615767197
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.241: v2.1.241",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-23T00:52:16Z",
+      "final_score": 1269.6781652804234
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.240: v2.1.240",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-22T14:45:30Z",
+      "final_score": 1221.5220806243387
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.239: v2.1.239",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
+      "body": "## What's changed\n\n- Cost estimates (`/cost`, status line, `--max-budget-usd`) now include the 1.1× US-only-inference premium for data-residency workspaces\n- Added the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in fullscreen\n- Added `/claude-api upgrade` to migrate Python projects from `anthropic` 0.x to 1.x, and updated the skill's Python reference for 1.x (timeouts use `anthropic.Timeout`, not `httpx.Timeout`)\n- Cloud sessions: plugins synced from claude.ai now show as `name@synced`, work with `claude plug",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-21T19:54:23Z",
+      "final_score": 1131.7509166031746
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.238: v2.1.238",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
+      "body": "## What's changed\n\n- Added a `keybindingFlavor` setting: set it to `\"readline\"` to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (`\"classic\"`) is unchanged\n- Plugin marketplaces: `headersHelper` on a url marketplace or a catalog entry runs a command that mints HTTP headers (e.g. a short-lived token) for catalog and same-origin archive fetches\n- A catalog entry's `headersHelper` runs only when you install or update that plugin, after its command is shown; `claude plugin install/update` ask `[y/N]` (or pass `-y`)\n- Added `claude self-hosted-runner --de",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-20T20:33:51Z",
+      "final_score": 1020.5974774497355
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.0.0: v1.0.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.0.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.0.0",
+      "body": "## 1.0.0 (2026-08-20)\n\nFull Changelog: [v0.125.0...v1.0.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.125.0...v1.0.0)\n\n### ⚠ BREAKING CHANGES\n\n* **client:** upgrade to httpx2 and some minor breaking changes. See MIGRATION.md for details\n\n### Features\n\n* **client:** upgrade to httpx2 and some minor breaking changes. See MIGRATION.md for details ([33e2967](https://github.com/anthropics/anthropic-sdk-python/commit/33e296749dda59c3b9af85d9bee37ae241b92a28))\n\n\n### Bug Fixes\n\n* **beta:** stop warning about `output_format=` on the parse/stream/tool_runner helpers ([59bf261](https:/",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-20T19:58:48Z",
+      "final_score": 1017.8157314179895
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.10: google-cloud-sdk: v0.0.10",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.10",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.10",
+      "body": "## 0.0.10 (2026-08-19)\n\nFull Changelog: [google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.9...google-cloud-sdk-v0.0.10)\n\n### Chores\n\n* **internal:** use a single pnpm workspace lockfile ([#359](https://github.com/anthropics/anthropic-sdk-typescript/issues/359)) ([3c32145](https://github.com/anthropics/anthropic-sdk-typescript/commit/3c32145d2bc4d53888c6c6857c9af216eec95fb9))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:52Z",
+      "final_score": 913.2178478201059
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v0.125.0: v0.125.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.125.0",
+      "body": "## 0.125.0 (2026-08-19)\n\nFull Changelog: [v0.124.0...v0.125.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.124.0...v0.125.0)\n\n### Features\n\n* **api:** managed agents web search config and self hosted sandbox memory ([b75afd6](https://github.com/anthropics/anthropic-sdk-python/commit/b75afd6ffa210ff2e98bc5e90d6f1f3367038f0b))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:31Z",
+      "final_score": 913.190070042328
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.5: vertex-sdk: v0.19.5",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.5",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.5",
+      "body": "## 0.19.5 (2026-08-19)\n\nFull Changelog: [vertex-sdk-v0.19.4...vertex-sdk-v0.19.5](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.4...vertex-sdk-v0.19.5)\n\n### Chores\n\n* **internal:** use a single pnpm workspace lockfile ([#359](https://github.com/anthropics/anthropic-sdk-typescript/issues/359)) ([3c32145](https://github.com/anthropics/anthropic-sdk-typescript/commit/3c32145d2bc4d53888c6c6857c9af216eec95fb9))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-19T22:00:22Z",
+      "final_score": 913.1781652804232
+    }
+  ]
+}
