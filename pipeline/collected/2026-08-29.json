@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-08-29T03:24:54.905606",
+  "collected_at": "2026-08-29T23:40:39.973120",
   "date": "2026-08-29",
-  "total_found": 17,
+  "total_found": 15,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-08-29T03:24:53.758621+00:00",
+      "created": "2026-08-29T23:40:39.017116+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.98103775951
+      "final_score": 19997.98419534716
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-28T18:19:32Z",
-      "final_score": 1556.7157333703703
+      "final_score": 1460.227548839947
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-28T00:49:16Z",
-      "final_score": 1473.3612360158731
+      "final_score": 1376.8730514854497
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-27T22:12:20Z",
-      "final_score": 1460.9062095608465
+      "final_score": 1364.4180250304232
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-27T20:33:46Z",
-      "final_score": 1453.0834582380953
+      "final_score": 1356.5952737076718
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-27T20:33:41Z",
-      "final_score": 1453.0768444814814
+      "final_score": 1356.5886599510582
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -78,7 +78,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-27T20:33:34Z",
-      "final_score": 1453.0675852222223
+      "final_score": 1356.579400691799
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -89,7 +89,17 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-27T20:28:58Z",
-      "final_score": 1452.7025058571428
+      "final_score": 1356.2143213267195
+    },
+    {
+      "source": "Hacker News",
+      "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
+      "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "external_url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
+      "score": 606,
+      "comments": 421,
+      "created": "2026-08-28T02:03:38+00:00",
+      "final_score": 1257.9521896748313
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -100,18 +110,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-08-26T23:06:39Z",
-      "final_score": 1350.9313418359789
-    },
-    {
-      "source": "GitHub anthropics/anthropic-sdk-typescript",
-      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.6: vertex-sdk: v0.19.6",
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.6",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.6",
-      "body": "## 0.19.6 (2026-08-26)\n\nFull Changelog: [vertex-sdk-v0.19.5...vertex-sdk-v0.19.6](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.5...vertex-sdk-v0.19.6)\n\n### Chores\n\n* **examples:** remove redundant main().catch boilerplate ([154ace7](https://github.com/anthropics/anthropic-sdk-typescript/commit/154ace7ea8ccd66d59b3a7d2ca61dcff82b39417))",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-08-26T17:24:20Z",
-      "final_score": 1323.7633524179894
+      "final_score": 1254.4431573055554
     }
   ]
 }
