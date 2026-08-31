@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-08-31T00:00:12.816040",
+  "date": "2026-08-31",
+  "total_found": 15,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-08-31T00:00:11.469385+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.977736899153
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.251: v2.1.251",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
+      "body": "## What's changed\n\n- Added `PreModelSwitch` and `PostModelSwitch` hook events (block, confirm, or annotate a model switch); `SessionStart` resume hooks now receive session staleness and the estimated re-cache cost\n- Added live streaming of a foreground subagent's tool calls and results to Remote Control clients (background subagents, the default, still show status only)\n- Added a Spend limit bar to `/usage` and a `rate_limits.spend_limit` status line field for developers behind a Claude apps gateway with spend limits\n- Added a per-session prompt-cache line to `/cost` (hit ratio, misses, tokens",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-28T18:19:32Z",
+      "final_score": 1344.3904550370369
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.250: v2.1.250",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-28T00:49:16Z",
+      "final_score": 1261.0359576825397
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.248: v2.1.248",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+      "body": "## What's changed\n\n- Added `--restricted` (or `CLAUDE_CODE_RESTRICTED=1`): removes the built-in tools that run commands or code and `WebFetch` (unless named in `--tools`), keeps file tools inside the working directory, refuses `bypassPermissions`, and ignores user, project and local settings files\n- Added `experimental.cacheTtl` (`\"5m\"` or `\"1h\"`) to agent frontmatter: a per-agent prompt cache TTL used when no subagent TTL setting is configured\n- Added `claude self-hosted-runner --client-label <label>` (or `SELF_HOSTED_RUNNER_CLIENT_LABEL`) to override the label the runner registers with (defa",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-27T22:12:20Z",
+      "final_score": 1248.5809312275132
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.6.6: aws-sdk: v0.6.6",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.6",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.6.6",
+      "body": "## 0.6.6 (2026-08-27)\n\nFull Changelog: [aws-sdk-v0.6.5...aws-sdk-v0.6.6](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.6.5...aws-sdk-v0.6.6)\n\n### Bug Fixes\n\n* **aws,bedrock:** prefer env credentials over AWS_PROFILE ([#436](https://github.com/anthropics/anthropic-sdk-typescript/issues/436)) ([d1fd5dd](https://github.com/anthropics/anthropic-sdk-typescript/commit/d1fd5ddb7e0e33bc5dc4f87580053aea41c2ae74))\n* **aws,bedrock:** sign repeated query keys correctly with SigV4 ([#409](https://github.com/anthropics/anthropic-sdk-typescript/issues/409)) ([6a7e22a](https://gith",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-27T20:33:46Z",
+      "final_score": 1240.758179904762
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.33.3: bedrock-sdk: v0.33.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.3",
+      "body": "## 0.33.3 (2026-08-27)\n\nFull Changelog: [bedrock-sdk-v0.33.2...bedrock-sdk-v0.33.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.2...bedrock-sdk-v0.33.3)\n\n### Bug Fixes\n\n* **aws,bedrock:** prefer env credentials over AWS_PROFILE ([#436](https://github.com/anthropics/anthropic-sdk-typescript/issues/436)) ([d1fd5dd](https://github.com/anthropics/anthropic-sdk-typescript/commit/d1fd5ddb7e0e33bc5dc4f87580053aea41c2ae74))\n* **aws,bedrock:** sign repeated query keys correctly with SigV4 ([#409](https://github.com/anthropics/anthropic-sdk-typescript/issues/409)) ([",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-27T20:33:41Z",
+      "final_score": 1240.7515661481482
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.122.0: sdk: v0.122.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.122.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.122.0",
+      "body": "## 0.122.0 (2026-08-27)\n\nFull Changelog: [sdk-v0.121.0...sdk-v0.122.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.121.0...sdk-v0.122.0)\n\n### Features\n\n* **api:** beta files/skills namespaces use GA shapes; drop dated beta header pins ([45d693a](https://github.com/anthropics/anthropic-sdk-typescript/commit/45d693a66bc7fb1af66d9c4e3625f6d6f64bae59))\n\n\n### Bug Fixes\n\n* **client:** classify cross-realm DOMException abort/timeout errors correctly ([1bd6395](https://github.com/anthropics/anthropic-sdk-typescript/commit/1bd639515e9948c1dc45047ce5cb4fcfc5c436b8))\n* **client:",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-27T20:33:34Z",
+      "final_score": 1240.7423068888888
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.2.0: v1.2.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.2.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.2.0",
+      "body": "## 1.2.0 (2026-08-27)\n\nFull Changelog: [v1.1.0...v1.2.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.1.0...v1.2.0)\n\n### Features\n\n* **api:** beta files/skills namespaces use GA shapes; drop dated beta header pins ([9df4565](https://github.com/anthropics/anthropic-sdk-python/commit/9df4565fdfe4eec941809a0a3d1615ee11e16b68))\n\n\n### Bug Fixes\n\n* **aws,bedrock:** sign raw request bytes so binary file uploads work ([#531](https://github.com/anthropics/anthropic-sdk-python/issues/531)) ([f50e910](https://github.com/anthropics/anthropic-sdk-python/commit/f50e9106c002d71966f5f8027758b",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-27T20:28:58Z",
+      "final_score": 1240.3772275238096
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.247: v2.1.247",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.247",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.247",
+      "body": "## What's changed\n\n- Added the `SendFeedback` tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from `/feedback` (turn off with the `feedbackDrafts` setting)\n- Added `{id, text, cooldownSessions, priority}` entries, `tipsFile`, and `label` to `spinnerTipsOverride`, so organizations can rotate their own tips alongside the built-in ones\n- Added a tip on Bash permission prompts pointing to auto mode, with a one-keystroke \"Yes, and switch to auto mode\" option\n- Added `/claude-api cost-optimize` to profile an existing project's Claude API sp",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-26T23:06:39Z",
+      "final_score": 1138.6060635026456
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.6: vertex-sdk: v0.19.6",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.6",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.6",
+      "body": "## 0.19.6 (2026-08-26)\n\nFull Changelog: [vertex-sdk-v0.19.5...vertex-sdk-v0.19.6](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.5...vertex-sdk-v0.19.6)\n\n### Chores\n\n* **examples:** remove redundant main().catch boilerplate ([154ace7](https://github.com/anthropics/anthropic-sdk-typescript/commit/154ace7ea8ccd66d59b3a7d2ca61dcff82b39417))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-08-26T17:24:20Z",
+      "final_score": 1111.438074084656
+    }
+  ]
+}
