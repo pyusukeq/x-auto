@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-09-07T23:50:46.794526",
+  "date": "2026-09-07",
+  "total_found": 14,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-09-07T23:50:45.910901+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98539185448
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.263: v2.1.263",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.263",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.263",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-06T02:54:20Z",
+      "final_score": 1385.9963035846563
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.7.0: aws-sdk: v0.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.0",
+      "body": "## 0.7.0 (2026-09-04)\n\nFull Changelog: [aws-sdk-v0.6.6...aws-sdk-v0.7.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.6.6...aws-sdk-v0.7.0)\n\n### Features\n\n* **api:** add support for sending a workspace ID on more endpoints ([a11e6f1](https://github.com/anthropics/anthropic-sdk-typescript/commit/a11e6f1d3bb0e12e6369d3611a232a6234e715eb))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:48Z",
+      "final_score": 1250.001594589947
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.5: foundry-sdk: v0.4.5",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.5",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.5",
+      "body": "## 0.4.5 (2026-09-04)\n\nFull Changelog: [foundry-sdk-v0.4.4...foundry-sdk-v0.4.5](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.4...foundry-sdk-v0.4.5)\n\n### Chores\n\n* **examples:** refresh platform model IDs ([#376](https://github.com/anthropics/anthropic-sdk-typescript/issues/376)) ([2637d11](https://github.com/anthropics/anthropic-sdk-typescript/commit/2637d1198b41514f563c799bec50759cce604638))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:42Z",
+      "final_score": 1249.9936580820104
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.33.4: bedrock-sdk: v0.33.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.4",
+      "body": "## 0.33.4 (2026-09-04)\n\nFull Changelog: [bedrock-sdk-v0.33.3...bedrock-sdk-v0.33.4](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.3...bedrock-sdk-v0.33.4)\n\n### Chores\n\n* **examples:** refresh platform model IDs ([#376](https://github.com/anthropics/anthropic-sdk-typescript/issues/376)) ([2637d11](https://github.com/anthropics/anthropic-sdk-typescript/commit/2637d1198b41514f563c799bec50759cce604638))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:37Z",
+      "final_score": 1249.9870443253967
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.7: vertex-sdk: v0.19.7",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.7",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.7",
+      "body": "## 0.19.7 (2026-09-04)\n\nFull Changelog: [vertex-sdk-v0.19.6...vertex-sdk-v0.19.7](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.6...vertex-sdk-v0.19.7)\n\n### Chores\n\n* **examples:** refresh platform model IDs ([#376](https://github.com/anthropics/anthropic-sdk-typescript/issues/376)) ([2637d11](https://github.com/anthropics/anthropic-sdk-typescript/commit/2637d1198b41514f563c799bec50759cce604638))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:30Z",
+      "final_score": 1249.9777850661376
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.124.0: sdk: v0.124.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.124.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.124.0",
+      "body": "## 0.124.0 (2026-09-04)\n\nFull Changelog: [sdk-v0.123.0...sdk-v0.124.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.123.0...sdk-v0.124.0)\n\n### Features\n\n* **api:** add Claude Tag category and user breakdowns to usage reports ([669ff22](https://github.com/anthropics/anthropic-sdk-typescript/commit/669ff2243179acb2df775e62bfd75e3da1d60d81))\n* **api:** add named types for organization compliance settings state ([54be8da](https://github.com/anthropics/anthropic-sdk-typescript/commit/54be8da7176d7aaa2c3e62ad2e0d5289182a55ed))\n* **api:** add support for sending a workspace I",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:24Z",
+      "final_score": 1249.969848558201
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.4.0: v1.4.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.4.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.4.0",
+      "body": "## 1.4.0 (2026-09-04)\n\nFull Changelog: [v1.3.0...v1.4.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.3.0...v1.4.0)\n\n### Features\n\n* **api:** add Claude Tag category and user breakdowns to usage reports ([9fce1e4](https://github.com/anthropics/anthropic-sdk-python/commit/9fce1e4994e113c35f4a7116d0c5eb90367b9c66))\n* **api:** add named types for organization compliance settings state ([1de1957](https://github.com/anthropics/anthropic-sdk-python/commit/1de1957334e7491979ddb21a1d673fa4e56d5459))\n* **api:** add support for sending a workspace ID on more endpoints ([d1d2c01](https:/",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:20Z",
+      "final_score": 1249.96455755291
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.261: v2.1.261",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
+      "body": "## What's changed\n\n- Added an \"Organization policy\" line to `/status` and `claude doctor` that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through\n- Added `bashOutputMaxChars` and `taskOutputMaxChars` settings to raise how much command and background-task output Claude receives inline before it is saved to a file, up to 128K characters\n- Added `--append-subagent-system-prompt-file` to read the subagent system prompt from a file, for prompts too large to pass on the command line\n- Added `/skill-doctor` to show which loaded skills go unused a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T19:58:10Z",
+      "final_score": 1238.6814887698413
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.260: v2.1.260",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.260",
+      "body": "## What's changed\n\n- Added a diff panel that opens beside the conversation in fullscreen mode and shows your uncommitted changes as Claude edits; toggle it with `/diff`\n- Added a likely cause for prompt-cache misses (e.g. tool definitions or system prompt changed, idle past the TTL) to `/cost` and the status line's `prompt_cache` field\n- Added `/reload-plugins` to headless sessions, so it appears in the Claude Code Desktop and SDK command lists\n- Added a text form of `/advisor` (`/advisor`, `/advisor <model>`, `/advisor off`) for the desktop app, Remote Control, and other headless (`-p`/Agent ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-03T23:48:12Z",
+      "final_score": 1142.6523882407407
+    }
+  ]
+}
