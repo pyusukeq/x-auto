@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-09-09T23:38:22.137508",
+  "date": "2026-09-09",
+  "total_found": 15,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-09-09T23:38:21.023883+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.981589473515
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude, change the “Add to Cart” button to blue",
+      "url": "https://opusfived.dev/",
+      "external_url": "https://opusfived.dev/",
+      "score": 956,
+      "comments": 385,
+      "created": "2026-09-09T09:39:46+00:00",
+      "final_score": 2024.9658938250197
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.267: v2.1.267",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.267",
+      "body": "## What's changed\n\n- Added `maxEffortLevel` setting (top-level or per model under `modelSettings`): caps the effort level on every provider, including Bedrock, Vertex and Foundry; users can still pick a lower level\n- Added `--system-prompt-snapshot off` to render the system prompt fresh on every request instead of reusing the conversation's recorded prompt (for iterating on prompt text)\n- Fixed Cowork scheduled tasks in the cloud failing at startup for organizations whose managed settings require sandboxing\n- Fixed `/context` and other local command output rendering blank on mobile clients\n- F",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-09T19:58:14Z",
+      "final_score": 1582.5289186997354
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.266: v2.1.266",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
+      "body": "## What's changed\n\n- Fixed a 2.1.265 regression affecting LLM-gateway and proxy setups: the undocumented `CLAUDE_CODE_USE_GATEWAY` environment variable, previously ignored unless `ANTHROPIC_BASE_URL` and `ANTHROPIC_AUTH_TOKEN` were both set, began forcing Cloud-gateway sign-in on its own in 2.1.265, so configurations that set it alongside an API key, `apiKeyHelper`, or custom auth headers failed every request with \"Not signed in to the Cloud gateway\". The variable on its own is ignored again; no configuration change is needed\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-08T23:55:14Z",
+      "final_score": 1487.052728223545
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.265: v2.1.265",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
+      "body": "## What's changed\n\n- Added `user.email` and `user.groups` to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions\n- Added support for pointing `--plugin-dir` at a folder of plugins: each child folder with a manifest loads, and children added or removed while running are picked up\n- Added a 1 GB cap on tool results saved to disk; the in-conversation preview says when a saved file was truncated\n- Fixed resuming a foreground-spawned subagent changing its tool list and system prompt prefix, which broke prompt-cache reuse for that agent\n- Fixed agen",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-08T20:37:31Z",
+      "final_score": 1471.360929281746
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.263: v2.1.263",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.263",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.263",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-06T02:54:20Z",
+      "final_score": 1158.4098710806877
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript aws-sdk-v0.7.0: aws-sdk: v0.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.0",
+      "body": "## 0.7.0 (2026-09-04)\n\nFull Changelog: [aws-sdk-v0.6.6...aws-sdk-v0.7.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/aws-sdk-v0.6.6...aws-sdk-v0.7.0)\n\n### Features\n\n* **api:** add support for sending a workspace ID on more endpoints ([a11e6f1](https://github.com/anthropics/anthropic-sdk-typescript/commit/a11e6f1d3bb0e12e6369d3611a232a6234e715eb))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:48Z",
+      "final_score": 1022.4151620859787
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.5: foundry-sdk: v0.4.5",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.5",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.5",
+      "body": "## 0.4.5 (2026-09-04)\n\nFull Changelog: [foundry-sdk-v0.4.4...foundry-sdk-v0.4.5](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.4...foundry-sdk-v0.4.5)\n\n### Chores\n\n* **examples:** refresh platform model IDs ([#376](https://github.com/anthropics/anthropic-sdk-typescript/issues/376)) ([2637d11](https://github.com/anthropics/anthropic-sdk-typescript/commit/2637d1198b41514f563c799bec50759cce604638))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:42Z",
+      "final_score": 1022.4072255780424
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.33.4: bedrock-sdk: v0.33.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.4",
+      "body": "## 0.33.4 (2026-09-04)\n\nFull Changelog: [bedrock-sdk-v0.33.3...bedrock-sdk-v0.33.4](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.3...bedrock-sdk-v0.33.4)\n\n### Chores\n\n* **examples:** refresh platform model IDs ([#376](https://github.com/anthropics/anthropic-sdk-typescript/issues/376)) ([2637d11](https://github.com/anthropics/anthropic-sdk-typescript/commit/2637d1198b41514f563c799bec50759cce604638))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:37Z",
+      "final_score": 1022.4006118214286
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.7: vertex-sdk: v0.19.7",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.7",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.7",
+      "body": "## 0.19.7 (2026-09-04)\n\nFull Changelog: [vertex-sdk-v0.19.6...vertex-sdk-v0.19.7](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.6...vertex-sdk-v0.19.7)\n\n### Chores\n\n* **examples:** refresh platform model IDs ([#376](https://github.com/anthropics/anthropic-sdk-typescript/issues/376)) ([2637d11](https://github.com/anthropics/anthropic-sdk-typescript/commit/2637d1198b41514f563c799bec50759cce604638))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-04T22:20:30Z",
+      "final_score": 1022.3913525621693
+    }
+  ]
+}
