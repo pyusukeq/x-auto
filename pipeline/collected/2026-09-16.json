@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-09-16T23:57:16.952813",
+  "date": "2026-09-16",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-09-16T23:57:15.611670+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.97782787881
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.273: v2.1.273",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.273",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.273",
+      "body": "## What's changed\n\n- Added `x-claude-code-request-class`, `x-claude-code-agent-type`, `x-claude-code-prev-tool-durations`, `x-claude-code-compaction` and `x-claude-code-context-compacted` request headers for LLM gateways; opt in with `CLAUDE_CODE_GATEWAY_HINT_HEADERS=1`\n- Added a notification when an MCP server disconnects mid-session and automatic reconnection gives up, pointing at `/mcp`\n- Added forking a session started with `claude --remote-control` or `/remote-control` from the Claude app; the fork runs as a background session on your computer\n- Fixed Bash commands the permission checker ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T20:23:03Z",
+      "final_score": 1468.711702679894
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.12: google-cloud-sdk: v0.0.12",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.12",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.12",
+      "body": "## 0.0.12 (2026-09-15)\n\nFull Changelog: [google-cloud-sdk-v0.0.11...google-cloud-sdk-v0.0.12](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.11...google-cloud-sdk-v0.0.12)\n\n### Chores\n\n* **internal:** move the sub-packages off ts-node and modernise their tsconfig ([1d7cd91](https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7cd915ab581332085f738d1eb5ed17464004d7))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T17:34:43Z",
+      "final_score": 1455.3519143201058
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.7: foundry-sdk: v0.4.7",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.7",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.7",
+      "body": "## 0.4.7 (2026-09-15)\n\nFull Changelog: [foundry-sdk-v0.4.6...foundry-sdk-v0.4.7](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.6...foundry-sdk-v0.4.7)\n\n### Chores\n\n* **internal:** move the sub-packages off ts-node and modernise their tsconfig ([1d7cd91](https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7cd915ab581332085f738d1eb5ed17464004d7))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T17:34:32Z",
+      "final_score": 1455.3373640555556
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.33.6: bedrock-sdk: v0.33.6",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.6",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.6",
+      "body": "## 0.33.6 (2026-09-15)\n\nFull Changelog: [bedrock-sdk-v0.33.5...bedrock-sdk-v0.33.6](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.5...bedrock-sdk-v0.33.6)\n\n### Chores\n\n* **internal:** move the sub-packages off ts-node and modernise their tsconfig ([1d7cd91](https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7cd915ab581332085f738d1eb5ed17464004d7))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T17:34:25Z",
+      "final_score": 1455.3281047962962
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.9: vertex-sdk: v0.19.9",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.9",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.9",
+      "body": "## 0.19.9 (2026-09-15)\n\nFull Changelog: [vertex-sdk-v0.19.8...vertex-sdk-v0.19.9](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.8...vertex-sdk-v0.19.9)\n\n### Chores\n\n* **internal:** move the sub-packages off ts-node and modernise their tsconfig ([1d7cd91](https://github.com/anthropics/anthropic-sdk-typescript/commit/1d7cd915ab581332085f738d1eb5ed17464004d7))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T17:34:18Z",
+      "final_score": 1455.318845537037
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.126.0: sdk: v0.126.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.126.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.126.0",
+      "body": "## 0.126.0 (2026-09-15)\n\nFull Changelog: [sdk-v0.125.0...sdk-v0.126.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.125.0...sdk-v0.126.0)\n\n### Features\n\n* **api:** add auto mode tool permissions for Managed Agents ([7829b43](https://github.com/anthropics/anthropic-sdk-typescript/commit/7829b4302375a14db64d5536226768601f843233))\n* **api:** add compaction parameter and signed compaction blocks (beta) ([05fd878](https://github.com/anthropics/anthropic-sdk-typescript/commit/05fd87804f1cb2db1ea94528ba3b5087403177ba))\n* **api:** add enum types for workspace data-residency ge",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T17:34:12Z",
+      "final_score": 1455.3109090291007
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.6.0: v1.6.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.6.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.6.0",
+      "body": "## 1.6.0 (2026-09-15)\n\nFull Changelog: [v1.5.0...v1.6.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.5.0...v1.6.0)\n\n### Features\n\n* **api:** add auto mode tool permissions for Managed Agents ([909d92f](https://github.com/anthropics/anthropic-sdk-python/commit/909d92ff57dd27270796407547ffbbf521cf941e))\n* **api:** add compaction parameter and signed compaction blocks (beta) ([8689179](https://github.com/anthropics/anthropic-sdk-python/commit/8689179d2c760f005d0f7736387d352b71f05bee))\n* **api:** add enum types for workspace data-residency geo fields ([3dc6dbf](https://github.com",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T15:14:42Z",
+      "final_score": 1444.2394804576718
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.272: v2.1.272",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.272",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.272",
+      "body": "## What's changed\n\n- Bug fixes and reliability improvements\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-15T00:42:25Z",
+      "final_score": 1375.010644478836
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.271: v2.1.271",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.271",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.271",
+      "body": "## What's changed\n\n- Added fast mode in Claude Code Remote sessions (cloud and self-hosted runners): the host's fast-mode setting or `/fast` typed in the session applies where your organization allows it\n- Added mouse support to the `/config` panel in fullscreen mode: the wheel scrolls the settings list, a click on a setting's value changes it, and the row under the pointer is highlighted\n- Added `claude self-hosted-runner --drain-marker-file <path>`: when that file exists at a SIGTERM drain, the runner reports its exit to the server as a host drain (telemetry only)\n- Added per-command `allowe",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-14T22:12:54Z",
+      "final_score": 1363.144242362434
+    }
+  ]
+}
