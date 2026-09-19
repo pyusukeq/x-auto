@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-09-19T23:44:58.201248",
+  "date": "2026-09-19",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-09-19T23:44:57.243909+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.984173342084
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.278: v2.1.278",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
+      "body": "## What's changed\n\n- Changed auto mode for Claude API and Enterprise users, and on Bedrock, Vertex, Foundry and gateways, to default to the server-side classifier, which does not charge for classifier overhead (`CLAUDE_CODE_AUTO_MODE_SERVER=0` opts out on Bedrock, Vertex, Foundry and gateways); warns on billed fallback. See https://code.claude.com/docs/en/auto-mode-classifier-billing\n- Added an `Auto mode server` row to `/status` showing whether this session's auto mode classifier runs on the server\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-19T03:10:40Z",
+      "final_score": 1502.0394164007935
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.277: v2.1.277",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.277",
+      "body": "## What's changed\n\n- Added AGENTS.md support: in a project with no CLAUDE.md, Claude Code reads AGENTS.md instead; change it under \"Project instructions\" in `/config` (not yet on Bedrock, Vertex or Foundry)\n- Added `CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1` for Claude apps gateways whose only egress is a forward proxy: every outbound request hands the proxy the hostname instead of resolving it locally\n- Added an optional `headers:` map on Claude apps gateway upstreams, to send static headers to a proxy you run in front of a provider\n- Added a line saying a background task's update is waiting ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T18:06:32Z",
+      "final_score": 1458.8542312156085
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.13: google-cloud-sdk: v0.0.13",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.13",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.13",
+      "body": "## 0.0.13 (2026-09-18)\n\nFull Changelog: [google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.12...google-cloud-sdk-v0.0.13)\n\n### Chores\n\n* **internal:** build the sub-packages with TypeScript 6.0.3 ([8a69ff5](https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd964030086b01ae5354aaf))\n* **internal:** switch unit tests from jest to vitest ([788c9c6](https://github.com/anthropics/anthropic-sdk-typescript/commit/788c9c62ba2bd8180ffc7dcebd1cee14cd692d03))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T16:25:20Z",
+      "final_score": 1450.8224851838625
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.8: foundry-sdk: v0.4.8",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.8",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.8",
+      "body": "## 0.4.8 (2026-09-18)\n\nFull Changelog: [foundry-sdk-v0.4.7...foundry-sdk-v0.4.8](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.7...foundry-sdk-v0.4.8)\n\n### Chores\n\n* **internal:** build the sub-packages with TypeScript 6.0.3 ([8a69ff5](https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd964030086b01ae5354aaf))\n* **internal:** switch unit tests from jest to vitest ([788c9c6](https://github.com/anthropics/anthropic-sdk-typescript/commit/788c9c62ba2bd8180ffc7dcebd1cee14cd692d03))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T16:25:08Z",
+      "final_score": 1450.8066121679894
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.33.7: bedrock-sdk: v0.33.7",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.7",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.7",
+      "body": "## 0.33.7 (2026-09-18)\n\nFull Changelog: [bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.6...bedrock-sdk-v0.33.7)\n\n### Bug Fixes\n\n* **bedrock:** raise APIError for mid-stream exception and error frames ([#622](https://github.com/anthropics/anthropic-sdk-typescript/issues/622)) ([8a14b15](https://github.com/anthropics/anthropic-sdk-typescript/commit/8a14b15cc33c64aeb8a77fefd2594c620c7ecc23))\n\n\n### Chores\n\n* **internal:** build the sub-packages with TypeScript 6.0.3 ([8a69ff5](https://github.com/anthropics/anthropic-sdk-",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T16:25:02Z",
+      "final_score": 1450.7986756600528
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.10: vertex-sdk: v0.19.10",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.10",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.10",
+      "body": "## 0.19.10 (2026-09-18)\n\nFull Changelog: [vertex-sdk-v0.19.9...vertex-sdk-v0.19.10](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.9...vertex-sdk-v0.19.10)\n\n### Chores\n\n* **internal:** build the sub-packages with TypeScript 6.0.3 ([8a69ff5](https://github.com/anthropics/anthropic-sdk-typescript/commit/8a69ff594ffeec3f6bd964030086b01ae5354aaf))\n* **internal:** switch unit tests from jest to vitest ([788c9c6](https://github.com/anthropics/anthropic-sdk-typescript/commit/788c9c62ba2bd8180ffc7dcebd1cee14cd692d03))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T16:24:56Z",
+      "final_score": 1450.7907391521164
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.127.0: sdk: v0.127.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.127.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.127.0",
+      "body": "## 0.127.0 (2026-09-18)\n\nFull Changelog: [sdk-v0.126.0...sdk-v0.127.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.126.0...sdk-v0.127.0)\n\n### Features\n\n* **api:** add group with display_name to rate limits, deprecate group_type ([2575d97](https://github.com/anthropics/anthropic-sdk-typescript/commit/2575d977be0508d0bd3e3c429b758efeb1e240a2))\n* **tools:** add compactBeforeNextTurn() to the tool runner ([#682](https://github.com/anthropics/anthropic-sdk-typescript/issues/682)) ([9f75ca6](https://github.com/anthropics/anthropic-sdk-typescript/commit/9f75ca69905ba808709c9",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T16:24:51Z",
+      "final_score": 1450.7841253955028
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.7.0: v1.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.7.0",
+      "body": "## 1.7.0 (2026-09-18)\n\nFull Changelog: [v1.6.0...v1.7.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.6.0...v1.7.0)\n\n### Features\n\n* **api:** add group with display_name to rate limits, deprecate group_type ([28f0a83](https://github.com/anthropics/anthropic-sdk-python/commit/28f0a831355fa3d539fd3e1db1c63f92a39bb252))\n* **tools:** add compact_before_next_turn() to the tool runner ([#641](https://github.com/anthropics/anthropic-sdk-python/issues/641)) ([8b23fb3](https://github.com/anthropics/anthropic-sdk-python/commit/8b23fb33f326c7ffa52e8d925902af0fd94501ce))\n\n\n### Bug Fixes\n\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-18T16:12:53Z",
+      "final_score": 1449.8343899457673
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Code now reads AGENTS.md if there is no Claude.md",
+      "url": "https://code.claude.com/docs/en/changelog",
+      "external_url": "https://code.claude.com/docs/en/changelog",
+      "score": 713,
+      "comments": 265,
+      "created": "2026-09-18T21:00:32+00:00",
+      "final_score": 1445.0115716661492
+    }
+  ]
+}
