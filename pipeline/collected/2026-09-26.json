@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-09-26T00:14:05.239279",
+  "date": "2026-09-26",
+  "total_found": 15,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-09-26T00:14:03.743889+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.975277753554
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.283: v2.1.283",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "body": "## What's changed\n\n- Added `x-claude-code-prompt-id` to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with `CLAUDE_CODE_GATEWAY_HINT_HEADERS=1`\n- Added `availableModelsMatch` managed setting: with `\"exact\"`, an `availableModels` entry allows only the model version it names, so new releases stay blocked until listed\n- Added `deniedModels` managed setting to block specific models, even when `availableModels` allows them\n- Added MCP tool, WebFetch and WebSearch outputs to the `tool.output` OpenTelemetry span event when `OTEL_LOG_TOOL_CONTENT=1`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-25T21:50:12Z",
+      "final_score": 1588.5803713756613
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.282: v2.1.282",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "body": "## What's changed\n\n- Added a `maxProseWidth` setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width\n- Added a startup notice, and `/status` and `claude doctor` entries, listing telemetry variables in a project's settings files that were ignored or that turned telemetry off\n- Added the `allowClaudeInChromeWithManagedMcp` managed setting to let `claude --chrome` run alongside an exclusive `managed-mcp.json`; the error shown when Chrome is blocked now names it\n- Added `store.readiness_grace_seconds` to the Claude apps gateway so `/readyz` ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-24T18:38:05Z",
+      "final_score": 1459.0473025925926
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.281: v2.1.281",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+      "body": "## What's changed\n\n- Added Claude apps gateway support for newer Claude Desktop keys in `desktop` policy blocks, including `blockReadsOutsideWorkingDirectories` and `disableBypassPermissionsMode`\n- Added `assume_role` on Claude apps gateway Bedrock upstreams: the gateway calls Bedrock as an IAM role it assumes through STS, in another AWS account if needed, optionally one session per developer\n- Added `guardrail: {id, version}` on Claude apps gateway Bedrock upstreams to apply an Amazon Bedrock guardrail to every request sent through them (set it on all Bedrock upstreams or none)\n- Added `telem",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-23T19:19:15Z",
+      "final_score": 1348.0287840740739
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.280: v2.1.280",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "body": "## What's changed\n\n- Added Claude Opus 5.5 (`claude-opus-5-5`), now the default Opus model — 1M context, $4/$20 per Mtok with $0.20/Mtok cache reads\n- Added mouse support to more lists in fullscreen mode: the wheel scrolls the `/skills` list, and a skill's state options in `/plugin` can be clicked\n- Added `CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH` to change the 2,048-character cap on MCP tool descriptions and server instructions for every MCP server in the session\n- Added hook output sizes and the number of oversized outputs saved to a file to the `hook_execution_complete` OpenTelemetry event\n- ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-22T16:38:14Z",
+      "final_score": 1220.9639692592593
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.14: google-cloud-sdk: v0.0.14",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.14",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.14",
+      "body": "## 0.0.14 (2026-09-22)\n\nFull Changelog: [google-cloud-sdk-v0.0.13...google-cloud-sdk-v0.0.14](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.13...google-cloud-sdk-v0.0.14)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-22T16:28:25Z",
+      "final_score": 1220.1848687301585
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.4.9: foundry-sdk: v0.4.9",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.9",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.4.9",
+      "body": "## 0.4.9 (2026-09-22)\n\nFull Changelog: [foundry-sdk-v0.4.8...foundry-sdk-v0.4.9](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.8...foundry-sdk-v0.4.9)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-22T16:28:13Z",
+      "final_score": 1220.1689957142858
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.33.8: bedrock-sdk: v0.33.8",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.8",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.33.8",
+      "body": "## 0.33.8 (2026-09-22)\n\nFull Changelog: [bedrock-sdk-v0.33.7...bedrock-sdk-v0.33.8](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.7...bedrock-sdk-v0.33.8)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-22T16:28:07Z",
+      "final_score": 1220.1610592063491
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.19.11: vertex-sdk: v0.19.11",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.11",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.19.11",
+      "body": "## 0.19.11 (2026-09-22)\n\nFull Changelog: [vertex-sdk-v0.19.10...vertex-sdk-v0.19.11](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.10...vertex-sdk-v0.19.11)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-22T16:28:01Z",
+      "final_score": 1220.1531226984127
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.128.0: sdk: v0.128.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.128.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.128.0",
+      "body": "## 0.128.0 (2026-09-22)\n\nFull Changelog: [sdk-v0.127.0...sdk-v0.128.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.127.0...sdk-v0.128.0)\n\n### Features\n\n* **api:** add support for claude-opus-5-5, inline tool definitions and MCP tool-list pinning (beta) ([eff2748](https://github.com/anthropics/anthropic-sdk-typescript/commit/eff27483d20beffef332312ef764a92c80ec5681))\n\n\n### Bug Fixes\n\n* **api:** share one evaluated_permission enum across Managed Agents events ([0c1cc0f](https://github.com/anthropics/anthropic-sdk-typescript/commit/0c1cc0fdf89efed709728e7f4fc8ac9ce3149cd",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-22T16:27:55Z",
+      "final_score": 1220.1451861904761
+    }
+  ]
+}
