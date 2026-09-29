@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-09-29T01:20:28.922076",
+  "date": "2026-09-29",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-09-29T01:20:27.912514+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.983309985968
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.15: google-cloud-sdk: v0.0.15",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.15",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.15",
+      "body": "## 0.0.15 (2026-09-28)\n\nFull Changelog: [google-cloud-sdk-v0.0.14...google-cloud-sdk-v0.0.15](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.14...google-cloud-sdk-v0.0.15)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:04:24Z",
+      "final_score": 1565.3903147791007
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.5.0: foundry-sdk: v0.5.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.0",
+      "body": "## 0.5.0 (2026-09-28)\n\nFull Changelog: [foundry-sdk-v0.4.9...foundry-sdk-v0.5.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.4.9...foundry-sdk-v0.5.0)\n\n### Features\n\n* **api:** add claude-sonnet-5-5 ([4e77366](https://github.com/anthropics/anthropic-sdk-typescript/commit/4e7736625fd23a5607800e8de4aa3c37daa74a07))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:04:12Z",
+      "final_score": 1565.3744417632274
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.34.0: bedrock-sdk: v0.34.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.0",
+      "body": "## 0.34.0 (2026-09-28)\n\nFull Changelog: [bedrock-sdk-v0.33.8...bedrock-sdk-v0.34.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.33.8...bedrock-sdk-v0.34.0)\n\n### Features\n\n* **api:** add claude-sonnet-5-5 ([4e77366](https://github.com/anthropics/anthropic-sdk-typescript/commit/4e7736625fd23a5607800e8de4aa3c37daa74a07))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:04:06Z",
+      "final_score": 1565.366505255291
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.20.0: vertex-sdk: v0.20.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.0",
+      "body": "## 0.20.0 (2026-09-28)\n\nFull Changelog: [vertex-sdk-v0.19.11...vertex-sdk-v0.20.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.19.11...vertex-sdk-v0.20.0)\n\n### Features\n\n* **api:** add claude-sonnet-5-5 ([4e77366](https://github.com/anthropics/anthropic-sdk-typescript/commit/4e7736625fd23a5607800e8de4aa3c37daa74a07))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:04:00Z",
+      "final_score": 1565.3585687473544
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.9.0: v1.9.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.9.0",
+      "body": "## 1.9.0 (2026-09-28)\n\nFull Changelog: [v1.8.0...v1.9.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.8.0...v1.9.0)\n\n### Features\n\n* **api:** add between_tools thinking type ([a9a577d](https://github.com/anthropics/anthropic-sdk-python/commit/a9a577d5a98cb2e133c1f8362f69fff856808da1))\n* **api:** add claude-sonnet-5-5 ([a5a25e9](https://github.com/anthropics/anthropic-sdk-python/commit/a5a25e9e35ac32f100149d1dfa0fbf8cac42a8b4))\n* **api:** add include_inherited and source to workspace rate limits ([0bf4af8](https://github.com/anthropics/anthropic-sdk-python/commit/0bf4af824331c4",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:03:49Z",
+      "final_score": 1565.3440184828041
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.129.0: sdk: v0.129.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.129.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.129.0",
+      "body": "## 0.129.0 (2026-09-28)\n\nFull Changelog: [sdk-v0.128.0...sdk-v0.129.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.128.0...sdk-v0.129.0)\n\n### Features\n\n* **api:** add between_tools thinking type ([ab51075](https://github.com/anthropics/anthropic-sdk-typescript/commit/ab51075609a2d583dffdca24856f4214779d9e7f))\n* **api:** add claude-sonnet-5-5 ([4e77366](https://github.com/anthropics/anthropic-sdk-typescript/commit/4e7736625fd23a5607800e8de4aa3c37daa74a07))\n* **api:** add ClientToolUnion type for client-executed tools ([2c1d2d7](https://github.com/anthropics/anthropic-s",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:03:48Z",
+      "final_score": 1565.3426957314814
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.284: v2.1.284",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
+      "body": "## What's changed\n\n- Added Claude Sonnet 5.5 (`claude-sonnet-5-5`), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads\n- Added a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones\n- Added dollar amounts to the Claude apps gateway spend limit in `/usage` and the status line (for example \"$271.40 / $500.00 spent this month\") when the gateway runs this version or later; the status line's `rate_limits.spend_limit` also g",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-28T18:02:03Z",
+      "final_score": 1565.2038068425925
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.283: v2.1.283",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.283",
+      "body": "## What's changed\n\n- Added `x-claude-code-prompt-id` to the gateway hint headers so LLM gateways can group the requests that serve one user prompt; opt in with `CLAUDE_CODE_GATEWAY_HINT_HEADERS=1`\n- Added `availableModelsMatch` managed setting: with `\"exact\"`, an `availableModels` entry allows only the model version it names, so new releases stay blocked until listed\n- Added `deniedModels` managed setting to block specific models, even when `availableModels` allows them\n- Added MCP tool, WebFetch and WebSearch outputs to the `tool.output` OpenTelemetry span event when `OTEL_LOG_TOOL_CONTENT=1`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-25T21:50:12Z",
+      "final_score": 1240.4538068425927
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.282: v2.1.282",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.282",
+      "body": "## What's changed\n\n- Added a `maxProseWidth` setting that caps the width of Claude's prose in wide terminals while tables and code blocks keep the full width\n- Added a startup notice, and `/status` and `claude doctor` entries, listing telemetry variables in a project's settings files that were ignored or that turned telemetry off\n- Added the `allowClaudeInChromeWithManagedMcp` managed setting to let `claude --chrome` run alongside an exclusive `managed-mcp.json`; the error shown when Chrome is blocked now names it\n- Added `store.readiness_grace_seconds` to the Claude apps gateway so `/readyz` ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-24T18:38:05Z",
+      "final_score": 1110.920738059524
+    }
+  ]
+}
