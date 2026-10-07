@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-10-07T01:05:45.895297",
+  "date": "2026-10-07",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-10-07T01:05:44.509379+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.977087625462
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic reported diary entry to police, woman faces felony charge",
+      "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+      "external_url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+      "score": 808,
+      "comments": 649,
+      "created": "2026-10-05T05:37:40+00:00",
+      "final_score": 1731.4381558061111
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.292: v2.1.292",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "body": "## What's changed\n\n- Added `--marketplace <source>` to `claude plugin install`: adds the marketplace if needed, under the same policy checks as `claude plugin marketplace add`, then installs the plugin from it\n- Added an `effort` parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for\n- Added `CLAUDE_CODE_OVERLOADED_RETRY_BASE_DELAY_MS` environment variable to set a longer base delay for the backoff when retrying an overloaded (529) request\n- Added `prompt.autocomplete`, an event a mod hooks to add its own rows to the prompt box's autocomplete list\n- Added promp",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-06T18:59:30Z",
+      "final_score": 1570.931355478836
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.291: v2.1.291",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+      "body": "## What's changed\n\n- Fixed a regression in 2.1.290 where cloud sessions could drop answers to permission prompts\n- Fixed a regression in 2.1.288 where the last messages of a session could be lost when quitting\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-06T03:55:19Z",
+      "final_score": 1499.1707734682539
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.290: v2.1.290",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+      "body": "## What's changed\n\n- Added `serverToolUses` to the result of a mod's `turn.step` hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end\n- Added `agentId` to the `tool.check` event of plugin hooks, so a hook can tell a subagent's permission check from the main session's\n- Added `ceiling` to the question and verdict a mod's `tool.check` hook reads, naming the approval an organization requires for a tool\n- Added `ThemeKey` and `Color` types to the plugin hooks typings, so an editor lists the theme colors a mod's drawing can name\n- Added to `claude plug",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-05T23:33:17Z",
+      "final_score": 1478.3744771719576
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.289: v2.1.289",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
+      "body": "## What's changed\n\n- Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines\n- Fixed the terminal freezing on short code blocks with many unclosed `<script>` tags or deeply nested `${` substitutions\n- Fixed `Read` deny rules not applying to files @-mentioned, changed, or selected in the IDE through a symlink\n- [VSCode] Reverted a 2.1.288 change to `claude auth status` that may have made sign-outs more frequent\n- Improved how quickly large files open in a plugin code pane by laying the highlighted view out once a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-03T23:07:17Z",
+      "final_score": 1247.739556537037
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.288: v2.1.288",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+      "body": "## What's changed\n\n- Added `$.ui.selection()` for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row\n- Added a built-in `gh api` to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the terminal\n- Added recovery for a prompt cleared with Ctrl+C: pressing Up on the empty prompt brings the draft back, including pasted text and images\n- Added a re-authenticate prompt when an MCP server asks for more OAuth scope during a tool call\n-",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-02T20:19:57Z",
+      "final_score": 1120.1734189708993
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.17: google-cloud-sdk: v0.0.17",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.17",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.17",
+      "body": "## 0.0.17 (2026-09-30)\n\nFull Changelog: [google-cloud-sdk-v0.0.16...google-cloud-sdk-v0.0.17](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.16...google-cloud-sdk-v0.0.17)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-30T22:58:53Z",
+      "final_score": 904.2157470132275
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.20.2: vertex-sdk: v0.20.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.2",
+      "body": "## 0.20.2 (2026-09-30)\n\nFull Changelog: [vertex-sdk-v0.20.1...vertex-sdk-v0.20.2](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.20.1...vertex-sdk-v0.20.2)\n\n### Chores\n\n* **client:** deprecate sonnet 4.5 ([d72cfaf](https://github.com/anthropics/anthropic-sdk-typescript/commit/d72cfaf6a551c75d54fad0538fb5fd65fb2346d1))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-30T22:58:29Z",
+      "final_score": 904.1840009814814
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.131.0: sdk: v0.131.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.131.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.131.0",
+      "body": "## 0.131.0 (2026-09-30)\n\nFull Changelog: [sdk-v0.130.0...sdk-v0.131.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.130.0...sdk-v0.131.0)\n\n### Features\n\n* **api:** add list spend limits endpoint ([cfb78c8](https://github.com/anthropics/anthropic-sdk-typescript/commit/cfb78c8dde70b5f9ea07bf2aebd3651282f2c9a8))\n\n\n### Chores\n\n* **client:** deprecate sonnet 4.5 ([d72cfaf](https://github.com/anthropics/anthropic-sdk-typescript/commit/d72cfaf6a551c75d54fad0538fb5fd65fb2346d1))",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-09-30T22:58:20Z",
+      "final_score": 904.1720962195766
+    }
+  ]
+}
