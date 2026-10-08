@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-10-08T01:25:10.637209",
+  "date": "2026-10-08",
+  "total_found": 19,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-10-08T01:25:09.837066+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.986772189317
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.293: v2.1.293",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+      "body": "## What's changed\n\n- Added Claude Haiku 5.5 (`claude-haiku-5-5`), now the default Haiku model on the Anthropic API — 1M context, $0.10/$0.50 per Mtok ($0.50/$2.50 for prompts over 100K)\n- Added `agentType` to the `subagentStatusLine` payload, so scripts can tell custom subagent types apart\n- Added `isDeferred` to `$.tool.register` for mods: `false` lists the tool's schema in the prompt from the start instead of behind tool search\n- Fixed Claude sometimes treating its own last actions before a context compaction as done after it, and retracting or redoing finished work\n- Fixed a memory leak whe",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T18:10:20Z",
+      "final_score": 1565.488575179894
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.18: google-cloud-sdk: v0.0.18",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.18",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.18",
+      "body": "## 0.0.18 (2026-10-07)\n\nFull Changelog: [google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T17:57:35Z",
+      "final_score": 1564.4766704179895
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.5.3: foundry-sdk: v0.5.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.3",
+      "body": "## 0.5.3 (2026-10-07)\n\nFull Changelog: [foundry-sdk-v0.5.2...foundry-sdk-v0.5.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.5.2...foundry-sdk-v0.5.3)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T17:57:19Z",
+      "final_score": 1564.4555063968255
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.34.3: bedrock-sdk: v0.34.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.3",
+      "body": "## 0.34.3 (2026-10-07)\n\nFull Changelog: [bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T17:57:13Z",
+      "final_score": 1564.447569888889
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.12.0: v1.12.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.0",
+      "body": "## 1.12.0 (2026-10-07)\n\nFull Changelog: [v1.11.0...v1.12.0](https://github.com/anthropics/anthropic-sdk-python/compare/v1.11.0...v1.12.0)\n\n### Features\n\n* **api:** add claude-haiku-5-5 and typed computer and browser toolset tool calls ([f6346e6](https://github.com/anthropics/anthropic-sdk-python/commit/f6346e63b7507a596e6e8acc9425cae2dfc7bf24))\n* **api:** add disabled to thinking types in model capabilities ([78d815d](https://github.com/anthropics/anthropic-sdk-python/commit/78d815d78b33cfea5f4aa78c57a30b341fa8ff42))\n* **api:** add display_name to RBAC roles and deprecate name ([f63f99c](https",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T17:57:07Z",
+      "final_score": 1564.4396333809525
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.20.3: vertex-sdk: v0.20.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.3",
+      "body": "## 0.20.3 (2026-10-07)\n\nFull Changelog: [vertex-sdk-v0.20.2...vertex-sdk-v0.20.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.20.2...vertex-sdk-v0.20.3)",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T17:57:07Z",
+      "final_score": 1564.4396333809525
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.132.0: sdk: v0.132.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.0",
+      "body": "## 0.132.0 (2026-10-07)\n\nFull Changelog: [sdk-v0.131.0...sdk-v0.132.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.131.0...sdk-v0.132.0)\n\n### Features\n\n* **api:** add claude-haiku-5-5 and typed computer and browser toolset tool calls ([1fd8261](https://github.com/anthropics/anthropic-sdk-typescript/commit/1fd826175b5742df1dc9fd69db708be1434fdc15))\n* **api:** add disabled to thinking types in model capabilities ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **api:** add display_name to RBAC roles an",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-07T17:57:01Z",
+      "final_score": 1564.4316968730159
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "external_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "score": 664,
+      "comments": 333,
+      "created": "2026-10-07T18:01:32+00:00",
+      "final_score": 1465.2758348596296
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.292: v2.1.292",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "body": "## What's changed\n\n- Added `--marketplace <source>` to `claude plugin install`: adds the marketplace if needed, under the same policy checks as `claude plugin marketplace add`, then installs the plugin from it\n- Added an `effort` parameter to the Agent tool, so Claude runs a sub-agent at the effort level you ask for\n- Added `CLAUDE_CODE_OVERLOADED_RETRY_BASE_DELAY_MS` environment variable to set a longer base delay for the backoff when retrying an overloaded (529) request\n- Added `prompt.autocomplete`, an event a mod hooks to add its own rows to the prompt box's autocomplete list\n- Added promp",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-06T18:59:30Z",
+      "final_score": 1455.1049772962963
+    }
+  ]
+}
