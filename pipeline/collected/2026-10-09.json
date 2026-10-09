@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-10-09T01:33:02.106378",
+  "date": "2026-10-09",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-10-09T01:33:01.067752+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.982829428867
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "external_url": "https://www.anthropic.com/claude-haiku-5-5",
+      "score": 1034,
+      "comments": 482,
+      "created": "2026-10-07T18:01:32+00:00",
+      "final_score": 2114.9709491612302
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.295: v2.1.295",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
+      "body": "## What's changed\n\n- Added `onFailure: \"block\"` for command and HTTP hooks: a hook that can't start, times out, or exits with an unexpected code blocks the action instead of letting it through\n- Added Program Status Protocol (OSC 7501) support: terminals that implement it can show whether Claude Code is working, waiting on you, or done\n- Added quoted text to the `/copy` picker, so a drafted message copies without its `>` markers\n- Added a warning to `claude plugin install`, `enable`, `disable` and `marketplace add` when the settings file they write to does not load\n- Added a line on stderr, wh",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T19:48:38Z",
+      "final_score": 1572.666526015873
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.294: v2.1.294",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+      "body": "## What's changed\n\n- Fixed `prompt` and `agent` hooks written as instructions (such as \"Block commands that...\") allowing what they should block\n- Improved how `prompt` hooks on Stop and SubagentStop written as instructions (such as \"Carry on if the build is broken\") are judged, so Claude is less likely to stop early\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T05:03:54Z",
+      "final_score": 1502.449594798942
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.12.1: v1.12.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.12.1",
+      "body": "### Chores\n\n* **ci:** check that pull requests update the changelog\n* **docs:** note that listing Claude Console spend limits is in early access\n* **internal:** match the package version in uv.lock",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T03:41:38Z",
+      "final_score": 1495.9204942698414
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.0.19: google-cloud-sdk-v0.0.19",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.19",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.19",
+      "body": "### Chores\n\n* **ci:** check that pull requests update the changelog",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T03:07:11Z",
+      "final_score": 1493.1863672857144
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.5.4: foundry-sdk-v0.5.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.4",
+      "body": "### Chores\n\n* **ci:** check that pull requests update the changelog",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T03:07:07Z",
+      "final_score": 1493.1810762804232
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.34.4: bedrock-sdk-v0.34.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.4",
+      "body": "### Chores\n\n* **ci:** check that pull requests update the changelog",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T03:07:05Z",
+      "final_score": 1493.178430777778
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.20.4: vertex-sdk-v0.20.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.4",
+      "body": "### Chores\n\n* **ci:** check that pull requests update the changelog",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T03:07:03Z",
+      "final_score": 1493.1757852751323
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.132.1: sdk-v0.132.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.1",
+      "body": "### Bug Fixes\n\n* **client:** throw before sending a request with an empty path parameter\n\n\n### Chores\n\n* **ci:** check that pull requests update the changelog\n* **ci:** publish every package from the publish workflow\n* **docs:** note that listing Claude Console spend limits is in early access\n\n\n### Documentation\n\n* split CLAUDE.md into shared, TypeScript, and repository rules",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-08T03:07:00Z",
+      "final_score": 1493.171817021164
+    }
+  ]
+}
