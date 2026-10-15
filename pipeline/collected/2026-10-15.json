@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-10-15T00:10:38.798343",
+  "collected_at": "2026-10-15T23:57:36.475937",
   "date": "2026-10-15",
-  "total_found": 20,
+  "total_found": 17,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,19 +10,42 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-10-15T00:10:37.296603+00:00",
+      "created": "2026-10-15T23:57:35.383448+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.97517282027
+      "final_score": 19997.98193889293
     },
     {
-      "source": "Hacker News",
-      "title": "Redesigning source control at Anthropic",
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "external_url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "score": 866,
-      "comments": 962,
-      "created": "2026-10-13T15:49:56+00:00",
-      "final_score": 2046.2680831205919
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.15.0: v1.15.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.15.0",
+      "body": "### Features\n\n* **api:** add between_tools to thinking types in model capabilities\n* **api:** add the speed parameter and usage.speed to Messages\n* **api:** return a Console organization's usage-tier spend cap as a read-only spend limit\n\n\n### Chores\n\n* **ci:** speed up breaking change detection\n* **docs:** describe headers on Managed Agents and telemetry endpoints\n* **internal:** simplify the script that formats code blocks in docs\n* **tests:** cover OpenTelemetry options and method default timeouts\n\n\n### Documentation\n\n* **api:** note that some models need a beta header to use speed",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-15T19:45:15Z",
+      "final_score": 1579.971592734127
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.135.0: sdk-v0.135.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.135.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.135.0",
+      "body": "### Features\n\n* **api:** add between_tools to thinking types in model capabilities\n* **api:** add the speed parameter and usage.speed to Messages\n* **api:** return a Console organization's usage-tier spend cap as a read-only spend limit\n\n\n### Bug Fixes\n\n* **client:** close streams dropped without being read to the end\n* **client:** keep an unread JSONL response open while it is held\n\n\n### Chores\n\n* **ci:** speed up breaking change detection\n* **docs:** describe headers on Managed Agents and telemetry endpoints\n\n\n### Documentation\n\n* **api:** note that some models need a beta header to use spee",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-15T19:42:46Z",
+      "final_score": 1579.774502787037
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.301: v2.1.301",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+      "body": "## What's changed\n\n- Added `CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) ends a request at a usage limit that resets too far away instead of waiting\n- Added OpenTelemetry tracing guidance to the `claude-api` skill, including setting up trace destinations with the `ant` CLI\n- Added the `%` motion to vim mode: jump to the matching bracket, alone or with d/c/y\n- Added `rows` to a mod's `Input`: a text field of several lines in the terminal, where Enter submits and Shift+Enter or a backslash before Enter starts a new line\n- Added `clas",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-15T19:22:06Z",
+      "final_score": 1578.1342911468255
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -33,84 +56,62 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T18:24:25Z",
-      "final_score": 1572.521430818783
+      "final_score": 1459.270534533069
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
       "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.1.0: google-cloud-sdk-v0.1.0",
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.1.0",
       "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.1.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add OpenTelemetry spans for API calls\n\n\n### Chores\n\n* include the license files in the published packages\n* **internal:** strip `@internal` declarations from published types",
+      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `openTelemetry: false` to the client or set `ANTHROPIC_OPEN_TELEMETRY=false`. Learn more in the [documentation](https://platform.claude.com/docs/en/manage-claude/opentelemetry/sdk).\n\n\n### Chores\n\n* include the license file",
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:24Z",
-      "final_score": 1566.8851874325399
+      "final_score": 1453.6342911468253
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
       "title": "【リリース】anthropic-sdk-typescript foundry-sdk-v0.6.0: foundry-sdk-v0.6.0",
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.6.0",
       "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.6.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add OpenTelemetry spans for API calls\n\n\n### Chores\n\n* include the license files in the published packages\n* **internal:** strip `@internal` declarations from published types",
+      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `openTelemetry: false` to the client or set `ANTHROPIC_OPEN_TELEMETRY=false`. Learn more in the [documentation](https://platform.claude.com/docs/en/manage-claude/opentelemetry/sdk).\n\n\n### Chores\n\n* include the license file",
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:19Z",
-      "final_score": 1566.878573675926
-    },
-    {
-      "source": "GitHub anthropics/anthropic-sdk-typescript",
-      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.35.0: bedrock-sdk-v0.35.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.35.0",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.35.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add OpenTelemetry spans for API calls\n\n\n### Chores\n\n* include the license files in the published packages\n* **internal:** strip `@internal` declarations from published types",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-10-14T17:13:16Z",
-      "final_score": 1566.8746054219578
+      "final_score": 1453.6276773902116
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
       "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.21.0: vertex-sdk-v0.21.0",
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.21.0",
       "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.21.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add OpenTelemetry spans for API calls\n\n\n### Chores\n\n* include the license files in the published packages\n* **internal:** strip `@internal` declarations from published types",
+      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `openTelemetry: false` to the client or set `ANTHROPIC_OPEN_TELEMETRY=false`. Learn more in the [documentation](https://platform.claude.com/docs/en/manage-claude/opentelemetry/sdk).\n\n\n### Chores\n\n* include the license file",
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:14Z",
-      "final_score": 1566.871959919312
+      "final_score": 1453.621063633598
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
       "title": "【リリース】anthropic-sdk-typescript sdk-v0.134.0: sdk-v0.134.0",
       "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.134.0",
       "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.134.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **api:** add organization_type_not_supported error to spend limit lists\n* **api:** add telemetry destination test endpoint\n* **api:** add telemetry destinations to the Admin API\n* **client:** emit OpenTelemetry spans for API calls, streams and tool runs. They are on by default and need no setup in the SDK: the spans appear once the application has registered a tracer provider with the OpenTelemetry API, and there are none without one. Requests carry the trace context in `traceparent`, and in the other headers that the r",
+      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **api:** add organization_type_not_supported error to spend limit lists\n* **api:** add telemetry destination test endpoint\n* **api:** add telemetry destinations to the Admin API\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `openTelemetry: false` to the client or se",
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:11Z",
-      "final_score": 1566.8679916653439
+      "final_score": 1453.6170953796297
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
       "title": "【リリース】anthropic-sdk-python v1.14.0: v1.14.0",
       "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.14.0",
       "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.14.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **api:** add organization_type_not_supported error to spend limit lists\n* **api:** add telemetry destination test endpoint\n* **api:** add telemetry destinations to the Admin API\n* **client:** add OpenTelemetry tracing for API calls, streaming and tool runs\n\n\n### Bug Fixes\n\n* **api:** rename telemetry destination test response model\n* **client:** close dropped streams without waiting for the collector\n* **streaming:** pass unknown event types through the message stream helpers\n* **streaming:** stop raising \"Unexpected ev",
+      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **api:** add organization_type_not_supported error to spend limit lists\n* **api:** add telemetry destination test endpoint\n* **api:** add telemetry destinations to the Admin API\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `open_telemetry=False` to the client or se",
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:08Z",
-      "final_score": 1566.8640234113757
-    },
-    {
-      "source": "GitHub anthropics/claude-code",
-      "title": "【リリース】claude-code v2.1.299: v2.1.299",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
-      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
-      "body": "## What's changed\n\n- Added `CLAUDE_CODE_DISABLE_FILE_MENTIONS` environment variable: Claude gets the paths of `@` file mentions to read with its file tools, not the files' contents\n- Added idle compaction in the terminal: a 200K+ token conversation left idle for about 54 minutes is compacted before its one-hour prompt cache expires, so your next message doesn't reprocess it all\n- Added `CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` to change idle compaction's 200K-token minimum; `\"idleCompaction\": false` in settings.json turns it off. Both need v2.1.290 or later\n- Added `$.prompt.media` so a `prompt.su",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-10-14T02:49:42Z",
-      "final_score": 1498.3375683849208
+      "final_score": 1453.6131271256615
     }
   ]
 }
