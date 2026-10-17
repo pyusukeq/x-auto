@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-10-17T00:01:37.218907",
+  "collected_at": "2026-10-17T23:36:05.959940",
   "date": "2026-10-17",
-  "total_found": 19,
+  "total_found": 17,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,19 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-10-17T00:01:36.368844+00:00",
+      "created": "2026-10-17T23:36:04.492603+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.985946908095
+      "final_score": 19997.975741728318
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude reveals ECDSA curve origins",
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "external_url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "score": 1018,
+      "comments": 372,
+      "created": "2026-10-16T18:55:59+00:00",
+      "final_score": 2048.281935899438
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +33,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-16T20:53:06Z",
-      "final_score": 1585.0380702910054
+      "final_score": 1472.7778308333334
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -34,7 +44,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-15T19:45:15Z",
-      "final_score": 1465.3674353703702
+      "final_score": 1353.1071959126982
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -45,7 +55,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-15T19:42:46Z",
-      "final_score": 1465.1703454232807
+      "final_score": 1352.9101059656086
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -56,7 +66,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-15T19:22:06Z",
-      "final_score": 1463.5301337830688
+      "final_score": 1351.2698943253968
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -67,7 +77,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T18:24:25Z",
-      "final_score": 1344.666377169312
+      "final_score": 1232.4061377116402
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -78,7 +88,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:24Z",
-      "final_score": 1339.0301337830688
+      "final_score": 1226.7698943253968
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -89,7 +99,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:19Z",
-      "final_score": 1339.0235200264551
+      "final_score": 1226.763280568783
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -100,18 +110,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-14T17:13:14Z",
-      "final_score": 1339.0169062698412
-    },
-    {
-      "source": "GitHub anthropics/anthropic-sdk-typescript",
-      "title": "【リリース】anthropic-sdk-typescript sdk-v0.134.0: sdk-v0.134.0",
-      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.134.0",
-      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.134.0",
-      "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **api:** add organization_type_not_supported error to spend limit lists\n* **api:** add telemetry destination test endpoint\n* **api:** add telemetry destinations to the Admin API\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `openTelemetry: false` to the client or se",
-      "score": 800,
-      "comments": 0,
-      "created": "2026-10-14T17:13:11Z",
-      "final_score": 1339.012938015873
+      "final_score": 1226.7566668121694
     }
   ]
 }
