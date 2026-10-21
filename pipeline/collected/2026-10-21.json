@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-10-21T00:13:18.960091",
+  "date": "2026-10-21",
+  "total_found": 22,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-10-21T00:13:17.740986+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.979845600297
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.137.0: sdk-v0.137.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.137.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.137.0",
+      "body": "### Features\n\n* **api:** add org webhook endpoints and user profile enforcement events\n\n\n### Chores\n\n* **ci:** run the changelog check on a standard runner\n* **tests:** make credential tests independent of the caller's environment",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T22:16:13Z",
+      "final_score": 1590.7064020555556
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.17.0: v1.17.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.17.0",
+      "body": "### Features\n\n* **api:** add org webhook endpoints and user profile enforcement events\n* **api:** add RBAC Group owner-access error codes to the Admin API\n* **api:** document the unsupported_charset error code for plugin uploads\n\n\n### Bug Fixes\n\n* **bedrock:** keep a workspace ID set in default_headers on the Bedrock and Mantle clients\n* **google-cloud:** keep workspace and user profile IDs set in default_headers\n\n\n### Chores\n\n* **ci:** run the changelog check on a standard runner",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T22:13:01Z",
+      "final_score": 1590.4524338015874
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.305: v2.1.305",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+      "body": "## What's changed\n\n- Added `sandbox.allowNestedUserNamespaces` so sandboxed commands on Linux can create user namespaces (Chromium, rootless podman); this lets them get around the sandbox's file protections\n- Added `CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS` so unattended retry mode (`CLAUDE_CODE_RETRY_WATCHDOG`) notices a usage limit that was lifted before its reset\n- Fixed every request failing on Vertex, Bedrock and other providers when the endpoint or a gateway rejects tool search, and behind gateways with ToolSearch disallowed or left out of `--tools` (a 2.1.304 regression): Claud",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T20:46:50Z",
+      "final_score": 1583.6124867116403
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v0.36.0: bedrock-sdk-v0.36.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.36.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.36.0",
+      "body": "### Features\n\n* **bedrock:** send `user_profile_id` in the request body on `AnthropicBedrockMantle` Messages and token counting requests\n* **bedrock:** throw an `AnthropicError` when `userProfiles` or `beta.userProfiles` is read on `AnthropicBedrock`, which doesn't serve user profiles",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T18:46:02Z",
+      "final_score": 1574.0251851243386
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v0.22.0: vertex-sdk-v0.22.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.22.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.22.0",
+      "body": "### Features\n\n* **vertex:** throw an `AnthropicError` when `userProfiles` or `beta.userProfiles` is read on `AnthropicVertex`, which doesn't serve the user profile endpoints",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T18:45:59Z",
+      "final_score": 1574.0212168703704
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v0.2.0: google-cloud-sdk-v0.2.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.2.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.2.0",
+      "body": "### Features\n\n* **google-cloud:** use the v1 endpoints and add the organization endpoint",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T17:54:01Z",
+      "final_score": 1569.8968782460317
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v0.136.0: sdk-v0.136.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.136.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.136.0",
+      "body": "### Features\n\n* **api:** add data_refreshed_at and has_more to analytics report pages\n* **api:** add workspace rate-limit updates to the Admin API\n* **api:** make User Profiles generally available\n* **client:** yield server-sent events with unrecognized event names\n* **tools:** accept every tool definition field in the tool helpers\n\n\n### Bug Fixes\n\n* **client:** treat x-amz-security-token as a sensitive header\n* **tools:** keep $ sequences literal in memory tool str_replace\n\n\n### Chores\n\n* **ci:** skip the changelog check on draft pull requests\n* **docs:** add credential expiry descriptions to",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T17:53:59Z",
+      "final_score": 1569.8942327433863
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v1.16.0: v1.16.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.16.0",
+      "body": "### Features\n\n* **api:** add data_refreshed_at and has_more to analytics report pages\n* **api:** add workspace rate-limit updates to the Admin API\n* **api:** make User Profiles generally available\n* **client:** yield server-sent events with unrecognized event names\n* **google-cloud:** use the v1 endpoints and add the organization endpoint\n\n\n### Chores\n\n* **ci:** skip the changelog check on draft pull requests\n* **docs:** add credential expiry descriptions to the Managed Agents API reference\n* **docs:** add Messages API request descriptions\n* **docs:** correct plugin manifest_version and reach ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-20T17:49:46Z",
+      "final_score": 1569.55957665873
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.304: v2.1.304",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.304",
+      "body": "## What's changed\n\n- Added a transcript line when a plugin that runs first skips one of your mod's hooks, naming the event and the plugin\n- Added `decider: \"person\"` to a mod's `tool.check` answer: only the permission dialog or a host's callback can approve the ask, and it is refused with the mod's reason where nobody can be asked\n- Added `e.isReadOnly` to a mod's `tool.check` event, set when the tool call is read-only\n- Added `/auto-mode-setup`: a guided setup that reads your project and recent sessions to teach auto mode about your environment, now also available on Bedrock, Vertex, Foundry,",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-19T21:34:39Z",
+      "final_score": 1473.1217459708994
+    }
+  ]
+}
