@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-10-24T00:07:29.109154",
+  "collected_at": "2026-10-24T23:50:52.490825",
   "date": "2026-10-24",
-  "total_found": 19,
+  "total_found": 18,
   "top_stories": [
     {
       "source": "Anthropic公式",
@@ -10,9 +10,9 @@
       "external_url": "https://www.anthropic.com/news",
       "score": 9999,
       "comments": 0,
-      "created": "2026-10-24T00:07:28.200844+00:00",
+      "created": "2026-10-24T23:50:51.276444+00:00",
       "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
-      "final_score": 19997.984984372084
+      "final_score": 19997.97992356869
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -23,7 +23,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T23:39:00Z",
-      "final_score": 1597.7392737037035
+      "final_score": 1484.7718375820107
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -34,7 +34,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T23:23:48Z",
-      "final_score": 1596.5329244973545
+      "final_score": 1483.5654883756615
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -45,7 +45,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T23:23:43Z",
-      "final_score": 1596.5263107407407
+      "final_score": 1483.5588746190476
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -56,7 +56,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T23:18:22Z",
-      "final_score": 1596.1017075661375
+      "final_score": 1483.1342714444445
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-python",
@@ -67,7 +67,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T13:10:10Z",
-      "final_score": 1547.8318662962963
+      "final_score": 1434.864430174603
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -78,7 +78,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T13:09:27Z",
-      "final_score": 1547.774987989418
+      "final_score": 1434.807551867725
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -89,7 +89,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T13:09:16Z",
-      "final_score": 1547.7604377248679
+      "final_score": 1434.7930016031746
     },
     {
       "source": "GitHub anthropics/anthropic-sdk-typescript",
@@ -100,7 +100,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-23T13:09:13Z",
-      "final_score": 1547.7564694708994
+      "final_score": 1434.7890333492064
     },
     {
       "source": "GitHub anthropics/claude-code",
@@ -111,7 +111,7 @@
       "score": 800,
       "comments": 0,
       "created": "2026-10-22T22:18:57Z",
-      "final_score": 1477.1003848148148
+      "final_score": 1364.1329486931215
     }
   ]
 }
