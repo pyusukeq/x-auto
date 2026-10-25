@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-10-25T23:40:01.153060",
+  "date": "2026-10-25",
+  "total_found": 17,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-10-25T23:40:00.041885+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98163016058
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.310: v2.1.310",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+      "body": "## What's changed\n\n- Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too\n- Fixed requests failing behind some gateways and compatible servers that reject the `effort-2025-11-24` beta value or mid-conversation system messages; Claude Code now retries without them\n- Fixed background cleanup deleting some recent files, such as pasted images, when `cleanupPeriodDays` is set to a very large value\n- Fixed compaction after a \"Prompt is too long\" error keeping too much of a ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T23:39:00Z",
+      "final_score": 1371.3476812116403
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v1.1.1: google-cloud-sdk-v1.1.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.1",
+      "body": "### Bug Fixes\n\n* **google-cloud:** send user profile routes to the organization endpoint\n\n\n### Chores\n\n* **internal:** stop expecting the beta query param in tests\n\n\n### Documentation\n\n* **google-cloud:** update the product name in the package description\n* **google-cloud:** update the product name",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T23:23:48Z",
+      "final_score": 1370.1413320052911
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.3.0: sdk-v1.3.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.3.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.3.0",
+      "body": "### Features\n\n* **api:** add Claude Tag endpoints for Claude Enterprise organizations\n\n\n### Bug Fixes\n\n* **client:** link the long-request error messages to the SDK documentation\n\n\n### Chores\n\n* **client:** stop sending query params hardcoded in endpoint paths\n* **docs:** improve the descriptions of the code execution tool and its encrypted results\n* **docs:** reword work queue, skill and external key descriptions\n* **docs:** update descriptions of the per-user usage and cost reports\n* **internal:** carry endpoint path query params to the request layer\n* **internal:** check the repository by o",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T23:23:43Z",
+      "final_score": 1370.1347182486772
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.3.0: v2.3.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.3.0",
+      "body": "### Features\n\n* **api:** add Claude Tag endpoints for Claude Enterprise organizations\n\n\n### Bug Fixes\n\n* **google-cloud:** send user profiles requests to the organization endpoint\n\n\n### Chores\n\n* **client:** stop sending query params hardcoded in endpoint paths\n* **docs:** improve the descriptions of the code execution tool and its encrypted results\n* **docs:** reword work queue, skill and external key descriptions\n* **docs:** update descriptions of the per-user usage and cost reports\n* **internal:** carry endpoint path query params to the request layer\n* **internal:** check the repository by ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T23:18:22Z",
+      "final_score": 1369.710115074074
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.2.0: v2.2.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.2.0",
+      "body": "### Features\n\n* **api:** add support for message threads\n* **api:** add usage and cost reports by dimension, mark older reports legacy\n\n\n### Bug Fixes\n\n* **client:** stop suggesting math.inf in the max_retries error message\n* **tools:** leave the tool runner's history to the caller after `append_messages()`, and keep the current reply out of the `set_messages_params()` callback\n* **tools:** keep running the tool runner's function tools when `set_messages_params()` gives `tools` as definitions, and stop running one it takes out of `tools`\n* **tools:** give the `set_messages_params()` callback o",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T13:10:10Z",
+      "final_score": 1321.4402738042327
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v1.1.0: google-cloud-sdk-v1.1.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.0",
+      "body": "### Features\n\n* **api:** add support for message threads",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T13:09:27Z",
+      "final_score": 1321.3833954973545
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v1.1.0: vertex-sdk-v1.1.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.0",
+      "body": "### Features\n\n* **api:** add support for message threads",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T13:09:16Z",
+      "final_score": 1321.3688452328042
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.2.0: sdk-v1.2.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.2.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.2.0",
+      "body": "### Features\n\n* **api:** add support for message threads\n* **api:** add usage and cost reports by dimension, mark older reports legacy\n\n\n### Bug Fixes\n\n* **tools:** copy the messages a tool runner is created with again\n* **tools:** restore what the tool runner does after setMessagesParams() or pushMessages() in the loop body\n\n\n### Chores\n\n* **docs:** clarify plugin content scan and validation descriptions\n* **docs:** clarify plugin served_version_pinned and updated_at\n* **docs:** fix usage and cost report examples and ending_at docs\n* **docs:** rate limit model lists vary by organization and w",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-23T13:09:13Z",
+      "final_score": 1321.364876978836
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.309: v2.1.309",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
+      "body": "## What's changed\n\n- Fixed sandboxed Bash commands on macOS and Linux running the shell's startup files outside the sandbox before each command\n- Fixed macOS sandbox `denyWrite` glob patterns not applying at a path's real location when the pattern's folder is reached through a symlink\n- Fixed sandboxed commands and auto-accepted edits being able to modify the MCP config file passed with `--mcp-config`\n- Fixed a disabled MCP server being reconnected by a later permission prompt in print and SDK sessions\n- Fixed the Bash permission check trusting a variable set by a command whose redirect can fa",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-10-22T22:18:57Z",
+      "final_score": 1250.7087923227512
+    }
+  ]
+}
