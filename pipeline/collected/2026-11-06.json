@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-11-06T01:53:27.060651",
+  "date": "2026-11-06",
+  "total_found": 21,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-06T01:53:25.600136+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.975854431992
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.6.0: sdk-v1.6.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
+      "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **client:** set the name of each error to its class name\n* **client:** set the name of WorkloadIdentityError\n\n\n### Chores\n\n* **docs:** describe the type and message of API errors\n* **internal:** generate the OpenTelemetry span attribute tables\n* **internal:** tell contributors when a runtime type check belongs\n\n\n### Documentation\n\n* add the rules the SDKs share to CLAUDE.md\n* **cli",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-05T19:00:33Z",
+      "final_score": 1567.230078563492
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.6.0: v2.6.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** raise error-code and status exception classes on platform clients\n* **bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options\n\n\n### Chores\n\n* **client:** stop recording sampling parameters on OpenTelemetry spans\n* **docs:** describe the type and message of API errors\n* **internal:** define the status error mapping once on t",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-05T18:58:47Z",
+      "final_score": 1567.0898669232806
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.5.0: v2.5.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "body": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTTP statuses and API error codes, and error_code, details and api_message on APIStatusError\n\n\n### Bug Fixes\n\n* **api:** capitalize CMEK in error details type names\n* **api:** move some error details types to the resource they describe\n* **bedrock:** raise a ValueError when model is \".\" or \"..\" instead of sending the request to a different path\n* **bedrock:** raise a ValueError when model is empty instead of sending the request to `/model//",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-04T20:27:20Z",
+      "final_score": 1459.8319304153438
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v1.1.3: google-cloud-sdk-v1.1.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.3",
+      "body": "### Bug Fixes\n\n* **google-cloud:** percent-encode the project, location and workspace ID in the derived base URL, and throw an `AnthropicError` for a value of `.` or `..`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-04T20:25:17Z",
+      "final_score": 1459.6692320026457
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v1.1.2: vertex-sdk-v1.1.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.2",
+      "body": "### Bug Fixes\n\n* **vertex:** percent-encode the project ID, region and model in the request path, so a `/` in the model can't move the request outside `/publishers/anthropic/models/`, and throw an `AnthropicError` for an empty `model` or a project ID or region of `.` or `..`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-04T20:25:14Z",
+      "final_score": 1459.6652637486773
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.5.0: sdk-v1.5.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.5.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.5.0",
+      "body": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTTP statuses and API error codes, and apiMessage, errorCode and details on APIError\n\n\n### Bug Fixes\n\n* **api:** capitalize CMEK in error details type names\n* **api:** move some error details types to the resource they describe\n* **client:** reject path parameters like \";x\", \".;x\" and \"..;x\"\n* **tools:** keep the memory tool from renaming or deleting the /memories directory\n\n\n### Performance Improvements\n\n* **streaming:** decode server-sent",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-04T20:25:11Z",
+      "final_score": 1459.661295494709
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.318: v2.1.318",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+      "body": "## What's changed\n\n- Added a record of your answer when Claude Code asks to turn on the mods it writes in a session\n- Added `assume_role` on `mantle` upstreams of the Claude apps gateway, for a role in another AWS account and for per-developer AWS cost attribution\n- Added an `effort` option to a mod's `$.model.fork`, so a quick side job can run at `low` whatever effort the session uses; the result reports the effort sent\n- Added the date a stored claude.ai sign-in ends to `claude auth status` (`loginExpiresAt`) and to `claude -p` JSON results (`credential_expires_at`)\n- Added a one-line stderr",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-04T00:01:03Z",
+      "final_score": 1362.5078563412699
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.317: v2.1.317",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+      "body": "## What's changed\n\n- Added a warning to `/schedule` when a new cloud scheduled task gets connectors you did not ask for, with how to remove them\n- Added a check that asks before a web or shell tool call sends your account email address to the network\n- Added `onFailure: \"block\"` for Agent SDK hook callbacks, so a callback that fails blocks the action instead of letting it run\n- Added a notice in Claude Desktop's Code tab when your organization's remote managed settings haven't loaded for the session, and another once they do\n- Added a notice when auto mode's check has no answer for a subagent'",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-03T01:25:46Z",
+      "final_score": 1254.9456870291006
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v1.1.1: vertex-sdk-v1.1.1",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.1",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.1",
+      "body": "### Chores\n\n* **internal:** type-check the published declarations of every subpackage",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-02T19:17:16Z",
+      "final_score": 1225.699655283069
+    }
+  ]
+}
