@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-11-10T03:52:38.032977",
+  "date": "2026-11-10",
+  "total_found": 20,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-10T03:52:36.887196+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.981057797188
+    },
+    {
+      "source": "Hacker News",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "external_url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "score": 951,
+      "comments": 1221,
+      "created": "2026-11-08T22:20:09+00:00",
+      "final_score": 2345.2745861091516
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.322: v2.1.322",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "body": "## What's changed\n\n- Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T02:29:43Z",
+      "final_score": 1593.4192686044973
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.321: v2.1.321",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "body": "## What's changed\n\n- Added Claude Fable 5.2 (`claude-fable-5-2`), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads\n- Added `--settings <file>` to `claude remote-control`, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart `claude remote-control`\n- Fixed MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them\n- Fixed a case where a read-only Bash command ran outside the sandbox without a permission prompt\n- Fixed a case where Bash permission ch",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-09T19:22:30Z",
+      "final_score": 1559.5131839484127
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.7.0: sdk-v1.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+      "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **client:** include the body of a failed response in debug logs\n* **helpers:** keep const and enum in structured output schemas\n\n\n### Chores\n\n* **api:** remove some error detail types and up",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-09T18:52:24Z",
+      "final_score": 1557.1242950595238
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.7.0: v2.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** add the parse and count_tokens methods missing from beta.messages.with_raw_response and with_streaming_response\n* **bedrock,vertex:** send the X-Stainless-Async header an",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-09T18:52:17Z",
+      "final_score": 1557.1150358002646
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.319: v2.1.319",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+      "body": "## What's changed\n\n- Changed auto mode with telemetry or feature flags off, including behind LLM gateways: calls the server can't check are asked about or denied, with no fallback to the built-in classifier; set `CLAUDE_CODE_AUTO_MODE_SERVER=0` to keep using it (Bedrock, Vertex and Foundry are unchanged)\n- Changed auto mode behind an LLM gateway: `CLAUDE_CODE_AUTO_MODE_SERVER=1` turns on the server-side check even with `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS` set; if managed settings set the latter, they must set the `1` too\n- Added support for MCP tasks in the terminal: when an MCP server run",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-06T17:04:01Z",
+      "final_score": 1205.6653003505292
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.6.0: sdk-v1.6.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
+      "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **client:** set the name of each error to its class name\n* **client:** set the name of WorkloadIdentityError\n\n\n### Chores\n\n* **docs:** describe the type and message of API errors\n* **internal:** generate the OpenTelemetry span attribute tables\n* **internal:** tell contributors when a runtime type check belongs\n\n\n### Documentation\n\n* add the rules the SDKs share to CLAUDE.md\n* **cli",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-05T19:00:33Z",
+      "final_score": 1100.628263313492
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.6.0: v2.6.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+      "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** raise error-code and status exception classes on platform clients\n* **bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options\n\n\n### Chores\n\n* **client:** stop recording sampling parameters on OpenTelemetry spans\n* **docs:** describe the type and message of API errors\n* **internal:** define the status error mapping once on t",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-05T18:58:47Z",
+      "final_score": 1100.4880516732803
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.5.0: v2.5.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
+      "body": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTTP statuses and API error codes, and error_code, details and api_message on APIStatusError\n\n\n### Bug Fixes\n\n* **api:** capitalize CMEK in error details type names\n* **api:** move some error details types to the resource they describe\n* **bedrock:** raise a ValueError when model is \".\" or \"..\" instead of sending the request to a different path\n* **bedrock:** raise a ValueError when model is empty instead of sending the request to `/model//",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-04T20:27:20Z",
+      "final_score": 993.2301151653439
+    }
+  ]
+}
