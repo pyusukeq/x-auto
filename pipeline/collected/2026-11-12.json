@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-11-12T02:34:56.879468",
+  "date": "2026-11-12",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-12T02:34:55.385867+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.97530736369
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v1.1.4: google-cloud-sdk-v1.1.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4",
+      "body": "### Bug Fixes\n\n* **google-cloud:** throw an `AnthropicError` for a project, location or workspace ID such as `;x`, `.;x` or `..;x`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:40Z",
+      "final_score": 1437.9935457314814
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v1.1.2: bedrock-sdk-v1.1.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2",
+      "body": "### Bug Fixes\n\n* **bedrock:** throw an `AnthropicError` for a model such as `;x`, `.;x` or `..;x`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:38Z",
+      "final_score": 1437.990900228836
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v1.1.3: vertex-sdk-v1.1.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
+      "body": "### Bug Fixes\n\n* **vertex:** send a `;` in the model as `%3B`\n* **vertex:** throw an `AnthropicError` for a project ID, region or model such as `;x`, `.;x` or `..;x`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:35Z",
+      "final_score": 1437.9869319748677
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.8.0: sdk-v1.8.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+      "body": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n### Chores\n\n* **docs:** clarify display_name for RBAC Roles created by Anthropic\n* **docs:** clarify plugin delete and skill name conflict descriptions\n* **docs:** clarify when to omit user_profile_id on external keys\n* **docs:** note that Claude Tag settings accept self-hosted runner pools\n\n\n### Documentation\n\n* **examples:** show multiagent when creating a Managed Agents agent",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:32Z",
+      "final_score": 1437.9829637208995
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.8.0: v2.8.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "body": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n### Bug Fixes\n\n* **bedrock:** send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\n* **google-cloud:** percent-encode the project, location and workspace ID in the workspace and organization base URL paths\n* **google-cloud:** refuse an empty project, location or workspace ID that would be written into a derived base URL\n* **vertex:** refuse an empty model, project ID or region instead o",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:32:58Z",
+      "final_score": 1437.937990175926
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.322: v2.1.322",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "body": "## What's changed\n\n- Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T02:29:43Z",
+      "final_score": 1371.0133870013226
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.321: v2.1.321",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+      "body": "## What's changed\n\n- Added Claude Fable 5.2 (`claude-fable-5-2`), now the default Fable model — 1M context, $8/$40 per Mtok with $0.20/Mtok cache reads\n- Added `--settings <file>` to `claude remote-control`, which applies a settings file to every session it starts; if the file changes, no new session starts until you restart `claude remote-control`\n- Fixed MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them\n- Fixed a case where a read-only Bash command ran outside the sandbox without a permission prompt\n- Fixed a case where Bash permission ch",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-09T19:22:30Z",
+      "final_score": 1337.107302345238
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.7.0: sdk-v1.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+      "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **client:** include the body of a failed response in debug logs\n* **helpers:** keep const and enum in structured output schemas\n\n\n### Chores\n\n* **api:** remove some error detail types and up",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-09T18:52:24Z",
+      "final_score": 1334.718413456349
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.7.0: v2.7.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+      "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** add the parse and count_tokens methods missing from beta.messages.with_raw_response and with_streaming_response\n* **bedrock,vertex:** send the X-Stainless-Async header an",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-09T18:52:17Z",
+      "final_score": 1334.70915419709
+    }
+  ]
+}
