@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-11-14T01:53:50.114164",
+  "date": "2026-11-14",
+  "total_found": 16,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-14T01:53:49.323184+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98692425744
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.325: v2.1.325",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+      "body": "## What's changed\n\n- Fixed a security issue in how zstd-compressed responses are decoded\n- Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook\n- Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run `/rewind` and change the message, or run `/clear`\n- Added a note for Claude when a sandboxed `git checkout`, `git stash` or autostash pull cannot update protected files such as those in `.claude`\n- Fixed `/security-review` and skills' inlin",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-13T20:40:01Z",
+      "final_score": 1575.0937644391533
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.323: v2.1.323",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "body": "## What's changed\n\n- Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization\n- Added `engines[\"claude-code\"]` to `plugin.json`: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits\n- Added type checking of a plugin's TypeScript hooks module to `claude plugin validate`; each finding is a warning, and `--strict` fails on it\n- Added to `claude plugin validate` the `$`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-12T22:12:13Z",
+      "final_score": 1468.1255104708996
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript google-cloud-sdk-v1.1.4: google-cloud-sdk-v1.1.4",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4",
+      "body": "### Bug Fixes\n\n* **google-cloud:** throw an `AnthropicError` for a project, location or workspace ID such as `;x`, `.;x` or `..;x`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:40Z",
+      "final_score": 1212.6850342804232
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v1.1.2: bedrock-sdk-v1.1.2",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2",
+      "body": "### Bug Fixes\n\n* **bedrock:** throw an `AnthropicError` for a model such as `;x`, `.;x` or `..;x`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:38Z",
+      "final_score": 1212.6823887777778
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript vertex-sdk-v1.1.3: vertex-sdk-v1.1.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3",
+      "body": "### Bug Fixes\n\n* **vertex:** send a `;` in the model as `%3B`\n* **vertex:** throw an `AnthropicError` for a project ID, region or model such as `;x`, `.;x` or `..;x`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:35Z",
+      "final_score": 1212.6784205238096
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.8.0: sdk-v1.8.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+      "body": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n### Chores\n\n* **docs:** clarify display_name for RBAC Roles created by Anthropic\n* **docs:** clarify plugin delete and skill name conflict descriptions\n* **docs:** clarify when to omit user_profile_id on external keys\n* **docs:** note that Claude Tag settings accept self-hosted runner pools\n\n\n### Documentation\n\n* **examples:** show multiagent when creating a Managed Agents agent",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:33:32Z",
+      "final_score": 1212.6744522698414
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.8.0: v2.8.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+      "body": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n### Bug Fixes\n\n* **bedrock:** send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\n* **google-cloud:** percent-encode the project, location and workspace ID in the workspace and organization base URL paths\n* **google-cloud:** refuse an empty project, location or workspace ID that would be written into a derived base URL\n* **vertex:** refuse an empty model, project ID or region instead o",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T16:32:58Z",
+      "final_score": 1212.6294787248676
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.322: v2.1.322",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+      "body": "## What's changed\n\n- Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-10T02:29:43Z",
+      "final_score": 1145.7048755502647
+    },
+    {
+      "source": "Hacker News",
+      "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+      "url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "external_url": "https://status.claude.com/incidents/nn11wk485zfn",
+      "score": 484,
+      "comments": 383,
+      "created": "2026-11-13T10:18:13+00:00",
+      "final_score": 1114.575457644418
+    }
+  ]
+}
