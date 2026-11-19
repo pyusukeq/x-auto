@@ -1,0 +1,117 @@
+{
+  "collected_at": "2026-11-19T02:52:13.767865",
+  "date": "2026-11-19",
+  "total_found": 18,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-19T02:52:12.788887+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.983815573632
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.328: v2.1.328",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "body": "## What's changed\n\n- Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission mode start in it\n- Added `\"onFailure\": \"block\"` for `mcp_tool` hooks, as for command and HTTP hooks: a hook whose call fails blocks the action\n- Added a warning when a message from a session that skips permission prompts may be held and dropped by a cloud session\n- Added a notice in `/status` and `claude doctor` when an OpenTelemetry exporter has no endpoint and its data would likely be lost\n",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-19T01:14:04Z",
+      "final_score": 1592.2093018267196
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.327: v2.1.327",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "body": "## What's changed\n\n- Added a confirmation before `/install-github-app` changes a repository\n- Added `claude mcp add-json <name> -` to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session\n- Added a line when a resumed session's earlier messages can't be loaded\n- Added a list in `/status` of broken agent, skill, command and output style files, keybinding errors, an unavailable sandbox, ignored permission settings and hook matchers that never match\n- Added a note in `/config` when other settings override a row\n- Added `x-claude-cod",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-17T23:17:45Z",
+      "final_score": 1468.692106059524
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.10.0: v2.10.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
+      "body": "### Features\n\n* **api:** add beta support for the billing_policy request parameter\n* **api:** add contract_spend_limit_reached error code to messages\n* **api:** add error codes for linked billing refusals\n* **api:** add the user_profile_billing_not_authorized error code\n* **api:** add webhook events for external key failure and recovery\n\n\n### Bug Fixes\n\n* **client:** stop reporting failed aiohttp connections as timeouts\n* **types:** keep deprecated model aliases and the types nested under them working\n\n\n### Chores\n\n* **api:** rename error data models, deprecating the old names\n* **docs:** clar",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-17T18:28:13Z",
+      "final_score": 1445.7132700806876
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.10.0: sdk-v1.10.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.10.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.10.0",
+      "body": "### Features\n\n* **api:** add beta support for the billing_policy request parameter\n* **api:** add contract_spend_limit_reached error code to messages\n* **api:** add error codes for linked billing refusals\n* **api:** add the user_profile_billing_not_authorized error code\n* **api:** add webhook events for external key failure and recovery\n\n\n### Bug Fixes\n\n* **tools:** keep the session tool runner's maxIdleMs countdown running when a session thread terminates\n\n  If the runner fails to read the session's event history after a reconnect, a termination that then arrives on the event stream still can",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-17T18:28:05Z",
+      "final_score": 1445.7026880701058
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.326: v2.1.326",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+      "body": "## What's changed\n\n- Added support for turning on Code Mode while agent teams are enabled; if you already turned it on, sessions with teams on now start in Code Mode\n- Added a startup warning when an `--allowedTools`, `--disallowedTools` or `--tools` value has an entry that doesn't look like a complete rule\n- Added a message explaining why MCP servers stop loading when an administrator adds `managed-mcp.json` during a session\n- Added a row to `/status` that says when your provider or an environment variable such as `DISABLE_TELEMETRY` turns features off\n- Added a note in `/plugin` and `claude ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-16T22:11:05Z",
+      "final_score": 1349.1153864828043
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.9.0: v2.9.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+      "body": "### Features\n\n* **api:** add source and error codes to the RBAC Role read endpoints\n* **api:** add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle\n\n\n### Bug Fixes\n\n* **credentials:** write the credentials file on Windows with Python 3.12 and earlier\n* **tools:** compare directory names exactly when confining file tool and upload paths on Windows\n* **tools:** fully resolve file tool paths that pass through a dangling symlink\n* **tools:** ignore ripgrep config files in the agent toolset's grep tool\n* **tools:** keep an existing skill directory when",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-16T16:47:17Z",
+      "final_score": 1323.4169737843915
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.9.0: sdk-v1.9.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.9.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.9.0",
+      "body": "### Features\n\n* **api:** add source and error codes to the RBAC Role read endpoints\n* **api:** add Update Bundle, which sets a Claude Tag Bundle's instructions, and return instructions on Bundle\n\n\n### Bug Fixes\n\n* **helpers:** keep $schema out of the transformed schema description\n* **streaming:** reject characters that aren't JSON in streamed tool input\n\n  The lenient parser for streamed tool input used to skip characters and words that aren't JSON, such as a comment, and to join numbers such as `12 3`, so it could return a value that the text doesn't contain. It now rejects such text, and a ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-16T16:47:01Z",
+      "final_score": 1323.3958097632276
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.325: v2.1.325",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+      "body": "## What's changed\n\n- Fixed a security issue in how zstd-compressed responses are decoded\n- Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook\n- Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run `/rewind` and change the message, or run `/clear`\n- Added a note for Claude when a sandboxed `git checkout`, `git stash` or autostash pull cannot update protected files such as those in `.claude`\n- Fixed `/security-review` and skills' inlin",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-13T20:40:01Z",
+      "final_score": 999.0307303981481
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.323: v2.1.323",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+      "body": "## What's changed\n\n- Added Code Mode, an experimental opt-in in which Claude writes JavaScript to call its tools; see https://code.claude.com/docs/en/code-mode to turn it on, or to turn it off for an organization\n- Added `engines[\"claude-code\"]` to `plugin.json`: plugins outside their stated Claude Code version range are not installed, updated or loaded, and install and update pick the newest version that fits\n- Added type checking of a plugin's TypeScript hooks module to `claude plugin validate`; each finding is a warning, and `--strict` fails on it\n- Added to `claude plugin validate` the `$`",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-12T22:12:13Z",
+      "final_score": 892.0624764298942
+    }
+  ]
+}
