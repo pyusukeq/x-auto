@@ -1,0 +1,88 @@
+{
+  "collected_at": "2026-11-20T02:44:15.710257",
+  "date": "2026-11-20",
+  "total_found": 8,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-20T02:44:15.553006+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.997400739452
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic’s Nasdaq debut",
+      "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "external_url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+      "score": 943,
+      "comments": 1856,
+      "created": "2026-11-19T17:02:40+00:00",
+      "final_score": 2759.5908486405833
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude solves two open problems in the physics of black holes",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "external_url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "score": 404,
+      "comments": 184,
+      "created": "2026-11-19T17:30:44+00:00",
+      "final_score": 877.8149290163691
+    },
+    {
+      "source": "Hacker News",
+      "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+      "url": "https://news.ycombinator.com/item?id=50548660",
+      "external_url": "",
+      "score": 140,
+      "comments": 42,
+      "created": "2026-11-18T16:53:42+00:00",
+      "final_score": 272.7977522627315
+    },
+    {
+      "source": "Hacker News",
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "url": "https://github.com/onlook-dev/onlook/",
+      "external_url": "https://github.com/onlook-dev/onlook/",
+      "score": 88,
+      "comments": 68,
+      "created": "2026-11-19T16:34:04+00:00",
+      "final_score": 204.67289930588623
+    },
+    {
+      "source": "Hacker News",
+      "title": "No Bailout for the AI Bubble, Anthropic IPO Protesters Say",
+      "url": "https://www.techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say/",
+      "external_url": "https://www.techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say/",
+      "score": 40,
+      "comments": 20,
+      "created": "2026-11-19T18:42:13+00:00",
+      "final_score": 88.0871223396164
+    },
+    {
+      "source": "Hacker News",
+      "title": "An FBI agent called a Claude user about his chats",
+      "url": "https://austinpatrick.substack.com/p/when-should-ai-labs-alert-police",
+      "external_url": "https://austinpatrick.substack.com/p/when-should-ai-labs-alert-police",
+      "score": 25,
+      "comments": 19,
+      "created": "2026-11-19T22:36:51+00:00",
+      "final_score": 58.88637937231316
+    },
+    {
+      "source": "Hacker News",
+      "title": "The MisAnthropic Statement",
+      "url": "https://misanthropicstatement.com/",
+      "external_url": "https://misanthropicstatement.com/",
+      "score": 23,
+      "comments": 1,
+      "created": "2026-11-19T12:48:40+00:00",
+      "final_score": 44.59338403575562
+    }
+  ]
+}
