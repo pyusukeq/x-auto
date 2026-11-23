@@ -1,0 +1,48 @@
+{
+  "collected_at": "2026-11-23T02:03:34.963850",
+  "date": "2026-11-23",
+  "total_found": 4,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-23T02:03:34.808840+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.997437789316
+    },
+    {
+      "source": "Hacker News",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "external_url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "score": 895,
+      "comments": 898,
+      "created": "2026-11-22T08:57:34+00:00",
+      "final_score": 2147.9003594293818
+    },
+    {
+      "source": "Hacker News",
+      "title": "Agentics: Mushy Software",
+      "url": "https://12gramsofcarbon.com/p/agentics-mushy-software",
+      "external_url": "https://12gramsofcarbon.com/p/agentics-mushy-software",
+      "score": 40,
+      "comments": 6,
+      "created": "2026-11-19T05:02:09+00:00",
+      "final_score": 60.85145741944444
+    },
+    {
+      "source": "Hacker News",
+      "title": "Localcode, open source agentic coding on your Mac with one command",
+      "url": "https://github.com/mjwsolo/localcode",
+      "external_url": "https://github.com/mjwsolo/localcode",
+      "score": 23,
+      "comments": 5,
+      "created": "2026-11-22T22:18:48+00:00",
+      "final_score": 47.987102897132935
+    }
+  ]
+}
