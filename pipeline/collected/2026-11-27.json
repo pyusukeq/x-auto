@@ -1,0 +1,116 @@
+{
+  "collected_at": "2026-11-27T03:51:40.999239",
+  "date": "2026-11-27",
+  "total_found": 19,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-27T03:51:40.058720+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.98445148887
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.332: v2.1.332",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "body": "## What's changed\n\n- Added skills from MCP servers (beta). They show as `server:skill` in the `/` menu; other skills keep their names\n- Added a `PreSkillShellCommand` hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start\n- Added \"Always deliver\" to the prompt for held messages from other sessions\n- Added a footer line that stays while a flagged message has your session on a different model, until you pick one with `/model`\n- Added an OpenTelemetry `assistant_response` event for text Claude send",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-25T01:32:14Z",
+      "final_score": 1360.3611121851852
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.14.0: sdk-v1.14.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.14.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.14.0",
+      "body": "### Features\n\n* **api:** add Google-managed data controls for Google Cloud projects\n* **api:** add Google-managed data controls for user profiles\n* **api:** add support for compliance review cases, notices, and items\n\n\n### Chores\n\n* **docs:** name both causes of the tool use limit error\n* **docs:** update example workspace and API key IDs",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-24T21:01:02Z",
+      "final_score": 1338.8373026613756
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.14.0: v2.14.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+      "body": "### Features\n\n* **api:** add Google-managed data controls for Google Cloud projects\n* **api:** add Google-managed data controls for user profiles\n* **api:** add support for compliance review cases, notices, and items\n\n\n### Bug Fixes\n\n* **client:** honor proxy and trust_env when proxy variables are set\n\n  `DefaultHttpxClient` and `DefaultAsyncHttpxClient` read `HTTP_PROXY`, `HTTPS_PROXY`, `ALL_PROXY` and `NO_PROXY` even when the caller passed `proxy=` or `trust_env=False`, and the variables won. Now `proxy=` is used for every request and the variables are not read, and `trust_env=False` ignores",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-24T21:00:57Z",
+      "final_score": 1338.830688904762
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.331: v2.1.331",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "body": "## What's changed\n\n- Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS\n- Added `oidc.groups_jsonpath` to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535)\n- Added an API connectivity section to `claude doctor` that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested\n- Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-23T21:34:41Z",
+      "final_score": 1227.2222232962963
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.13.0: sdk-v1.13.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.13.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.13.0",
+      "body": "### Features\n\n* **api:** add an error code to Message Batches creation\n* **api:** add External Storage to the Admin API beta\n* **api:** add webhook events for external storage failure and recovery\n\n\n### Bug Fixes\n\n* **api:** type beta batch request params as message create params\n\n\n### Chores\n\n* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)\n* **client:** read deprecated models from generated data and warn on claude-mythos-preview again\n* **docs:** clarify when plugin archive downloads are recorded and who gave a share\n* **docs:** correct organization-type notes in ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-23T18:35:09Z",
+      "final_score": 1212.973546047619
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.13.0: v2.13.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+      "body": "### Features\n\n* **api:** add an error code to Message Batches creation\n* **api:** add External Storage to the Admin API beta\n* **api:** add webhook events for external storage failure and recovery\n\n\n### Bug Fixes\n\n* **client:** build the right class for tool results with unknown values\n\n\n### Chores\n\n* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)\n* **client:** read deprecated models from generated data and stop warning on retired ones\n* **docs:** clarify when plugin archive downloads are recorded and who gave a share\n* **docs:** correct organization-type notes in u",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-23T18:34:26Z",
+      "final_score": 1212.9166677407409
+    },
+    {
+      "source": "Hacker News",
+      "title": "Much shorter version of GRH Lean verification from Anthropic",
+      "url": "https://github.com/lsernau/grh-lean",
+      "external_url": "https://github.com/lsernau/grh-lean",
+      "score": 550,
+      "comments": 349,
+      "created": "2026-11-25T21:48:10+00:00",
+      "final_score": 1176.0938334103835
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.330: v2.1.330",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "body": "## What's changed\n\n- Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after `claude auth login`, Claude Code applies the organization's settings and uses its cloud provider or gateway\n- Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in `/config`\n- Added `CLAUDE_CODE_FULL_SIGN_IN_LINK=1` to print the full sign-in link, if the short one shows an error or a script reads values from it\n- Self-hosted runner: Added `--start-dir` /",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-20T22:32:56Z",
+      "final_score": 888.9880963121694
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript bedrock-sdk-v1.1.3: bedrock-sdk-v1.1.3",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.3",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.3",
+      "body": "### Bug Fixes\n\n* **bedrock:** send the user profile ID in the request body\n\n  Amazon Bedrock reads `user_profile_id` from the request body and ignores the `anthropic-user-profile-id` header, so a profile ID given to `AnthropicBedrock` was not applied. `AnthropicBedrock` now moves it into the body of Messages requests and no longer sends the header. A `user_profile_id` already in the body takes priority over the header.\n\n  Some models on Bedrock do not support user profiles. A request to one of them with a profile ID now fails with a 400 error; before, the ID was ignored. Leave the ID off reque",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-20T16:03:53Z",
+      "final_score": 858.1111121851851
+    }
+  ]
+}
