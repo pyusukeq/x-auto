@@ -1,0 +1,114 @@
+{
+  "collected_at": "2026-11-28T03:37:33.441155",
+  "date": "2026-11-28",
+  "total_found": 11,
+  "top_stories": [
+    {
+      "source": "Anthropic公式",
+      "title": "[公式] anthropic.com/news を確認してください",
+      "url": "https://www.anthropic.com/news",
+      "external_url": "https://www.anthropic.com/news",
+      "score": 9999,
+      "comments": 0,
+      "created": "2026-11-28T03:37:32.152751+00:00",
+      "note": "公式ページは手動確認推奨。新着記事があれば優先して取り上げてください。",
+      "final_score": 19997.97869978235
+    },
+    {
+      "source": "Hacker News",
+      "title": "Claude sabotaging ML research tasks?",
+      "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+      "external_url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+      "score": 636,
+      "comments": 293,
+      "created": "2026-11-27T08:28:08+00:00",
+      "final_score": 1345.976817872996
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.332: v2.1.332",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "body": "## What's changed\n\n- Added skills from MCP servers (beta). They show as `server:skill` in the `/` menu; other skills keep their names\n- Added a `PreSkillShellCommand` hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start\n- Added \"Always deliver\" to the prompt for held messages from other sessions\n- Added a footer line that stays while a flagged message has your session on a different model, until you pick one with `/model`\n- Added an OpenTelemetry `assistant_response` event for text Claude send",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-25T01:32:14Z",
+      "final_score": 1247.1965064589947
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.14.0: sdk-v1.14.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.14.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.14.0",
+      "body": "### Features\n\n* **api:** add Google-managed data controls for Google Cloud projects\n* **api:** add Google-managed data controls for user profiles\n* **api:** add support for compliance review cases, notices, and items\n\n\n### Chores\n\n* **docs:** name both causes of the tool use limit error\n* **docs:** update example workspace and API key IDs",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-24T21:01:02Z",
+      "final_score": 1225.6726969351853
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.14.0: v2.14.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.14.0",
+      "body": "### Features\n\n* **api:** add Google-managed data controls for Google Cloud projects\n* **api:** add Google-managed data controls for user profiles\n* **api:** add support for compliance review cases, notices, and items\n\n\n### Bug Fixes\n\n* **client:** honor proxy and trust_env when proxy variables are set\n\n  `DefaultHttpxClient` and `DefaultAsyncHttpxClient` read `HTTP_PROXY`, `HTTPS_PROXY`, `ALL_PROXY` and `NO_PROXY` even when the caller passed `proxy=` or `trust_env=False`, and the variables won. Now `proxy=` is used for every request and the variables are not read, and `trust_env=False` ignores",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-24T21:00:57Z",
+      "final_score": 1225.6660831785714
+    },
+    {
+      "source": "GitHub anthropics/claude-code",
+      "title": "【リリース】claude-code v2.1.331: v2.1.331",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "external_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "body": "## What's changed\n\n- Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS\n- Added `oidc.groups_jsonpath` to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535)\n- Added an API connectivity section to `claude doctor` that reports whether the API can be reached, with the HTTP status or the error, or says why it wasn't tested\n- Added a notice when tap-mode voice dictation stops by itself, after 15 seconds without recognized speech or a",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-23T21:34:41Z",
+      "final_score": 1114.0576175701058
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-typescript",
+      "title": "【リリース】anthropic-sdk-typescript sdk-v1.13.0: sdk-v1.13.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.13.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.13.0",
+      "body": "### Features\n\n* **api:** add an error code to Message Batches creation\n* **api:** add External Storage to the Admin API beta\n* **api:** add webhook events for external storage failure and recovery\n\n\n### Bug Fixes\n\n* **api:** type beta batch request params as message create params\n\n\n### Chores\n\n* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)\n* **client:** read deprecated models from generated data and warn on claude-mythos-preview again\n* **docs:** clarify when plugin archive downloads are recorded and who gave a share\n* **docs:** correct organization-type notes in ",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-23T18:35:09Z",
+      "final_score": 1099.8089403214285
+    },
+    {
+      "source": "GitHub anthropics/anthropic-sdk-python",
+      "title": "【リリース】anthropic-sdk-python v2.13.0: v2.13.0",
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+      "external_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+      "body": "### Features\n\n* **api:** add an error code to Message Batches creation\n* **api:** add External Storage to the Admin API beta\n* **api:** add webhook events for external storage failure and recovery\n\n\n### Bug Fixes\n\n* **client:** build the right class for tool results with unknown values\n\n\n### Chores\n\n* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)\n* **client:** read deprecated models from generated data and stop warning on retired ones\n* **docs:** clarify when plugin archive downloads are recorded and who gave a share\n* **docs:** correct organization-type notes in u",
+      "score": 800,
+      "comments": 0,
+      "created": "2026-11-23T18:34:26Z",
+      "final_score": 1099.7520620145503
+    },
+    {
+      "source": "Hacker News",
+      "title": "\"What's Claude's fursona?\" and other questions",
+      "url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+      "external_url": "https://herecomesthemoon.net/2026/11/whats-claudes-fursona/",
+      "score": 188,
+      "comments": 173,
+      "created": "2026-11-27T04:56:18+00:00",
+      "final_score": 437.11147002315477
+    },
+    {
+      "source": "Hacker News",
+      "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+      "url": "https://github.com/skeeto/prospero",
+      "external_url": "https://github.com/skeeto/prospero",
+      "score": 40,
+      "comments": 9,
+      "created": "2026-11-27T20:23:14+00:00",
+      "final_score": 82.7764919896164
+    }
+  ]
+}
